@@ -28,12 +28,19 @@ function start() {
 					`
 						<section>
 							<div class="content">
-							<div class="image_content">
-								<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
-							</div>
+								<div class="image_content">
+									<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
+									<p>${section.tekst_indhold.guid}</p>
+								</div>
 							<div class="gallery_content" id="${section.slug}">
-								<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}"><img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}"><img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}"><img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
-							</div>
+								<div class="top">
+									<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
+								</div>
+								<div class="bottom">
+									<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede.guid}" alt="Billede til: ${section.title.rendered}">
+								</div>
 						</div>
 						</section>
 					`;
