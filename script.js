@@ -58,6 +58,6 @@ function insertGallery() {
 					`;
         //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
         destGallery.insertAdjacentHTML("beforeend", template);
-    })
+    });
 }
-}
+getGallery();
