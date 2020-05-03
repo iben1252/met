@@ -12,10 +12,10 @@ function start() {
 		is_touch_device() ? 'is_touch_device' : 'is_not_touch_device');
 	//Funktionen kigger på om det er true eller false ift. hvilken enhed det er.
 
-	destGallery = document.querySelector("#gallery-section");
+
 
 }
-
+destGallery = document.querySelector("#gallery-section");
 async function getGallery() {
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside_-_galleri?per_page=100";
 	// Husk at sætte WP post URL ind.
@@ -58,10 +58,4 @@ async function getGallery() {
 			destGallery.insertAdjacentHTML("beforeend", template);
 		})
 	}
-}
-
-
-
-}
-
 }
