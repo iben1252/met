@@ -44,7 +44,7 @@ function insertGallery() {
 							<div class="content">
 								<div class="billede_venstre">
 
-									<img src="${section.billede_venstre.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede_venstre.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
 
 									<p>${section.billede_venstre_tekst.guid}</p>
 								</div>
@@ -52,16 +52,16 @@ function insertGallery() {
 							<div class="gallery_content" id="${section.slug}">
 								<div class="top">
 
-									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%";>
 
-									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
 
 								</div>
 								<div class="bottom">
 
-									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
 
-									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}">
+									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
 								</div>
 						</div>
 						</section>
