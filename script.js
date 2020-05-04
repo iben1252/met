@@ -36,7 +36,6 @@ async function getGallery() {
 }
 
 function insertGallery() {
-	dest.innerHTML = "";
 	section.forEach((section) => {
 		console.log("get content");
 		let template =
