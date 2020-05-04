@@ -27,7 +27,7 @@ function start() {
 
 async function getGallery() {
     console.log("gallery!");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside_-_galleri?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
     // Husk at sætte WP post URL ind.
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
