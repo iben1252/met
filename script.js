@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
     console.log("Hello world!");
     destGallery = document.querySelector("#gallery-section", getGallery());
-
 }
 
 
@@ -70,58 +69,42 @@ function insertGallery() {
         destGallery.insertAdjacentHTML("beforeend", template);
     });
 }
-getGallery();
-
+//getGallery();
 
 
 
 //OM OS SEKTION
 
+destOmOs = document.querySelector("#about-us", getOmOs());
 
-//
-//
-//async function getOmOs() {
-//    console.log("Om os");
-//    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside_-_galleri?per_page=100";
-//    // Husk at sætte WP post URL ind.
-//    let jsonData = await fetch(pagesURL);
-//    section = await jsonData.json();
-//    insertOmOs();
-//    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
-//}
-//
-//function insertOmOs() {
-//    section.forEach((section) => {
-//        let template =
-//            `
-//						<section>
-//							<div class="content">
-//								<div class="billede_venstre">
-//
-//									<img src="${section.billede_venstre.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
-//
-//									<p>${section.billede_venstre_tekst.guid}</p>
-//								</div>
-//
-//							<div class="gallery_content" id="${section.slug}">
-//								<div class="top">
-//
-//									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%";>
-//
-//									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
-//
-//								</div>
-//								<div class="bottom">
-//
-//									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
-//
-//									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
-//								</div>
-//						</div>
-//						</section>
-//					`;
-//        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-//        destGallery.insertAdjacentHTML("beforeend", template);
-//    });
-//}
-//getGallery();
+async function getOmOs() {
+    console.log("Om os");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    // Husk at sætte WP post URL ind.
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertOmOs();
+    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertOmOs() {
+    section.forEach((section) => {
+        let template =
+            `
+						<section>
+							<div class="content">
+                                <h2>${section.overskrift}</h2>
+
+									<img src="${section.billede_om_os_1.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+                                    <p>${section.tekst_om_os_1}</p>
+
+
+									<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+                                    <p>${section.tekst_om_os_2}</p>
+						      </div>
+						</section>
+					`;
+        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+        destOmOs.insertAdjacentHTML("beforeend", template);
+    });
+}
