@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-    console.log("Hello world!");
-    destGallery = document.querySelector("#gallery-section", getGallery());
+	console.log("Hello world!");
+	destGallery = document.querySelector("#gallery-section", getGallery());
 }
 
 
@@ -22,23 +22,23 @@ function start() {
 //
 //}
 
-//
+//---------------------------------Forside Galleri ---------------------------------------
 
 async function getGallery() {
-    console.log("gallery!");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-    // Husk at sætte WP post URL ind.
-    let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertGallery();
-    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
+	console.log("gallery!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertGallery();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
 function insertGallery() {
-    section.forEach((section) => {
-        console.log("get content");
-        let template =
-            `
+	section.forEach((section) => {
+		console.log("get content");
+		let template =
+			`
 						<section>
 							<div class="content">
 								<div class="billede_venstre">
@@ -65,11 +65,52 @@ function insertGallery() {
 						</div>
 						</section>
 					`;
-        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-        destGallery.insertAdjacentHTML("beforeend", template);
-    });
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destGallery.insertAdjacentHTML("beforeend", template);
+		destQuote = document.querySelector("#quote-box", getQuote());
+
+	});
 }
-//getGallery();
+//----------------------- Forside Galleri SLUT ---------------------------------
+
+
+//----------------------- Forside Citat --------------------------------
+
+
+async function getQuote() {
+	console.log("quote");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertQuote();
+}
+
+function insertQuote() {
+	section.forEach((section) => {
+		console.log("get quote");
+		let template =
+
+			`
+						<section>
+							<div class="content">
+								<div class="quote-container" style="width:70vw; height:100vh; overflow-x:auto; display:flex; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;">
+									<p style="width:30vw; height:100%; flex-shrink:0; ">${section.citat}</p>
+
+									<p style="width:30vw; height:100%; flex-shrink:0;">${section.citat_2}</p>
+
+									<p style="width:30vw; height:100%; flex-shrink:0;>${section.citat_3}</p>
+
+								</div>
+						</div>
+						</section>
+					`;
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destQuote.insertAdjacentHTML("beforeend", template);
+	});
+}
+
+
+//----------------------- Forside Citat SLUT----------------------------
 
 
 
@@ -78,19 +119,19 @@ function insertGallery() {
 destOmOs = document.querySelector("#about-us", getOmOs());
 
 async function getOmOs() {
-    console.log("Om os");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-    // Husk at sætte WP post URL ind.
-    let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertOmOs();
-    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
+	console.log("Om os");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertOmOs();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
 function insertOmOs() {
-    section.forEach((section) => {
-        let template =
-            `
+	section.forEach((section) => {
+		let template =
+			`
 						<section>
 							<div class="content">
                                 <h2>${section.overskrift}</h2>
@@ -104,7 +145,7 @@ function insertOmOs() {
 						      </div>
 						</section>
 					`;
-        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-        destOmOs.insertAdjacentHTML("beforeend", template);
-    });
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destOmOs.insertAdjacentHTML("beforeend", template);
+	});
 }
