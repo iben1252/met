@@ -93,15 +93,15 @@ function insertQuote() {
 			`
 						<section>
 							<div class="content">
-								<div class="quote-container" style="width:70vw; height:100vh; overflow-x:auto; display:flex; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;">
-									<p style="width:30vw; height:100%; flex-shrink:0; ">${section.citat}</p>
+								<div class="quote-container" style="width:70vw; height:70vh; overflow-x:auto; display:flex; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;">
+									<p style="width:70vw; flex-shrink:0; ">${section.citat}</p>
 
-									<p style="width:30vw; height:100%; flex-shrink:0;">${section.citat_2}</p>
+									<p style="width:70vw; flex-shrink:0;">${section.citat_2}</p>
 
-									<p style="width:30vw; height:100%; flex-shrink:0;>${section.citat_3}</p>
+									<p style="width:70vw; flex-shrink:0;>${section.citat_3}</p>
 
 								</div>
-						</div>
+							</div>
 						</section>
 					`;
 		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
