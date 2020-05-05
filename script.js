@@ -80,28 +80,99 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+	showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+	showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {
+		slideIndex = 1
+	}
+	if (n < 1) {
+		slideIndex = slides.length
+	}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex - 1].style.display = "block";
+	dots[slideIndex - 1].className += " active";
 }
+
+
+//
+//--------------- Forside Citat - Slideshow JavaScript (virker ikke pt)-----------------
+//async function getQuote() {
+//	console.log("quote");
+//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+//	let jsonData = await fetch(pagesURL);
+//	section = await jsonData.json();
+//	insertQuote();
+//}
+//
+//function insertQuote() {
+//	section.forEach((section) => {
+//		console.log("get quote");
+//		let template =
+//			`
+//			<section>
+//				<div class="mySlides">
+//					<q>${section.citat}</q>
+//					<p class="author">${section.citat_forfatter}</p>
+//				</div>
+//
+//				<div class="mySlides">
+//					<q>${section.citat_2}</q>
+//					<p class="author">${section.citat_forfatter_2}</p>
+//				</div>
+//
+//				<div class="mySlides">
+//					<q>${section.citat_3}</q>
+//					<p class="author">${section.citat_forfatter_3}</p>
+//				</div>
+//            </section>
+//			`
+//		destQuote.insertAdjacentHTML("beforeend", template);
+//	}) }
+
+
+//
+//function insertQuote() {
+//	section.forEach((section) => {
+//		console.log("get quote");
+//		let template =
+//
+//			`
+//						<section>
+//							<div class="content">
+//								<div class="quote-container" style="width:70vw; height:70vh; overflow-x:auto; display:flex; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;">
+//									<p style="width:70vw; flex-shrink:0; ">${section.citat}</p>
+//
+//									<p style="width:70vw; flex-shrink:0;">${section.citat_2}</p>
+//
+//									<p style="width:70vw; flex-shrink:0;>${section.citat_3}</p>
+//
+//								</div>
+//							</div>
+//						</section>
+//					`;
+//		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+//		destQuote.insertAdjacentHTML("beforeend", template);
+//	});
+//}
+
+
+//----------------------- Forside Citat JavaScript SLUT----------------------------
+
+
 
 //----------------------- Forside Citat SLUT----------------------------
 
