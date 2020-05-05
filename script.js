@@ -109,7 +109,7 @@ function showSlides(n) {
 
 
 //
-//--------------- Forside Citat - Slideshow JavaScript (virker ikke pt)-----------------
+//--------------- Forside Citat - Slideshow JavaScript (virker ikke pt)------------------
 //async function getQuote() {
 //	console.log("quote");
 //	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
