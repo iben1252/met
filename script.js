@@ -240,3 +240,63 @@ function insertAboutUs() {
 }
 
 //------------------------------Om os sektion SlUT -----------------------------
+
+
+
+//-----------------------------Footer sektion-----------------------------------//
+
+destFooter = document.querySelector("#foot_box", getFooter());
+
+async function getFooter() {
+    console.log("Footer");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/foot/footer?per_page=10"; //----- VIRKER IKKE??? -----//
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertFooter();
+}
+
+function insertFooter() {
+    section.forEach((section) => {
+        let template =
+            `
+						<section>
+							<div class="footer_all">
+                                <div class="venstre">
+                                   <div class="day">
+                                      <p>${section.aabningsdag}</p>
+                                      <p>${section.aabningsdag_2}</p>
+                                   </div>
+
+                                   <div class="time">
+                                      <p>${section.aabningstider}</p>
+                                      <p>${section.aabningstider_2}</p>
+                                   </div>
+                                </div>
+
+                                <div class="center">
+                                   <div class="adress">
+                                       <p>${section.adresse_footer}</p>
+                                       <p>${section.telefonnummer}</p>
+                                       <p>${section.mail_footer}</p>
+                                   </div>
+                                </div>
+
+                                <div class="hojre">
+                                   <div class="news"></div>
+                                   <div class="some"></div>
+                                </div>
+
+						      </div>
+						</section>
+
+					`;
+        //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
+
+        destFooter.insertAdjacentHTML("beforeend", template);
+    });
+}
+
+
+
+
+//-----------------------------Footer sektion SLUT-----------------------------------//
