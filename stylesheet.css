@@ -109,6 +109,8 @@ img {
 .quote_3 q {
     font-family: Avenir;
     font-style: italic;
+    line-height: 25px;
+
 }
 
 /* Add a blue color to the author */
@@ -118,33 +120,124 @@ img {
 .quote_3 p {
     font-family: Avenir light;
     color: #dd3340;
-    margin-left: 50vw;
+    margin-left: 44vw;
 }
 
 
 
+/*--------------------RESPONSIVE-----------------*/
+
+@media screen and (min-width: 800px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+    /*Forside Citat SLUT*/
+
+}
+
+@media screen and (min-width: 940px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+
+        margin-left: 43vw;
+    }
+
+    /*Forside Citat SLUT*/
 
 
+}
 
-/*RESPONSIVE */
+@media screen and (min-width: 1000px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    /*Forside Citat SLUT*/
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+
+        margin-left: 45vw;
+    }
+
+    /*Forside Citat SLUT*/
 
 
-
-
-
+}
 
 @media screen and (min-width: 1200px) {
 
-
-    /* Citat tegn*/
-
-    #quote-section img {
-        display: block;
-        padding-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 7vw;
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
-    /* Citat tegn slut */
+    /*Forside Citat SLUT*/
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    /*Forside Citat SLUT*/
+
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 330px;
+        padding-right: 330px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 31vw;
+    }
+
+    #quote-section img {
+        width: 4vw;
+    }
+
+    /*Forside Citat SLUT*/
+
 }
