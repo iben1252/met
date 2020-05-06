@@ -169,6 +169,88 @@ function showSlides(n) {
 //	});
 //}
 
+destQuote1 = document.querySelector("#quote_1", getQuote1());
+
+async function getQuote1() {
+	console.log("get quote1");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertQuote1();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertQuote1() {
+	section.forEach((section) => {
+		let template =
+			`
+						<section>
+							<q>${section.citat}</q>
+							<p>${section.citat_forfatter}</p>
+						</section>
+					`;
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destQuote1.insertAdjacentHTML("beforeend", template);
+	});
+}
+
+//------------- Citat 2 ---------------
+
+destQuote2 = document.querySelector("#quote_2", getQuote2());
+
+async function getQuote2() {
+	console.log("get quote2");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertQuote2();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertQuote2() {
+	section.forEach((section) => {
+		let template =
+			`
+						<section>
+							<q>${section.citat_2}</q>
+							<p>${section.citat_forfatter_2}</p>
+						</section>
+					`;
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destQuote2.insertAdjacentHTML("beforeend", template);
+	});
+}
+
+//---------------------- Citat 3 ----------------------------
+
+destQuote3 = document.querySelector("#quote_3", getQuote3());
+
+async function getQuote3() {
+	console.log("get quote3");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+	insertQuote3();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertQuote3() {
+	section.forEach((section) => {
+		let template =
+			`
+						<section>
+							<q>${section.citat_3}</q>
+							<p>${section.citat_forfatter_3}</p>
+						</section>
+					`;
+		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+		destQuote3.insertAdjacentHTML("beforeend", template);
+	});
+}
+
 
 //----------------------- Forside Citat JavaScript SLUT----------------------------
 
@@ -188,7 +270,7 @@ async function getAboutUs() {
 	// Husk at sætte WP post URL ind.
 	let jsonData = await fetch(pagesURL);
 	section = await jsonData.json();
-	insertOmOs();
+	insertAboutUs();
 	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
