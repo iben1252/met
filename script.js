@@ -80,8 +80,7 @@ function insertGallery() {
 
 
 
-
-//----------------------- Forside Citat ---------------------------------------
+//----------------------- Forside Citat ----------------------------------------
 
 //------------------ Til Slideshowet fra W3Schools ----------------------------
 // Slideshowet er taget fra W3Schools, da vi ville arbejde med et citat slideshow men havde problemer med at sætte op.
@@ -197,6 +196,12 @@ function insertQuote3() {
 
 
 //-------------------------- Forside Citat SLUT---------------------------------
+
+
+
+
+
+
 
 
 
