@@ -231,6 +231,7 @@ function insertAboutUs() {
 
 									<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}";">
                                     <p>${section.tekst_om_os_2}</p>
+
 						      </div>
 						</section>
 					`;
