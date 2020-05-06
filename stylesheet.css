@@ -3,13 +3,31 @@ body {
     /*Fjerner standard margin fra siden*/
 }
 
-
-
 img {
-    width: 50%;
+    width: 50vw;
 }
 
 /* Slideshow container */
+
+/* Citat tegn*/
+
+#quote-section h4 {
+    font-family: "Times";
+    text-align-last: center;
+    font-size: 100px;
+    color: #DB3C3C;
+}
+
+#quote-section img {
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
+}
+
+/* Citat tegn slut */
+
 #quote-section {
     background: #F2EDEB;
 }
@@ -24,7 +42,9 @@ img {
 .quote_2,
 .quote_3 {
     display: none;
-    padding: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
     text-align: center;
 }
 
