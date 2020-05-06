@@ -1,35 +1,105 @@
+/* Indholdsfortegnelse
+-------------------------
+1: Generelt
+2: Nav
+3: Slideshow
+4: Responsiv
+
+*/
+
+/*---------- 1: Generelt -----------*/
+
 body {
-    margin: 0;
-    /*Fjerner standard margin fra siden*/
+	margin: 0;
+	/*Fjerner standard margin fra siden*/
 }
 
 img {
-    width: 50vw;
+	width: 50vw;
 }
 
-/* Slideshow container */
+/*---------- 1: Generelt SLUT -----------*/
+
+
+
+
+
+/*----------- 2: Nav Menu -------------*/
+
+#nav {
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 5% 60%;
+	justify-items: center;
+}
+
+
+#logo {
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	place-self: center;
+	max-width: 100%;
+}
+
+#logo img {
+	max-width: 100%;
+}
+
+#main-menu {
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 5;
+	grid-row-end: 5;
+	display: flex;
+}
+
+
+#nav a {
+	text-decoration: none;
+	color: gray;
+	font-family: 'Avenir light', sans-serif;
+	font-size: 1em;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*----------- 2: Nav Menu SLUT-------------*/
+
+
+
+
+
+/*----------- 3: Slideshow container ------------*/
 
 /* Citat tegn billede */
 
 #quote-section img {
-    display: block;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 7vw;
+	display: block;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7vw;
 
-    grid-template-columns: 1f;
-    grid-gap: 10px;
+	grid-template-columns: 1f;
+	grid-gap: 10px;
 }
 
 /* Citat tegn billede slut */
 
 #quote-section {
-    background: #F2EDEB;
+	background: #F2EDEB;
 }
 
 .slideshow-container {
-    position: relative;
+	position: relative;
 }
 
 /* Slides */
@@ -37,69 +107,69 @@ img {
 .quote_1,
 .quote_2,
 .quote_3 {
-    display: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    text-align: center;
+	display: none;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 40px;
+	text-align: center;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    align-self: center;
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	align-self: center;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    /*    background-color: rgba(0, 0, 0, 6.8);*/
-    color: white;
+	/*    background-color: rgba(0, 0, 0, 6.8);*/
+	color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-    text-align: center;
-    padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 
-    border-radius: 10px;
-    border: 1px solid #DB3C3C;
+	border-radius: 10px;
+	border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-    background-color: #DB3C3C;
+	background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
@@ -107,9 +177,9 @@ img {
 .quote_1 q,
 .quote_2 q,
 .quote_3 q {
-    font-family: Avenir;
-    font-style: italic;
-    line-height: 25px;
+	font-family: Avenir;
+	font-style: italic;
+	line-height: 25px;
 
 }
 
@@ -118,126 +188,130 @@ img {
 .quote_1 p,
 .quote_2 p,
 .quote_3 p {
-    font-family: Avenir light;
-    color: #dd3340;
-    margin-left: 44vw;
+	font-family: Avenir light;
+	color: #dd3340;
+	margin-left: 44vw;
 }
 
+/*----------- 3: Slideshow container SLUT ------------*/
 
 
-/*--------------------RESPONSIVE-----------------*/
+
+
+
+/*-------------------- 4: RESPONSIVE-----------------*/
 
 @media screen and (min-width: 800px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 60px;
-        padding-right: 60px;
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 60px;
+		padding-right: 60px;
 
-    }
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 940px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
 
-        margin-left: 43vw;
-    }
+		margin-left: 43vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1000px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 1100px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
 
-        margin-left: 45vw;
-    }
+		margin-left: 45vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1200px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 1300px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 240px;
-        padding-right: 240px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 240px;
+		padding-right: 240px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1400px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 330px;
-        padding-right: 330px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 330px;
+		padding-right: 330px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 31vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 31vw;
+	}
 
-    #quote-section img {
-        width: 4vw;
-    }
+	#quote-section img {
+		width: 4vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
