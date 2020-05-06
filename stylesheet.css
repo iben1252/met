@@ -9,14 +9,7 @@ img {
 
 /* Slideshow container */
 
-/* Citat tegn*/
-
-#quote-section h4 {
-    font-family: "Times";
-    text-align-last: center;
-    font-size: 100px;
-    color: #DB3C3C;
-}
+/* Citat tegn billede */
 
 #quote-section img {
     display: block;
@@ -29,7 +22,7 @@ img {
     grid-gap: 10px;
 }
 
-/* Citat tegn slut */
+/* Citat tegn billede slut */
 
 #quote-section {
     background: #F2EDEB;
@@ -126,4 +119,32 @@ img {
     font-family: Avenir light;
     color: #dd3340;
     margin-left: 50vw;
+}
+
+
+
+
+
+
+/*RESPONSIVE */
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+
+    /* Citat tegn*/
+
+    #quote-section img {
+        display: block;
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7vw;
+    }
+
+    /* Citat tegn slut */
 }
