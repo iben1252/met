@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-	console.log("Hello world!");
-	destGallery = document.querySelector("#gallery-section", getGallery());
+    console.log("Hello world!");
+    destGallery = document.querySelector("#gallery-section", getGallery());
 }
 
 
@@ -25,20 +25,20 @@ function start() {
 //---------------------------------Forside Galleri ---------------------------------------
 
 async function getGallery() {
-	console.log("gallery!");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	// Husk at sætte WP post URL ind.
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertGallery();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+    console.log("gallery!");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    // Husk at sætte WP post URL ind.
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertGallery();
+    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
 function insertGallery() {
-	section.forEach((section) => {
-		console.log("get content");
-		let template =
-			`
+    section.forEach((section) => {
+        console.log("get content");
+        let template =
+            `
 						<section>
 							<div class="content">
 								<div class="billede_venstre">
@@ -65,221 +65,157 @@ function insertGallery() {
 						</div>
 						</section>
 					`;
-		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destGallery.insertAdjacentHTML("beforeend", template);
-		destQuote = document.querySelector("#quote-box", getQuote());
+        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+        destGallery.insertAdjacentHTML("beforeend", template);
+        destQuote = document.querySelector("#quote-box", getQuote());
 
-	});
+    });
 }
 //----------------------- Forside Galleri SLUT ---------------------------------
 
 
-//----------------------- Forside Citat --------------------------------
-//------------ Til Slideshowet fra W3Schools -------------------
+
+
+
+
+
+
+
+//----------------------- Forside Citat ---------------------------------------
+
+//------------------ Til Slideshowet fra W3Schools ----------------------------
 // Slideshowet er taget fra W3Schools, da vi ville arbejde med et citat slideshow men havde problemer med at sætte op.
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-	showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-	showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
-	if (n > slides.length) {
-		slideIndex = 1
-	}
-	if (n < 1) {
-		slideIndex = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
-//------------ Til Slideshowet fra W3Schools -------------------
-
-//
-//--------------- Forside Citat - Slideshow JavaScript (virker ikke pt)------------------
-//async function getQuote() {
-//	console.log("quote");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-//	let jsonData = await fetch(pagesURL);
-//	section = await jsonData.json();
-//	insertQuote();
-//}
-//
-//function insertQuote() {
-//	section.forEach((section) => {
-//		console.log("get quote");
-//		let template =
-//			`
-//			<section>
-//				<div class="mySlides">
-//					<q>${section.citat}</q>
-//					<p class="author">${section.citat_forfatter}</p>
-//				</div>
-//
-//				<div class="mySlides">
-//					<q>${section.citat_2}</q>
-//					<p class="author">${section.citat_forfatter_2}</p>
-//				</div>
-//
-//				<div class="mySlides">
-//					<q>${section.citat_3}</q>
-//					<p class="author">${section.citat_forfatter_3}</p>
-//				</div>
-//            </section>
-//			`
-//		destQuote.insertAdjacentHTML("beforeend", template);
-//	}) }
+//------------------ Til Slideshowet fra W3Schools SLUT ----------------------
 
 
-//
-//function insertQuote() {
-//	section.forEach((section) => {
-//		console.log("get quote");
-//		let template =
-//
-//			`
-//						<section>
-//							<div class="content">
-//								<div class="quote-container" style="width:70vw; height:70vh; overflow-x:auto; display:flex; -webkit-overflow-scrolling:touch; scroll-behavior:smooth;">
-//									<p style="width:70vw; flex-shrink:0; ">${section.citat}</p>
-//
-//									<p style="width:70vw; flex-shrink:0;">${section.citat_2}</p>
-//
-//									<p style="width:70vw; flex-shrink:0;>${section.citat_3}</p>
-//
-//								</div>
-//							</div>
-//						</section>
-//					`;
-//		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-//		destQuote.insertAdjacentHTML("beforeend", template);
-//	});
-//}
-
-//------------ Citat 1 -------------------
+//----------------------- Citat 1 --------------------------------------------
 destQuote1 = document.querySelector("#quote_1", getQuote1());
 
 async function getQuote1() {
-	console.log("get quote1");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote1();
+    console.log("get quote1");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote1();
 }
 
 function insertQuote1() {
-	section.forEach((section) => {
-		let template =
-			`
+    section.forEach((section) => {
+        let template =
+            `
 						<section>
 							<q>${section.citat}</q>
 							<p>${section.citat_forfatter}</p>
 						</section>
 					`;
-		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destQuote1.insertAdjacentHTML("beforeend", template);
-	});
+
+        destQuote1.insertAdjacentHTML("beforeend", template);
+    });
 }
 
-//------------- Citat 2 ---------------
+//-------------------------- Citat 2 -------------------------------------------
 
 destQuote2 = document.querySelector("#quote_2", getQuote2());
 
 async function getQuote2() {
-	console.log("get quote2");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	// Husk at sætte WP post URL ind.
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote2();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+    console.log("get quote2");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote2();
 }
 
 function insertQuote2() {
-	section.forEach((section) => {
-		let template =
-			`
+    section.forEach((section) => {
+        let template =
+            `
 						<section>
 							<q>${section.citat_2}</q>
 							<p>${section.citat_forfatter_2}</p>
 						</section>
 					`;
-		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destQuote2.insertAdjacentHTML("beforeend", template);
-	});
+        destQuote2.insertAdjacentHTML("beforeend", template);
+    });
 }
 
-//---------------------- Citat 3 ----------------------------
+//----------------------------- Citat 3 ------------------------------------------
 
 destQuote3 = document.querySelector("#quote_3", getQuote3());
 
 async function getQuote3() {
-	console.log("get quote3");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	// Husk at sætte WP post URL ind.
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote3();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+    console.log("get quote3");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote3();
 }
 
 function insertQuote3() {
-	section.forEach((section) => {
-		let template =
-			`
+    section.forEach((section) => {
+        let template =
+            `
 						<section>
 							<q>${section.citat_3}</q>
 							<p>${section.citat_forfatter_3}</p>
 						</section>
 					`;
-		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destQuote3.insertAdjacentHTML("beforeend", template);
-	});
+        destQuote3.insertAdjacentHTML("beforeend", template);
+    });
 }
 
 
-//----------------------- Forside Citat JavaScript SLUT----------------------------
+//-------------------------- Forside Citat SLUT---------------------------------
 
 
 
-//----------------------- Forside Citat SLUT----------------------------
-
-
-
-//OM OS SEKTION
+//------------------------------Om os sektion-----------------------------------
 
 destAboutUs = document.querySelector("#about-us", getAboutUs());
 
 async function getAboutUs() {
-	console.log("Om os");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	// Husk at sætte WP post URL ind.
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertAboutUs();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+    console.log("Om os");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertAboutUs();
 }
 
 function insertAboutUs() {
-	section.forEach((section) => {
-		let template =
-			`
+    section.forEach((section) => {
+        let template =
+            `
 						<section>
 							<div class="content">
                                 <h2>${section.overskrift}</h2>
@@ -293,7 +229,8 @@ function insertAboutUs() {
 						      </div>
 						</section>
 					`;
-		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destAboutUs.insertAdjacentHTML("beforeend", template);
-	});
+        destAboutUs.insertAdjacentHTML("beforeend", template);
+    });
 }
+
+//------------------------------Om os sektion SlUT -----------------------------
