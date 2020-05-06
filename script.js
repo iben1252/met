@@ -180,9 +180,9 @@ function showSlides(n) {
 
 //OM OS SEKTION
 
-destOmOs = document.querySelector("#about-us", getOmOs());
+destAboutUs = document.querySelector("#about-us", getAboutUs());
 
-async function getOmOs() {
+async function getAboutUs() {
 	console.log("Om os");
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
 	// Husk at sætte WP post URL ind.
@@ -192,7 +192,7 @@ async function getOmOs() {
 	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
-function insertOmOs() {
+function insertAboutUs() {
 	section.forEach((section) => {
 		let template =
 			`
@@ -210,6 +210,6 @@ function insertOmOs() {
 						</section>
 					`;
 		//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-		destOmOs.insertAdjacentHTML("beforeend", template);
+		destAboutUs.insertAdjacentHTML("beforeend", template);
 	});
 }
