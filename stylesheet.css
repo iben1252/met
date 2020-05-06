@@ -24,6 +24,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 7vw;
+
+    grid-template-columns: 1f;
+    grid-gap: 10px;
 }
 
 /* Citat tegn slut */
