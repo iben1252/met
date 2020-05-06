@@ -1,10 +1,17 @@
+body {
+    margin: 0;
+    /*Fjerner standard margin fra siden*/
+}
+
+
+
 img {
     width: 50%;
 }
 
 /* Slideshow container */
 #quote-section {
-    background: #f2edeb;
+    background: #F2EDEB;
 }
 
 .slideshow-container {
@@ -61,19 +68,22 @@ img {
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
-    background-color: rgba(221, 51, 64, 0.53);
+    background-color: transparent;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+
+    border-radius: 10px;
+    border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-    background-color: #ED018C;
+    background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
