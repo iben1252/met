@@ -51,16 +51,16 @@ function insertGallery() {
 							<div class="gallery_content" id="${section.slug}">
 								<div class="top">
 
-									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%";>
+									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}";>
 
-									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}";">
 
 								</div>
 								<div class="bottom">
 
-									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}";">
 
-									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}";">
 								</div>
 						</div>
 						</section>
@@ -225,11 +225,11 @@ function insertAboutUs() {
 							<div class="content">
                                 <h2>${section.overskrift}</h2>
 
-									<img src="${section.billede_om_os_1.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+									<img src="${section.billede_om_os_1.guid}" alt="Billede til: ${section.title.rendered}";">
                                     <p>${section.tekst_om_os_1}</p>
 
 
-									<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}" style="width:100%;">
+									<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}";">
                                     <p>${section.tekst_om_os_2}</p>
 						      </div>
 						</section>
