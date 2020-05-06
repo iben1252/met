@@ -75,6 +75,8 @@ function insertGallery() {
 
 
 //----------------------- Forside Citat --------------------------------
+//------------ Til Slideshowet fra W3Schools -------------------
+// Slideshowet er taget fra W3Schools, da vi ville arbejde med et citat slideshow men havde problemer med at sætte op.
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -107,6 +109,7 @@ function showSlides(n) {
 	dots[slideIndex - 1].className += " active";
 }
 
+//------------ Til Slideshowet fra W3Schools -------------------
 
 //
 //--------------- Forside Citat - Slideshow JavaScript (virker ikke pt)------------------
@@ -169,16 +172,15 @@ function showSlides(n) {
 //	});
 //}
 
+//------------ Citat 1 -------------------
 destQuote1 = document.querySelector("#quote_1", getQuote1());
 
 async function getQuote1() {
 	console.log("get quote1");
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
-	// Husk at sætte WP post URL ind.
 	let jsonData = await fetch(pagesURL);
 	section = await jsonData.json();
 	insertQuote1();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
 function insertQuote1() {
