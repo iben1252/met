@@ -228,18 +228,28 @@ ul {
     font-family: Avenir light;
     color: white;
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr 3fr 2fr;
+    grid-template-columns: 3fr 2fr 3fr;
     grid-template-rows: 50% 20%;
 }
 
 #footer_box {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
+    margin-left: 5vw;
 }
 
-.adress {
+.left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.right {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 #mc_embed_signup {

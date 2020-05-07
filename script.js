@@ -239,46 +239,92 @@ function insertAboutUs() {
 
 //-----------------------------Footer sektion-----------------------------------//
 
-destFooter = document.querySelector("#footer_box", getFooter());
+/* aabningstider og dage */
+destFooter1 = document.querySelector(".left", getFooter1());
 
-async function getFooter() {
-    console.log("Footer");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125"; //----- VIRKER IKKE??? -----//
+async function getFooter1() {
+    console.log("get left");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
-    insertFooter();
+    insertFooter1();
 }
 
-function insertFooter() {
+function insertFooter1() {
+
     let template =
         `
-						<section>
-                            <div class="venstre">
-                                   <div class="day">
-                                      <p>${section.aabningsdage}</p>
-                                      <p>${section.aabningsdage_2}</p>
-                                   </div>
-                                </div>
-
-                                <div class="center">
-                                   <div class="adress">
-                                       <p>${section.adresse_footer}</p>
-                                       <p>${section.telefonnummer}</p>
-                                       <p>${section.mail_footer}</p>
-                                   </div>
-                                </div>
-
-                                <div class="hojre">
-                                   <div class="news"></div>
-                                   <div class="some"></div>
-                                </div>
-						</section>
+				<p>${section.aabningsdage}</p>
+                <p>${section.aabningsdage_2}</p>
 					`;
-    //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
+    destFooter1.insertAdjacentHTML("beforeend", template);
 
-    destFooter.insertAdjacentHTML("beforeend", template);
 }
 
+/* adresse og information */
+destFooter2 = document.querySelector(".right", getFooter2());
+
+async function getFooter2() {
+    console.log("get right");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertFooter2();
+}
+
+function insertFooter2() {
+
+    let template =
+        `							                          <p>${section.adresse_footer}</p>
+               <p>${section.telefonnummer}</p>
+               <p>${section.mail_footer}</p>
+
+					`;
+    destFooter2.insertAdjacentHTML("beforeend", template);
+
+}
+
+
+//destFooter = document.querySelector("#footer_box", getFooter());
+//
+//async function getFooter() {
+//    console.log("Footer");
+//    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125"; //----- VIRKER IKKE??? -----//
+//    let jsonData = await fetch(pagesURL);
+//    section = await jsonData.json();
+//    insertFooter();
+//}
+//
+//function insertFooter() {
+//    let template =
+//        `
+//						<section>
+//                            <div class="venstre">
+//                                   <div class="day">
+//                                      <p>${section.aabningsdage}</p>
+//                                      <p>${section.aabningsdage_2}</p>
+//                                   </div>
+//                                </div>
+//
+//                                <div class="center">
+//                                   <div class="adress">
+//                                       <p>${section.adresse_footer}</p>
+//                                       <p>${section.telefonnummer}</p>
+//                                       <p>${section.mail_footer}</p>
+//                                   </div>
+//                                </div>
+//
+//                                <div class="hojre">
+//                                   <div class="news"></div>
+//                                   <div class="some"></div>
+//                                </div>
+//						</section>
+//					`;
+//    //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
+//
+//    destFooter.insertAdjacentHTML("beforeend", template);
+//}
+//
 
 
 
