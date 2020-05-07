@@ -275,7 +275,8 @@ async function getFooter2() {
 function insertFooter2() {
 
     let template =
-        `							                          <p>${section.adresse_footer}</p>
+        `
+                <p>${section.adresse_footer}</p>
                <p>${section.telefonnummer}</p>
                <p>${section.mail_footer}</p>
 
