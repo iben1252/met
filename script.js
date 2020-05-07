@@ -26,7 +26,7 @@ function start() {
 
 async function getGallery() {
     console.log("gallery!");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     // Husk at sætte WP post URL ind.
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
@@ -35,7 +35,6 @@ async function getGallery() {
 }
 
 function insertGallery() {
-    section.forEach((section) => {
         console.log("get content");
         let template =
             `
@@ -68,8 +67,6 @@ function insertGallery() {
         //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
         destGallery.insertAdjacentHTML("beforeend", template);
         destQuote = document.querySelector("#quote-box", getQuote());
-
-    });
 }
 //----------------------- Forside Galleri SLUT ---------------------------------
 
@@ -124,14 +121,13 @@ destQuote1 = document.querySelector("#quote_1", getQuote1());
 
 async function getQuote1() {
     console.log("get quote1");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
     insertQuote1();
 }
 
 function insertQuote1() {
-    section.forEach((section) => {
         let template =
             `
 						<section>
@@ -141,7 +137,7 @@ function insertQuote1() {
 					`;
 
         destQuote1.insertAdjacentHTML("beforeend", template);
-    });
+
 }
 
 //-------------------------- Citat 2 -------------------------------------------
@@ -150,14 +146,13 @@ destQuote2 = document.querySelector("#quote_2", getQuote2());
 
 async function getQuote2() {
     console.log("get quote2");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
     insertQuote2();
 }
 
 function insertQuote2() {
-    section.forEach((section) => {
         let template =
             `
 						<section>
@@ -166,7 +161,7 @@ function insertQuote2() {
 						</section>
 					`;
         destQuote2.insertAdjacentHTML("beforeend", template);
-    });
+
 }
 
 //----------------------------- Citat 3 ------------------------------------------
@@ -175,14 +170,14 @@ destQuote3 = document.querySelector("#quote_3", getQuote3());
 
 async function getQuote3() {
     console.log("get quote3");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
     insertQuote3();
 }
 
 function insertQuote3() {
-    section.forEach((section) => {
+
         let template =
             `
 						<section>
@@ -191,7 +186,7 @@ function insertQuote3() {
 						</section>
 					`;
         destQuote3.insertAdjacentHTML("beforeend", template);
-    });
+
 }
 
 
@@ -211,14 +206,13 @@ destAboutUs = document.querySelector("#about-us", getAboutUs());
 
 async function getAboutUs() {
     console.log("Om os");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside?per_page=100";
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
     insertAboutUs();
 }
 
 function insertAboutUs() {
-    section.forEach((section) => {
         let template =
             `
 						<section>
@@ -236,7 +230,7 @@ function insertAboutUs() {
 						</section>
 					`;
         destAboutUs.insertAdjacentHTML("beforeend", template);
-    });
+
 }
 
 //------------------------------Om os sektion SlUT -----------------------------
@@ -249,14 +243,13 @@ destFooter = document.querySelector("#foot_box", getFooter());
 
 async function getFooter() {
     console.log("Footer");
-    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/foot/footer?per_page=10"; //----- VIRKER IKKE??? -----//
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125"; //----- VIRKER IKKE??? -----//
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
     insertFooter();
 }
 
 function insertFooter() {
-    section.forEach((section) => {
         let template =
             `
 						<section>
@@ -293,7 +286,6 @@ function insertFooter() {
         //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
 
         destFooter.insertAdjacentHTML("beforeend", template);
-    });
 }
 
 
