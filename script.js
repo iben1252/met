@@ -35,9 +35,9 @@ async function getGallery() {
 }
 
 function insertGallery() {
-        console.log("get content");
-        let template =
-            `
+    console.log("get content");
+    let template =
+        `
 						<section>
 							<div class="content">
 								<div class="billede_venstre">
@@ -64,9 +64,9 @@ function insertGallery() {
 						</div>
 						</section>
 					`;
-        //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-        destGallery.insertAdjacentHTML("beforeend", template);
-        destQuote = document.querySelector("#quote-box", getQuote());
+    //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+    destGallery.insertAdjacentHTML("beforeend", template);
+    destQuote = document.querySelector("#quote-box", getQuote());
 }
 //----------------------- Forside Galleri SLUT ---------------------------------
 
@@ -128,15 +128,15 @@ async function getQuote1() {
 }
 
 function insertQuote1() {
-        let template =
-            `
+    let template =
+        `
 						<section>
 							<q>${section.citat}</q>
 							<p>${section.citat_forfatter}</p>
 						</section>
 					`;
 
-        destQuote1.insertAdjacentHTML("beforeend", template);
+    destQuote1.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -153,14 +153,14 @@ async function getQuote2() {
 }
 
 function insertQuote2() {
-        let template =
-            `
+    let template =
+        `
 						<section>
 							<q>${section.citat_2}</q>
 							<p>${section.citat_forfatter_2}</p>
 						</section>
 					`;
-        destQuote2.insertAdjacentHTML("beforeend", template);
+    destQuote2.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -178,14 +178,14 @@ async function getQuote3() {
 
 function insertQuote3() {
 
-        let template =
-            `
+    let template =
+        `
 						<section>
 							<q>${section.citat_3}</q>
 							<p>${section.citat_forfatter_3}</p>
 						</section>
 					`;
-        destQuote3.insertAdjacentHTML("beforeend", template);
+    destQuote3.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -213,8 +213,8 @@ async function getAboutUs() {
 }
 
 function insertAboutUs() {
-        let template =
-            `
+    let template =
+        `
 						<section>
 							<div class="content">
                                 <h2>${section.overskrift}</h2>
@@ -229,7 +229,7 @@ function insertAboutUs() {
 						      </div>
 						</section>
 					`;
-        destAboutUs.insertAdjacentHTML("beforeend", template);
+    destAboutUs.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -239,7 +239,7 @@ function insertAboutUs() {
 
 //-----------------------------Footer sektion-----------------------------------//
 
-destFooter = document.querySelector("#foot_box", getFooter());
+destFooter = document.querySelector("#footer_box", getFooter());
 
 async function getFooter() {
     console.log("Footer");
@@ -250,19 +250,13 @@ async function getFooter() {
 }
 
 function insertFooter() {
-        let template =
-            `
+    let template =
+        `
 						<section>
-							<div class="footer_all">
-                                <div class="venstre">
+                            <div class="venstre">
                                    <div class="day">
-                                      <p>${section.aabningsdag}</p>
-                                      <p>${section.aabningsdag_2}</p>
-                                   </div>
-
-                                   <div class="time">
-                                      <p>${section.aabningstider}</p>
-                                      <p>${section.aabningstider_2}</p>
+                                      <p>${section.aabningsdage}</p>
+                                      <p>${section.aabningsdage_2}</p>
                                    </div>
                                 </div>
 
@@ -278,14 +272,11 @@ function insertFooter() {
                                    <div class="news"></div>
                                    <div class="some"></div>
                                 </div>
-
-						      </div>
 						</section>
-
 					`;
-        //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
+    //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
 
-        destFooter.insertAdjacentHTML("beforeend", template);
+    destFooter.insertAdjacentHTML("beforeend", template);
 }
 
 
