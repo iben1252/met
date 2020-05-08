@@ -231,7 +231,7 @@ ul {
     font-family: Avenir light;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 2fr;
+    grid-template-columns: 1fr 1fr 3fr 2fr 1fr;
     grid-template-rows: 50% 20%;
 }
 
