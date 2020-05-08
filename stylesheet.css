@@ -286,6 +286,8 @@ ul {
     font-size: 11px !important;
     padding: 6px 6px 6px 6px !important;
     line-height: inherit !important;
+    height: 30px !important;
+
 }
 
 /*SIGN UP STYLING SLUT*/
@@ -295,8 +297,17 @@ ul {
     border: 2px solid white !important;
 }
 
+#mc_embed_signup div#mce-responses {
+    width: auto !important;
+    padding: auto !important;
+    margin: auto !important;
+}
 
 
+
+#mail_section {
+    display: flex;
+}
 
 /*------------ 4: Footer container SLUT -------------*/
 
