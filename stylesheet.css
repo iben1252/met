@@ -49,8 +49,8 @@ img {
     grid-row-end: 3;
     max-width: 90%;
     margin-top: 2vw;
-
 }
+
 
 #logo img {
     max-width: 100%;
@@ -228,7 +228,7 @@ ul {
     font-family: Avenir light;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 3fr 4fr;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
     grid-template-rows: 50% 20%;
 }
 
@@ -253,19 +253,49 @@ ul {
     grid-row-end: 2;
 }
 
+/*SIGN UP STYLING */
+
 #mc_embed_signup {
     clear: left;
     font: 14px Avenir light, Avenir Black, sans-serif;
 }
 
-#mc_embedded_signup .button {
-    background-color: red !importen;
-
+#mc_embed_signup .mc-field-group input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
 }
 
+::-webkit-input-placeholder {
+    /* Edge */
+    color: white;
+    font: Avenir light, Avenir Black, sans-serif;
+    font-style: oblique;
+}
+
+/*Grunden til der står "important" er fordi at Mailchimp egen CSS er dominerende for den taget kode. Med important kan man fastgøre at det er vigtigt og dermed fange det man vil style*/
+
+#mc_embed_signup .button {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    border-radius: 0px !important;
+    font: Avenir light, Avenir Black, sans-serif !important;
+    font-size: 11px !important;
+    padding: 6px 6px 6px 6px !important;
+    line-height: inherit !important;
+}
+
+/*SIGN UP STYLING SLUT*/
 
 
 /*------------ 4: Footer container SLUT -------------*/
+
+
+
+
+
+
+
 
 /*-------------------- 5: RESPONSIVE-----------------*/
 
