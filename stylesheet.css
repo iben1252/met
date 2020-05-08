@@ -95,8 +95,6 @@ ul {
     white-space: nowrap;
 }
 
-
-
 /*----------- 2: Nav Menu SLUT-------------*/
 
 
@@ -221,6 +219,11 @@ ul {
 
 /*----------- 3: Slideshow container SLUT ------------*/
 
+
+
+
+
+
 /*------------ 4: Footer container START -------------*/
 
 #box {
@@ -286,6 +289,13 @@ ul {
 }
 
 /*SIGN UP STYLING SLUT*/
+
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 2px solid white !important;
+}
+
+
 
 
 /*------------ 4: Footer container SLUT -------------*/
