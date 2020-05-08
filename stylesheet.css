@@ -362,18 +362,16 @@ path:hover {
         grid-row-start: 2;
         margin-left: 10vw;
         margin-right: -5vw;
-        margin-top: 5vw;
+        margin-top: 10vw;
         /* Kan ikke få "tilmeld nyhedsbrev" til at stå i midten */
     }
 
     .some_container {
         grid-column-start: 1;
         grid-row-start: 3;
-        /* Lægger i det hvide, kan ikke få det op*/
+        margin-top: -30vw;
+        margin-left: 35vw;
     }
-
-
-
 
 }
 
