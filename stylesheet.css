@@ -221,8 +221,10 @@ ul {
 
 
 
-/*------------ 4: Footer container START -------------*/
 
+
+/*------------ 4: Footer container START -------------*/
+/*
 #box {
     background-color: #dd3340;
     font-family: Avenir light;
@@ -251,7 +253,9 @@ ul {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-}
+}*/
+
+
 
 /*SIGN UP STYLING */
 
@@ -334,9 +338,18 @@ path:hover {
 
 /*-------------------- 5: RESPONSIVE-----------------*/
 
-@media screen and (min-width: 320px) {
 
-    /*footer*/
+
+
+
+
+
+/*IBENS*/
+
+/*@media screen and (min-width: 320px) {
+    */
+/*    footer*/
+/*
     #box {
         grid-template-columns: 5fr 1fr;
         grid-template-rows: 50% 50%;
@@ -363,7 +376,7 @@ path:hover {
         margin-left: 10vw;
         margin-right: -5vw;
         margin-top: 10vw;
-        /* Kan ikke få "tilmeld nyhedsbrev" til at stå i midten */
+        Kan ikke få "tilmeld nyhedsbrev"til at stå i midten
     }
 
     .some_container {
@@ -373,7 +386,15 @@ path:hover {
         margin-left: 35vw;
     }
 
-}
+    }
+*/
+
+
+
+
+@media screen and (min-width: 768px) {}
+
+
 
 @media screen and (min-width: 800px) {
 
@@ -416,6 +437,40 @@ path:hover {
     /*Forside Citat SLUT*/
 
 }
+
+@media screen and (min-width: 1024px) {
+    #box {
+        background-color: #dd3340;
+        font-family: Avenir light;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 2fr 1fr 1fr;
+        grid-template-rows: 50% 20%;
+    }
+
+    #footer_box {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-left: 2.5vw;
+    }
+
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .right {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+}
+
 
 @media screen and (min-width: 1100px) {
 
