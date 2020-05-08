@@ -71,15 +71,12 @@ li {
 #nav a:hover {
     text-decoration: underline solid red;
     font-style: italic;
-
 }
 
 #nav a:active {
     text-decoration: underline solid red;
     font-style: italic;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -287,11 +284,7 @@ ul {
     padding: 6px 6px 6px 6px !important;
     line-height: inherit !important;
     height: 30px !important;
-
 }
-
-/*SIGN UP STYLING SLUT*/
-
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
     border: 2px solid white !important;
@@ -303,11 +296,32 @@ ul {
     margin: auto !important;
 }
 
-
-
 #mail_section {
     display: flex;
 }
+
+/*SIGN UP STYLING SLUT*/
+
+
+
+/*SoMe ikoner*/
+.some_container {
+    padding-top: 9.2vh;
+    padding-left: 16px;
+}
+
+.some_container svg {
+    width: 15%;
+    padding-right: 10px;
+}
+
+path:hover {
+    fill: #000000;
+}
+
+/*SoMe ikoner SLUT*/
+
+
 
 /*------------ 4: Footer container SLUT -------------*/
 
@@ -326,7 +340,6 @@ ul {
     .slideshow-container {
         padding-left: 60px;
         padding-right: 60px;
-
     }
 
     /*Forside Citat SLUT*/
@@ -345,7 +358,6 @@ ul {
     .quote_1 p,
     .quote_2 p,
     .quote_3 p {
-
         margin-left: 43vw;
     }
 
