@@ -403,7 +403,6 @@ path:hover {
 @media screen and (min-width: 600px) {
 
     /*Footer*/
-
     .some_container svg {
         width: 20%;
     }
@@ -421,7 +420,6 @@ path:hover {
         display: grid;
     }
 
-
     .left {
         grid-column-start: 1;
         grid-column-end: 1;
@@ -438,7 +436,6 @@ path:hover {
         padding-top: 4.4vh;
         padding-right: 9vw;
     }
-
 
     #mc_embed_signup {
         grid-column-start: 2;
@@ -511,20 +508,6 @@ path:hover {
 @media screen and (min-width: 1024px) {
 
     /*Footer*/
-
-    #box {
-
-        /*
-        background-color: #dd3340;
-        font-family: Avenir light;
-        color: white;
-        display: grid;
-*/
-
-        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-        /*        grid-template-rows: 50% 20%;
-        */
-    }
 
     #footer_box {
         display: grid;
