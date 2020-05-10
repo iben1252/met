@@ -81,7 +81,7 @@ li {
 ul {
     list-style-type: none;
     margin-bottom: 2vw;
-    padding: 0;
+    padding: 0vw;
     overflow: hidden;
     grid-column-start: 3;
     grid-column-end: 3;
@@ -89,7 +89,7 @@ ul {
     grid-row-end: 5;
     display: flex;
     font-family: Avenir Light;
-    ´ white-space: nowrap;
+    white-space: nowrap;
 }
 
 #active {
@@ -230,7 +230,7 @@ ul {
 
 
 
-/*---------------------- Om os SLUT ------------------*/
+/*---------------------- Om os------------------------*/
 /*JS template som fanger og styler*/
 #aboutUs h2 {
     font-family: Avenir Light;
@@ -238,21 +238,17 @@ ul {
     padding-top: 7vh;
 }
 
-/*
-JS template som fanger og styler .grid-colum-2 {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-}
-*/
-
 #aboutUs {
     text-align: center;
-
 }
 
 #aboutUs p {
+    font-family: Avenir Light;
     text-align: center;
 }
+
+/*---------------------- Om os SLUT ------------------*/
+
 
 
 
@@ -311,7 +307,6 @@ JS template som fanger og styler .grid-colum-2 {
 }
 
 /*SIGN UP MAILCHIMP STYLING SLUT*/
-
 
 
 /*SoMe ikoner i footer*/
@@ -513,6 +508,7 @@ path:hover {
         font-family: Avenir Light;
         text-align: center;
         padding-top: 7vh;
+        padding-bottom: 7vh;
     }
 
     /*JS template som fanger og styler*/
@@ -522,16 +518,36 @@ path:hover {
     }
 
     #aboutUs {
-        /*        width: 80%;
-        */
-        text-align: center;
-        /*        padding-right: 5vw;
-        */
+        padding-right: 10vw;
+        padding-left: 10vw;
     }
 
+    #aboutUs img {
+        width: 70%;
+    }
+
+    .mette,
+    img {
+        text-align: end;
+        padding-right: 5px;
+
+    }
+
+    .thomas,
+    img {
+        text-align: start;
+        padding-left: 5px;
+    }
+
+    .thomas p {
+        text-align: left;
+    }
+
+    /*
     #aboutUs p {
         text-align: center;
     }
+*/
 
     /*---------------------- Om os SLUT ------------------*/
 

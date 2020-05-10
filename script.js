@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
     console.log("Hello world!");
     destGallery = document.querySelector("#gallery-section", getGallery());
-    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
 
 
@@ -24,25 +23,27 @@ function start() {
 //}
 
 
-function toggleMenu() {
-    console.log("Toggle menu");
-    document.querySelector("#menu").classList.toggle("hide");
 
-
-
-    let erSkjult = document.querySelector("#menu").classList.contains("hide");
-
-    if (erSkjult == true) {
-        //menu er nu skjult - ændre nenuknap til lll
-        document.querySelector("#menuknap").textContent = "☰";
-    } else {
-        //menu er nu vist - ændre menuknap til X
-        document.querySelector("#menuknap").textContent = "⤫";
-    }
-
-}
-
-
+//BURGER menu//
+//function toggleMenu() {
+//    console.log("Toggle menu");
+//    document.querySelector("#menu").classList.toggle("hide");
+//
+//
+//
+//    let erSkjult = document.querySelector("#menu").classList.contains("hide");
+//
+//    if (erSkjult == true) {
+//        //menu er nu skjult - ændre nenuknap til lll
+//        document.querySelector("#menuknap").textContent = "☰";
+//    } else {
+//        //menu er nu vist - ændre menuknap til X
+//        document.querySelector("#menuknap").textContent = "⤫";
+//    }
+//
+//}
+//
+//
 
 
 
