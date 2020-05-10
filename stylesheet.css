@@ -64,15 +64,16 @@ li {
     color: gray;
     font-family: 'Avenir light', sans-serif;
     font-size: 1em;
+    padding-bottom: 3vw;
 }
 
 #nav a:hover {
-    text-decoration: underline solid red;
+    border-bottom: 1px solid #DD3340;
     font-style: italic;
 }
 
 #nav a:active {
-    text-decoration: underline solid red;
+    border-bottom: 1px solid #DD3340;
     font-style: italic;
 }
 
@@ -90,6 +91,10 @@ ul {
     white-space: nowrap;
 }
 
+#active {
+    border-bottom: 1px solid #DD3340;
+    font-style: italic;
+}
 
 /*----------- 2: Nav Menu SLUT-------------*/
 
