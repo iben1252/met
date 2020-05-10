@@ -20,6 +20,7 @@ img {
     width: 50vw;
 }
 
+
 /*---------- 1: Generelt SLUT -----------*/
 
 
@@ -88,13 +89,14 @@ ul {
     grid-row-end: 5;
     display: flex;
     font-family: Avenir Light;
-    white-space: nowrap;
+    ´ white-space: nowrap;
 }
 
 #active {
     border-bottom: 1px solid #DD3340;
     font-style: italic;
 }
+
 
 /*----------- 2: Nav Menu SLUT-------------*/
 
@@ -220,6 +222,38 @@ ul {
 }
 
 /*----------- 3: Slideshow container SLUT ------------*/
+
+
+
+
+
+
+
+
+/*---------------------- Om os SLUT ------------------*/
+/*JS template som fanger og styler*/
+#aboutUs h2 {
+    font-family: Avenir Light;
+    text-align: center;
+    padding-top: 7vh;
+}
+
+/*
+JS template som fanger og styler .grid-colum-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+*/
+
+#aboutUs {
+    text-align: center;
+
+}
+
+#aboutUs p {
+    text-align: center;
+}
+
 
 
 
@@ -464,6 +498,45 @@ path:hover {
     }
 
     /*Footer*/
+
+
+
+
+    /*---------------------- Om os ------------------*/
+    /*JS template som fanger og styler*/
+
+    #aboutUs {
+        border: none;
+    }
+
+    #aboutUs h2 {
+        font-family: Avenir Light;
+        text-align: center;
+        padding-top: 7vh;
+    }
+
+    /*JS template som fanger og styler*/
+    .grid-colum-2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    #aboutUs {
+        /*        width: 80%;
+        */
+        text-align: center;
+        /*        padding-right: 5vw;
+        */
+    }
+
+    #aboutUs p {
+        text-align: center;
+    }
+
+    /*---------------------- Om os SLUT ------------------*/
+
+
+
 }
 
 

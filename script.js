@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
     console.log("Hello world!");
     destGallery = document.querySelector("#gallery-section", getGallery());
+    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
 
 
@@ -22,7 +23,35 @@ function start() {
 //
 //}
 
+
+function toggleMenu() {
+    console.log("Toggle menu");
+    document.querySelector("#menu").classList.toggle("hide");
+
+
+
+    let erSkjult = document.querySelector("#menu").classList.contains("hide");
+
+    if (erSkjult == true) {
+        //menu er nu skjult - ændre nenuknap til lll
+        document.querySelector("#menuknap").textContent = "☰";
+    } else {
+        //menu er nu vist - ændre menuknap til X
+        document.querySelector("#menuknap").textContent = "⤫";
+    }
+
+}
+
+
+
+
+
+
+
+
+
 //---------------------------------Forside Galleri ---------------------------------------
+
 
 async function getGallery() {
     console.log("gallery!");
@@ -215,25 +244,43 @@ async function getAboutUs() {
 function insertAboutUs() {
     let template =
         `
-						<section>
-							<div class="content">
-                                <h2>${section.overskrift}</h2>
+				<section id="aboutUs">
+				    <div class="content">
+                        <h2>${section.overskrift}</h2>
+                            <div class="grid-colum-2">
 
-									<img src="${section.billede_om_os_1.guid}" alt="Billede til: ${section.title.rendered}";">
-                                    <p>${section.tekst_om_os_1}</p>
+                            <div class="mette">
+
+								<img src="${section.billede_om_os_1.guid}" alt="Billede til: ${section.title.rendered}";">
+
+                                <p>${section.tekst_om_os_1}</p>
+                            </div>
+
+                            <div class="thomas">
+								<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}";">
+
+                                <p>${section.tekst_om_os_2}</p>
+                            </div>
+                            </div>
 
 
-									<img src="${section.billede_om_os_2.guid}" alt="Billede til: ${section.title.rendered}";">
-                                    <p>${section.tekst_om_os_2}</p>
 
-						      </div>
-						</section>
+
+
+						  </div>
+				    </section>
 					`;
     destAboutUs.insertAdjacentHTML("beforeend", template);
 
 }
 
 //------------------------------Om os sektion SlUT -----------------------------
+
+
+
+
+
+
 
 
 
