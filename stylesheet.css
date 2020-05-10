@@ -501,7 +501,6 @@ path:hover {
 @media screen and (min-width: 768px) {
 
     /*Footer*/
-
     #footer_box {
         display: grid;
     }
@@ -526,26 +525,24 @@ path:hover {
 
 
     #mc_embed_signup {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
         grid-row-start: 6;
         grid-row-end: 2;
         padding-top: 10vh;
     }
 
-
     .some_container {
-        grid-column-start: 3;
+        grid-column-start: 4;
         grid-column-end: 4;
         grid-row-start: 6;
         grid-row-end: 2;
-        padding-top: 16vh;
-
-
+        padding-top: 17vh;
+        padding-left: 9vw;
     }
 
     .some_container svg {
-        width: 14%;
+        width: 26%;
     }
 
     /*Footer*/
