@@ -8,8 +8,9 @@
 
 */
 
-/*---------- 1: Generelt -----------*/
 
+
+/*---------- 1: Generelt -----------*/
 body {
     margin: 0;
     /*Fjerner standard margin fra siden*/
@@ -34,7 +35,6 @@ img {
     justify-items: center;
 }
 
-
 #logo {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
@@ -51,11 +51,9 @@ img {
     margin-top: 2vw;
 }
 
-
 #logo img {
     max-width: 70%;
 }
-
 
 li {
     margin: 1vw 3.5vw 0vw 3.5vw;
@@ -92,7 +90,11 @@ ul {
     white-space: nowrap;
 }
 
+
 /*----------- 2: Nav Menu SLUT-------------*/
+
+
+
 
 
 
@@ -101,7 +103,6 @@ ul {
 /*----------- 3: Slideshow container ------------*/
 
 /* Citat tegn billede */
-
 #quote-section img {
     display: block;
     padding-top: 40px;
@@ -123,7 +124,7 @@ ul {
     position: relative;
 }
 
-/* Slides */
+/* Slider */
 .mySlides,
 .quote_1,
 .quote_2,
@@ -201,7 +202,6 @@ ul {
     font-family: Avenir;
     font-style: italic;
     line-height: 25px;
-
 }
 
 /* Add a blue color to the author */
@@ -224,41 +224,8 @@ ul {
 
 
 /*------------ 4: Footer container START -------------*/
-/*
-#box {
-    background-color: #dd3340;
-    font-family: Avenir light;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr 2fr 1fr 1fr;
-    grid-template-rows: 50% 20%;
-}
 
-#footer_box {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-left: 2.5vw;
-}
-
-.left {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.right {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}*/
-
-
-
-/*SIGN UP STYLING */
-
+/*SIGN UP MAILCHIMP STYLING */
 #mc_embed_signup {
     clear: left;
     font: 14px Avenir light, Avenir Black, sans-serif;
@@ -304,11 +271,11 @@ ul {
     display: flex;
 }
 
-/*SIGN UP STYLING SLUT*/
+/*SIGN UP MAILCHIMP STYLING SLUT*/
 
 
 
-/*SoMe ikoner*/
+/*SoMe ikoner i footer*/
 .some_container {
     padding-top: 9.2vh;
     /*    padding-left: 16px;
@@ -324,10 +291,7 @@ path:hover {
     fill: #000000;
 }
 
-/*SoMe ikoner SLUT*/
-
-
-
+/*SoMe ikoner i footer SLUT*/
 /*------------ 4: Footer container SLUT -------------*/
 
 
@@ -341,53 +305,6 @@ path:hover {
 
 /*-------------------- 5: RESPONSIVE-----------------*/
 
-
-
-/*IBENS*/
-
-/*@media screen and (min-width: 320px) {
-    */
-/*    footer*/
-/*
-    #box {
-        grid-template-columns: 5fr 1fr;
-        grid-template-rows: 50% 50%;
-        background: #dd3340;
-    }
-
-    .left {
-        margin-top: 5vw;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        text-align: center;
-    }
-
-    .right {
-        grid-column-start: 1;
-        grid-row-start: 2;
-        text-align: center;
-        margin-top: 5vw;
-    }
-
-    #mc_embed_signup form {
-        grid-column-start: 1;
-        grid-row-start: 2;
-        margin-left: 10vw;
-        margin-right: -5vw;
-        margin-top: 10vw;
-        Kan ikke få "tilmeld nyhedsbrev"til at stå i midten
-    }
-
-    .some_container {
-        grid-column-start: 1;
-        grid-row-start: 3;
-        margin-top: -30vw;
-        margin-left: 35vw;
-    }
-
-    }
-*/
-
 @media screen and (min-width: 320px) {
 
     /*Footer*/
@@ -400,7 +317,6 @@ path:hover {
         grid-template-rows: 25% 25% 25% 25%;
         letter-spacing: 0.7px;
         font-size: 13px;
-
     }
 
     #footer_box {
