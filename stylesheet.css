@@ -12,12 +12,12 @@
 
 /*---------- 1: Generelt -----------*/
 body {
-    margin: 0;
-    /*Fjerner standard margin fra siden*/
+	margin: 0;
+	/*Fjerner standard margin fra siden*/
 }
 
 img {
-    width: 50vw;
+	width: 50vw;
 }
 
 
@@ -30,71 +30,71 @@ img {
 /*----------- 2: Nav Menu -------------*/
 
 #nav {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 5% 60%;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 5% 60%;
+	justify-items: center;
 }
 
 #logo {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 50% 60%;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 50% 60%;
 }
 
 #logo a {
-    grid-template-rows: 50% 60%;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 90%;
-    margin-top: 2vw;
+	grid-template-rows: 50% 60%;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	max-width: 90%;
+	margin-top: 2vw;
 }
 
 #logo img {
-    max-width: 70%;
+	max-width: 70%;
 }
 
 li {
-    margin: 1vw 3.5vw 0vw 3.5vw;
+	margin: 1vw 3.5vw 0vw 3.5vw;
 }
 
 #nav a {
-    text-decoration: none;
-    color: gray;
-    font-family: 'Avenir light', sans-serif;
-    font-size: 1em;
-    padding-bottom: 3vw;
+	text-decoration: none;
+	color: gray;
+	font-family: 'Avenir light', sans-serif;
+	font-size: 1em;
+	padding-bottom: 3vw;
 }
 
 #nav a:hover {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 #nav a:active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 ul {
-    list-style-type: none;
-    margin-bottom: 2vw;
-    padding: 0vw;
-    overflow: hidden;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    display: flex;
-    font-family: Avenir Light;
-    white-space: nowrap;
+	list-style-type: none;
+	margin-bottom: 2vw;
+	padding: 0vw;
+	overflow: hidden;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	display: flex;
+	font-family: Avenir Light;
+	white-space: nowrap;
 }
 
 #active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 
@@ -111,24 +111,24 @@ ul {
 
 /* Citat tegn billede */
 #quote-section img {
-    display: block;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 7vw;
+	display: block;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7vw;
 
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
 }
 
 /* Citat tegn billede slut */
 
 #quote-section {
-    background: #F2EDEB;
+	background: #F2EDEB;
 }
 
 .slideshow-container {
-    position: relative;
+	position: relative;
 }
 
 /* Slider */
@@ -136,69 +136,69 @@ ul {
 .quote_1,
 .quote_2,
 .quote_3 {
-    display: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    text-align: center;
+	display: none;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 40px;
+	text-align: center;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    align-self: center;
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	align-self: center;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    /*    background-color: rgba(0, 0, 0, 6.8);*/
-    color: white;
+	/*    background-color: rgba(0, 0, 0, 6.8);*/
+	color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-    text-align: center;
-    padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 
-    border-radius: 10px;
-    border: 1px solid #DB3C3C;
+	border-radius: 10px;
+	border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-    background-color: #DB3C3C;
+	background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
@@ -206,9 +206,9 @@ ul {
 .quote_1 q,
 .quote_2 q,
 .quote_3 q {
-    font-family: Avenir;
-    font-style: italic;
-    line-height: 25px;
+	font-family: Avenir;
+	font-style: italic;
+	line-height: 25px;
 }
 
 /* Add a blue color to the author */
@@ -216,9 +216,9 @@ ul {
 .quote_1 p,
 .quote_2 p,
 .quote_3 p {
-    font-family: Avenir light;
-    color: #dd3340;
-    margin-left: 44vw;
+	font-family: Avenir light;
+	color: #dd3340;
+	margin-left: 44vw;
 }
 
 /*----------- 3: Slideshow container SLUT ------------*/
@@ -233,18 +233,18 @@ ul {
 /*---------------------- Om os------------------------*/
 /*JS template som fanger og styler*/
 #aboutUs h2 {
-    font-family: Avenir Light;
-    text-align: center;
-    padding-top: 7vh;
+	font-family: Avenir Light;
+	text-align: center;
+	padding-top: 7vh;
 }
 
 #aboutUs {
-    text-align: center;
+	text-align: center;
 }
 
 #aboutUs p {
-    font-family: Avenir Light;
-    text-align: center;
+	font-family: Avenir Light;
+	text-align: center;
 }
 
 /*---------------------- Om os SLUT ------------------*/
@@ -262,48 +262,48 @@ ul {
 
 /*SIGN UP MAILCHIMP STYLING */
 #mc_embed_signup {
-    clear: left;
-    font: 14px Avenir light, Avenir Black, sans-serif;
+	clear: left;
+	font: 14px Avenir light, Avenir Black, sans-serif;
 }
 
 #mc_embed_signup .mc-field-group input {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 0px;
 }
 
 ::-webkit-input-placeholder {
-    /* Edge */
-    color: white;
-    font: Avenir light, Avenir Black, sans-serif;
-    font-style: oblique;
+	/* Edge */
+	color: white;
+	font: Avenir light, Avenir Black, sans-serif;
+	font-style: oblique;
 }
 
 /*Grunden til der står "important" er fordi at Mailchimp egen CSS er dominerende for den taget kode. Med important kan man fastgøre at det er vigtigt og dermed fange det man vil style*/
 
 #mc_embed_signup .button {
-    background-color: transparent !important;
-    border: 1px solid white !important;
-    border-radius: 0px !important;
-    font: Avenir light, Avenir Black, sans-serif !important;
-    font-size: 11px !important;
-    padding: 6px 6px 6px 6px !important;
-    line-height: inherit !important;
-    height: 30px !important;
+	background-color: transparent !important;
+	border: 1px solid white !important;
+	border-radius: 0px !important;
+	font: Avenir light, Avenir Black, sans-serif !important;
+	font-size: 11px !important;
+	padding: 6px 6px 6px 6px !important;
+	line-height: inherit !important;
+	height: 30px !important;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
-    border: 2px solid white !important;
+	border: 2px solid white !important;
 }
 
 #mc_embed_signup div#mce-responses {
-    width: auto !important;
-    padding: auto !important;
-    margin: auto !important;
+	width: auto !important;
+	padding: auto !important;
+	margin: auto !important;
 }
 
 #mail_section {
-    display: flex;
+	display: flex;
 }
 
 /*SIGN UP MAILCHIMP STYLING SLUT*/
@@ -311,18 +311,18 @@ ul {
 
 /*SoMe ikoner i footer*/
 .some_container {
-    padding-top: 9.2vh;
-    /*    padding-left: 16px;
+	padding-top: 9.2vh;
+	/*    padding-left: 16px;
     */
 }
 
 .some_container svg {
-    width: 15%;
-    padding-right: 10px;
+	width: 15%;
+	padding-right: 10px;
 }
 
 path:hover {
-    fill: #000000;
+	fill: #000000;
 }
 
 /*SoMe ikoner i footer SLUT*/
@@ -332,29 +332,123 @@ path:hover {
 
 
 
+/*------------ 5: Burgermenu Mobile ----------------*/
+.burgernav {
+	display: none;
+	margin: 1em;
+}
+
+
+.burgernav button {
+	display: flex;
+	padding: 0.5em;
+	cursor: pointer;
+
+	background-color: none;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+
+.burgernav button a {
+	text-decoration: none;
+	font-family: "Avenir Light", sans-serif;
+	color: gray;
+}
+
+.burgernav button a:hover {
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
+}
+
+.burgernav button a:active {
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
+}
+
+.burgermenu {
+	display: block;
+}
+
+
+
+/*------------ 5: Burgermenu Mobile SLUT -----------*/
 
 
 
 
 
-/*-------------------- 5: RESPONSIVE-----------------*/
 
-@media screen and (min-width: 320px) {
+/*-------------------- 6: RESPONSIVE-----------------*/
+@media screen and (max-width: 460px) {
 
-    /*Brugermenu*/
-    /* Style the navigation menu */
+	#nav {
+		display: none;
+		grid: none;
+	}
+
+	#logo {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
+
+	#logo a {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin-top: 1.7em;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.burger {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
+
+	.menu-button {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		max-width: 100%;
+		text-align: center;
+
+		background-color: none;
+		font-size: 2.5em;
+		cursor: pointer;
+	}
+
+}
+
+
+@media screen and (min-width: 460px) {
+
+	.burgermenu {
+		display: none;
+	}
+
+	/*Brugermenu*/
+	/* Style the navigation menu */
+	/*
     .topnav {
         overflow: hidden;
         background-color: #333;
         position: relative;
     }
+*/
 
-    /* Hide the links inside the navigation menu (except for logo/home) */
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	/*
     .topnav #myLinks {
         display: none;
     }
+*/
 
-    /* Style navigation menu links */
+	/* Style navigation menu links */
+	/*
     .topnav a {
         color: white;
         padding: 14px 16px;
@@ -362,8 +456,10 @@ path:hover {
         font-size: 17px;
         display: block;
     }
+*/
 
-    /* Style the hamburger menu */
+	/* Style the hamburger menu */
+	/*
     .topnav a.icon {
         background: black;
         display: block;
@@ -371,117 +467,120 @@ path:hover {
         right: 0;
         top: 0;
     }
+*/
 
-    /* Add a grey background color on mouse-over */
+	/* Add a grey background color on mouse-over */
+	/*
     .topnav a:hover {
         background-color: #ddd;
         color: black;
     }
+*/
 
 
-    /*Brugermenu SLUT*/
+	/*Brugermenu SLUT*/
 
-    /*Footer*/
-    #box {
-        background-color: #dd3340;
-        font-family: Avenir light;
-        color: white;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-        grid-template-rows: 25% 25% 25% 25%;
-        letter-spacing: 0.7px;
-        font-size: 13px;
-    }
+	/*Footer*/
+	#box {
+		background-color: #dd3340;
+		font-family: Avenir light;
+		color: white;
+		display: grid;
+		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+		grid-template-rows: 25% 25% 25% 25%;
+		letter-spacing: 0.7px;
+		font-size: 13px;
+	}
 
-    #footer_box {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    #footer_box2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box2 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    .left {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        padding-top: 3vh;
-    }
+	.left {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		padding-top: 3vh;
+	}
 
-    .right {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
+	.right {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
 
-    }
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 3;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    }
-
-
-    #mc_embed_signup h2 {
-        font-size: 1em !important;
-        -webkit-text-stroke: 0.3px white;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 3;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+	}
 
 
-    #mc_embed_signup form {
-        padding: 0vw !important;
-    }
+	#mc_embed_signup h2 {
+		font-size: 1em !important;
+		-webkit-text-stroke: 0.3px white;
+	}
 
-    .some_container {
-        grid-column-start: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        padding-top: 2.5vh;
-        padding-bottom: 0vh;
-        padding-left: 2vw;
-    }
 
-    .some_container svg {
-        width: 30%;
-    }
+	#mc_embed_signup form {
+		padding: 0vw !important;
+	}
 
-    /*Footer*/
+	.some_container {
+		grid-column-start: 3;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		padding-top: 2.5vh;
+		padding-bottom: 0vh;
+		padding-left: 2vw;
+	}
+
+	.some_container svg {
+		width: 30%;
+	}
+
+	/*Footer*/
 }
 
 
 @media screen and (min-width: 455px) {
 
-    /*Footer*/
-    #box {
-        font-size: 14px;
-    }
+	/*Footer*/
+	#box {
+		font-size: 14px;
+	}
 
-    .some_container svg {
-        width: 25%;
-    }
+	.some_container svg {
+		width: 25%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 }
 
 
 @media screen and (min-width: 600px) {
 
-    /*Footer*/
-    .some_container svg {
-        width: 20%;
-    }
+	/*Footer*/
+	.some_container svg {
+		width: 20%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 }
 
@@ -489,107 +588,107 @@ path:hover {
 
 @media screen and (min-width: 768px) {
 
-    /*Footer*/
-    #footer_box {
-        display: grid;
-    }
+	/*Footer*/
+	#footer_box {
+		display: grid;
+	}
 
-    .left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 5vh;
-    }
+	.left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 5vh;
+	}
 
-    .right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 4.4vh;
-        padding-right: 9vw;
-    }
+	.right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 4.4vh;
+		padding-right: 9vw;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 10vh;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 10vh;
+	}
 
-    .some_container {
-        grid-column-start: 4;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 17vh;
-        padding-left: 9vw;
-    }
+	.some_container {
+		grid-column-start: 4;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 17vh;
+		padding-left: 9vw;
+	}
 
-    .some_container svg {
-        width: 26%;
-    }
+	.some_container svg {
+		width: 26%;
+	}
 
-    /*Footer*/
-
-
+	/*Footer*/
 
 
-    /*---------------------- Om os ------------------*/
-    /*JS template som fanger og styler*/
 
-    #aboutUs {
-        border: none;
-    }
 
-    #aboutUs h2 {
-        font-family: Avenir Light;
-        text-align: center;
-        padding-top: 7vh;
-        padding-bottom: 7vh;
-    }
+	/*---------------------- Om os ------------------*/
+	/*JS template som fanger og styler*/
 
-    /*JS template som fanger og styler*/
-    .grid-colum-2 {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
+	#aboutUs {
+		border: none;
+	}
 
-    #aboutUs {
-        padding-right: 10vw;
-        padding-left: 10vw;
-    }
+	#aboutUs h2 {
+		font-family: Avenir Light;
+		text-align: center;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+	}
 
-    #aboutUs img {
-        width: 70%;
-    }
+	/*JS template som fanger og styler*/
+	.grid-colum-2 {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+	}
 
-    .mette,
-    img {
-        text-align: end;
-        padding-right: 5px;
+	#aboutUs {
+		padding-right: 10vw;
+		padding-left: 10vw;
+	}
 
-    }
+	#aboutUs img {
+		width: 70%;
+	}
 
-    .thomas,
-    img {
-        text-align: start;
-        padding-left: 5px;
-    }
+	.mette,
+	img {
+		text-align: end;
+		padding-right: 5px;
 
-    .thomas p {
-        text-align: left;
-    }
+	}
 
-    /*
+	.thomas,
+	img {
+		text-align: start;
+		padding-left: 5px;
+	}
+
+	.thomas p {
+		text-align: left;
+	}
+
+	/*
     #aboutUs p {
         text-align: center;
     }
 */
 
-    /*---------------------- Om os SLUT ------------------*/
+	/*---------------------- Om os SLUT ------------------*/
 
 
 
@@ -599,94 +698,94 @@ path:hover {
 
 @media screen and (min-width: 800px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 940px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 43vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 43vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 }
 
 @media screen and (min-width: 1000px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    /*Footer*/
+	/*Footer*/
 
-    #footer_box {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin-left: 2.5vw;
-    }
+	#footer_box {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin-left: 2.5vw;
+	}
 
-    .left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    .right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding-top: 4vh;
-        padding-right: 10vw;
-    }
+	#mc_embed_signup {
+		grid-column-start: 4;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		padding-top: 4vh;
+		padding-right: 10vw;
+	}
 
-    .some_container {
-        grid-column-start: 6;
-        grid-row-start: 6;
-        grid-row-start: 1;
-        grid-row-end: 6;
-        padding-top: 10vh;
-        padding-left: 32vw;
-    }
+	.some_container {
+		grid-column-start: 6;
+		grid-row-start: 6;
+		grid-row-start: 1;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 32vw;
+	}
 
-    .some_container svg {
-        width: 23%;
-    }
+	.some_container svg {
+		width: 23%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 
 }
@@ -694,68 +793,68 @@ path:hover {
 
 @media screen and (min-width: 1100px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 45vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 45vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1200px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 1300px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 240px;
-        padding-right: 240px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 240px;
+		padding-right: 240px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1400px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 330px;
-        padding-right: 330px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 330px;
+		padding-right: 330px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 31vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 31vw;
+	}
 
-    #quote-section img {
-        width: 4vw;
-    }
+	#quote-section img {
+		width: 4vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
