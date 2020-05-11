@@ -29,9 +29,9 @@ function openBurger() {
 	console.log("open burger");
 	document.querySelector(".burgernav").style.display = "block";
 	document.querySelector(".burgernav").style.display = "grid";
-	document.querySelector(".menu-burger").style.display = "block";
-	document.querySelector(".fest-burger").style.display = "block";
-	document.querySelector(".kontakt-burger").style.display = "block";
+	document.querySelector(".menu-burger").style.display = "contents";
+	document.querySelector(".fest-burger").style.display = "contents";
+	document.querySelector(".kontakt-burger").style.display = "contents";
 
 	document.querySelector(".menu-button").addEventListener("click", closeBurger);
 	document.querySelector(".menu-button").removeEventListener("click", openBurger);

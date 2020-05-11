@@ -4,7 +4,8 @@
 2: Nav
 3: Slideshow
 4: Footer
-5: Responsiv
+5: Burgermenu
+6: Responsiv
 
 */
 
@@ -333,18 +334,21 @@ path:hover {
 
 
 /*------------ 5: Burgermenu Mobile ----------------*/
+
+.burgermenu {
+	margin: 1em;
+
+}
+
 .burgernav {
 	display: none;
-	margin: 1em;
 }
 
 
 .burgernav button {
 	display: flex;
-	padding: 0.5em;
 	cursor: pointer;
 
-	background-color: none;
 	font-size: 1.5em;
 	cursor: pointer;
 }
@@ -354,6 +358,7 @@ path:hover {
 	text-decoration: none;
 	font-family: "Avenir Light", sans-serif;
 	color: gray;
+	padding: 0.5em;
 }
 
 .burgernav button a:hover {
@@ -366,7 +371,7 @@ path:hover {
 	font-style: italic;
 }
 
-.burgermenu {
+.burger .menu-button {
 	display: block;
 }
 
@@ -380,7 +385,13 @@ path:hover {
 
 
 /*-------------------- 6: RESPONSIVE-----------------*/
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 505px) {
+
+
+	/*----------- Burgermenu --------------*/
+	.menu-button {
+		display: block;
+	}
 
 	#nav {
 		display: none;
@@ -416,69 +427,25 @@ path:hover {
 		max-width: 100%;
 		text-align: center;
 
-		background-color: none;
 		font-size: 2.5em;
 		cursor: pointer;
 	}
 
+
+
 }
 
+/*----------- Burgermenu SLUT --------------*/
 
-@media screen and (min-width: 460px) {
 
+@media screen and (min-width: 505px) {
+
+	/*----------- Burgermenu --------------*/
 	.burgermenu {
 		display: none;
 	}
 
-	/*Brugermenu*/
-	/* Style the navigation menu */
-	/*
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-    }
-*/
-
-	/* Hide the links inside the navigation menu (except for logo/home) */
-	/*
-    .topnav #myLinks {
-        display: none;
-    }
-*/
-
-	/* Style navigation menu links */
-	/*
-    .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-*/
-
-	/* Style the hamburger menu */
-	/*
-    .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-*/
-
-	/* Add a grey background color on mouse-over */
-	/*
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-*/
-
-
-	/*Brugermenu SLUT*/
+	/*----------- Burgermenu SLUT --------------*/
 
 	/*Footer*/
 	#box {
