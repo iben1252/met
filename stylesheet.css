@@ -448,8 +448,20 @@ path:hover {
 	}
 
 	/*----------- Burgermenu SLUT --------------*/
+}
+
+
+@media screen and (min-width: 300px) {
 
 	/*Footer*/
+	#box {
+		font-size: 14px;
+	}
+
+	.some_container svg {
+		width: 25%;
+	}
+
 	#box {
 		background-color: #dd3340;
 		font-family: Avenir light;
@@ -471,7 +483,7 @@ path:hover {
 		grid-column-end: 6;
 	}
 
-	.left {
+	.footer-left {
 		grid-column-start: 2;
 		grid-column-end: 6;
 		grid-row-start: 1;
@@ -479,7 +491,7 @@ path:hover {
 		padding-top: 3vh;
 	}
 
-	.right {
+	.footer-right {
 		grid-column-start: 2;
 		grid-column-end: 5;
 		grid-row-start: 2;
@@ -524,22 +536,6 @@ path:hover {
 }
 
 
-@media screen and (min-width: 455px) {
-
-	/*Footer*/
-	#box {
-		font-size: 14px;
-	}
-
-	.some_container svg {
-		width: 25%;
-	}
-
-	/*Footer*/
-
-}
-
-
 @media screen and (min-width: 600px) {
 
 	/*Footer*/
@@ -560,7 +556,7 @@ path:hover {
 		display: grid;
 	}
 
-	.left {
+	.footer-left {
 		grid-column-start: 1;
 		grid-column-end: 1;
 		grid-row-start: 1;
@@ -568,7 +564,7 @@ path:hover {
 		padding-top: 5vh;
 	}
 
-	.right {
+	.footer-right {
 		grid-column-start: 2;
 		grid-column-end: 2;
 		grid-row-start: 1;
@@ -709,14 +705,14 @@ path:hover {
 		margin-left: 2.5vw;
 	}
 
-	.left {
+	.footer-left {
 		grid-column-start: 1;
 		grid-column-end: 1;
 		grid-row-start: 1;
 		grid-row-end: 2;
 	}
 
-	.right {
+	.footer-right {
 		grid-column-start: 2;
 		grid-column-end: 2;
 		grid-row-start: 1;

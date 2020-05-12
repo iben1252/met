@@ -326,10 +326,10 @@ function insertAboutUs() {
 
 
 
-//-----------------------------Footer sektion-----------------------------------//
+//*-----------------------------Footer sektion-----------------------------------*//
 
 /* aabningstider og dage */
-destFooter1 = document.querySelector(".left", getFooter1());
+destFooter1 = document.querySelector(".footer-left", getFooter1());
 
 async function getFooter1() {
 	console.log("get left");
@@ -351,7 +351,7 @@ function insertFooter1() {
 }
 
 /* adresse og information */
-destFooter2 = document.querySelector(".right", getFooter2());
+destFooter2 = document.querySelector(".footer-right", getFooter2());
 
 async function getFooter2() {
 	console.log("get right");
@@ -365,7 +365,7 @@ function insertFooter2() {
 
 	let template =
 		`
-                <p>${section.adresse_footer}</p>
+               <p>${section.adresse_footer}</p>
                <p>${section.telefonnummer}</p>
                <p>${section.mail_footer}</p>
 
