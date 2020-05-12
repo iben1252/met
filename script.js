@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-	console.log("Hello world!");
-	destGallery = document.querySelector("#gallery-section", getGallery());
+	console.log("load destinations");
+	destGalleryCardF = document.querySelector(".front", getGalleryCardF());
+	destGalleryCardB = document.querySelector(".back", getGalleryCardB());
+	destGalleryTL = document.querySelector(".gallery-top-left", getGalleryTL());
+	destGalleryTR = document.querySelector(".gallery-top-right", getGalleryTR());
+	destGalleryBL = document.querySelector(".gallery-bottom-left", getGalleryBL());
+	destGalleryBR = document.querySelector(".gallery-bottom-right", getGalleryBR());
 }
 
 
@@ -93,51 +98,159 @@ function closeBurger() {
 //---------------------------------Forside Galleri ---------------------------------------
 
 
-async function getGallery() {
-	console.log("gallery!");
+async function getGalleryCardF() {
+	console.log("gallery card f!");
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
 	// Husk at sætte WP post URL ind.
 	let jsonData = await fetch(pagesURL);
 	section = await jsonData.json();
 
-	insertGallery();
+	insertGalleryCardF();
 	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
-function insertGallery() {
+function insertGalleryCardF() {
 	console.log("get content");
 	let template =
 		`
-						<section>
-							<div class="content">
-								<div class="billede_venstre">
+						<img src="${section.billede_venstre.guid}" alt="Billede til: ${section.title.rendered}";">
 
-									<img src="${section.billede_venstre.guid}" alt="Billede til: ${section.title.rendered}";">
+					`;
+	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+	destGalleryCardF.insertAdjacentHTML("beforeend", template);
+}
 
-									<p>${section.billede_venstre_tekst}</p>
-								</div>
+async function getGalleryCardB() {
+	console.log("gallery card b!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
 
-							<div class="gallery_content" id="${section.slug}">
-								<div class="top">
+	insertGalleryCardB();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertGalleryCardB() {
+	console.log("get back card");
+	let template =
+		`
+					<p>${section.billede_venstre_tekst}</p>
+
+					`;
+	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+	destGalleryCardB.insertAdjacentHTML("beforeend", template);
+}
+
+//------------------ Øverst venstre galleri billede ------------------------
+
+async function getGalleryTL() {
+	console.log("gallery top left!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+
+	insertGalleryTL();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertGalleryTL() {
+	console.log("get top left content");
+	let template =
+		`
 
 									<img src="${section.billede_1.guid}" alt="Billede til: ${section.title.rendered}";>
 
-									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}";">
 
-								</div>
-								<div class="bottom">
-
-									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}";">
-
-									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}";">
-								</div>
-						</div>
-						</section>
 					`;
 	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-	destGallery.insertAdjacentHTML("beforeend", template);
-	destQuote = document.querySelector("#quote-box", getQuote());
+	destGalleryTL.insertAdjacentHTML("beforeend", template);
 }
+
+
+//------------------ Øverst højre galleri billede ------------------------
+
+
+async function getGalleryTR() {
+	console.log("gallery top right!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+
+	insertGalleryTR();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertGalleryTR() {
+	console.log("get top right content");
+	let template =
+		`
+
+									<img src="${section.billede_2.guid}" alt="Billede til: ${section.title.rendered}";>
+
+
+					`;
+	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+	destGalleryTR.insertAdjacentHTML("beforeend", template);
+}
+
+
+//------------------ Nederst venstre galleri billede ------------------------
+
+
+async function getGalleryBL() {
+	console.log("gallery bottom left!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+
+	insertGalleryBL();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertGalleryBL() {
+	console.log("get bottom left content");
+	let template =
+		`
+									<img src="${section.billede_3.guid}" alt="Billede til: ${section.title.rendered}";">
+
+
+					`;
+	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+	destGalleryBL.insertAdjacentHTML("beforeend", template);
+}
+
+//------------------ Nederst højre galleri billede ------------------------
+
+
+async function getGalleryBR() {
+	console.log("gallery bottom right!");
+	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+	// Husk at sætte WP post URL ind.
+	let jsonData = await fetch(pagesURL);
+	section = await jsonData.json();
+
+	insertGalleryBR();
+	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+}
+
+function insertGalleryBR() {
+	console.log("get bottom right content");
+	let template =
+		`
+
+
+									<img src="${section.billede_4.guid}" alt="Billede til: ${section.title.rendered}";">
+
+
+					`;
+	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+	destGalleryBR.insertAdjacentHTML("beforeend", template);
+}
+
 
 //----------------------- Forside Galleri SLUT ---------------------------------
 
