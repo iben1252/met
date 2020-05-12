@@ -374,7 +374,43 @@ path:hover {
 
 .menu-button {
     color: #DD3340;
+    display: block;
 }
+
+#nav {
+    display: none;
+}
+
+#logo {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+#logo a {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 1.7em;
+    max-width: 100%;
+    text-align: center;
+}
+
+.burger {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.menu-button {
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 1;
+    font-size: 1.6em;
+    /*        cursor: pointer;*/
+}
+
+
 
 /*------------ 5: Burgermenu Mobile SLUT -----------*/
 
@@ -390,22 +426,23 @@ path:hover {
 
 
 /*-------------------- 6: RESPONSIVE-----------------*/
-@media screen and (max-width: 505px) {
+@media screen and (min-width: 298px) {
 
 
     /*----------- Burgermenu --------------*/
     .menu-button {
-        display: block;
+        display: none;
     }
 
     #nav {
         display: none;
-        grid: none;
+
     }
 
     #logo {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 50% 50%;
+
     }
 
     #logo a {
@@ -420,16 +457,10 @@ path:hover {
 
     .burger {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100%;
     }
 
-    .menu-button {
-        grid-column-start: 0;
-        grid-column-end: 0;
-        grid-row-start: 1;
-        font-size: 1.6em;
-        /*        cursor: pointer;*/
+    .burger .menu-button {
+        display: grid;
     }
 
     /*----------- Burgermenu SLUT --------------*/
@@ -552,6 +583,15 @@ path:hover {
     }
 
     /*Om os citat SLUT*/
+
+
+    /*Navbar visning ved tablet*/
+    #nav {
+        display: grid;
+
+    }
+
+    /*Navbar visning ved tablet SLUT*/
 
 }
 
