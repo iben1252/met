@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
+    burgerStart();
     getGallery();
     getQuote1();
     getQuote2();
@@ -8,6 +9,8 @@ function start() {
     getAboutUs();
     getFooter1();
     getFooter2();
+
+
 
 }
 
@@ -28,10 +31,14 @@ function start() {
 //
 //}
 
-document.querySelector(".menu-button").addEventListener("click", openBurger);
-document.querySelector(".menu-button").textContent = "☰";
+function burgerStart() {
+    document.querySelector(".menu-button").addEventListener("click", openBurger());
+    document.querySelector(".menu-button").textContent = "☰";
+}
+
 
 function openBurger() {
+
     console.log("open burger");
     document.querySelector(".burgernav").style.display = "block";
     document.querySelector(".burgernav").style.display = "grid";
