@@ -4,6 +4,7 @@ function start() {
     burgerStart();
     getFooter1();
     getFooter2();
+    menuKort()
 }
 
 
@@ -57,6 +58,193 @@ function closeBurger() {
 }
 
 //*-----------------------------Burgermenu sektion SLUT-----------------------------------*//
+
+
+
+
+
+
+
+//------------------------------------Menu sektion ----------------------------------------
+
+async function menuKort() {
+    console.log("menukort");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/menu/42";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertmenuKort(section);
+}
+
+function insertmenuKort(section) {
+    let destmenuKort = document.querySelector("#menukort");
+
+    let template =
+        `
+				<p>${section.kaffe_overskrift}</p>
+                <p>${section.kaffe_beskrivelse}</p>
+					`;
+    destmenuKort.insertAdjacentHTML("beforeend", template);
+
+}
+
+
+//<div id="sectionwrapper">
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="coffee-text">
+//                    <h1>Kaffe</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <p>Espresso</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Americano</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cortado</p>
+//                            <p>34 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Flat white</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cappuccino</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Latte</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Iskaffe</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Filter</p>
+//                            <p>25 / 30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Te</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Varm kakao</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="coffee-photo"></div>
+//            </div>
+//        </div>
+//
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="food-photo">
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="food-text">
+//                    <h1>Morgenmad og brunch</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <div class="surdejs-upper">
+//                                <p>Surdejsbolle eller tebolle</p>
+//                                <p>17 kr.</p>
+//                            </div>
+//                            <div class="surdejs-lower">
+//                                <p>- med smør & ost</p>
+//                                <p>32 kr.</p>
+//                            </div>
+//                        </li>
+//                        <li>
+//                            <p>Yoghurt med granola & kompot</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Overnight oats</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Focaccia</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Grape m. mynte/basilikum sukker</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Chokostykke</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Æg m. urtesalt & chili</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Månedens kage</p>
+//                            <p>35 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Månedens salater</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Sandwich</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                    </ul>
+//                    <p>Ekstra bagværk fredag, lørdag & søndag</p>
+//                    <ul>
+//                        <li>
+//                            <p>Kanelsnurre eller stickybuns</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//        </div>
+//
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="drinks-text">
+//                    <h1>Kolde drikke</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <p>GRO juice</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Lemonade</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Kombucha</p>
+//                            <p>35 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cortado</p>
+//                            <p>34 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="drinks-photo"></div>
+//            </div>
+//
+//        </div>
+//    </div>
+
+//---------------------------------Menu sektion SLUT ----------------------------
+
 
 
 
