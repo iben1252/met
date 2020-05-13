@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-	console.log("Hello world!");
-	destGallery = document.querySelector("#gallery-section", getGallery());
+    console.log("Hello world!");
+    destGallery = document.querySelector("#gallery-section", getGallery());
 }
 
 
@@ -26,28 +26,28 @@ document.querySelector(".menu-button").addEventListener("click", openBurger);
 document.querySelector(".menu-button").textContent = "☰";
 
 function openBurger() {
-	console.log("open burger");
-	document.querySelector(".burgernav").style.display = "block";
-	document.querySelector(".burgernav").style.display = "grid";
-	document.querySelector(".menu-burger").style.display = "contents";
-	document.querySelector(".fest-burger").style.display = "contents";
-	document.querySelector(".kontakt-burger").style.display = "contents";
+    console.log("open burger");
+    document.querySelector(".burgernav").style.display = "block";
+    document.querySelector(".burgernav").style.display = "grid";
+    document.querySelector(".menu-burger").style.display = "contents";
+    document.querySelector(".fest-burger").style.display = "contents";
+    document.querySelector(".kontakt-burger").style.display = "contents";
 
-	document.querySelector(".menu-button").addEventListener("click", closeBurger);
-	document.querySelector(".menu-button").removeEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "⤫";
+    document.querySelector(".menu-button").addEventListener("click", closeBurger);
+    document.querySelector(".menu-button").removeEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "⤫";
 }
 
 function closeBurger() {
-	console.log("close burger");
-	document.querySelector(".burgernav").style.display = "none";
-	document.querySelector(".menu-burger").style.display = "none";
-	document.querySelector(".fest-burger").style.display = "none";
-	document.querySelector(".kontakt-burger").style.display = "none";
+    console.log("close burger");
+    document.querySelector(".burgernav").style.display = "none";
+    document.querySelector(".menu-burger").style.display = "none";
+    document.querySelector(".fest-burger").style.display = "none";
+    document.querySelector(".kontakt-burger").style.display = "none";
 
-	document.querySelector(".menu-button").removeEventListener("click", closeBurger);
-	document.querySelector(".menu-button").addEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "☰";
+    document.querySelector(".menu-button").removeEventListener("click", closeBurger);
+    document.querySelector(".menu-button").addEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "☰";
 
 }
 
@@ -58,20 +58,20 @@ function closeBurger() {
 
 
 async function getGallery() {
-	console.log("gallery!");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-	// Husk at sætte WP post URL ind.
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
+    console.log("gallery!");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+    // Husk at sætte WP post URL ind.
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
 
-	insertGallery();
-	//Med InsertGallery, "aktiverer" vi funktionen til at virke.
+    insertGallery();
+    //Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
 function insertGallery() {
-	console.log("get content");
-	let template =
-		`
+    console.log("get content");
+    let template =
+        `
 						<section>
 							<div class="content">
 								<div class="picture-left">
@@ -100,31 +100,31 @@ function insertGallery() {
 						</div>
 						</section>
 					`;
-	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
-	destGallery.insertAdjacentHTML("beforeend", template);
-	document.querySelector(".front").addEventListener("click", flipFrontCard);
+    //Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
+    destGallery.insertAdjacentHTML("beforeend", template);
+    document.querySelector(".front").addEventListener("click", flipFrontCard);
 }
 
 
 
 function flipFrontCard() {
-	console.log("flip front card");
-	document.querySelector(".front").classList.add(".flip");
-	document.querySelector(".back").classList.remove(".flip-back");
+    console.log("flip front card");
+    document.querySelector(".front").classList.add(".flip");
+    document.querySelector(".back").classList.remove(".flip-back");
 
-	document.querySelector(".front").removeEventListener("click", flipFrontCard);
-	document.querySelector(".back").addEventListener("click", flipBackCard);
+    document.querySelector(".front").removeEventListener("click", flipFrontCard);
+    document.querySelector(".back").addEventListener("click", flipBackCard);
 }
 
 
 function flipBackCard() {
-	console.log("flip back card");
-	document.querySelector(".front").classList.add(".flip-back");
-	document.querySelector(".back").classList.remove(".flip");
+    console.log("flip back card");
+    document.querySelector(".front").classList.add(".flip-back");
+    document.querySelector(".back").classList.remove(".flip");
 
 
-	document.querySelector(".front").addEventListener("click", flipFrontCard);
-	document.querySelector(".back").removeEventListener("click", flipBackCard);
+    document.querySelector(".front").addEventListener("click", flipFrontCard);
+    document.querySelector(".back").removeEventListener("click", flipBackCard);
 }
 
 
@@ -147,31 +147,31 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-	showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-	showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("dot");
-	if (n > slides.length) {
-		slideIndex = 1
-	}
-	if (n < 1) {
-		slideIndex = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 //------------------ Til Slideshowet fra W3Schools SLUT ----------------------
@@ -183,23 +183,23 @@ function showSlides(n) {
 destQuote1 = document.querySelector("#quote_1", getQuote1());
 
 async function getQuote1() {
-	console.log("get quote1");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote1();
+    console.log("get quote1");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote1();
 }
 
 function insertQuote1() {
-	let template =
-		`
+    let template =
+        `
 						<section>
 							<q>${section.citat}</q>
 							<p>${section.citat_forfatter}</p>
 						</section>
 					`;
 
-	destQuote1.insertAdjacentHTML("beforeend", template);
+    destQuote1.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -208,22 +208,22 @@ function insertQuote1() {
 destQuote2 = document.querySelector("#quote_2", getQuote2());
 
 async function getQuote2() {
-	console.log("get quote2");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote2();
+    console.log("get quote2");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote2();
 }
 
 function insertQuote2() {
-	let template =
-		`
+    let template =
+        `
 						<section>
 							<q>${section.citat_2}</q>
 							<p>${section.citat_forfatter_2}</p>
 						</section>
 					`;
-	destQuote2.insertAdjacentHTML("beforeend", template);
+    destQuote2.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -232,23 +232,23 @@ function insertQuote2() {
 destQuote3 = document.querySelector("#quote_3", getQuote3());
 
 async function getQuote3() {
-	console.log("get quote3");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertQuote3();
+    console.log("get quote3");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertQuote3();
 }
 
 function insertQuote3() {
 
-	let template =
-		`
+    let template =
+        `
 						<section>
 							<q>${section.citat_3}</q>
 							<p>${section.citat_forfatter_3}</p>
 						</section>
 					`;
-	destQuote3.insertAdjacentHTML("beforeend", template);
+    destQuote3.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -268,16 +268,16 @@ function insertQuote3() {
 destAboutUs = document.querySelector("#about-us", getAboutUs());
 
 async function getAboutUs() {
-	console.log("Om os");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertAboutUs();
+    console.log("Om os");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertAboutUs();
 }
 
 function insertAboutUs() {
-	let template =
-		`
+    let template =
+        `
 				<section id="aboutUs">
 				    <div class="content">
                         <h2>${section.overskrift}</h2>
@@ -304,7 +304,7 @@ function insertAboutUs() {
 						  </div>
 				    </section>
 					`;
-	destAboutUs.insertAdjacentHTML("beforeend", template);
+    destAboutUs.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -316,6 +316,157 @@ function insertAboutUs() {
 
 
 
+//---------------------------------Menu sektion --------------------------------
+
+
+//<div id = "sectionwrapper" >
+//    <div id = "section" >
+//    <div class = "menu-left" >
+//    <div class = "coffee-text" >
+//    <h1 > Kaffe</h1>
+//< p > PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET.Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet. < /p>
+//<ul >
+//    <
+//    li >
+//    <
+//    p > Espresso < /p> <
+//    p > 25 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Americano < /p> <
+//    p > 30 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Cortado < /p> <
+//    p > 34 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Flat white < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Cappuccino < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Latte < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Iskaffe < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Filter < /p> <
+//    p > 25 / 30 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Te < /p> <
+//    p > 30 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Varm kakao < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    /ul> <
+//    /div> <
+//    /div> <
+//    div class = "menu-right" >
+//    <
+//    div class = "coffee-photo" > < /div> <
+//    /div> <
+//    /div>
+//
+//    <
+//    div id = "section" >
+//    <
+//    div class = "menu-left" >
+//    <
+//    div class = "food-photo" >
+//    <
+//    /div> <
+//    /div> <
+//    div class = "menu-right" >
+//    <
+//    div class = "food-text" >
+//    <
+//    h1 > Morgenmad og brunch < /h1> <
+//    p > PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET.Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet. < /p> <
+//    ul >
+//    <
+//    li >
+//    <
+//    div class = "surdejs-upper" >
+//    <
+//    p > Surdejsbolle eller tebolle < /p> <
+//    p > 17 kr. < /p> <
+//    /div> <
+//    div class = "surdejs-lower" >
+//    <
+//    p > -med smør & ost < /p> <
+//    p > 32 kr. < /p> <
+//    /div> <
+//    /li> <
+//    li >
+//    <
+//    p > Yoghurt med granola & kompot < /p> <
+//    p > 40 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Overnight oats < /p> <
+//    p > 40 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Focaccia < /p> <
+//    p > 25 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Grape m.mynte / basilikum sukker < /p> <
+//    p > 20 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Chokostykke < /p> <
+//    p > 20 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Æg m.urtesalt & chili < /p> <
+//    p > 20 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Månedens kage < /p> <
+//    p > 35 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Månedens salater < /p> <
+//    p > 38 kr. < /p> <
+//    /li> <
+//    li >
+//    <
+//    p > Sandwich < /p>
+//
+
+
+
+//---------------------------------Menu sektion SLUT ----------------------------
+
+
+
 
 
 //*-----------------------------Footer sektion-----------------------------------*//
@@ -324,21 +475,21 @@ function insertAboutUs() {
 destFooter1 = document.querySelector(".footer-left", getFooter1());
 
 async function getFooter1() {
-	console.log("get left");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertFooter1();
+    console.log("get left");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertFooter1();
 }
 
 function insertFooter1() {
 
-	let template =
-		`
+    let template =
+        `
 				<p>${section.aabningsdage}</p>
                 <p>${section.aabningsdage_2}</p>
 					`;
-	destFooter1.insertAdjacentHTML("beforeend", template);
+    destFooter1.insertAdjacentHTML("beforeend", template);
 
 }
 
@@ -346,68 +497,25 @@ function insertFooter1() {
 destFooter2 = document.querySelector(".footer-right", getFooter2());
 
 async function getFooter2() {
-	console.log("get right");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	section = await jsonData.json();
-	insertFooter2();
+    console.log("get right");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    section = await jsonData.json();
+    insertFooter2();
 }
 
 function insertFooter2() {
 
-	let template =
-		`
+    let template =
+        `
                <p>${section.adresse_footer}</p>
                <p>${section.telefonnummer}</p>
                <p>${section.mail_footer}</p>
 
 					`;
-	destFooter2.insertAdjacentHTML("beforeend", template);
+    destFooter2.insertAdjacentHTML("beforeend", template);
 
 }
-
-
-//destFooter = document.querySelector("#footer_box", getFooter());
-//
-//async function getFooter() {
-//    console.log("Footer");
-//    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125"; //----- VIRKER IKKE??? -----//
-//    let jsonData = await fetch(pagesURL);
-//    section = await jsonData.json();
-//    insertFooter();
-//}
-//
-//function insertFooter() {
-//    let template =
-//        `
-//						<section>
-//                            <div class="venstre">
-//                                   <div class="day">
-//                                      <p>${section.aabningsdage}</p>
-//                                      <p>${section.aabningsdage_2}</p>
-//                                   </div>
-//                                </div>
-//
-//                                <div class="center">
-//                                   <div class="adress">
-//                                       <p>${section.adresse_footer}</p>
-//                                       <p>${section.telefonnummer}</p>
-//                                       <p>${section.mail_footer}</p>
-//                                   </div>
-//                                </div>
-//
-//                                <div class="hojre">
-//                                   <div class="news"></div>
-//                                   <div class="some"></div>
-//                                </div>
-//						</section>
-//					`;
-//    //------ MAILCHIMP VIRKER IKKE? KAN IKKE LURE HVORDAN DET SKAL SÆTTES OP (KIG UNDER CLASS="NEWS" OG FOOTER I HTML'EN-------//
-//
-//    destFooter.insertAdjacentHTML("beforeend", template);
-//}
-//
-
 
 
 //-----------------------------Footer sektion SLUT-----------------------------------//
