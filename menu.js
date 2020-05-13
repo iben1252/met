@@ -69,6 +69,7 @@ function closeBurger() {
 
 async function menuKort() {
     console.log("menukort");
+
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/menu/42";
     let jsonData = await fetch(pagesURL);
     let section = await jsonData.json();
@@ -80,8 +81,72 @@ function insertmenuKort(section) {
 
     let template =
         `
-				<p>${section.kaffe_overskrift}</p>
-                <p>${section.kaffe_beskrivelse}</p>
+
+<div id="kaffe-sektion">
+
+    <div class="menu-left">
+        <p>${section.kaffe_overskrift}</p>
+        <p>${section.kaffe_beskrivelse}</p>
+
+            <ul>
+                <li>
+                    <p>${section.kaffe_menu}</p>
+                    <p>${section.kaffe_priser}</p>
+                </li>
+            </ul>
+    </div>
+
+    <div class="menu-right">
+        <img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}";">
+    </div>
+
+</div>
+
+<div id="morgenmad-sektion">
+
+    <div class="menu-left">
+        <p>${section.morgenmad_overskrift}</p>
+        <p>${section.morgenmad_beskrivelse}</p>
+
+            <ul>
+                <li>
+                    <p>${section.morgenmad_menu}</p>
+                    <p>${section.morgenmad_priser}</p>
+                </li>
+            </ul>
+    </div>
+
+    <div class="menu-right">
+        <img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}";">
+    </div>
+
+</div>
+
+
+<div id="koldedrikke-sektion">
+
+    <div class="menu-left">
+        <p>${section.kolde_drikke}</p>
+        <p>${section.kolde_beskrivelse}</p>
+
+            <ul>
+                <li>
+                    <p>${section.kolde_menu}</p>
+                    <p>${section.kolde_priser}</p>
+                </li>
+            </ul>
+    </div>
+
+    <div class="menu-right">
+        <img src="${section.koldebillede.guid}" alt="Billede til: ${section.title.rendered}";">
+    </div>
+
+</div>
+
+
+
+
+
 					`;
     destmenuKort.insertAdjacentHTML("beforeend", template);
 
