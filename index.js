@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-    console.log("Hello world!");
-    destGallery = document.querySelector("#gallery-section", getGallery());
+    getGallery();
+    getQuote1();
+    getQuote2();
+    getQuote3();
+    getAboutUs();
+    getFooter1();
+    getFooter2();
+
 }
 
 
@@ -64,12 +70,15 @@ async function getGallery() {
     let jsonData = await fetch(pagesURL);
     section = await jsonData.json();
 
-    insertGallery();
+    insertGallery(section);
     //Med InsertGallery, "aktiverer" vi funktionen til at virke.
 }
 
-function insertGallery() {
+function insertGallery(section) {
     console.log("get content");
+
+    let destGallery = document.querySelector("#gallery-section");
+
     let template =
         `
 						<section>
@@ -138,6 +147,7 @@ function flipBackCard() {
 
 
 
+
 //----------------------- Forside Citat ----------------------------------------
 
 //------------------ Til Slideshowet fra W3Schools ----------------------------
@@ -180,17 +190,18 @@ function showSlides(n) {
 
 
 //----------------------- Citat 1 --------------------------------------------
-destQuote1 = document.querySelector("#quote_1", getQuote1());
 
 async function getQuote1() {
     console.log("get quote1");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertQuote1();
+    let section = await jsonData.json();
+    insertQuote1(section);
 }
 
-function insertQuote1() {
+function insertQuote1(section) {
+    let destQuote1 = document.querySelector("#quote_1");
+
     let template =
         `
 						<section>
@@ -200,22 +211,22 @@ function insertQuote1() {
 					`;
 
     destQuote1.insertAdjacentHTML("beforeend", template);
-
 }
 
 //-------------------------- Citat 2 -------------------------------------------
 
-destQuote2 = document.querySelector("#quote_2", getQuote2());
 
 async function getQuote2() {
     console.log("get quote2");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertQuote2();
+    let section = await jsonData.json();
+    insertQuote2(section);
 }
 
-function insertQuote2() {
+function insertQuote2(section) {
+    let destQuote2 = document.querySelector("#quote_2");
+
     let template =
         `
 						<section>
@@ -224,22 +235,23 @@ function insertQuote2() {
 						</section>
 					`;
     destQuote2.insertAdjacentHTML("beforeend", template);
-
 }
 
 //----------------------------- Citat 3 ------------------------------------------
 
-destQuote3 = document.querySelector("#quote_3", getQuote3());
 
 async function getQuote3() {
     console.log("get quote3");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertQuote3();
+    let section = await jsonData.json();
+    insertQuote3(section);
 }
 
-function insertQuote3() {
+function insertQuote3(section) {
+
+    let destQuote3 = document.querySelector("#quote_3");
+
 
     let template =
         `
@@ -249,7 +261,6 @@ function insertQuote3() {
 						</section>
 					`;
     destQuote3.insertAdjacentHTML("beforeend", template);
-
 }
 
 
@@ -265,17 +276,17 @@ function insertQuote3() {
 
 //------------------------------Om os sektion-----------------------------------
 
-destAboutUs = document.querySelector("#about-us", getAboutUs());
-
 async function getAboutUs() {
     console.log("Om os");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertAboutUs();
+    let section = await jsonData.json();
+    insertAboutUs(section);
 }
 
-function insertAboutUs() {
+function insertAboutUs(section) {
+    let destAboutUs = document.querySelector("#about-us");
+
     let template =
         `
 				<section id="aboutUs">
@@ -297,10 +308,6 @@ function insertAboutUs() {
                             </div>
                             </div>
 
-
-
-
-
 						  </div>
 				    </section>
 					`;
@@ -318,150 +325,160 @@ function insertAboutUs() {
 
 //---------------------------------Menu sektion --------------------------------
 
-
-//<div id = "sectionwrapper" >
-//    <div id = "section" >
-//    <div class = "menu-left" >
-//    <div class = "coffee-text" >
-//    <h1 > Kaffe</h1>
-//< p > PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET.Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet. < /p>
-//<ul >
-//    <
-//    li >
-//    <
-//    p > Espresso < /p> <
-//    p > 25 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Americano < /p> <
-//    p > 30 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Cortado < /p> <
-//    p > 34 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Flat white < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Cappuccino < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Latte < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Iskaffe < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Filter < /p> <
-//    p > 25 / 30 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Te < /p> <
-//    p > 30 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Varm kakao < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    /ul> <
-//    /div> <
-//    /div> <
-//    div class = "menu-right" >
-//    <
-//    div class = "coffee-photo" > < /div> <
-//    /div> <
-//    /div>
+//<div id="sectionwrapper">
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="coffee-text">
+//                    <h1>Kaffe</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <p>Espresso</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Americano</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cortado</p>
+//                            <p>34 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Flat white</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cappuccino</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Latte</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Iskaffe</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Filter</p>
+//                            <p>25 / 30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Te</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Varm kakao</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="coffee-photo"></div>
+//            </div>
+//        </div>
 //
-//    <
-//    div id = "section" >
-//    <
-//    div class = "menu-left" >
-//    <
-//    div class = "food-photo" >
-//    <
-//    /div> <
-//    /div> <
-//    div class = "menu-right" >
-//    <
-//    div class = "food-text" >
-//    <
-//    h1 > Morgenmad og brunch < /h1> <
-//    p > PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET.Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet. < /p> <
-//    ul >
-//    <
-//    li >
-//    <
-//    div class = "surdejs-upper" >
-//    <
-//    p > Surdejsbolle eller tebolle < /p> <
-//    p > 17 kr. < /p> <
-//    /div> <
-//    div class = "surdejs-lower" >
-//    <
-//    p > -med smør & ost < /p> <
-//    p > 32 kr. < /p> <
-//    /div> <
-//    /li> <
-//    li >
-//    <
-//    p > Yoghurt med granola & kompot < /p> <
-//    p > 40 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Overnight oats < /p> <
-//    p > 40 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Focaccia < /p> <
-//    p > 25 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Grape m.mynte / basilikum sukker < /p> <
-//    p > 20 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Chokostykke < /p> <
-//    p > 20 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Æg m.urtesalt & chili < /p> <
-//    p > 20 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Månedens kage < /p> <
-//    p > 35 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Månedens salater < /p> <
-//    p > 38 kr. < /p> <
-//    /li> <
-//    li >
-//    <
-//    p > Sandwich < /p>
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="food-photo">
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="food-text">
+//                    <h1>Morgenmad og brunch</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <div class="surdejs-upper">
+//                                <p>Surdejsbolle eller tebolle</p>
+//                                <p>17 kr.</p>
+//                            </div>
+//                            <div class="surdejs-lower">
+//                                <p>- med smør & ost</p>
+//                                <p>32 kr.</p>
+//                            </div>
+//                        </li>
+//                        <li>
+//                            <p>Yoghurt med granola & kompot</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Overnight oats</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Focaccia</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Grape m. mynte/basilikum sukker</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Chokostykke</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Æg m. urtesalt & chili</p>
+//                            <p>20 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Månedens kage</p>
+//                            <p>35 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Månedens salater</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Sandwich</p>
+//                            <p>38 kr.</p>
+//                        </li>
+//                    </ul>
+//                    <p>Ekstra bagværk fredag, lørdag & søndag</p>
+//                    <ul>
+//                        <li>
+//                            <p>Kanelsnurre eller stickybuns</p>
+//                            <p>25 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//        </div>
 //
-
-
+//        <div id="section">
+//            <div class="menu-left">
+//                <div class="drinks-text">
+//                    <h1>Kolde drikke</h1>
+//                    <p>PÅ RYESGADE 25 ligger vores hyggelige lille sted, MET. Her kan man få en sublim kop kaffe, morgenmad, salater & sandwiches der mætter både maven & øjet.</p>
+//                    <ul>
+//                        <li>
+//                            <p>GRO juice</p>
+//                            <p>40 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Lemonade</p>
+//                            <p>30 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Kombucha</p>
+//                            <p>35 kr.</p>
+//                        </li>
+//                        <li>
+//                            <p>Cortado</p>
+//                            <p>34 kr.</p>
+//                        </li>
+//                    </ul>
+//                </div>
+//            </div>
+//            <div class="menu-right">
+//                <div class="drinks-photo"></div>
+//            </div>
+//
+//        </div>
+//    </div>
 
 //---------------------------------Menu sektion SLUT ----------------------------
 
@@ -472,17 +489,17 @@ function insertAboutUs() {
 //*-----------------------------Footer sektion-----------------------------------*//
 
 /* aabningstider og dage */
-destFooter1 = document.querySelector(".footer-left", getFooter1());
 
 async function getFooter1() {
     console.log("get left");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertFooter1();
+    let section = await jsonData.json();
+    insertFooter1(section);
 }
 
-function insertFooter1() {
+function insertFooter1(section) {
+    let destFooter1 = document.querySelector(".footer-left");
 
     let template =
         `
@@ -494,17 +511,17 @@ function insertFooter1() {
 }
 
 /* adresse og information */
-destFooter2 = document.querySelector(".footer-right", getFooter2());
 
 async function getFooter2() {
     console.log("get right");
     let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
     let jsonData = await fetch(pagesURL);
-    section = await jsonData.json();
-    insertFooter2();
+    let section = await jsonData.json();
+    insertFooter2(section);
 }
 
-function insertFooter2() {
+function insertFooter2(section) {
+    let destFooter2 = document.querySelector(".footer-right");
 
     let template =
         `
