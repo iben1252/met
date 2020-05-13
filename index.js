@@ -2,7 +2,11 @@ document.addEventListener("DOMContentLoaded", start);
 
 function start() {
 	burgerStart();
+
+
 	getGallery();
+	clickCard();
+
 	getQuote1();
 	getQuote2();
 	getQuote3();
@@ -119,15 +123,26 @@ function insertGallery(section) {
 					`;
 	//Section er strukturen på forsidens billedgalleri - Derfor har klassen, gallery_content, fået fire img srcs, da det er herinde vi skal indsætte billeder fra caféen eller deres mad.
 	destGallery.insertAdjacentHTML("beforeend", template);
-	document.querySelector(".front").addEventListener("click", flipFrontCard);
+
 }
 
 
+function clickCard() {
+
+
+	let front = document.querySelector(".front");
+
+	front.addEventListener("click");
+	flipFrontCard();
+}
 
 function flipFrontCard() {
 	console.log("flip front card");
-	document.querySelector(".front").classList.add(".flip");
-	document.querySelector(".back").classList.remove(".flip-back");
+	let front = document.querySelector(".front");
+	let back = document.querySelector(".back");
+
+	front.classList.add(".flip");
+	back.classList.remove(".flip-back");
 
 	document.querySelector(".front").removeEventListener("click", flipFrontCard);
 	document.querySelector(".back").addEventListener("click", flipBackCard);
