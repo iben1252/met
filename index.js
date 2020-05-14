@@ -5,7 +5,7 @@ function start() {
 
 
 	getGallery();
-	clickCard();
+//	clickCard();
 
 	getQuote1();
 	getQuote2();
