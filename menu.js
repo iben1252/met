@@ -83,166 +83,160 @@ function insertmenuKort(section) {
 	let template =
 		`
 
-        <div id="coffee_section">
-                <div class="menu-left">
-                        <div class="coffee-text">
-							<p>${section.kaffe_overskrift}</p>
-                        	<p>${section.kaffe_beskrivelse}</p>
-						</div>
+     	<div id="coffee_section">
+		<div class="menu-left">
+			<div class="coffee-text">
+				<h1>${section.kaffe_overskrift}</h1>
+				<p>${section.kaffe_beskrivelse}</p>
+				<div class="white-border1"></div>
+			</div>
 
-						<div class="coffee-list">
-                          <ul>
-                            <li>
-                                <p>${section.kaffe1}</p>
-                            </li>
+			<div class="coffee-list">
+				<ul>
+					<li>
+						<p>${section.kaffe1}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe2}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe2}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe3}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe3}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe4}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe4}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe5}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe5}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe6}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe6}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe7}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe7}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe8}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe8}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe9}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe9}</p>
+					</li>
 
-                            <li>
-                                <p>${section.kaffe10}</p>
-                            </li>
+					<li>
+						<p>${section.kaffe10}</p>
+					</li>
 
-                        </ul>
-
-
-                        <ul>
-
-                            <li>
-                                <p>${section.kaffe1_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe2_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe3_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe4_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe5_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe6_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe7_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe8_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe9_pris}</p>
-                            </li>
-
-                            <li>
-                                <p>${section.kaffe10_pris}</p>
-                            </li>
+				</ul>
 
 
+				<ul>
 
-                        </ul>
-					</div>
+					<li>
+						<p>${section.kaffe1_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe2_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe3_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe4_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe5_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe6_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe7_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe8_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe9_pris}</p>
+					</li>
+
+					<li>
+						<p>${section.kaffe10_pris}</p>
+					</li>
 
 
-            </div>
 
-                <div class="menu-right">
-                        <img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}";">
-                </div>
+				</ul>
+			</div>
 
-        </div>
+		</div>
+			<div class="menu-right">
+				<img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}" ;>
+			</div>
+		</div>
 
-            <div id="morgenmad-section">
-                <div class="menu-left">
+		<div id="morgenmad-section">
+			<div class="menu-left">
+				<img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}";>
+				<div class="white-border2"></div>
+			</div>
+			<div class="menu-right">
 
-					<img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}";">
+				<div class="morgen-text">
+					<h1>${section.morgenmad_overskrift}</h1>
+					<p>${section.morgenmad_beskrivelse}</p>
+				</div>
+				<div class="morgen-list">
+					<ul>
+						<li>
+							<p>${section.morgenmad_menu}</p>
+							<p>${section.morgenmad_priser}</p>
+						</li>
+					</ul>
+				</div>
 
-                </div>
-
-                <div class="menu-right">
-
-
-					<div class="morgen-text">
-                        <p>${section.morgenmad_overskrift}</p>
-                        <p>${section.morgenmad_beskrivelse}</p>
-					</div>
-
-					<div class="morgen-list">
-                        <ul>
-                            <li>
-                                <p>${section.morgenmad_menu}</p>
-                                <p>${section.morgenmad_priser}</p>
-                            </li>
-                        </ul>
-					</div>
-
-                </div>
-
-            </div>
+			</div>
+		</div>
 
 
-            <div id="koldedrikke-section">
+		<div id="koldedrikke-section">
+			<div class="menu-left">
+				<div class="drikke-text">
+					<h1>${section.kolde_drikke}</h1>
+					<p>${section.kolde_beskrivelse}</p>
+				</div>
+				<div class="drikke-list">
+					<ul>
+						<li>
+							<p>${section.kolde_menu}</p>
+							<p>${section.kolde_priser}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-                <div class="menu-left">
-					<div class="drikke-text">
-						<p>${section.kolde_drikke}</p>
-						<p>${section.kolde_beskrivelse}</p>
-					</div>
+			<div class="menu-right">
+				<img src="${section.koldebillede.guid}" alt="Billede til: ${section.title.rendered}";>
+					<div class="white-border3"></div>
 
-					<div class="drikke-list">
-						<ul>
-							<li>
-								<p>${section.kolde_menu}</p>
-                        		<p>${section.kolde_priser}</p>
-                    		</li>
-						</ul>
-					</div>
-            </div>
+			</div>
 
-            <div class="menu-right">
-                <img src="${section.koldebillede.guid}" alt="Billede til: ${section.title.rendered}";">
-            </div>
+		</div>
 
-        </div>
 
 					`;
 

@@ -49,7 +49,7 @@ body {
 	grid-row-start: 1;
 	grid-row-end: 3;
 	max-width: 90%;
-	margin-top: 2vw;
+	margin-top: 2vh;
 }
 
 #logo img {
@@ -352,6 +352,17 @@ ul {
 	margin: 3vw;
 }
 
+#menukort h1 {
+	font-family: "Avenir black", sans-serif;
+	font-size: 2em;
+}
+
+#menukort p {
+	font-family: "Avenir light", sans-serif;
+	font-size: 1em;
+}
+
+
 #coffee_section,
 #morgenmad-section,
 #koldedrikke-section {
@@ -380,6 +391,10 @@ ul {
 	display: grid;
 }
 
+#morgen-section {
+	flex-wrap: wrap-reverse;
+}
+
 .coffee-text,
 .morgen-text,
 .drikke-text {
@@ -391,7 +406,16 @@ ul {
 	display: flex;
 }
 
-.
+.whiteborder1 {
+	border: 1vw solid white;
+	max-width: 30vw;
+	z-index: absolute;
+}
+
+.whiteborder2 {}
+
+.whiteborder3 {}
+
 /*
 #menukort {
     display: grid;
@@ -768,37 +792,43 @@ path:hover {
 
 	/*Navbar visning ved tablet SLUT*/
 
+
+	/*--------- Menukort ---------*/
+	#coffee_section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 25% 25% 25% 25%;
+	}
+
+	.menu-left {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		margin: 2vw;
+	}
+
+	#menukort img {
+		max-width: 100%;
+	}
+
+	#menukort {
+		margin: 1vw 6vw;
+	}
+
+	.menu-right {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 2vw;
+	}
+
+	/*--------- Menukort SLUT ---------*/
+
+
+
 }
 
 
-/*--------- Menukort ---------*/
-#coffee_section {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 25% 25% 25% 25%;
-}
 
-.menu-left {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	margin: 2vw;
-}
 
-#menukort img {
-	max-width: 100%;
-}
-
-#menukort {
-	margin: 1vw 6vw;
-}
-
-.menu-right {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	margin: 2vw;
-}
-
-/*--------- Menukort SLUT ---------*/
 
 
 @media screen and (min-width: 600px) {
