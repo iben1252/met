@@ -350,6 +350,11 @@ ul {
     display: grid;
 }
 
+
+.menu-left {
+    display: flex;
+}
+
 /*
 #menukort {
     display: grid;
