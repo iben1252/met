@@ -16,8 +16,8 @@ Responsive
 
 /*---------- Generelt -----------*/
 body {
-    margin: 0;
-    /*Fjerner standard margin fra siden*/
+	margin: 0;
+	/*Fjerner standard margin fra siden*/
 }
 
 
@@ -30,71 +30,71 @@ body {
 /*-----------  Nav Menu -------------*/
 
 #nav {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 5% 60%;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 5% 60%;
+	justify-items: center;
 }
 
 #logo {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 50% 60%;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 50% 60%;
 }
 
 #logo a {
-    grid-template-rows: 50% 60%;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 90%;
-    margin-top: 2vw;
+	grid-template-rows: 50% 60%;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	max-width: 90%;
+	margin-top: 2vw;
 }
 
 #logo img {
-    max-width: 70%;
+	max-width: 70%;
 }
 
 li {
-    margin: 1vw 3.5vw 0vw 3.5vw;
+	margin: 1vw 3.5vw 0vw 3.5vw;
 }
 
 #nav a {
-    text-decoration: none;
-    color: gray;
-    font-family: 'Avenir light', sans-serif;
-    font-size: 1em;
-    padding-bottom: 3vw;
+	text-decoration: none;
+	color: gray;
+	font-family: 'Avenir light', sans-serif;
+	font-size: 1em;
+	padding-bottom: 3vw;
 }
 
 #nav li:hover {
-    font-style: italic;
-    border-bottom: 1px solid #DD3340;
+	font-style: italic;
+	border-bottom: 1px solid #DD3340;
 }
 
 #nav li:active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 ul {
-    list-style-type: none;
-    margin-bottom: 2vw;
-    padding: 0vw;
-    overflow: hidden;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    display: flex;
-    font-family: Avenir Light;
-    white-space: nowrap;
+	list-style-type: none;
+	margin-bottom: 2vw;
+	padding: 0vw;
+	overflow: hidden;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	display: flex;
+	font-family: Avenir Light;
+	white-space: nowrap;
 }
 
 #active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 
@@ -111,24 +111,24 @@ ul {
 
 /* Citat tegn billede */
 #quote-section img {
-    display: block;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 7vw;
+	display: block;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7vw;
 
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
 }
 
 /* Citat tegn billede slut */
 
 #quote-section {
-    background: #F2EDEB;
+	background: #F2EDEB;
 }
 
 .slideshow-container {
-    position: relative;
+	position: relative;
 }
 
 /* Slider */
@@ -136,69 +136,69 @@ ul {
 .quote_1,
 .quote_2,
 .quote_3 {
-    display: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    text-align: center;
+	display: none;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 40px;
+	text-align: center;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    align-self: center;
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	align-self: center;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    /*    background-color: rgba(0, 0, 0, 6.8);*/
-    color: white;
+	/*    background-color: rgba(0, 0, 0, 6.8);*/
+	color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-    text-align: center;
-    padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 
-    border-radius: 10px;
-    border: 1px solid #DB3C3C;
+	border-radius: 10px;
+	border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-    background-color: #DB3C3C;
+	background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
@@ -206,9 +206,9 @@ ul {
 .quote_1 q,
 .quote_2 q,
 .quote_3 q {
-    font-family: Avenir;
-    font-style: italic;
-    line-height: 25px;
+	font-family: Avenir;
+	font-style: italic;
+	line-height: 25px;
 }
 
 /* Add a blue color to the author */
@@ -216,9 +216,9 @@ ul {
 .quote_1 p,
 .quote_2 p,
 .quote_3 p {
-    font-family: Avenir light;
-    color: #dd3340;
-    margin-left: 2vw;
+	font-family: Avenir light;
+	color: #dd3340;
+	margin-left: 2vw;
 }
 
 /*----------- Slideshow container SLUT ------------*/
@@ -234,56 +234,56 @@ ul {
 /*---------------- Galleri ------------------------*/
 
 #gallery-section .content {
-    display: grid;
-    margin: 3vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 25% 25% 25%;
-    perspective: 30vw;
+	display: grid;
+	margin: 3vw;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 25% 25% 25% 25%;
+	perspective: 30vw;
 }
 
 #gallery-section .content img {
-    max-width: 96%;
+	max-width: 96%;
 }
 
 .picture-left {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    text-align: center;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	text-align: center;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
 }
 
 #gallery-section .front img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .front {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .back {
-    font-family: "Avenir light", sans-serif;
-    display: none;
+	font-family: "Avenir light", sans-serif;
+	display: none;
 }
 
 .gallery-content .top {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .gallery-content .bottom {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
 }
 
 .picture-left,
@@ -291,16 +291,16 @@ ul {
 .p-top-right,
 .p-bottom-left,
 .p-bottom-right {
-    margin: 1vw;
+	margin: 1vw;
 }
 
 .flip {
-    transform: rotateY(180deg);
-    transition: transform 0.8s;
+	transform: rotateY(180deg);
+	transition: transform 0.8s;
 }
 
 .flip-back {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 
@@ -317,22 +317,22 @@ ul {
 /*------------------------- Om os------------------------*/
 /*JS template som fanger og styler*/
 #aboutUs h2 {
-    font-family: Avenir Light;
-    text-align: center;
-    padding-top: 7vh;
+	font-family: Avenir Light;
+	text-align: center;
+	padding-top: 7vh;
 }
 
 #aboutUs {
-    text-align: center;
+	text-align: center;
 }
 
 #aboutUs p {
-    font-family: Avenir Light;
-    text-align: center;
+	font-family: Avenir Light;
+	text-align: center;
 }
 
 #aboutUs img {
-    width: 50vw;
+	width: 50vw;
 }
 
 /*--------------------- Om os SLUT ------------------*/
@@ -346,15 +346,48 @@ ul {
 
 /*----------------------Menu kort------------------*/
 
-#caffee_section ul {
-    display: grid;
+
+
+#menukort {
+	margin: 3vw;
 }
 
+#coffee_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 25% 25% 25% 25%;
+}
 
 .menu-left {
-    display: flex;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin: 2vw;
 }
 
+#menukort img {
+	max-width: 100%;
+}
+
+.menu-right {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin: 2vw;
+}
+
+#coffee_section ul {
+	display: grid;
+}
+
+.coffee-text {
+	max-width: 60vw;
+	max-height: 50vh;
+}
+
+.coffee-list {
+	display: flex;
+}
+
+.
 /*
 #menukort {
     display: grid;
@@ -404,48 +437,48 @@ ul {
 
 /*SIGN UP MAILCHIMP STYLING */
 #mc_embed_signup {
-    clear: left;
-    font: 14px Avenir light, Avenir Black, sans-serif;
+	clear: left;
+	font: 14px Avenir light, Avenir Black, sans-serif;
 }
 
 #mc_embed_signup .mc-field-group input {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 0px;
 }
 
 ::-webkit-input-placeholder {
-    /* Edge */
-    color: white;
-    font: 'Avenir Black', sans-serif;
-    font-style: oblique;
+	/* Edge */
+	color: white;
+	font: 'Avenir Black', sans-serif;
+	font-style: oblique;
 }
 
 /*Grunden til der står "important" er fordi at Mailchimp egen CSS er dominerende for den taget kode. Med important kan man fastgøre at det er vigtigt og dermed fange det man vil style*/
 
 #mc_embed_signup .button {
-    background-color: transparent !important;
-    border: 1px solid white !important;
-    border-radius: 0px !important;
-    font: Avenir light, Avenir Black, sans-serif !important;
-    font-size: 11px !important;
-    padding: 6px 6px 6px 6px !important;
-    line-height: inherit !important;
-    height: 30px !important;
+	background-color: transparent !important;
+	border: 1px solid white !important;
+	border-radius: 0px !important;
+	font: Avenir light, Avenir Black, sans-serif !important;
+	font-size: 11px !important;
+	padding: 6px 6px 6px 6px !important;
+	line-height: inherit !important;
+	height: 30px !important;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
-    border: 2px solid white !important;
+	border: 2px solid white !important;
 }
 
 #mc_embed_signup div#mce-responses {
-    width: auto !important;
-    padding: auto !important;
-    margin: auto !important;
+	width: auto !important;
+	padding: auto !important;
+	margin: auto !important;
 }
 
 #mail_section {
-    display: flex;
+	display: flex;
 }
 
 /*SIGN UP MAILCHIMP STYLING SLUT*/
@@ -453,18 +486,18 @@ ul {
 
 /*SoMe ikoner i footer*/
 .some_container {
-    padding-top: 9.2vh;
-    /*    padding-left: 16px;
+	padding-top: 9.2vh;
+	/*    padding-left: 16px;
     */
 }
 
 .some_container svg {
-    width: 15%;
-    padding-right: 10px;
+	width: 15%;
+	padding-right: 10px;
 }
 
 path:hover {
-    fill: #000000;
+	fill: #000000;
 }
 
 /*SoMe ikoner i footer SLUT*/
@@ -480,76 +513,76 @@ path:hover {
 /*------------ 7: Burgermenu Mobile ----------------*/
 
 .burgermenu {
-    margin: 1em;
+	margin: 1em;
 }
 
 .burgernav {
-    display: none;
+	display: none;
 }
 
 .burgernav button {
-    display: flex;
-    cursor: pointer;
-    font-size: 1.5em;
-    cursor: pointer;
+	display: flex;
+	cursor: pointer;
+	font-size: 1.5em;
+	cursor: pointer;
 }
 
 .burgernav button a {
-    text-decoration: none;
-    font-family: "Avenir Light", sans-serif;
-    color: gray;
-    padding: 0.5em;
-    font-size: 16px;
+	text-decoration: none;
+	font-family: "Avenir Light", sans-serif;
+	color: gray;
+	padding: 0.5em;
+	font-size: 16px;
 }
 
 .burgernav button a:hover {
-    font-style: italic;
+	font-style: italic;
 }
 
 .burgernav button a:active {
-    font-style: italic;
+	font-style: italic;
 }
 
 .burger .menu-button {
-    display: block;
+	display: block;
 }
 
 .menu-button {
-    color: #DD3340;
-    display: block;
+	color: #DD3340;
+	display: block;
 }
 
 #nav {
-    display: none;
+	display: none;
 }
 
 #logo {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50% 50%;
 }
 
 #logo a {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    margin-top: 1.7em;
-    max-width: 100%;
-    text-align: center;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin-top: 1.7em;
+	max-width: 100%;
+	text-align: center;
 }
 
 .burger {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100%;
 }
 
 .menu-button {
-    grid-column-start: 0;
-    grid-column-end: 0;
-    grid-row-start: 1;
-    font-size: 1.6em;
-    /*        cursor: pointer;*/
+	grid-column-start: 0;
+	grid-column-end: 0;
+	grid-row-start: 1;
+	font-size: 1.6em;
+	/*        cursor: pointer;*/
 }
 
 
@@ -570,39 +603,39 @@ path:hover {
 @media screen and (min-width: 298px) {
 
 
-    /*----------- Burgermenu --------------*/
-    .menu-button {
-        display: none;
-    }
+	/*----------- Burgermenu --------------*/
+	.menu-button {
+		display: none;
+	}
 
-    #nav {
-        display: none;
-    }
+	#nav {
+		display: none;
+	}
 
-    #logo {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
+	#logo {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
 
-    #logo a {
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin-top: 1.7em;
-        max-width: 100%;
-        text-align: center;
-    }
+	#logo a {
+		grid-column-start: 3;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin-top: 1.7em;
+		max-width: 100%;
+		text-align: center;
+	}
 
-    .burger {
-        display: grid;
-    }
+	.burger {
+		display: grid;
+	}
 
-    .burger .menu-button {
-        display: grid;
-    }
+	.burger .menu-button {
+		display: grid;
+	}
 
-    /*----------- Burgermenu SLUT --------------*/
+	/*----------- Burgermenu SLUT --------------*/
 
 }
 
@@ -610,193 +643,222 @@ path:hover {
 
 @media screen and (min-width: 300px) {
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 6vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 6vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
-    /*Footer*/
-    #box {
-        font-size: 14px;
-    }
+	/*Footer*/
+	#box {
+		font-size: 14px;
+	}
 
-    .some_container svg {
-        width: 25%;
-    }
+	.some_container svg {
+		width: 25%;
+	}
 
-    #box {
-        background-color: #dd3340;
-        font-family: Avenir light;
-        color: white;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-        grid-template-rows: 25% 25% 25% 25%;
-        letter-spacing: 0.7px;
-        font-size: 13px;
-    }
+	#box {
+		background-color: #dd3340;
+		font-family: Avenir light;
+		color: white;
+		display: grid;
+		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+		grid-template-rows: 25% 25% 25% 25%;
+		letter-spacing: 0.7px;
+		font-size: 13px;
+	}
 
-    #footer_box {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    #footer_box2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box2 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    .footer-left {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        padding-top: 3vh;
-    }
+	.footer-left {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		padding-top: 3vh;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 3;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 3;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+	}
 
-    /*Webite - text-stroke - er for at gøre tekst skriften mere bold */
-    #mc_embed_signup h2 {
-        font-size: 1em !important;
-        -webkit-text-stroke: 0.3px white;
-    }
+	/*Webite - text-stroke - er for at gøre tekst skriften mere bold */
+	#mc_embed_signup h2 {
+		font-size: 1em !important;
+		-webkit-text-stroke: 0.3px white;
+	}
 
-    #mc_embed_signup form {
-        padding: 0vw !important;
-    }
+	#mc_embed_signup form {
+		padding: 0vw !important;
+	}
 
-    .some_container {
-        grid-column-start: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        padding-top: 2.5vh;
-        padding-bottom: 0vh;
-        padding-left: 2vw;
-    }
+	.some_container {
+		grid-column-start: 3;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		padding-top: 2.5vh;
+		padding-bottom: 0vh;
+		padding-left: 2vw;
+	}
 
-    .some_container svg {
-        width: 30%;
-    }
+	.some_container svg {
+		width: 30%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 }
 
 
 
 @media screen and (min-width: 505px) {
 
-    /*----------- Burgermenu --------------*/
-    .burgermenu {
-        display: none;
-    }
+	/*----------- Burgermenu --------------*/
+	.burgermenu {
+		display: none;
+	}
 
-    /*----------- Burgermenu SLUT --------------*/
+	/*----------- Burgermenu SLUT --------------*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 40vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 40vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
 
-    /*Navbar visning ved tablet*/
-    #nav {
-        display: grid;
-    }
+	/*Navbar visning ved tablet*/
+	#nav {
+		display: grid;
+	}
 
-    /*Navbar visning ved tablet SLUT*/
+	/*Navbar visning ved tablet SLUT*/
 
 }
 
 
+/*--------- Menukort ---------*/
+#coffee_section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 25% 25% 25% 25%;
+}
+
+.menu-left {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin: 2vw;
+}
+
+#menukort img {
+	max-width: 100%;
+}
+
+#menukort {
+	margin: 1vw 6vw;
+}
+
+.menu-right {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin: 2vw;
+}
+
+/*--------- Menukort SLUT ---------*/
+
 
 @media screen and (min-width: 600px) {
 
-    /* Galleri */
-    #gallery-section .content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 25% 25% 25% 25%;
-    }
+	/* Galleri */
+	#gallery-section .content {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 25% 25% 25% 25%;
+	}
 
 
-    .picture-left {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
+	.picture-left {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 5;
+	}
 
 
-    .gallery-content .top {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin: 0.5vw;
-    }
+	.gallery-content .top {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin: 0.5vw;
+	}
 
-    .gallery-content .bottom {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        margin: 0.5vw;
-    }
+	.gallery-content .bottom {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 5;
+		margin: 0.5vw;
+	}
 
-    .p-top-left,
-    .p-top-right,
-    .p-bottom-left,
-    .p-bottom-right {
-        margin: 0.5vw;
-    }
+	.p-top-left,
+	.p-top-right,
+	.p-bottom-left,
+	.p-bottom-right {
+		margin: 0.5vw;
+	}
 
-    /* Galleri SLUT */
-
-
+	/* Galleri SLUT */
 
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 50vw;
-    }
-
-    /*Om os citat SLUT*/
 
 
-    /*Footer*/
-    .some_container svg {
-        width: 20%;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 50vw;
+	}
 
-    /*Footer SLUT*/
+	/*Om os citat SLUT*/
+
+
+	/*Footer*/
+	.some_container svg {
+		width: 20%;
+	}
+
+	/*Footer SLUT*/
 
 }
 
@@ -804,118 +866,118 @@ path:hover {
 
 @media screen and (min-width: 768px) {
 
-    /* Galleri */
-    #gallery-section .content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10% 10% 10% 10%;
-    }
+	/* Galleri */
+	#gallery-section .content {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 10% 10% 10% 10%;
+	}
 
-    /* Galleri SLUT*/
+	/* Galleri SLUT*/
 
-    /*Footer*/
-    #footer_box {
-        display: grid;
-    }
+	/*Footer*/
+	#footer_box {
+		display: grid;
+	}
 
-    .footer-left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 5vh;
-    }
+	.footer-left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 5vh;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 4.4vh;
-        padding-right: 9vw;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 4.4vh;
+		padding-right: 9vw;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 10vh;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 10vh;
+	}
 
-    .some_container {
-        grid-column-start: 4;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 17vh;
-        padding-left: 9vw;
-    }
+	.some_container {
+		grid-column-start: 4;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 17vh;
+		padding-left: 9vw;
+	}
 
-    .some_container svg {
-        width: 26%;
-    }
+	.some_container svg {
+		width: 26%;
+	}
 
-    /*Footer*/
-
-
+	/*Footer*/
 
 
-    /*---------------------- Om os ------------------*/
-    /*JS template som fanger og styler*/
-
-    #aboutUs {
-        border: none;
-    }
-
-    #aboutUs h2 {
-        font-family: Avenir Light;
-        text-align: center;
-        padding-top: 7vh;
-        padding-bottom: 7vh;
-    }
-
-    /*JS template som fanger og styler*/
-    .grid-colum-2 {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
-
-    #aboutUs {
-        padding-right: 10vw;
-        padding-left: 10vw;
-    }
-
-    #aboutUs img {
-        width: 70%;
-    }
-
-    .mette,
-    img {
-        text-align: end;
-        padding-right: 5px;
-
-    }
-
-    .thomas,
-    img {
-        text-align: start;
-        padding-left: 5px;
-    }
-
-    .thomas p {
-        text-align: left;
-    }
 
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 50vw;
-    }
+	/*---------------------- Om os ------------------*/
+	/*JS template som fanger og styler*/
 
-    /*---------------------- Om os SLUT ------------------*/
+	#aboutUs {
+		border: none;
+	}
+
+	#aboutUs h2 {
+		font-family: Avenir Light;
+		text-align: center;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+	}
+
+	/*JS template som fanger og styler*/
+	.grid-colum-2 {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+	}
+
+	#aboutUs {
+		padding-right: 10vw;
+		padding-left: 10vw;
+	}
+
+	#aboutUs img {
+		width: 70%;
+	}
+
+	.mette,
+	img {
+		text-align: end;
+		padding-right: 5px;
+
+	}
+
+	.thomas,
+	img {
+		text-align: start;
+		padding-left: 5px;
+	}
+
+	.thomas p {
+		text-align: left;
+	}
+
+
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 50vw;
+	}
+
+	/*---------------------- Om os SLUT ------------------*/
 
 
 
@@ -925,104 +987,104 @@ path:hover {
 
 @media screen and (min-width: 800px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
 
 @media screen and (min-width: 940px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 54vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 54vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 }
 
 @media screen and (min-width: 1000px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 48vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 48vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    /*Footer*/
-    #footer_box {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin-left: 2.5vw;
-    }
+	/*Footer*/
+	#footer_box {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin-left: 2.5vw;
+	}
 
-    .footer-left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.footer-left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding-top: 4vh;
-        padding-right: 10vw;
-    }
+	#mc_embed_signup {
+		grid-column-start: 4;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		padding-top: 4vh;
+		padding-right: 10vw;
+	}
 
-    .some_container {
-        grid-column-start: 6;
-        grid-row-start: 6;
-        grid-row-start: 1;
-        grid-row-end: 6;
-        padding-top: 10vh;
-        padding-left: 32vw;
-    }
+	.some_container {
+		grid-column-start: 6;
+		grid-row-start: 6;
+		grid-row-start: 1;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 32vw;
+	}
 
-    .some_container svg {
-        width: 23%;
-    }
+	.some_container svg {
+		width: 23%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 
 }
@@ -1030,87 +1092,87 @@ path:hover {
 
 @media screen and (min-width: 1100px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 51vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 51vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1200px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 43vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 43vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
 }
 
 @media screen and (min-width: 1300px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 240px;
-        padding-right: 240px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 240px;
+		padding-right: 240px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 41vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 41vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
 }
 
 @media screen and (min-width: 1400px) {
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 330px;
-        padding-right: 330px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 330px;
+		padding-right: 330px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 31vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 31vw;
+	}
 
-    #quote-section img {
-        width: 4vw;
-    }
+	#quote-section img {
+		width: 4vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
