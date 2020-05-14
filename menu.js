@@ -191,38 +191,51 @@ function insertmenuKort(section) {
 
         </div>
 
-            <div id="morgenmad-sektion">
+            <div id="morgenmad-section">
                 <div class="menu-left">
+
+					<img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}";">
+
+                </div>
+
+                <div class="menu-right">
+
+
+					<div class="morgen-text">
                         <p>${section.morgenmad_overskrift}</p>
                         <p>${section.morgenmad_beskrivelse}</p>
+					</div>
 
+					<div class="morgen-list">
                         <ul>
                             <li>
                                 <p>${section.morgenmad_menu}</p>
                                 <p>${section.morgenmad_priser}</p>
                             </li>
                         </ul>
-                </div>
+					</div>
 
-                <div class="menu-right">
-                    <img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}";">
                 </div>
 
             </div>
 
 
-            <div id="koldedrikke-sektion">
+            <div id="koldedrikke-section">
 
                 <div class="menu-left">
-                    <p>${section.kolde_drikke}</p>
-                    <p>${section.kolde_beskrivelse}</p>
+					<div class="drikke-text">
+						<p>${section.kolde_drikke}</p>
+						<p>${section.kolde_beskrivelse}</p>
+					</div>
 
-                <ul>
-                    <li>
-                        <p>${section.kolde_menu}</p>
-                        <p>${section.kolde_priser}</p>
-                    </li>
-                </ul>
+					<div class="drikke-list">
+						<ul>
+							<li>
+								<p>${section.kolde_menu}</p>
+                        		<p>${section.kolde_priser}</p>
+                    		</li>
+						</ul>
+					</div>
             </div>
 
             <div class="menu-right">

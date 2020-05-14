@@ -352,15 +352,17 @@ ul {
 	margin: 3vw;
 }
 
-#coffee_section {
+#coffee_section,
+#morgenmad-section,
+#koldedrikke-section {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-areas: 25% 25% 25% 25%;
 }
 
 .menu-left {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	margin: 2vw;
 }
 
@@ -370,7 +372,7 @@ ul {
 
 .menu-right {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	margin: 2vw;
 }
 
@@ -378,7 +380,9 @@ ul {
 	display: grid;
 }
 
-.coffee-text {
+.coffee-text,
+.morgen-text,
+.drikke-text {
 	max-width: 60vw;
 	max-height: 50vh;
 }
