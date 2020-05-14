@@ -89,51 +89,97 @@ function insertmenuKort(section) {
 
                           <ul>
                             <li>
-                                <p">${section.kaffe1}</p>
+                                <p>${section.kaffe1}</p>
                             </li>
 
                             <li>
-                                <p">${section.kaffe2}</p>
+                                <p>${section.kaffe2}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe3}</p>
+                                <p>${section.kaffe3}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe4}</p>
+                                <p>${section.kaffe4}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe5}</p>
+                                <p>${section.kaffe5}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe6}</p>
+                                <p>${section.kaffe6}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe7}</p>
+                                <p>${section.kaffe7}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe8}</p>
+                                <p>${section.kaffe8}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe9}</p>
+                                <p>${section.kaffe9}</p>
                             </li>
 
                             <li>
-                                <p class="priceColumn">${section.kaffe10}</p>
-                            </li>
-
-                            <li>
-                                <p class="priceColumn">${section.kaffe_priser}</p>
+                                <p>${section.kaffe10}</p>
                             </li>
 
                         </ul>
-                    </div>
+
+
+                        <ul>
+
+                            <li>
+                                <p>${section.kaffe1_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe2_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe3_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe4_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe5_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe6_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe7_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe8_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe9_pris}</p>
+                            </li>
+
+                            <li>
+                                <p>${section.kaffe10_pris}</p>
+                            </li>
+
+
+
+                        </ul>
+
+
+
+            </div>
 
                 <div class="menu-right">
                         <img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}";">

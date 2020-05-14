@@ -345,6 +345,11 @@ ul {
 
 
 /*----------------------Menu kort------------------*/
+
+#caffee_section ul {
+    display: grid;
+}
+
 /*
 #menukort {
     display: grid;
