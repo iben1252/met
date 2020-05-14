@@ -87,11 +87,51 @@ function insertmenuKort(section) {
                         <p>${section.kaffe_overskrift}</p>
                         <p>${section.kaffe_beskrivelse}</p>
 
-                        <ul>
+                          <ul>
                             <li>
-                                <p>${section.kaffe_menu}</p>
+                                <p">${section.kaffe1}</p>
                             </li>
-                                <p>${section.kaffe_priser}</p> </li>
+
+                            <li>
+                                <p">${section.kaffe2}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe3}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe4}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe5}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe6}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe7}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe8}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe9}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe10}</p>
+                            </li>
+
+                            <li>
+                                <p class="priceColumn">${section.kaffe_priser}</p>
+                            </li>
+
                         </ul>
                     </div>
 

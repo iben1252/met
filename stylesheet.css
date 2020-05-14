@@ -345,30 +345,36 @@ ul {
 
 
 /*----------------------Menu kort------------------*/
+/*
 #menukort {
     display: grid;
-}
+}*/
 
-
+/*
 #caffee_section {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
     grid-template-rows: 20% 20% 20% 20%;
 }
+*/
 
-.menu-left {
+
+
+/*
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-}
+*/
 
+
+/*
 .menu-right {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
-}
+}*/
 
 /*--------------------Menu kort SLUT------------------*/
 
