@@ -99,7 +99,7 @@ function insertmenuKort(section) {
                         <img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}";">
                 </div>
 
-                </div>
+        </div>
 
             <div id="morgenmad-sektion">
                 <div class="menu-left">
