@@ -82,7 +82,7 @@ function insertmenuKort(section) {
     let template =
         `
 
-        <div id="kaffe-sektion">
+        <div id="caffee_section">
                 <div class="menu-left">
                         <p>${section.kaffe_overskrift}</p>
                         <p>${section.kaffe_beskrivelse}</p>
@@ -91,7 +91,6 @@ function insertmenuKort(section) {
                             <li>
                                 <p>${section.kaffe_menu}</p>
                             </li>
-                <li>
                                 <p>${section.kaffe_priser}</p> </li>
                         </ul>
                     </div>
