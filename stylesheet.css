@@ -1145,21 +1145,39 @@ path:hover {
         padding: 5vw;
     }
 
-    #coffee_section,
-    #morgenmad-section,
-    #koldedrikke-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 25% 25% 25 25%;
-    }
 
     /*
+    #coffee_section {
+        display: flex;
+    }
 
+    #morgenmad-section {
+        display: flex;
+    }
+
+    #koldedrikke-section {
+        display: flex;
+    }
+*/
 
     #menukort img {
         max-width: 100%;
     }
+
+
+
+    /*Grid*/
+
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section {
+        display: flex;
+        /*
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 25% 25 25%;
 */
+    }
+
 
     .menu-left {
         display: grid;
@@ -1172,27 +1190,37 @@ path:hover {
     }
 
     .menu-right {
-        display: grid;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 6;
+    }
+
+    /*Grid slut*/
+
+
+
+
+    /*Styling på Kolde drikke*/
+    #koldedrikke-section h1 {
+        margin-top: 0vw;
     }
 
 
     .menu-right-last {
         display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
+    /*Styling på Kolde drikke slut*/
 
 
 
 
-    /*Grid slut*/
+
 
     /*Styling af produkt og priser */
 
@@ -1237,19 +1265,21 @@ path:hover {
     /*Styling af produkt og priser SLUT */
 
 
+
     /*Styling af menu billede*/
+    /*
+#coffee_section img {
+    width: 100%;
+}
 
-    #coffee_section img {
-        width: 100%;
-    }
+#morgenmad_section img {
+    width: 100%;
+}
 
-    #morgenmad_section img {
-        width: 100%;
-    }
-
-    #koldedrikke_section img {
-        width: 100%;
-    }
+#koldedrikke_section img {
+    width: 100%;
+}
+*/
 
     /*Styling af menu billede SLUT*/
 

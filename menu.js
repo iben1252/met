@@ -84,7 +84,6 @@ function insertmenuKort(section) {
         `
 <section id="menuCard">
 
-
      	<div id="coffee_section">
 		<div class="menu-left">
 			<div class="coffee-text">
