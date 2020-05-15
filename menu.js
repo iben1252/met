@@ -93,7 +93,7 @@ function insertmenuKort(section) {
 
 
 			<div class="coffee-list">
-				<ul>
+				<ul class="coffee_price_list">
 					<li>
 						<p>${section.kaffe1}</p>
 					</li>
@@ -202,7 +202,7 @@ function insertmenuKort(section) {
 			</div>
 
 			<div class="morgenmad-list">
-				<ul>
+				<ul class="morgenmad_price_list">
 					<li>
 						<p>${section.morgenmad1}</p>
 					</li>
@@ -314,7 +314,7 @@ function insertmenuKort(section) {
 			</div>
 
 			<div class="drikke-list">
-				<ul>
+				<ul class="drikke_price_list">
 					<li>
 						<p>${section.koldedrikke1}</p>
 					</li>
