@@ -82,7 +82,7 @@ function insertmenuKort(section) {
 
     let template =
         `
-
+<section id="menuCard">
      	<div id="coffee_section">
 		<div class="menu-left">
 			<div class="coffee-text">
@@ -194,6 +194,12 @@ function insertmenuKort(section) {
 
 
 	<div id="morgenmad-section">
+
+            <div class="menu-right">
+				<img src="${section.morgenmadbillede.guid}" alt="Billede af kage creme på et bord" ;>
+			</div>
+
+
 		<div class="menu-left">
 			<div class="morgenmad-text">
 				<h1>${section.morgenmad_overskrift}</h1>
@@ -294,9 +300,7 @@ function insertmenuKort(section) {
 			</div>
 
 		</div>
-			<div class="menu-right">
-				<img src="${section.morgenmadbillede.guid}" alt="Billede af kage creme på et bord" ;>
-			</div>
+
 		</div>
 
 
@@ -356,12 +360,12 @@ function insertmenuKort(section) {
 			</div>
 
 		</div>
-			<div class="menu-right">
+			<div class="menu-right-last">
 				<img src="${section.koldebillede.guid}" alt="Billede af blomster og juice flasker" ;>
 			</div>
 		</div>
 
-
+</section>
 					`;
 
     destmenuKort.insertAdjacentHTML("beforeend", template);
