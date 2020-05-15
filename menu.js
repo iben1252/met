@@ -184,7 +184,7 @@ function insertmenuKort(section) {
 
 		</div>
 			<div class="menu-right">
-				<img src="${section.kaffebillede.guid}" alt="Billede til: ${section.title.rendered}" ;>
+				<img src="${section.kaffebillede.guid}" alt="Billede fra et bord i caffeen, blomster på bordet" ;>
 			</div>
 		</div>
 
@@ -295,7 +295,7 @@ function insertmenuKort(section) {
 
 		</div>
 			<div class="menu-right">
-				<img src="${section.morgenmadbillede.guid}" alt="Billede til: ${section.title.rendered}" ;>
+				<img src="${section.morgenmadbillede.guid}" alt="Billede af kage creme på et bord" ;>
 			</div>
 		</div>
 
@@ -357,7 +357,7 @@ function insertmenuKort(section) {
 
 		</div>
 			<div class="menu-right">
-				<img src="${section.koldebillede.guid}" alt="Billede til: ${section.title.rendered}" ;>
+				<img src="${section.koldebillede.guid}" alt="Billede af blomster og juice flasker" ;>
 			</div>
 		</div>
 
