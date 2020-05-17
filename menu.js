@@ -195,7 +195,11 @@ function insertmenuKort(section) {
 
 	<div id="morgenmad-section">
 
-		<div class="menu-left">
+            <div class="menu-left">
+				<img src="${section.morgenmadbillede.guid}" alt="Billede af kage creme på et bord" ;>
+			</div>
+
+		<div class="menu-right">
 			<div class="morgenmad-text">
 				<h1>${section.morgenmad_overskrift}</h1>
 				<p>${section.morgenmad_beskrivelse}</p>
@@ -296,10 +300,6 @@ function insertmenuKort(section) {
 
 		</div>
 
-            <div class="menu-right">
-				<img src="${section.morgenmadbillede.guid}" alt="Billede af kage creme på et bord" ;>
-			</div>
-
 		</div>
 
 
@@ -309,6 +309,7 @@ function insertmenuKort(section) {
 
 
 	<div id="koldedrikke-section">
+
 		<div class="menu-left">
 			<div class="drikke-text">
 				<h1>${section.kolde_drikke}</h1>
