@@ -213,7 +213,7 @@ function insertmenuKort(section) {
 					</li>
 
 					<li>
-						<p>${section.morgenmad2}</p>
+						<p class="med">${section.morgenmad2}</p>
 					</li>
 
 					<li>

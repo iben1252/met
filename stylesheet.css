@@ -349,6 +349,10 @@ ul {
 /*----------------------MENU kort------------------*/
 /*Styling på overordnet menukort*/
 
+#menuCard {
+    padding: 0vw;
+}
+
 #menukort {
     margin: 3vw;
 }
@@ -369,54 +373,54 @@ ul {
 
 }
 
-/*
-
-#menuCard {
-    padding: vw;
-}
-*/
-
 /*Styling på overordnet menukort SLUT*/
 
 
 
 
-/*For at få produkt og priser overfor hinanden*/
+/*Kaffe*/
+#coffee_section h1 {
+    color: #F2CA50;
+}
+
 #coffee_section ul {
     display: grid;
     margin-left: 0vw;
-}
-
-#morgenmad-section ul {
-    display: grid;
-}
-
-#koldedrikke-section ul {
-    display: grid;
-}
-
-.morgenmad-list {
-    display: flex;
 }
 
 .coffee-list {
     display: flex;
 }
 
-.drikke-list {
-    display: flex;
-}
-
-/*For at få produkt og priser overfor hinanden SLUT*/
-
-
-/*Styling af produkt og priser */
 .coffee-list li {
     margin: -4vw 0vw 1vw 0vw;
 }
 
 .coffee_price_list li {
     margin-right: 37vw;
+}
+
+#coffee_section img {
+    margin-top: 13vh;
+    max-width: 100%;
+    display: inline-grid;
+}
+
+/*Kaffe slut*/
+
+
+
+/*morgenmad*/
+#morgenmad-section h1 {
+    color: #EB414F;
+}
+
+#morgenmad-section ul {
+    display: grid;
+}
+
+.morgenmad-list {
+    display: flex;
 }
 
 .morgenmad-list li {
@@ -427,6 +431,32 @@ ul {
     margin-right: 19vw;
 }
 
+#morgenmad-section img {
+    display: none;
+}
+
+.med {
+    font-style: oblique;
+}
+
+
+/*morgenmad slut*/
+
+
+
+/*koldedrikke*/
+#koldedrikke-section h1 {
+    color: #798C35;
+}
+
+#koldedrikke-section ul {
+    display: grid;
+}
+
+.drikke-list {
+    display: flex;
+}
+
 .drikke-list li {
     margin: -4vw 0vw 1vw 0vw;
 }
@@ -435,7 +465,14 @@ ul {
     margin-right: 55vw;
 }
 
-/*Styling af produkt og priser SLUT */
+#koldedrikke-section h1 {
+    margin-top: 3vh;
+}
+
+
+
+/*koldedrikke slut*/
+
 
 /*Grid*/
 #coffee_section,
@@ -443,7 +480,7 @@ ul {
 #koldedrikke-section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 20% 20% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .menu-left {
@@ -469,11 +506,6 @@ ul {
     padding-left: 4vw;
 }
 
-
-#coffee_section img {
-    margin-top: 13vh;
-}
-
 #morgenmad-section .menu-right {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -492,30 +524,8 @@ ul {
     padding-top: 9vh;
 }
 
-
 /*Grid slut*/
 
-
-#koldedrikke-section h1 {
-    margin-top: 3vh;
-
-}
-
-
-.coffee-text,
-.morgen-text,
-.drikke-text {
-    /*    display: grid;
-    */
-    /*
-    max-width: 70vw;
-    max-height: 50vh;
-*/
-}
-
-#morgenmad-section img {
-    display: none;
-}
 
 
 
@@ -934,7 +944,6 @@ path:hover {
         margin-top: 17vh;
     }
 
-
     .menu-right {
         padding: 0vh;
         text-align: center;
@@ -992,40 +1001,6 @@ path:hover {
 
     /*Navbar visning ved tablet SLUT*/
 
-
-    /*--------- Menukort ---------*/
-    /* NORWINS
-    #coffee_section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 25% 25% 25% 25%;
-    }
-
-    .menu-left {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        margin: 2vw;
-    }
-
-    #menukort img {
-        max-width: 100%;
-    }
-
-    #menukort {
-        margin: 1vw 6vw;
-    }
-
-    .menu-right {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        margin: 2vw;
-    }*/
-
-
-    /*--------- Menukort SLUT ---------*/
-
-
-
 }
 
 
@@ -1057,8 +1032,9 @@ path:hover {
         margin-top: 3vh;
     }
 
-    /*beskrivelses tekst styling*/
+    /*Styling af produkt og priser SLUT */
 
+    /*beskrivelses tekst styling*/
     .coffee-text p {
         padding: 0vw 13vw 0vw 0vw;
     }
@@ -1073,10 +1049,6 @@ path:hover {
 
     /*beskrivelses tekst styling SLUT*/
 
-
-
-
-    /*Styling af produkt og priser SLUT */
     /*MENUKORT SLUT*/
 
 
@@ -1246,6 +1218,7 @@ path:hover {
     .menu-left p {
         margin-top: 3.7vh;
     }
+
 
 }
 
