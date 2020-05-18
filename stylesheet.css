@@ -16,8 +16,8 @@ Responsive
 
 /*---------- Generelt -----------*/
 body {
-    margin: 0;
-    /*Fjerner standard margin fra siden*/
+	margin: 0;
+	/*Fjerner standard margin fra siden*/
 
 
 }
@@ -32,71 +32,71 @@ body {
 /*-----------  Nav Menu -------------*/
 
 #nav {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 5% 60%;
-    justify-items: center;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 5% 60%;
+	justify-items: center;
 }
 
 #logo {
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    grid-template-rows: 50% 60%;
+	display: grid;
+	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+	grid-template-rows: 50% 60%;
 }
 
 #logo a {
-    grid-template-rows: 50% 60%;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    max-width: 90%;
-    margin-top: 2vh;
+	grid-template-rows: 50% 60%;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	max-width: 90%;
+	margin-top: 2vh;
 }
 
 #logo img {
-    max-width: 70%;
+	max-width: 70%;
 }
 
 li {
-    margin: 1vw 3.5vw 0vw 3.5vw;
+	margin: 1vw 3.5vw 0vw 3.5vw;
 }
 
 #nav a {
-    text-decoration: none;
-    color: gray;
-    font-family: 'Avenir light', sans-serif;
-    font-size: 1em;
-    padding-bottom: 3vw;
+	text-decoration: none;
+	color: gray;
+	font-family: 'Avenir light', sans-serif;
+	font-size: 1em;
+	padding-bottom: 3vw;
 }
 
 #nav li:hover {
-    font-style: italic;
-    border-bottom: 1px solid #DD3340;
+	font-style: italic;
+	border-bottom: 1px solid #DD3340;
 }
 
 #nav li:active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 ul {
-    list-style-type: none;
-    margin-bottom: 2vw;
-    padding: 0vw;
-    overflow: hidden;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    display: flex;
-    font-family: Avenir Light;
-    white-space: nowrap;
+	list-style-type: none;
+	margin-bottom: 2vw;
+	padding: 0vw;
+	overflow: hidden;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	display: flex;
+	font-family: Avenir Light;
+	white-space: nowrap;
 }
 
 #active {
-    border-bottom: 1px solid #DD3340;
-    font-style: italic;
+	border-bottom: 1px solid #DD3340;
+	font-style: italic;
 }
 
 
@@ -113,24 +113,24 @@ ul {
 
 /* Citat tegn billede */
 #quote-section img {
-    display: block;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 7vw;
+	display: block;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7vw;
 
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
 }
 
 /* Citat tegn billede slut */
 
 #quote-section {
-    background: #F2EDEB;
+	background: #F2EDEB;
 }
 
 .slideshow-container {
-    position: relative;
+	position: relative;
 }
 
 /* Slider */
@@ -138,69 +138,69 @@ ul {
 .quote_1,
 .quote_2,
 .quote_3 {
-    display: none;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 40px;
-    text-align: center;
+	display: none;
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 40px;
+	text-align: center;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    align-self: center;
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	align-self: center;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    /*    background-color: rgba(0, 0, 0, 6.8);*/
-    color: white;
+	/*    background-color: rgba(0, 0, 0, 6.8);*/
+	color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-    text-align: center;
-    padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 
-    border-radius: 10px;
-    border: 1px solid #DB3C3C;
+	border-radius: 10px;
+	border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-    background-color: #DB3C3C;
+	background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
@@ -208,9 +208,9 @@ ul {
 .quote_1 q,
 .quote_2 q,
 .quote_3 q {
-    font-family: Avenir;
-    font-style: italic;
-    line-height: 25px;
+	font-family: Avenir;
+	font-style: italic;
+	line-height: 25px;
 }
 
 /* Add a blue color to the author */
@@ -218,9 +218,9 @@ ul {
 .quote_1 p,
 .quote_2 p,
 .quote_3 p {
-    font-family: Avenir light;
-    color: #dd3340;
-    margin-left: 2vw;
+	font-family: Avenir light;
+	color: #dd3340;
+	margin-left: 2vw;
 }
 
 /*----------- Slideshow container SLUT ------------*/
@@ -236,56 +236,56 @@ ul {
 /*---------------- Galleri ------------------------*/
 
 #gallery-section .content {
-    display: grid;
-    margin: 3vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% 25% 25% 25%;
-    perspective: 30vw;
+	display: grid;
+	margin: 3vw;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 25% 25% 25% 25%;
+	perspective: 30vw;
 }
 
 #gallery-section .content img {
-    max-width: 96%;
+	max-width: 96%;
 }
 
 .picture-left {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    text-align: center;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	text-align: center;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
 }
 
 #gallery-section .front img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .front {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .back {
-    font-family: "Avenir light", sans-serif;
-    display: none;
+	font-family: "Avenir light", sans-serif;
+	display: none;
 }
 
 .gallery-content .top {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 
 .gallery-content .bottom {
-    display: flex;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+	display: flex;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 4;
+	grid-row-end: 5;
 }
 
 .picture-left,
@@ -293,16 +293,16 @@ ul {
 .p-top-right,
 .p-bottom-left,
 .p-bottom-right {
-    margin: 1vw;
+	margin: 1vw;
 }
 
 .flip {
-    transform: rotateY(180deg);
-    transition: transform 0.8s;
+	transform: rotateY(180deg);
+	transition: transform 0.8s;
 }
 
 .flip-back {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 
@@ -319,25 +319,25 @@ ul {
 /*------------------------- Om os------------------------*/
 /*JS template som fanger og styler*/
 #aboutUs h2 {
-    font-family: Avenir Light;
-    text-align: center;
-    padding-top: 7vh;
+	font-family: Avenir Light;
+	text-align: center;
+	padding-top: 7vh;
 }
 
 #aboutUs {
-    text-align: center;
+	text-align: center;
 }
 
 #aboutUs p {
-    font-family: Avenir Light;
-    text-align: left;
-    padding-left: 9vw;
-    padding-right: 9vw;
-    margin-bottom: 14vw;
+	font-family: Avenir Light;
+	text-align: left;
+	padding-left: 9vw;
+	padding-right: 9vw;
+	margin-bottom: 14vw;
 }
 
 #aboutUs img {
-    width: 81vw;
+	width: 81vw;
 }
 
 /*
@@ -365,26 +365,26 @@ ul {
 /*Styling på overordnet menukort*/
 
 #menuCard {
-    padding: 0vw;
+	padding: 0vw;
 }
 
 #menukort {
-    margin: 3vw;
+	margin: 3vw;
 }
 
 #menukort h1 {
-    font-family: "Avenir black", sans-serif;
-    font-size: 1.2em;
-    margin-top: 0vw;
+	font-family: "Avenir black", sans-serif;
+	font-size: 1.2em;
+	margin-top: 0vw;
 }
 
 #menukort p {
-    font-family: "Avenir light", sans-serif;
-    font-size: 0.9em;
+	font-family: "Avenir light", sans-serif;
+	font-size: 0.9em;
 }
 
 #menukort img {
-    max-width: 90%;
+	max-width: 90%;
 
 }
 
@@ -395,39 +395,39 @@ ul {
 
 /*Kaffe*/
 #coffee_section h1 {
-    color: #F2CA50;
+	color: #F2CA50;
 }
 
 #coffee_section ul {
-    display: grid;
-    /*    margin-left: 0vw;*/
+	display: grid;
+	/*    margin-left: 0vw;*/
 }
 
 .coffee-list {
-    display: flex;
+	display: flex;
 }
 
 .coffee-list li {
-    margin: -4vw 0vw 1vw 0vw;
+	margin: -4vw 0vw 1vw 0vw;
 }
 
 .coffee_price_list li {
-    margin-right: 40vw;
+	margin-right: 40vw;
 }
 
 #coffee_section img {
-    margin-top: 45vw;
-    max-width: 95%;
-    display: inline-grid;
+	/*    margin-top: 45vw;*/
+	max-width: 95%;
+	display: inline-grid;
 }
 
 .white-border1 {
-    border: white solid 2vw;
-    margin-top: 55vw;
-    margin-left: -3vw;
-    width: 75vw;
-    height: 98vw;
-    position: absolute;
+	border: white solid 2vw;
+	margin-top: 5vw;
+	margin-left: -3vw;
+	width: 75vw;
+	height: 98vw;
+	position: absolute;
 }
 
 /*Kaffe slut*/
@@ -436,38 +436,40 @@ ul {
 
 /*morgenmad*/
 
+/*
 .morgenmad-text {
-    margin-top: -40vw;
+	margin-top: -40vw;
 
 }
+*/
 
 #morgenmad-section h1 {
-    color: #EB414F;
-    font-size: 1.1em;
+	color: #EB414F;
+	font-size: 1.1em;
 }
 
 #morgenmad-section ul {
-    display: grid;
+	display: grid;
 }
 
 .morgenmad-list {
-    display: flex;
+	display: flex;
 }
 
 .morgenmad-list li {
-    margin: -4vw 0vw 1vw 0vw;
+	margin: -4vw 0vw 1vw 0vw;
 }
 
 .morgenmad_price_list {
-    margin-right: 6vw;
+	margin-right: 6vw;
 }
 
 #morgenmad-section img {
-    display: none;
+	display: none;
 }
 
-.med {
-    font-style: oblique;
+.mad {
+	font-style: oblique;
 }
 
 
@@ -477,44 +479,43 @@ ul {
 
 /*koldedrikke*/
 #koldedrikke-section h1 {
-    color: #798C35;
+	color: #798C35;
 }
 
 #koldedrikke-section ul {
-    display: grid;
+	display: grid;
 }
 
 
 .drikke-list {
-    display: flex;
+	display: flex;
 }
 
 .drikke-list li {
-    margin: -4vw 0vw 1vw 0vw;
+	margin: -4vw 0vw 1vw 0vw;
 }
 
 .drikke_price_list li {
-    margin-right: 53vw;
+	margin-right: 53vw;
 }
 
 #koldedrikke-section h1 {
-    margin-top: 3vh;
+	margin-top: 3vh;
 }
 
 .menu-right-last {
-    margin-top: 15vw;
-    margin-left: 5vw;
-    width: 100%;
-    display: grid;
+	/*	margin-top: 15vw;*/
+	display: grid;
+
 }
 
 .white-border3 {
-    border: white solid 2vw;
-    margin-top: 72vw;
-    margin-left: -3vw;
-    width: 70vw;
-    height: 70vw;
-    position: absolute;
+	border: white solid 2vw;
+	margin-top: 63vw;
+	margin-left: -3vw;
+	width: 70vw;
+	height: 61vw;
+	position: absolute;
 }
 
 /*koldedrikke slut*/
@@ -524,51 +525,52 @@ ul {
 #coffee_section,
 #morgenmad-section,
 #koldedrikke-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 20% 20%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20% 20% 15% 35%;
 }
 
 .menu-left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 4vw;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin: 4vw;
 }
 
 #koldedrikke-section .menu-left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 
 .menu-right {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    padding-left: 4vw;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	margin: 4vw;
 }
 
 #morgenmad-section .menu-right {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    text-align: left;
-    margin-top: 0vh;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	text-align: left;
+	margin-top: 0;
 }
 
+/*
 .menu-right-last {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 6;
-    text-align: center;
-    padding-top: 9vh;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	text-align: center;
 }
+*/
 
 /*Grid slut*/
 
@@ -602,50 +604,50 @@ ul {
 
 /*SIGN UP MAILCHIMP STYLING */
 #mc_embed_signup {
-    clear: left;
-    font: 14px Avenir light, Avenir Black, sans-serif;
-    margin-left: 10vw;
-    margin-right: -10vw;
+	clear: left;
+	font: 14px Avenir light, Avenir Black, sans-serif;
+	margin-left: 10vw;
+	margin-right: -10vw;
 }
 
 #mc_embed_signup .mc-field-group input {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 0px;
 }
 
 ::-webkit-input-placeholder {
-    /* Edge */
-    color: white;
-    font: 'Avenir Black', sans-serif;
-    font-style: oblique;
+	/* Edge */
+	color: white;
+	font: 'Avenir Black', sans-serif;
+	font-style: oblique;
 }
 
 /*Grunden til der står "important" er fordi at Mailchimp egen CSS er dominerende for den taget kode. Med important kan man fastgøre at det er vigtigt og dermed fange det man vil style*/
 
 #mc_embed_signup .button {
-    background-color: transparent !important;
-    border: 1px solid white !important;
-    border-radius: 0px !important;
-    font: Avenir light, Avenir Black, sans-serif !important;
-    font-size: 11px !important;
-    padding: 6px 6px 6px 6px !important;
-    line-height: inherit !important;
-    height: 30px !important;
+	background-color: transparent !important;
+	border: 1px solid white !important;
+	border-radius: 0px !important;
+	font: Avenir light, Avenir Black, sans-serif !important;
+	font-size: 11px !important;
+	padding: 6px 6px 6px 6px !important;
+	line-height: inherit !important;
+	height: 30px !important;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
-    border: 2px solid white !important;
+	border: 2px solid white !important;
 }
 
 #mc_embed_signup div#mce-responses {
-    width: auto !important;
-    padding: auto !important;
-    margin: auto !important;
+	width: auto !important;
+	padding: auto !important;
+	margin: auto !important;
 }
 
 #mail_section {
-    display: flex;
+	display: flex;
 }
 
 /*SIGN UP MAILCHIMP STYLING SLUT*/
@@ -653,23 +655,23 @@ ul {
 
 /*SoMe ikoner i footer*/
 .some_container {
-    padding-top: 9.2vh;
-    padding-left: 16px;
+	padding-top: 9.2vh;
+	padding-left: 16px;
 }
 
 .some_container svg {
-    width: 15%;
-    padding-right: 10px;
+	width: 15%;
+	padding-right: 10px;
 }
 
 path:hover {
-    fill: #000000;
+	fill: #000000;
 }
 
 a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 /*SoMe ikoner i footer SLUT*/
@@ -685,76 +687,76 @@ a:-webkit-any-link {
 /*------------ 7: Burgermenu Mobile ----------------*/
 
 .burgermenu {
-    margin: 1em;
+	margin: 1em;
 }
 
 .burgernav {
-    display: none;
+	display: none;
 }
 
 .burgernav button {
-    display: flex;
-    cursor: pointer;
-    font-size: 1.5em;
-    cursor: pointer;
+	display: flex;
+	cursor: pointer;
+	font-size: 1.5em;
+	cursor: pointer;
 }
 
 .burgernav button a {
-    text-decoration: none;
-    font-family: "Avenir Light", sans-serif;
-    color: gray;
-    padding: 0.5em;
-    font-size: 16px;
+	text-decoration: none;
+	font-family: "Avenir Light", sans-serif;
+	color: gray;
+	padding: 0.5em;
+	font-size: 16px;
 }
 
 .burgernav button a:hover {
-    font-style: italic;
+	font-style: italic;
 }
 
 .burgernav button a:active {
-    font-style: italic;
+	font-style: italic;
 }
 
 .burger .menu-button {
-    display: block;
+	display: block;
 }
 
 .menu-button {
-    color: #DD3340;
-    display: block;
+	color: #DD3340;
+	display: block;
 }
 
 #nav {
-    display: none;
+	display: none;
 }
 
 #logo {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50% 50%;
 }
 
 #logo a {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    margin-top: 1.7em;
-    max-width: 100%;
-    text-align: center;
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin-top: 1.7em;
+	max-width: 100%;
+	text-align: center;
 }
 
 .burger {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100%;
 }
 
 .menu-button {
-    grid-column-start: 0;
-    grid-column-end: 0;
-    grid-row-start: 1;
-    font-size: 1.6em;
-    /*        cursor: pointer;*/
+	grid-column-start: 0;
+	grid-column-end: 0;
+	grid-row-start: 1;
+	font-size: 1.6em;
+	/*        cursor: pointer;*/
 }
 
 
@@ -775,39 +777,39 @@ a:-webkit-any-link {
 @media screen and (min-width: 298px) {
 
 
-    /*----------- Burgermenu --------------*/
-    .menu-button {
-        display: none;
-    }
+	/*----------- Burgermenu --------------*/
+	.menu-button {
+		display: none;
+	}
 
-    #nav {
-        display: none;
-    }
+	#nav {
+		display: none;
+	}
 
-    #logo {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
+	#logo {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
 
-    #logo a {
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin-top: 1.7em;
-        max-width: 100%;
-        text-align: center;
-    }
+	#logo a {
+		grid-column-start: 3;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin-top: 1.7em;
+		max-width: 100%;
+		text-align: center;
+	}
 
-    .burger {
-        display: grid;
-    }
+	.burger {
+		display: grid;
+	}
 
-    .burger .menu-button {
-        display: grid;
-    }
+	.burger .menu-button {
+		display: grid;
+	}
 
-    /*----------- Burgermenu SLUT --------------*/
+	/*----------- Burgermenu SLUT --------------*/
 
 }
 
@@ -815,96 +817,96 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 300px) {
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 6vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 6vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
-    /*Footer*/
-    #box {
-        font-size: 14px;
-    }
+	/*Footer*/
+	#box {
+		font-size: 14px;
+	}
 
-    .some_container svg {
-        width: 25%;
-    }
+	.some_container svg {
+		width: 25%;
+	}
 
-    #box {
-        background-color: #dd3340;
-        font-family: Avenir light;
-        color: white;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-        grid-template-rows: 25% 25% 25% 25%;
-        letter-spacing: 0.7px;
-        font-size: 13px;
-    }
+	#box {
+		background-color: #dd3340;
+		font-family: Avenir light;
+		color: white;
+		display: grid;
+		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+		grid-template-rows: 25% 25% 25% 25%;
+		letter-spacing: 0.7px;
+		font-size: 13px;
+	}
 
-    #footer_box {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    #footer_box2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
-    }
+	#footer_box2 {
+		grid-column-start: 2;
+		grid-column-end: 6;
+	}
 
-    .footer-left {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        padding-top: 3vh;
-    }
+	.footer-left {
+		grid-column-start: 2;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		padding-top: 3vh;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 2;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 3;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 3;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+	}
 
-    /*Webite - text-stroke - er for at gøre tekst skriften mere bold */
-    #mc_embed_signup h2 {
-        font-size: 1em !important;
-        -webkit-text-stroke: 0.3px white;
-    }
+	/*Webite - text-stroke - er for at gøre tekst skriften mere bold */
+	#mc_embed_signup h2 {
+		font-size: 1em !important;
+		-webkit-text-stroke: 0.3px white;
+	}
 
-    #mc_embed_signup form {
-        padding: 0vw !important;
-    }
+	#mc_embed_signup form {
+		padding: 0vw !important;
+	}
 
-    .some_container {
-        grid-column-start: 3;
-        grid-row-start: 4;
-        grid-row-end: 4;
-        padding-top: 2.5vh;
-        padding-bottom: 0vh;
-        padding-left: 2vw;
-    }
+	.some_container {
+		grid-column-start: 3;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		padding-top: 2.5vh;
+		padding-bottom: 0vh;
+		padding-left: 2vw;
+	}
 
-    .some_container svg {
-        width: 30%;
-    }
+	.some_container svg {
+		width: 30%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 }
 
 
@@ -914,73 +916,73 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 441px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 60%;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 60%;
+	}
 
-    /* Logo SLUT */
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
-    #menuCard {
-        padding: 2vw;
-    }
+	/* Logo SLUT */
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
+	#menuCard {
+		padding: 2vw;
+	}
 
-    .coffee-list {
-        margin-top: 0vh;
-    }
+	.coffee-list {
+		margin-top: 0vh;
+	}
 
-    .coffee_price_list li {
-        margin-right: vw;
-    }
+	.coffee_price_list li {
+		margin-right: vw;
+	}
 
-    .morgenmad_price_list {
-        margin-right: 24vw;
-    }
+	.morgenmad_price_list {
+		margin-right: 24vw;
+	}
 
-    .drikke_price_list li {
-        margin-right: 60vw;
-    }
+	.drikke_price_list li {
+		margin-right: 60vw;
+	}
 
-    #coffee_section img {
-        margin-top: 25vw;
-        max-width: 95%;
-        display: inline-grid;
-    }
+	#coffee_section img {
+		margin-top: 25vw;
+		max-width: 95%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 35vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 90vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 35vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 90vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -20vw;
+	.morgenmad-text {
+		margin-top: -20vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 5vw;
-        width: 100%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 5vw;
+		width: 100%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 50vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 70vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 50vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 70vw;
+		position: absolute;
+	}
 
 
-    /*Styling af produkt og priser SLUT */
-    /*MENUKORT SLUT*/
+	/*Styling af produkt og priser SLUT */
+	/*MENUKORT SLUT*/
 
 
 }
@@ -988,113 +990,113 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 500px) {
 
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
 
-    #menuCard {
-        padding: 6vw;
-    }
+	#menuCard {
+		padding: 6vw;
+	}
 
-    .coffee_price_list li {
-        margin-right: 52vw;
+	.coffee_price_list li {
+		margin-right: 52vw;
 
-    }
+	}
 
-    .morgenmad_price_list {
-        margin-right: 33vw;
-    }
+	.morgenmad_price_list {
+		margin-right: 33vw;
+	}
 
-    .morgenmad-list li {
-        margin: -3vw 0vw 1vw 0vw;
-    }
+	.morgenmad-list li {
+		margin: -3vw 0vw 1vw 0vw;
+	}
 
-    .drikke_price_list li {
-        margin-right: 63vw;
-    }
+	.drikke_price_list li {
+		margin-right: 63vw;
+	}
 
-    .menu-left p {
-        margin-top: 3vh;
-    }
+	.menu-left p {
+		margin-top: 3vh;
+	}
 
-    /*beskrivelses tekst styling*/
+	/*beskrivelses tekst styling*/
 
-    .coffee-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	.coffee-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    .morgenmad-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	.morgenmad-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    .drikke-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	.drikke-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    /*beskrivelses tekst styling SLUT*/
+	/*beskrivelses tekst styling SLUT*/
 
 
-    #coffee_section img {
-        margin-top: 17vh;
-    }
+	#coffee_section img {
+		margin-top: 17vh;
+	}
 
-    .menu-right {
-        padding: 0vh;
-        text-align: center;
-    }
+	.menu-right {
+		padding: 0vh;
+		text-align: center;
+	}
 
-    .menu-right-last {
-        text-align: left;
-    }
+	.menu-right-last {
+		text-align: left;
+	}
 
-    .menu-left {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin: 0vw;
-    }
+	.menu-left {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin: 0vw;
+	}
 
-    #menukort img {
-        max-width: 100%;
-    }
+	#menukort img {
+		max-width: 100%;
+	}
 
-    #coffee_section img {
-        margin-top: 20vw;
-        max-width: 95%;
-        display: inline-grid;
-    }
+	#coffee_section img {
+		margin-top: 20vw;
+		max-width: 95%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 30vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 90vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 30vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 90vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -15vw;
+	.morgenmad-text {
+		margin-top: -15vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 55vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 65vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 55vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 65vw;
+		position: absolute;
+	}
 
-    /*Styling af produkt og priser SLUT
+	/*Styling af produkt og priser SLUT
     /*MENUKORT SLUT*/
 
 }
@@ -1102,62 +1104,62 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 505px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 60%;
-        margin-right: 2vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 60%;
+		margin-right: 2vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 40vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 40vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
-    /*MENUKORT START*/
-    #coffee_section img {
-        margin-top: 15vw;
-        max-width: 95%;
-        display: inline-grid;
-    }
+	/*MENUKORT START*/
+	#coffee_section img {
+		margin-top: 15vw;
+		max-width: 95%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 25vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 90vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 25vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 90vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -5vw;
+	.morgenmad-text {
+		margin-top: -5vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 47vw;
-        margin-left: -3vw;
-        width: 70vw;
-        height: 70vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 47vw;
+		margin-left: -3vw;
+		width: 70vw;
+		height: 70vw;
+		position: absolute;
+	}
 
-    /*MENUKORT SLUT*/
+	/*MENUKORT SLUT*/
 
 }
 
@@ -1167,215 +1169,215 @@ a:-webkit-any-link {
 @media screen and (min-width: 527px) {
 
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 65%;
-        margin-right: 1.5vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 65%;
+		margin-right: 1.5vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
 
-    #menuCard {
-        padding: 9vw;
-    }
+	#menuCard {
+		padding: 9vw;
+	}
 
-    .coffee_price_list li {
-        margin-right: 46vw;
-    }
+	.coffee_price_list li {
+		margin-right: 46vw;
+	}
 
-    .morgenmad_price_list {
-        margin-right: 29vw;
-    }
+	.morgenmad_price_list {
+		margin-right: 29vw;
+	}
 
-    .drikke_price_list li {
-        margin-right: 56vw;
-    }
+	.drikke_price_list li {
+		margin-right: 56vw;
+	}
 
-    .menu-left p {
-        margin-top: 3vh;
-    }
+	.menu-left p {
+		margin-top: 3vh;
+	}
 
-    /*Styling af produkt og priser SLUT */
+	/*Styling af produkt og priser SLUT */
 
-    /*beskrivelses tekst styling*/
-    .coffee-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	/*beskrivelses tekst styling*/
+	.coffee-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    .morgenmad-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	.morgenmad-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    .drikke-text p {
-        padding: 0vw 13vw 0vw 0vw;
-    }
+	.drikke-text p {
+		padding: 0vw 13vw 0vw 0vw;
+	}
 
-    /*beskrivelses tekst styling SLUT*/
+	/*beskrivelses tekst styling SLUT*/
 
-    #coffee_section img {
-        margin-top: 15vw;
-        max-width: 95%;
-        display: inline-grid;
-    }
+	#coffee_section img {
+		margin-top: 15vw;
+		max-width: 95%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 23vw;
-        margin-left: -3vw;
-        width: 65vw;
-        height: 80vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 23vw;
+		margin-left: -3vw;
+		width: 65vw;
+		height: 80vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -5vw;
+	.morgenmad-text {
+		margin-top: -5vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 43vw;
-        margin-left: -3vw;
-        width: 65vw;
-        height: 58vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 43vw;
+		margin-left: -3vw;
+		width: 65vw;
+		height: 58vw;
+		position: absolute;
+	}
 
-    /*MENUKORT SLUT*/
+	/*MENUKORT SLUT*/
 
 
 }
 
 @media screen and (min-width: 600px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 50%;
-        margin-right: 2vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 50%;
+		margin-right: 2vw;
+	}
 
-    /* Logo SLUT */
-
-
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
-
-    #menuCard {
-        padding: 13vw;
-    }
-
-    /*beskrivelses tekst styling SLUT*/
+	/* Logo SLUT */
 
 
-    /* Galleri */
-    #gallery-section .content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 25% 25% 25% 25%;
-    }
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
+
+	#menuCard {
+		padding: 13vw;
+	}
+
+	/*beskrivelses tekst styling SLUT*/
 
 
-    .picture-left {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
+	/* Galleri */
+	#gallery-section .content {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 25% 25% 25% 25%;
+	}
 
 
-    .gallery-content .top {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        margin: 0.5vw;
-    }
-
-    .gallery-content .bottom {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        margin: 0.5vw;
-    }
-
-    .p-top-left,
-    .p-top-right,
-    .p-bottom-left,
-    .p-bottom-right {
-        margin: 0.5vw;
-    }
-
-    /* Galleri SLUT */
+	.picture-left {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 5;
+	}
 
 
+	.gallery-content .top {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		margin: 0.5vw;
+	}
+
+	.gallery-content .bottom {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 5;
+		margin: 0.5vw;
+	}
+
+	.p-top-left,
+	.p-top-right,
+	.p-bottom-left,
+	.p-bottom-right {
+		margin: 0.5vw;
+	}
+
+	/* Galleri SLUT */
 
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 50vw;
-    }
 
-    /*Om os citat SLUT*/
 
-    /*MENUKORT START*/
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 50vw;
+	}
 
-    #coffee_section img {
-        margin-top: 15vw;
-        max-width: 95%;
-        display: inline-grid;
-    }
+	/*Om os citat SLUT*/
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 23vw;
-        margin-left: -3vw;
-        width: 65vw;
-        height: 76vw;
-        position: absolute;
-    }
+	/*MENUKORT START*/
 
-    .morgenmad-text {
-        margin-top: -5vw;
+	#coffee_section img {
+		margin-top: 15vw;
+		max-width: 95%;
+		display: inline-grid;
+	}
 
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 23vw;
+		margin-left: -3vw;
+		width: 65vw;
+		height: 76vw;
+		position: absolute;
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.morgenmad-text {
+		margin-top: -5vw;
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 43vw;
-        margin-left: -3vw;
-        width: 65vw;
-        height: 58vw;
-        position: absolute;
-    }
+	}
 
-    /*MENUKORT SLUT*/
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    /*Footer*/
-    .some_container svg {
-        width: 20%;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 43vw;
+		margin-left: -3vw;
+		width: 65vw;
+		height: 58vw;
+		position: absolute;
+	}
 
-    /*Footer SLUT*/
+	/*MENUKORT SLUT*/
+
+	/*Footer*/
+	.some_container svg {
+		width: 20%;
+	}
+
+	/*Footer SLUT*/
 
 }
 
@@ -1383,88 +1385,88 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 610px) {
 
-    /*Om os thomas og mette*/
-    #aboutUs p {
-        padding-left: 15vw;
-        padding-right: 14vw;
-    }
+	/*Om os thomas og mette*/
+	#aboutUs p {
+		padding-left: 15vw;
+		padding-right: 14vw;
+	}
 
-    #aboutUs img {
-        width: 70vw;
-    }
+	#aboutUs img {
+		width: 70vw;
+	}
 
-    /*Om os thomas og mette*/
-
-
-
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
-
-    #menuCard {
-        padding: 15vw;
-        padding-top: 0vw;
-    }
-
-    .coffee_price_list li {
-        margin-right: 38vw;
-    }
-
-    .morgenmad_price_list {
-        margin-right: 23vw;
-    }
-
-    .drikke_price_list li {
-        margin-right: 48vw;
-    }
-
-    .menu-left p {
-        margin-top: 5vh;
-    }
+	/*Om os thomas og mette*/
 
 
-    #coffee_section img {
-        margin-top: 22vh;
-    }
 
-    /*beskrivelses tekst styling SLUT*/
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
 
-    #coffee_section img {
-        margin-top: 20vw;
-        max-width: 100%;
-        display: inline-grid;
-    }
+	#menuCard {
+		padding: 15vw;
+		padding-top: 0vw;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 30vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 70vw;
-        position: absolute;
-    }
+	.coffee_price_list li {
+		margin-right: 38vw;
+	}
 
-    .morgenmad-text {
-        margin-top: -15vw;
+	.morgenmad_price_list {
+		margin-right: 23vw;
+	}
 
-    }
+	.drikke_price_list li {
+		margin-right: 48vw;
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-left p {
+		margin-top: 5vh;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 40vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 58vw;
-        position: absolute;
-    }
 
-    /*MENUKORT SLUT*/
+	#coffee_section img {
+		margin-top: 22vh;
+	}
+
+	/*beskrivelses tekst styling SLUT*/
+
+	#coffee_section img {
+		margin-top: 20vw;
+		max-width: 100%;
+		display: inline-grid;
+	}
+
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 30vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 70vw;
+		position: absolute;
+	}
+
+	.morgenmad-text {
+		margin-top: -15vw;
+
+	}
+
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
+
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 40vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 58vw;
+		position: absolute;
+	}
+
+	/*MENUKORT SLUT*/
 
 
 }
@@ -1472,141 +1474,141 @@ a:-webkit-any-link {
 @media screen and (min-width: 648px) {
 
 
-    /*MENUKORT*/
-    /*Styling af produkt og priser */
+	/*MENUKORT*/
+	/*Styling af produkt og priser */
 
-    #menuCard {
-        padding: 15vw;
-        padding-top: 0vw;
-    }
+	#menuCard {
+		padding: 15vw;
+		padding-top: 0vw;
+	}
 
-    .coffee_price_list li {
-        margin-right: 40vw;
-    }
+	.coffee_price_list li {
+		margin-right: 40vw;
+	}
 
-    .morgenmad_price_list {
-        margin-right: 25vw;
-    }
+	.morgenmad_price_list {
+		margin-right: 25vw;
+	}
 
-    .drikke_price_list li {
-        margin-right: 48vw;
-    }
+	.drikke_price_list li {
+		margin-right: 48vw;
+	}
 
-    .menu-left p {
-        margin-top: 3.4vh;
-    }
+	.menu-left p {
+		margin-top: 3.4vh;
+	}
 
-    .morgenmad-list p {
-        margin-top: 2.7vh;
-    }
+	.morgenmad-list p {
+		margin-top: 2.7vh;
+	}
 
 
-    #coffee_section img {
-        margin-top: 12vh;
-    }
+	#coffee_section img {
+		margin-top: 12vh;
+	}
 
-    /*beskrivelses tekst styling SLUT*/
+	/*beskrivelses tekst styling SLUT*/
 
-    #coffee_section img {
-        margin-top: 8vw;
-        max-width: 100%;
-        display: inline-grid;
-    }
+	#coffee_section img {
+		margin-top: 8vw;
+		max-width: 100%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 15vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 73vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 15vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 73vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -1vw;
+	.morgenmad-text {
+		margin-top: -1vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: 1vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: 1vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 33vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 58vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 33vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 58vw;
+		position: absolute;
+	}
 
-    /*MENUKORT SLUT*/
+	/*MENUKORT SLUT*/
 
 }
 
 
 @media screen and (min-width: 710px) {
 
-    /*Om os thomas og mette*/
-    #aboutUs p {
-        padding-left: 17vw;
-        padding-right: 17vw;
-    }
+	/*Om os thomas og mette*/
+	#aboutUs p {
+		padding-left: 17vw;
+		padding-right: 17vw;
+	}
 
-    #aboutUs img {
-        width: 65vw;
-    }
+	#aboutUs img {
+		width: 65vw;
+	}
 
-    /*Om os thomas og mette*/
+	/*Om os thomas og mette*/
 
 
-    /*menu*/
-    .menu-left p {
-        margin-top: 3.7vh;
-    }
+	/*menu*/
+	.menu-left p {
+		margin-top: 3.7vh;
+	}
 
-    #coffee_section img {
-        margin-top: 5vw;
-        max-width: 100%;
-        display: inline-grid;
-    }
+	#coffee_section img {
+		margin-top: 5vw;
+		max-width: 100%;
+		display: inline-grid;
+	}
 
-    .white-border1 {
-        border: white solid 2vw;
-        margin-top: 12vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 73vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 2vw;
+		margin-top: 12vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 73vw;
+		position: absolute;
+	}
 
-    .morgenmad-text {
-        margin-top: -1vw;
+	.morgenmad-text {
+		margin-top: -1vw;
 
-    }
+	}
 
-    .menu-right-last {
-        margin-top: -5vw;
-        margin-left: 1vw;
-        width: 98%;
-        display: grid;
-    }
+	.menu-right-last {
+		margin-top: -5vw;
+		margin-left: 1vw;
+		width: 98%;
+		display: grid;
+	}
 
-    .white-border3 {
-        border: white solid 2vw;
-        margin-top: 27vw;
-        margin-left: -3vw;
-        width: 55vw;
-        height: 50vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 2vw;
+		margin-top: 27vw;
+		margin-left: -3vw;
+		width: 55vw;
+		height: 50vw;
+		position: absolute;
+	}
 
-    /*MENUKORT SLUT*/
+	/*MENUKORT SLUT*/
 
-    /*menu slut*/
+	/*menu slut*/
 }
 
 
@@ -1615,339 +1617,339 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 768px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 45%;
-        margin-right: 1.5vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 45%;
+		margin-right: 1.5vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
 
 
-    /*Burgermenu */
-    .burgermenu {
-        display: none;
-    }
+	/*Burgermenu */
+	.burgermenu {
+		display: none;
+	}
 
-    /*Burgermenu SLUT*/
+	/*Burgermenu SLUT*/
 
 
 
-    /*Navbar visning ved tablet*/
-    #nav {
-        display: grid;
-    }
+	/*Navbar visning ved tablet*/
+	#nav {
+		display: grid;
+	}
 
-    /*Navbar visning ved tablet SLUT*/
+	/*Navbar visning ved tablet SLUT*/
 
 
 
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw;
+	}
 
-    #morgenmad-section img {
-        max-width: 48vw;
-        display: grid;
-    }
+	#morgenmad-section img {
+		max-width: 48vw;
+		display: grid;
+	}
 
-    /*Menukort slut*/
+	/*Menukort slut*/
 
 
-    /*Grid*/
-    #coffee_section,
-    #morgenmad-section,
-    #koldedrikke-section {
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
+	/*Grid*/
+	#coffee_section,
+	#morgenmad-section,
+	#koldedrikke-section {
+		display: flex;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
 
-    .menu-left {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin: 0vw;
-        margin-right: 4.1vw;
-    }
+	.menu-left {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin: 0vw;
+		margin-right: 4.1vw;
+	}
 
-    .menu-right {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.menu-right {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
 
-    #morgenmad-section .menu-right {
-        text-align: left;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin: 0vw;
-    }
+	#morgenmad-section .menu-right {
+		text-align: left;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin: 0vw;
+	}
 
 
-    #morgenmad-section h1 {
-        margin-top: 0vh;
-    }
+	#morgenmad-section h1 {
+		margin-top: 0vh;
+	}
 
-    .menu-right-last {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 6;
-    }
+	.menu-right-last {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 6;
+	}
 
-    /*Grid slut*/
+	/*Grid slut*/
 
 
 
 
-    /* Kaffe sektion*/
+	/* Kaffe sektion*/
 
-    .coffee-list li {
-        margin: 0vw 0vw 0vw 0vw;
-    }
+	.coffee-list li {
+		margin: 0vw 0vw 0vw 0vw;
+	}
 
-    .coffee_price_list li {
-        margin-right: 18vw;
-    }
-
-    .menu-left p {
-        margin-top: 0vh;
-    }
+	.coffee_price_list li {
+		margin-right: 18vw;
+	}
+
+	.menu-left p {
+		margin-top: 0vh;
+	}
 
-    #coffee_section img {
-        margin-top: 0px;
-        width: 350vw;
-        height: 95vh;
-    }
+	#coffee_section img {
+		margin-top: 0px;
+		width: 350vw;
+		height: 95vh;
+	}
 
-    /*Kaffe sektion SLUT */
+	/*Kaffe sektion SLUT */
 
 
 
-    /*morgenmad section*/
-    .morgenmad-list li {
-        margin: -2vw 0vw 0vw 0vw;
-    }
+	/*morgenmad section*/
+	.morgenmad-list li {
+		margin: -2vw 0vw 0vw 0vw;
+	}
 
-    .morgenmad_price_list {
-        margin-right: 5vw;
-    }
+	.morgenmad_price_list {
+		margin-right: 5vw;
+	}
 
-    #morgenmad-section {
-        padding-top: 7vw;
-    }
+	#morgenmad-section {
+		padding-top: 7vw;
+	}
 
-    .morgenmad-text p {
-        padding: 0vw 0vw 0vw 0vw;
-    }
+	.morgenmad-text p {
+		padding: 0vw 0vw 0vw 0vw;
+	}
 
-    #morgenmad-section img {
-        max-width: 38vw;
-        padding-left: 0px;
-    }
+	#morgenmad-section img {
+		max-width: 38vw;
+		padding-left: 0px;
+	}
 
-    /*morgenmad section SLUT */
-
-
-    /*Kolde drikke sektion*/
-    #koldedrikke-section {
-        padding-top: 9vw;
-    }
-
-    .drikke-list li {
-        margin: 0vw 0vw -1vw 0vw;
-    }
-
-    .drikke_price_list {
-        margin-right: 25vw;
-    }
-
-    .coffee-text p {
-        padding: 0vw;
-    }
-
-    #koldedrikke-section h1 {
-        margin-top: 0vw;
-    }
-
-    .menu-right-last {
-        width: 100%;
-        display: grid;
-    }
+	/*morgenmad section SLUT */
+
+
+	/*Kolde drikke sektion*/
+	#koldedrikke-section {
+		padding-top: 9vw;
+	}
+
+	.drikke-list li {
+		margin: 0vw 0vw -1vw 0vw;
+	}
+
+	.drikke_price_list {
+		margin-right: 25vw;
+	}
+
+	.coffee-text p {
+		padding: 0vw;
+	}
+
+	#koldedrikke-section h1 {
+		margin-top: 0vw;
+	}
+
+	.menu-right-last {
+		width: 100%;
+		display: grid;
+	}
 
-    .drikke-text p {
-        padding: 0vw 0vw 0vw 0vw;
-    }
+	.drikke-text p {
+		padding: 0vw 0vw 0vw 0vw;
+	}
 
-    /*Kolde drikke slut*/
+	/*Kolde drikke slut*/
 
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: -3vw;
-        width: 36vw;
-        height: 60vw;
-        position: absolute;
-    }
-
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: 6vw;
-        width: 32vw;
-        height: 50vw;
-        position: absolute;
-    }
-
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: -3vw;
+		width: 36vw;
+		height: 60vw;
+		position: absolute;
+	}
+
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: 6vw;
+		width: 32vw;
+		height: 50vw;
+		position: absolute;
+	}
+
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -10vw;
-        margin-left: 48vw;
-        width: 30vw;
-        height: 25vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -10vw;
+		margin-left: 48vw;
+		width: 30vw;
+		height: 25vw;
+		position: absolute;
+	}
 
-    /*Menukort SLUT*/
+	/*Menukort SLUT*/
 
 
-    /* Galleri */
-    #gallery-section .content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10% 10% 10% 10%;
-    }
+	/* Galleri */
+	#gallery-section .content {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 10% 10% 10% 10%;
+	}
 
-    /* Galleri SLUT*/
+	/* Galleri SLUT*/
 
 
 
-    /*Footer*/
-    #footer_box {
-        display: grid;
-    }
+	/*Footer*/
+	#footer_box {
+		display: grid;
+	}
 
-    .footer-left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 5vh;
-    }
+	.footer-left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 5vh;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 4.4vh;
-        padding-right: 9vw;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-top: 4.4vh;
+		padding-right: 9vw;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 10vh;
-    }
+	#mc_embed_signup {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 10vh;
+	}
 
-    .some_container {
-        grid-column-start: 4;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 2;
-        padding-top: 17vh;
-        padding-left: 9vw;
-    }
+	.some_container {
+		grid-column-start: 4;
+		grid-column-end: 4;
+		grid-row-start: 6;
+		grid-row-end: 2;
+		padding-top: 17vh;
+		padding-left: 9vw;
+	}
 
-    .some_container svg {
-        width: 26%;
-    }
+	.some_container svg {
+		width: 26%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 
 
 
-    /*---------------------- Om os ------------------*/
-    /*JS template som fanger og styler*/
+	/*---------------------- Om os ------------------*/
+	/*JS template som fanger og styler*/
 
-    #aboutUs {
-        border: none;
-    }
+	#aboutUs {
+		border: none;
+	}
 
-    #aboutUs h2 {
-        font-family: Avenir Light;
-        text-align: center;
-        padding-top: 7vh;
-        padding-bottom: 7vh;
-    }
+	#aboutUs h2 {
+		font-family: Avenir Light;
+		text-align: center;
+		padding-top: 7vh;
+		padding-bottom: 7vh;
+	}
 
-    /*JS template som fanger og styler*/
-    .grid-colum-2 {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
+	/*JS template som fanger og styler*/
+	.grid-colum-2 {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+	}
 
-    #aboutUs img {
+	#aboutUs img {
 
-        margin-bottom: 9vw;
-    }
+		margin-bottom: 9vw;
+	}
 
-    .mette img {
-        text-align: end;
-        padding-right: 3px;
+	.mette img {
+		text-align: end;
+		padding-right: 3px;
 
-    }
+	}
 
-    .thomas,
-    img {
-        text-align: start;
-        padding-left: 8px;
-    }
+	.thomas,
+	img {
+		text-align: start;
+		padding-left: 8px;
+	}
 
 
-    #aboutUs .mette p {
-        padding-left: 3vw;
-        padding-right: 2vw;
+	#aboutUs .mette p {
+		padding-left: 3vw;
+		padding-right: 2vw;
 
-    }
+	}
 
-    #aboutUs .thomas p {
-        padding-left: 1vw;
-        padding-right: 2vw;
-    }
+	#aboutUs .thomas p {
+		padding-left: 1vw;
+		padding-right: 2vw;
+	}
 
 
-    #aboutUs img {
-        width: 45vw;
-        margin-bottom: 0vw;
-    }
+	#aboutUs img {
+		width: 45vw;
+		margin-bottom: 0vw;
+	}
 
 
 
 
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 50vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 50vw;
+	}
 
-    /*---------------------- Om os SLUT ------------------*/
+	/*---------------------- Om os SLUT ------------------*/
 
 }
 
@@ -1955,97 +1957,97 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 800px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 40%;
-        margin-right: 1.5vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 40%;
+		margin-right: 1.5vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Menukort*/
-    /* Billede på morgemad og frokost*/
-    #coffee_section img {
-        margin-top: 0px;
-        width: 350vw;
-        height: 110vh;
-    }
+	/*Menukort*/
+	/* Billede på morgemad og frokost*/
+	#coffee_section img {
+		margin-top: 0px;
+		width: 350vw;
+		height: 110vh;
+	}
 
-    #morgenmad-section img {
-        margin-top: 0px;
-        width: 190vw;
-        height: 89vh;
-    }
+	#morgenmad-section img {
+		margin-top: 0px;
+		width: 190vw;
+		height: 89vh;
+	}
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: -3vw;
-        width: 36vw;
-        height: 60vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: -3vw;
+		width: 36vw;
+		height: 60vw;
+		position: absolute;
+	}
 
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: 6vw;
-        width: 32vw;
-        height: 50vw;
-        position: absolute;
-    }
-
-
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -10vw;
-        margin-left: 48vw;
-        width: 30vw;
-        height: 25vw;
-        position: absolute;
-    }
-
-    /*Menukort SLUT */
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: 6vw;
+		width: 32vw;
+		height: 50vw;
+		position: absolute;
+	}
 
 
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -10vw;
+		margin-left: 48vw;
+		width: 30vw;
+		height: 25vw;
+		position: absolute;
+	}
 
-
-    /*Om os - Thomad og Mette*/
-
-    #aboutUs .mette p {
-        padding-left: 3vw;
-        padding-right: 2vw;
-
-    }
-
-    #aboutUs .thomas p {
-        padding-left: 1vw;
-        padding-right: 4vw;
-    }
-
-    #aboutUs img {
-        width: 35vw;
-        margin-bottom: 0vw;
-    }
-
-    #aboutUs {
-        padding-left: 9vw;
-        padding-right: 9vw;
-    }
-
-    /*Om os - Thomad og Mette SLUT*/
+	/*Menukort SLUT */
 
 
 
 
+	/*Om os - Thomad og Mette*/
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+	#aboutUs .mette p {
+		padding-left: 3vw;
+		padding-right: 2vw;
 
-    /*Forside Citat SLUT*/
+	}
+
+	#aboutUs .thomas p {
+		padding-left: 1vw;
+		padding-right: 4vw;
+	}
+
+	#aboutUs img {
+		width: 35vw;
+		margin-bottom: 0vw;
+	}
+
+	#aboutUs {
+		padding-left: 9vw;
+		padding-right: 9vw;
+	}
+
+	/*Om os - Thomad og Mette SLUT*/
+
+
+
+
+
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	/*Forside Citat SLUT*/
 }
 
 
@@ -2053,35 +2055,35 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 842px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 40%;
-        margin-right: 1.5vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 40%;
+		margin-right: 1.5vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Menukort*/
-    #menuCard {
-        padding: 9vw;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 9vw;
+	}
 
-    #morgenmad-section img {
-        max-width: 38vw;
-    }
+	#morgenmad-section img {
+		max-width: 38vw;
+	}
 
-    #morgenmad-section {
-        padding-top: 8vw;
-    }
+	#morgenmad-section {
+		padding-top: 8vw;
+	}
 
 
-    #coffee_section img {
-        margin-top: 0px;
-        width: 350vw;
-        height: 105vh;
-    }
+	#coffee_section img {
+		margin-top: 0px;
+		width: 350vw;
+		height: 105vh;
+	}
 
-    /*
+	/*
     .menu-right-last {
         max-width: 70vw;
         display: grid;
@@ -2089,35 +2091,35 @@ a:-webkit-any-link {
 */
 
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: -3vw;
-        width: 32vw;
-        height: 60vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: -3vw;
+		width: 32vw;
+		height: 60vw;
+		position: absolute;
+	}
 
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: 6vw;
-        width: 32vw;
-        height: 50vw;
-        position: absolute;
-    }
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: 6vw;
+		width: 32vw;
+		height: 50vw;
+		position: absolute;
+	}
 
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -10vw;
-        margin-left: 48vw;
-        width: 23vw;
-        height: 25vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -10vw;
+		margin-left: 48vw;
+		width: 23vw;
+		height: 25vw;
+		position: absolute;
+	}
 
-    /*Menukort SLUT*/
+	/*Menukort SLUT*/
 }
 
 
@@ -2126,48 +2128,48 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 940px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 35%;
-        margin-right: 1.5vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 35%;
+		margin-right: 1.5vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Menukort*/
-    /* Billede på morgemad og frokost*/
-    #morgenmad-section img {
-        margin-top: 0px;
-        width: 100vw;
-        height: 69vh;
-    }
+	/*Menukort*/
+	/* Billede på morgemad og frokost*/
+	#morgenmad-section img {
+		margin-top: 0px;
+		width: 100vw;
+		height: 69vh;
+	}
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -8vw;
-        margin-left: 46vw;
-        width: 25 vw;
-        height: 25vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -8vw;
+		margin-left: 46vw;
+		width: 25 vw;
+		height: 25vw;
+		position: absolute;
+	}
 
-    /*Menukort SLUT */
+	/*Menukort SLUT */
 
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 54vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 54vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 }
 
 
@@ -2175,281 +2177,281 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 983px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 40%;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 40%;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Menukort*/
-    #menuCard {
-        padding: 12vw;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 12vw;
+	}
 
-    #morgenmad-section img {
-        max-width: 36vw;
-    }
+	#morgenmad-section img {
+		max-width: 36vw;
+	}
 
-    #morgenmad-section {
-        padding-top: 6vw;
-    }
+	#morgenmad-section {
+		padding-top: 6vw;
+	}
 
-    #coffee_section img {
-        margin-top: 0px;
-        width: 350vw;
-        height: 89vh;
-    }
+	#coffee_section img {
+		margin-top: 0px;
+		width: 350vw;
+		height: 89vh;
+	}
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 6vw;
-        margin-left: -3vw;
-        width: 30vw;
-        height: 46vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 6vw;
+		margin-left: -3vw;
+		width: 30vw;
+		height: 46vw;
+		position: absolute;
+	}
 
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: 5vw;
-        width: 32vw;
-        height: 35vw;
-        position: absolute;
-    }
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+		width: 32vw;
+		height: 35vw;
+		position: absolute;
+	}
 
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -8vw;
-        margin-left: 42vw;
-        width: 23vw;
-        height: 25vw;
-        position: absolute;
-    }
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -8vw;
+		margin-left: 42vw;
+		width: 23vw;
+		height: 25vw;
+		position: absolute;
+	}
 
-    /*Menukort SLUT*/
+	/*Menukort SLUT*/
 }
 
 
 
 @media screen and (min-width: 1000px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 40%;
-        margin-right: 1vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 40%;
+		margin-right: 1vw;
+	}
 
-    /* Logo SLUT */
+	/* Logo SLUT */
 
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 12vw 5vw 14vw;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 12vw 5vw 14vw;
+	}
 
-    #coffee_section img {
-        margin-top: 0px;
-        width: 400vw;
-        height: 85vh;
-    }
+	#coffee_section img {
+		margin-top: 0px;
+		width: 400vw;
+		height: 85vh;
+	}
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: -3vw;
-        width: 27vw;
-        height: 46vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: -3vw;
+		width: 27vw;
+		height: 46vw;
+		position: absolute;
+	}
 
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: 5vw;
-        width: 32vw;
-        height: 35vw;
-        position: absolute;
-    }
-
-
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -8vw;
-        margin-left: 40vw;
-        width: 23vw;
-        height: 20vw;
-        position: absolute;
-    }
-
-    /*Menukort SLUT*/
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+		width: 32vw;
+		height: 35vw;
+		position: absolute;
+	}
 
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -8vw;
+		margin-left: 40vw;
+		width: 23vw;
+		height: 20vw;
+		position: absolute;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Menukort SLUT*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 48vw;
-    }
 
-    /*Om os citat SLUT*/
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+
+	/*Forside Citat SLUT*/
+
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 48vw;
+	}
+
+	/*Om os citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 35%;
-        margin-right: 1vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 35%;
+		margin-right: 1vw;
+	}
 
-    /* Logo SLUT */
-
-
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 12vw 5vw 12vw;
-    }
-
-    #coffee_section img {
-        margin-top: 0px;
-        max-width: 40vw;
-        height: 70vh;
-    }
-
-    .coffee_price_list {
-        margin-right: -2vw;
-    }
-
-    .coffee-text p {
-        padding-right: 0.5vw;
-        letter-spacing: 0.2px;
-    }
-
-    .morgenmad-list {
-        margin-top: 3vw;
-    }
-
-    #morgenmad-section img {
-        margin-top: 0px;
-        max-width: 34vw;
-        height: 62vh;
-    }
-
-    .morgenmad-text p {
-        padding-right: 2.8vw;
-        letter-spacing: 0.2px;
-    }
-
-    .morgenmad-list li {
-        padding-right: 2.8vw;
-    }
-
-    #koldedrikke-section img {
-        margin-top: 0px;
-        max-width: 34vw;
-        height: 40vh;
-    }
-
-    .drikke-text p {
-        padding-right: 6vw;
-        letter-spacing: 0.2px;
-    }
-
-    .drikke_price_list {
-        margin-right: 18vw;
-    }
+	/* Logo SLUT */
 
 
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: -3vw;
-        width: 35vw;
-        height: 47vw;
-        position: absolute;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 12vw 5vw 12vw;
+	}
 
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: 5vw;
-        width: 30vw;
-        height: 38vw;
-        position: absolute;
-    }
+	#coffee_section img {
+		margin-top: 0px;
+		max-width: 40vw;
+		height: 70vh;
+	}
+
+	.coffee_price_list {
+		margin-right: -2vw;
+	}
+
+	.coffee-text p {
+		padding-right: 0.5vw;
+		letter-spacing: 0.2px;
+	}
+
+	.morgenmad-list {
+		margin-top: 3vw;
+	}
+
+	#morgenmad-section img {
+		margin-top: 0px;
+		max-width: 34vw;
+		height: 62vh;
+	}
+
+	.morgenmad-text p {
+		padding-right: 2.8vw;
+		letter-spacing: 0.2px;
+	}
+
+	.morgenmad-list li {
+		padding-right: 2.8vw;
+	}
+
+	#koldedrikke-section img {
+		margin-top: 0px;
+		max-width: 34vw;
+		height: 40vh;
+	}
+
+	.drikke-text p {
+		padding-right: 6vw;
+		letter-spacing: 0.2px;
+	}
+
+	.drikke_price_list {
+		margin-right: 18vw;
+	}
 
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -9vw;
-        margin-left: 37vw;
-        width: 25vw;
-        height: 23vw;
-        position: absolute;
-    }
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: -3vw;
+		width: 35vw;
+		height: 47vw;
+		position: absolute;
+	}
 
-    /*Menukort SLUT*/
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+		width: 30vw;
+		height: 38vw;
+		position: absolute;
+	}
+
+
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -9vw;
+		margin-left: 37vw;
+		width: 25vw;
+		height: 23vw;
+		position: absolute;
+	}
+
+	/*Menukort SLUT*/
 
 
 
-    /*Footer*/
-    #footer_box {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin-left: 2.5vw;
-    }
+	/*Footer*/
+	#footer_box {
+		display: grid;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		margin-left: 2.5vw;
+	}
 
-    .footer-left {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.footer-left {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    .footer-right {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
+	.footer-right {
+		grid-column-start: 2;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
 
-    #mc_embed_signup {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding-top: 4vh;
-        padding-right: 10vw;
-    }
+	#mc_embed_signup {
+		grid-column-start: 4;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		padding-top: 4vh;
+		padding-right: 10vw;
+	}
 
-    .some_container {
-        grid-column-start: 6;
-        grid-row-start: 6;
-        grid-row-start: 1;
-        grid-row-end: 6;
-        padding-top: 10vh;
-        padding-left: 32vw;
-    }
+	.some_container {
+		grid-column-start: 6;
+		grid-row-start: 6;
+		grid-row-start: 1;
+		grid-row-end: 6;
+		padding-top: 10vh;
+		padding-left: 32vw;
+	}
 
-    .some_container svg {
-        width: 23%;
-    }
+	.some_container svg {
+		width: 23%;
+	}
 
-    /*Footer*/
+	/*Footer*/
 
 
 }
@@ -2457,341 +2459,341 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1100px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 33%;
-        margin-right: 1vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 33%;
+		margin-right: 1vw;
+	}
 
-    /* Logo SLUT */
-
-
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 12vw 5vw 12vw;
-    }
-
-    #koldedrikke-section img {
-        max-width: 84%;
-        padding-left: 6vw;
-
-    }
-
-    #coffee_section img {
-        margin-top: 0px;
-        max-width: 40vw;
-        height: 80vh;
-    }
-
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: -3vw;
-        width: 35vw;
-        height: 40vw;
-        position: absolute;
-    }
-
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: 5vw;
-        width: 30vw;
-        height: 35vw;
-        position: absolute;
-    }
+	/* Logo SLUT */
 
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -8vw;
-        margin-left: 40vw;
-        width: 25vw;
-        height: 20vw;
-        position: absolute;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 12vw 5vw 12vw;
+	}
+
+	#koldedrikke-section img {
+		max-width: 84%;
+		padding-left: 6vw;
+
+	}
+
+	#coffee_section img {
+		margin-top: 0px;
+		max-width: 40vw;
+		height: 80vh;
+	}
+
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: -3vw;
+		width: 35vw;
+		height: 40vw;
+		position: absolute;
+	}
+
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+		width: 30vw;
+		height: 35vw;
+		position: absolute;
+	}
 
 
-    /*Menukort SLUT*/
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -8vw;
+		margin-left: 40vw;
+		width: 25vw;
+		height: 20vw;
+		position: absolute;
+	}
 
 
-    /*Forside Citat */
+	/*Menukort SLUT*/
 
 
-    .slideshow-container {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
+	/*Forside Citat */
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 51vw;
-    }
 
-    /*Forside Citat SLUT*/
+	.slideshow-container {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 51vw;
+	}
+
+	/*Forside Citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1200px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 30%;
-        margin-right: 1vw;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 30%;
+		margin-right: 1vw;
+	}
 
-    /* Logo SLUT */
-
-
+	/* Logo SLUT */
 
 
-    /*Om os - Thomad og Mette*/
-
-    .mette img {
-        text-align: end;
-        padding-left: 7vw;
-
-    }
-
-    .thomas img {
-        text-align: start;
-        padding-left: 0vw;
-    }
-
-    #aboutUs .mette p {
-        padding-left: 8.8vw;
-        padding-right: 2vw;
-    }
-
-    #aboutUs .thomas p {
-        padding-left: 0vw;
-        padding-right: 8.9vw;
-    }
-
-    #aboutUs img {
-        width: 30vw;
-        margin-bottom: 0vw;
-    }
 
 
-    /*Om os - Thomad og Mette SLUT*/
+	/*Om os - Thomad og Mette*/
+
+	.mette img {
+		text-align: end;
+		padding-left: 7vw;
+
+	}
+
+	.thomas img {
+		text-align: start;
+		padding-left: 0vw;
+	}
+
+	#aboutUs .mette p {
+		padding-left: 8.8vw;
+		padding-right: 2vw;
+	}
+
+	#aboutUs .thomas p {
+		padding-left: 0vw;
+		padding-right: 8.9vw;
+	}
+
+	#aboutUs img {
+		width: 30vw;
+		margin-bottom: 0vw;
+	}
 
 
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 12vw 5vw 14vw;
-    }
-
-    #koldedrikke-section img {
-        max-width: 80%;
-    }
-
-    /*Menukort SLUT*/
+	/*Om os - Thomad og Mette SLUT*/
 
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 12vw 5vw 14vw;
+	}
 
-    /*Forside Citat SLUT*/
+	#koldedrikke-section img {
+		max-width: 80%;
+	}
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 43vw;
-    }
+	/*Menukort SLUT*/
 
-    /*Om os citat SLUT*/
+
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+
+	/*Forside Citat SLUT*/
+
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 43vw;
+	}
+
+	/*Om os citat SLUT*/
 
 }
 
 @media screen and (min-width: 1300px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 28%;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 28%;
+	}
 
-    /* Logo SLUT */
-
-
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 24vw 5vw 24vw;
-    }
-
-    #coffee_section img {
-        max-width: 30vw;
-    }
-
-    #morgenmad-section img {
-        max-width: 30vw;
-        height: 76vh;
-    }
-
-    .morgenmad-list li {
-        margin: -1vw 0vw 0vw 0vw;
-    }
-
-    #koldedrikke-section img {
-        max-width: 29vw;
-    }
-
-    #koldedrikke-section .menu-left {
-        margin-right: 1vw;
-    }
-
-    #coffee_section img {
-        margin-top: 0px;
-        max-width: 30vw;
-        height: 80vh;
-    }
-
-    .white-border1 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: -3vw;
-        width: 27vw;
-        height: 40vw;
-        position: absolute;
-    }
-
-    .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
-        margin-left: 5vw;
-        width: 25vw;
-        height: 40vw;
-        position: absolute;
-    }
+	/* Logo SLUT */
 
 
-    .white-border3 {
-        border: white solid 1vw;
-        margin-top: -7vw;
-        margin-left: 30vw;
-        width: 15vw;
-        height: 25vw;
-        position: absolute;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 24vw 5vw 24vw;
+	}
 
-    /*Menukort SLUT*/
+	#coffee_section img {
+		max-width: 30vw;
+	}
+
+	#morgenmad-section img {
+		max-width: 30vw;
+		height: 76vh;
+	}
+
+	.morgenmad-list li {
+		margin: -1vw 0vw 0vw 0vw;
+	}
+
+	#koldedrikke-section img {
+		max-width: 29vw;
+	}
+
+	#koldedrikke-section .menu-left {
+		margin-right: 1vw;
+	}
+
+	#coffee_section img {
+		margin-top: 0px;
+		max-width: 30vw;
+		height: 80vh;
+	}
+
+	.white-border1 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: -3vw;
+		width: 27vw;
+		height: 40vw;
+		position: absolute;
+	}
+
+	.white-border2 {
+		border: white solid 1vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+		width: 25vw;
+		height: 40vw;
+		position: absolute;
+	}
+
+
+	.white-border3 {
+		border: white solid 1vw;
+		margin-top: -7vw;
+		margin-left: 30vw;
+		width: 15vw;
+		height: 25vw;
+		position: absolute;
+	}
+
+	/*Menukort SLUT*/
 
 
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 240px;
-        padding-right: 240px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 240px;
+		padding-right: 240px;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
-    /*Om os citat*/
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 41vw;
-    }
+	/*Om os citat*/
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 41vw;
+	}
 
-    /*Om os citat SLUT*/
+	/*Om os citat SLUT*/
 
 }
 
 @media screen and (min-width: 1400px) {
 
-    /* Logo størrelse */
-    #logo img {
-        max-width: 28%;
-    }
+	/* Logo størrelse */
+	#logo img {
+		max-width: 28%;
+	}
 
-    /* Logo SLUT */
-
-
-    /*Menukort*/
-    #menuCard {
-        padding: 5vw 17vw 5vw 16vw;
-    }
-
-    #koldedrikke-section {
-        padding-top: 5vw;
-    }
-
-    #koldedrikke-section img {
-        max-width: 27vw;
-    }
-
-    .drikke_price_list {
-        margin-right: 18vw;
-    }
-
-    .drikke-text p {
-        width: 25vw;
-    }
-
-    #coffee_section img {
-        margin-top: 0px;
-        max-width: 30vw;
-        height: 67vh;
-    }
-
-    .white-border1 {
-        border: white solid 0.8vw;
-        margin-top: 3vw;
-        margin-left: -3vw;
-        width: 28vw;
-        height: 35vw;
-        position: absolute;
-    }
-
-    .white-border2 {
-        border: white solid 0.8vw;
-        margin-top: 4vw;
-        margin-left: 5vw;
-        width: 26vw;
-        height: 38vw;
-        position: absolute;
-    }
+	/* Logo SLUT */
 
 
-    .white-border3 {
-        border: white solid 0.8vw;
-        margin-top: -6.9vw;
-        margin-left: 36vw;
-        width: 19vw;
-        height: 20vw;
-        position: absolute;
-    }
+	/*Menukort*/
+	#menuCard {
+		padding: 5vw 17vw 5vw 16vw;
+	}
+
+	#koldedrikke-section {
+		padding-top: 5vw;
+	}
+
+	#koldedrikke-section img {
+		max-width: 27vw;
+	}
+
+	.drikke_price_list {
+		margin-right: 18vw;
+	}
+
+	.drikke-text p {
+		width: 25vw;
+	}
+
+	#coffee_section img {
+		margin-top: 0px;
+		max-width: 30vw;
+		height: 67vh;
+	}
+
+	.white-border1 {
+		border: white solid 0.8vw;
+		margin-top: 3vw;
+		margin-left: -3vw;
+		width: 28vw;
+		height: 35vw;
+		position: absolute;
+	}
+
+	.white-border2 {
+		border: white solid 0.8vw;
+		margin-top: 4vw;
+		margin-left: 5vw;
+		width: 26vw;
+		height: 38vw;
+		position: absolute;
+	}
+
+
+	.white-border3 {
+		border: white solid 0.8vw;
+		margin-top: -6.9vw;
+		margin-left: 36vw;
+		width: 19vw;
+		height: 20vw;
+		position: absolute;
+	}
 
 
 
-    /*Menukort SLUT*/
+	/*Menukort SLUT*/
 
-    /*Forside Citat */
-    .slideshow-container {
-        padding-left: 330px;
-        padding-right: 330px;
-    }
+	/*Forside Citat */
+	.slideshow-container {
+		padding-left: 330px;
+		padding-right: 330px;
+	}
 
-    .mySlides p,
-    .quote_1 p,
-    .quote_2 p,
-    .quote_3 p {
-        margin-left: 31vw;
-    }
+	.mySlides p,
+	.quote_1 p,
+	.quote_2 p,
+	.quote_3 p {
+		margin-left: 31vw;
+	}
 
-    #quote-section img {
-        width: 4vw;
-    }
+	#quote-section img {
+		width: 4vw;
+	}
 
-    /*Forside Citat SLUT*/
+	/*Forside Citat SLUT*/
 
 }
