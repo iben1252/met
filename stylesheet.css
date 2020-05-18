@@ -622,6 +622,12 @@ path:hover {
     fill: #000000;
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /*SoMe ikoner i footer SLUT*/
 
 
@@ -864,6 +870,12 @@ path:hover {
 
 @media screen and (min-width: 441px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 60%;
+    }
+
+    /* Logo SLUT */
     /*MENUKORT*/
     /*Styling af produkt og priser */
     #menuCard {
@@ -976,12 +988,13 @@ path:hover {
 
 @media screen and (min-width: 505px) {
 
-    /*----------- Burgermenu --------------*/
-    .burgermenu {
-        display: none;
+    /* Logo størrelse */
+    #logo img {
+        max-width: 60%;
+        margin-right: 2vw;
     }
 
-    /*----------- Burgermenu SLUT --------------*/
+    /* Logo SLUT */
 
     /*Om os citat*/
     .mySlides p,
@@ -992,15 +1005,6 @@ path:hover {
     }
 
     /*Om os citat SLUT*/
-
-
-    /*Navbar visning ved tablet*/
-    #nav {
-        display: grid;
-    }
-
-    /*Navbar visning ved tablet SLUT*/
-
 }
 
 
@@ -1008,6 +1012,14 @@ path:hover {
 
 @media screen and (min-width: 527px) {
 
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 65%;
+        margin-right: 1.5vw;
+    }
+
+    /* Logo SLUT */
 
     /*MENUKORT*/
     /*Styling af produkt og priser */
@@ -1056,6 +1068,14 @@ path:hover {
 
 @media screen and (min-width: 600px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 50%;
+        margin-right: 2vw;
+    }
+
+    /* Logo SLUT */
+
 
     /*MENUKORT*/
     /*Styling af produkt og priser */
@@ -1065,8 +1085,6 @@ path:hover {
     }
 
     /*beskrivelses tekst styling SLUT*/
-
-
 
 
     /* Galleri */
@@ -1227,6 +1245,28 @@ path:hover {
 
 
 @media screen and (min-width: 768px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 45%;
+        margin-right: 1.5vw;
+    }
+
+    /* Logo SLUT */
+
+    /*----------- Burgermenu --------------*/
+    .burgermenu {
+        display: none;
+    }
+
+    /*----------- Burgermenu SLUT --------------*/
+
+    /*Navbar visning ved tablet*/
+    #nav {
+        display: grid;
+    }
+
+    /*Navbar visning ved tablet SLUT*/
 
     /*Menukort*/
     #menuCard {
@@ -1502,6 +1542,13 @@ path:hover {
 
 @media screen and (min-width: 800px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+        margin-right: 1.5vw;
+    }
+
+    /* Logo SLUT */
 
     /*Menukort*/
     /* Billede på morgemad og frokost*/
@@ -1512,7 +1559,6 @@ path:hover {
     }
 
     /*Menukort SLUT */
-
 
 
 
@@ -1528,6 +1574,14 @@ path:hover {
 
 
 @media screen and (min-width: 842px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+        margin-right: 1.5vw;
+    }
+
+    /* Logo SLUT */
 
     /*Menukort*/
     #menuCard {
@@ -1550,6 +1604,14 @@ path:hover {
 
 
 @media screen and (min-width: 940px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 35%;
+        margin-right: 1.5vw;
+    }
+
+    /* Logo SLUT */
 
     /*Menukort*/
     /* Billede på morgemad og frokost*/
@@ -1583,6 +1645,13 @@ path:hover {
 
 @media screen and (min-width: 983px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+    }
+
+    /* Logo SLUT */
+
     /*Menukort*/
     #menuCard {
         padding: 12vw;
@@ -1601,112 +1670,15 @@ path:hover {
 
 
 
-
-/*Grid*/
-
-#coffee_section,
-#morgenmad-section,
-#koldedrikke-section {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    /*        grid-template-rows: 25% 25% 25% 25%;
-        */
-}
-
-/*
-.menu-left {
-    margin: 0vw;
-}
-*/
-
-/*Grid slut*/
-
-/*Styling af produkt og priser */
-/*
-    .coffee-list li {
-        margin: -3vw 0vw 0vw 0vw;
-    }
-
-    .coffee_price_list li {
-        margin-right: 14vw;
-    }
-
-    .morgenmad-list li {
-        margin: 0vw 0vw -2vw 10vw;
-    }
-
-    .drikke-list li {
-        margin: 0vw 0vw -2vw 10vw;
-    }
-
-    .coffee-text p {
-        padding: 0vw;
-    }
-*/
-
-/*
-    #menuCard {
-        padding: 4vw;
-    }*/
-
-/*
-    .morgenmad_price_list {
-        margin-right: 0vw;
-    }
-
-    .drikke_price_list li {
-        margin-right: 0vw;
-    }
-
-    .menu-left p {
-        margin-top: 5vh;
-    }
-*/
-
-/*Styling af produkt og priser SLUT */
-
-
-/*Styling af menu billede*/
-
-/*
-    .coffee_section img {
-        width: 100%;
-    }
-*/
-
-/*Styling af menu billede SLUT*/
-
-
-
-
-
-
-
-
-
-/*Menukort SLUT*/
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1000px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+        margin-right: 1vw;
+    }
+
+    /* Logo SLUT */
 
     /*Menukort*/
     #menuCard {
@@ -1739,6 +1711,13 @@ path:hover {
 
 @media screen and (min-width: 1024px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 35%;
+        margin-right: 1vw;
+    }
+
+    /* Logo SLUT */
 
     /*Menukort*/
     #menuCard {
@@ -1842,6 +1821,15 @@ path:hover {
 
 @media screen and (min-width: 1100px) {
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 33%;
+        margin-right: 1vw;
+    }
+
+    /* Logo SLUT */
+
+
     /*Menukort*/
     #menuCard {
         padding: 5vw 16vw 5vw 16vw;
@@ -1869,6 +1857,15 @@ path:hover {
 }
 
 @media screen and (min-width: 1200px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 30%;
+        margin-right: 1vw;
+    }
+
+    /* Logo SLUT */
+
 
     /*Menukort*/
     #menuCard {
@@ -1899,6 +1896,14 @@ path:hover {
 }
 
 @media screen and (min-width: 1300px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 28%;
+    }
+
+    /* Logo SLUT */
+
 
     /*Menukort*/
     #menuCard {
@@ -1953,6 +1958,14 @@ path:hover {
 }
 
 @media screen and (min-width: 1400px) {
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 28%;
+    }
+
+    /* Logo SLUT */
+
 
     /*Forside Citat */
     .slideshow-container {
