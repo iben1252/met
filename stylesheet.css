@@ -1059,14 +1059,14 @@ a:-webkit-any-link {
     }
 
     #coffee_section img {
-        margin-top: 15vw;
+        margin-top: 20vw;
         max-width: 95%;
         display: inline-grid;
     }
 
     .white-border1 {
         border: white solid 2vw;
-        margin-top: 25vw;
+        margin-top: 30vw;
         margin-left: -3vw;
         width: 70vw;
         height: 90vw;
@@ -1074,7 +1074,7 @@ a:-webkit-any-link {
     }
 
     .morgenmad-text {
-        margin-top: -5vw;
+        margin-top: -15vw;
 
     }
 
@@ -1087,10 +1087,10 @@ a:-webkit-any-link {
 
     .white-border3 {
         border: white solid 2vw;
-        margin-top: 47vw;
+        margin-top: 55vw;
         margin-left: -3vw;
         width: 70vw;
-        height: 70vw;
+        height: 65vw;
         position: absolute;
     }
 
@@ -2318,8 +2318,6 @@ a:-webkit-any-link {
     /* Logo SLUT */
 
 
-
-
     /*Menukort*/
     #menuCard {
         padding: 5vw 12vw 5vw 12vw;
@@ -2328,7 +2326,7 @@ a:-webkit-any-link {
     #coffee_section img {
         margin-top: 0px;
         max-width: 40vw;
-        height: 65vh;
+        height: 70vh;
     }
 
     .coffee_price_list {
@@ -2347,6 +2345,7 @@ a:-webkit-any-link {
     #morgenmad-section img {
         margin-top: 0px;
         max-width: 34vw;
+        height: 62vh;
     }
 
     .morgenmad-text p {
@@ -2359,7 +2358,9 @@ a:-webkit-any-link {
     }
 
     #koldedrikke-section img {
-        max-width: 104%;
+        margin-top: 0px;
+        max-width: 34vw;
+        height: 40vh;
     }
 
     .drikke-text p {
@@ -2386,17 +2387,17 @@ a:-webkit-any-link {
         margin-top: 5vw;
         margin-left: 5vw;
         width: 30vw;
-        height: 50vw;
+        height: 38vw;
         position: absolute;
     }
 
 
     .white-border3 {
         border: white solid 1vw;
-        margin-top: -8vw;
-        margin-left: 40vw;
+        margin-top: -9vw;
+        margin-left: 37vw;
         width: 25vw;
-        height: 20vw;
+        height: 23vw;
         position: absolute;
     }
 
@@ -2736,23 +2737,40 @@ a:-webkit-any-link {
         width: 25vw;
     }
 
+    #coffee_section img {
+        margin-top: 0px;
+        max-width: 30vw;
+        height: 67vh;
+    }
+
     .white-border1 {
-        border: white solid 1vw;
-        margin-top: 5vw;
+        border: white solid 0.8vw;
+        margin-top: 3vw;
         margin-left: -3vw;
-        width: 27vw;
+        width: 28vw;
         height: 35vw;
         position: absolute;
     }
 
     .white-border2 {
-        border: white solid 1vw;
-        margin-top: 5vw;
+        border: white solid 0.8vw;
+        margin-top: 4vw;
         margin-left: 5vw;
-        width: 25vw;
-        height: 35vw;
+        width: 26vw;
+        height: 38vw;
         position: absolute;
     }
+
+
+    .white-border3 {
+        border: white solid 0.8vw;
+        margin-top: -6.9vw;
+        margin-left: 36vw;
+        width: 19vw;
+        height: 20vw;
+        position: absolute;
+    }
+
 
 
     /*Menukort SLUT*/
