@@ -325,7 +325,7 @@ function insertAboutUs(section) {
                             </div>
 
                             <div class="thomas">
-								<img src="${section.billede_om_os_2.guid}"Thomas/mand sidder ved caffeens udendørs sæde ${section.title.rendered}";">
+								<img src="${section.billede_om_os_2.guid}"Thomas/mand sidder ved caffeens udendørs sæde "${section.title.rendered}";">
 
                                 <p>${section.tekst_om_os_2}</p>
                             </div>

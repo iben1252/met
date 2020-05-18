@@ -330,12 +330,27 @@ ul {
 
 #aboutUs p {
     font-family: Avenir Light;
-    text-align: center;
+    text-align: left;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    margin-bottom: 14vw;
 }
 
 #aboutUs img {
-    width: 50vw;
+    width: 81vw;
 }
+
+/*
+.mette p {
+    padding-left: 11vw;
+}
+
+
+.thomas p {
+    padding-left: 0.7vw;
+    padding-right: 10.9vw;
+}
+*/
 
 /*--------------------- Om os SLUT ------------------*/
 
@@ -1154,6 +1169,19 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 610px) {
 
+    /*Om os thomas og mette*/
+    #aboutUs p {
+        padding-left: 15vw;
+        padding-right: 14vw;
+    }
+
+    #aboutUs img {
+        width: 70vw;
+    }
+
+    /*Om os thomas og mette*/
+
+
 
     /*MENUKORT*/
     /*Styling af produkt og priser */
@@ -1233,11 +1261,25 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 710px) {
 
+    /*Om os thomas og mette*/
+    #aboutUs p {
+        padding-left: 17vw;
+        padding-right: 17vw;
+    }
+
+    #aboutUs img {
+        width: 65vw;
+    }
+
+    /*Om os thomas og mette*/
+
+
+    /*menu*/
     .menu-left p {
         margin-top: 3.7vh;
     }
 
-
+    /*menu slut*/
 }
 
 
@@ -1254,12 +1296,16 @@ a:-webkit-any-link {
 
     /* Logo SLUT */
 
-    /*----------- Burgermenu --------------*/
+
+
+    /*Burgermenu */
     .burgermenu {
         display: none;
     }
 
-    /*----------- Burgermenu SLUT --------------*/
+    /*Burgermenu SLUT*/
+
+
 
     /*Navbar visning ved tablet*/
     #nav {
@@ -1267,6 +1313,8 @@ a:-webkit-any-link {
     }
 
     /*Navbar visning ved tablet SLUT*/
+
+
 
     /*Menukort*/
     #menuCard {
@@ -1278,9 +1326,10 @@ a:-webkit-any-link {
         display: grid;
     }
 
+    /*Menukort slut*/
+
 
     /*Grid*/
-
     #coffee_section,
     #morgenmad-section,
     #koldedrikke-section {
@@ -1353,7 +1402,7 @@ a:-webkit-any-link {
         height: 70vh;
     }
 
-    /*    Kaffe sektion SLUT */
+    /*Kaffe sektion SLUT */
 
 
 
@@ -1385,7 +1434,7 @@ a:-webkit-any-link {
 
 
 
-    /*    Kolde drikke sektion*/
+    /*Kolde drikke sektion*/
     #koldedrikke-section {
         padding-top: 9vw;
     }
@@ -1500,31 +1549,44 @@ a:-webkit-any-link {
         grid-template-columns: 2fr 2fr;
     }
 
-    #aboutUs {
-        padding-right: 10vw;
-        padding-left: 10vw;
-    }
-
     #aboutUs img {
-        width: 70%;
+
+        margin-bottom: 9vw;
     }
 
-    .mette,
-    img {
+    .mette img {
         text-align: end;
-        padding-right: 5px;
+        padding-right: 3px;
 
     }
 
     .thomas,
     img {
         text-align: start;
-        padding-left: 5px;
+        padding-left: 8px;
     }
 
-    .thomas p {
-        text-align: left;
+
+    #aboutUs .mette p {
+        padding-left: 3vw;
+        padding-right: 2vw;
+
     }
+
+    #aboutUs .thomas p {
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+    #aboutUs img {
+        width: 45vw;
+        margin-bottom: 0vw;
+    }
+
+
+
+
 
     /*Om os citat*/
     .mySlides p,
@@ -1562,6 +1624,36 @@ a:-webkit-any-link {
 
 
 
+
+    /*Om os - Thomad og Mette*/
+
+    #aboutUs .mette p {
+        padding-left: 3vw;
+        padding-right: 2vw;
+
+    }
+
+    #aboutUs .thomas p {
+        padding-left: 1vw;
+        padding-right: 4vw;
+    }
+
+    #aboutUs img {
+        width: 35vw;
+        margin-bottom: 0vw;
+    }
+
+    #aboutUs {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+
+    /*Om os - Thomad og Mette SLUT*/
+
+
+
+
+
     /*Forside Citat */
     .slideshow-container {
         padding-left: 60px;
@@ -1570,6 +1662,7 @@ a:-webkit-any-link {
 
     /*Forside Citat SLUT*/
 }
+
 
 
 
@@ -1718,6 +1811,9 @@ a:-webkit-any-link {
     }
 
     /* Logo SLUT */
+
+
+
 
     /*Menukort*/
     #menuCard {
@@ -1875,6 +1971,48 @@ a:-webkit-any-link {
     }
 
     /* Logo SLUT */
+
+
+
+
+    /*Om os - Thomad og Mette*/
+
+    .mette img {
+        text-align: end;
+        padding-left: 7vw;
+
+    }
+
+    .thomas img {
+        text-align: start;
+        padding-left: 0vw;
+    }
+
+    #aboutUs .mette p {
+        padding-left: 8.8vw;
+        padding-right: 2vw;
+    }
+
+    #aboutUs .thomas p {
+        padding-left: 0vw;
+        padding-right: 8.9vw;
+    }
+
+    #aboutUs img {
+        width: 30vw;
+        margin-bottom: 0vw;
+    }
+
+
+    /*Om os - Thomad og Mette SLUT*/
+
+
+
+
+
+
+
+
 
 
     /*Menukort*/
