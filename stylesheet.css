@@ -385,7 +385,7 @@ ul {
 
 #coffee_section ul {
     display: grid;
-    margin-left: 0vw;
+/*    margin-left: 0vw;*/
 }
 
 .coffee-list {
@@ -397,13 +397,22 @@ ul {
 }
 
 .coffee_price_list li {
-    margin-right: 37vw;
+    margin-right: 40vw;
 }
 
 #coffee_section img {
-    margin-top: 13vh;
-    max-width: 100%;
+    margin-top: 45vw;
+    max-width: 95%;
     display: inline-grid;
+}
+
+.white-border1 {
+    border: white solid 2vw;
+    margin-top: 55vw;
+    margin-left: -3vw;
+    width: 75vw;
+    height: 98vw;
+    position: absolute;
 }
 
 /*Kaffe slut*/
@@ -411,8 +420,15 @@ ul {
 
 
 /*morgenmad*/
+
+.morgenmad-text {
+    margin-top: -40vw;
+
+}
+
 #morgenmad-section h1 {
     color: #EB414F;
+    font-size: 1.1em;
 }
 
 #morgenmad-section ul {
@@ -428,7 +444,7 @@ ul {
 }
 
 .morgenmad_price_list {
-    margin-right: 19vw;
+    margin-right: 6vw;
 }
 
 #morgenmad-section img {
@@ -453,6 +469,7 @@ ul {
     display: grid;
 }
 
+
 .drikke-list {
     display: flex;
 }
@@ -462,15 +479,28 @@ ul {
 }
 
 .drikke_price_list li {
-    margin-right: 55vw;
+    margin-right: 53vw;
 }
 
 #koldedrikke-section h1 {
     margin-top: 3vh;
 }
 
+.menu-right-last {
+    margin-top: 15vw;
+    margin-left: 5vw;
+    width: 100%;
+    display: grid;
+}
 
-
+.white-border2 {
+    border: white solid 2vw;
+    margin-top: 65vw;
+    margin-left: -3vw;
+    width: 70vw;
+    height:70vw;
+    position: absolute;
+}
 /*koldedrikke slut*/
 
 
@@ -480,7 +510,7 @@ ul {
 #koldedrikke-section {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
 }
 
 .menu-left {
@@ -530,11 +560,13 @@ ul {
 
 
 
+/*
 .whiteborder1 {
     border: 1vw solid white;
     max-width: 30vw;
     z-index: absolute;
 }
+*/
 
 .whiteborder2 {}
 
@@ -561,6 +593,8 @@ ul {
 #mc_embed_signup {
     clear: left;
     font: 14px Avenir light, Avenir Black, sans-serif;
+    margin-left: 10vw;
+    margin-right: -10vw;
 }
 
 #mc_embed_signup .mc-field-group input {
@@ -609,8 +643,7 @@ ul {
 /*SoMe ikoner i footer*/
 .some_container {
     padding-top: 9.2vh;
-    /*    padding-left: 16px;
-    */
+    padding-left: 16px;
 }
 
 .some_container svg {

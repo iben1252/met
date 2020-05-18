@@ -89,7 +89,6 @@ function insertmenuKort(section) {
 			<div class="coffee-text">
 				<h1>${section.kaffe_overskrift}</h1>
 				<p>${section.kaffe_beskrivelse}</p>
-				<div class="white-border1"></div>
 			</div>
 
 
@@ -183,8 +182,12 @@ function insertmenuKort(section) {
 		</div>
 
 
+
 			<div class="menu-right">
-				<img src="${section.kaffebillede.guid}" alt="Billede fra et bord i caffeen, blomster på bordet" ;>
+                <div class="white-border1"></div>
+				<div>
+                    <img src="${section.kaffebillede.guid}" alt="Billede fra et bord i caffeen, blomster på bordet" ;>
+                </div>
 			</div>
 		</div>
 
@@ -203,7 +206,6 @@ function insertmenuKort(section) {
 			<div class="morgenmad-text">
 				<h1>${section.morgenmad_overskrift}</h1>
 				<p>${section.morgenmad_beskrivelse}</p>
-				<div class="white-border2"></div>
 			</div>
 
 			<div class="morgenmad-list">
