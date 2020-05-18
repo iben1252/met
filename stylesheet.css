@@ -1682,7 +1682,7 @@ a:-webkit-any-link {
 
     /*Menukort*/
     #menuCard {
-        padding: 5vw 14vw 5vw 14vw;
+        padding: 5vw 12vw 5vw 14vw;
     }
 
     /*Menukort SLUT*/
@@ -1721,7 +1721,7 @@ a:-webkit-any-link {
 
     /*Menukort*/
     #menuCard {
-        padding: 5vw 15vw 5vw 15vw;
+        padding: 5vw 12vw 5vw 12vw;
     }
 
     #coffee_section img {
@@ -1757,12 +1757,16 @@ a:-webkit-any-link {
     }
 
     #koldedrikke-section img {
-        max-width: 123%;
+        max-width: 104%;
     }
 
     .drikke-text p {
         padding-right: 6vw;
         letter-spacing: 0.2px;
+    }
+
+    .drikke_price_list {
+        margin-right: 18vw;
     }
 
     /*Menukort SLUT*/
@@ -1832,7 +1836,13 @@ a:-webkit-any-link {
 
     /*Menukort*/
     #menuCard {
-        padding: 5vw 16vw 5vw 16vw;
+        padding: 5vw 12vw 5vw 12vw;
+    }
+
+    #koldedrikke-section img {
+        max-width: 84%;
+        padding-left: 6vw;
+
     }
 
     /*Menukort SLUT*/
@@ -1869,7 +1879,11 @@ a:-webkit-any-link {
 
     /*Menukort*/
     #menuCard {
-        padding: 5vw 18vw 5vw 18vw;
+        padding: 5vw 12vw 5vw 14vw;
+    }
+
+    #koldedrikke-section img {
+        max-width: 80%;
     }
 
     /*Menukort SLUT*/
@@ -1966,6 +1980,25 @@ a:-webkit-any-link {
 
     /* Logo SLUT */
 
+
+    /*Menukort*/
+    #menuCard {
+        padding: 5vw 17vw 5vw 16vw;
+    }
+
+    #koldedrikke-section {
+        padding-top: 5vw;
+    }
+
+    #koldedrikke-section img {
+        max-width: 27vw;
+    }
+
+    .drikke_price_list {
+        margin-right: 18vw;
+    }
+
+    /*Menukort SLUT*/
 
     /*Forside Citat */
     .slideshow-container {
