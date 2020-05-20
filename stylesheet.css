@@ -1976,13 +1976,11 @@ a:-webkit-any-link {
 		max-height: 100%;
 	}
 
-	/*
+
 	#morgenmad-section img {
-		margin-top: 0px;
-		width: 190vw;
-		height: 89vh;
+		width: 100%;
 	}
-*/
+
 
 	.white-border1 {
 		margin-top: 2em;
@@ -2192,10 +2190,15 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 890px) {
 	.white-border2 {
-		width: 19.25em
+		width: 19.3em
 	}
 }
 
+@media screen and (min-width: 904px) {
+	.white-border2 {
+		width: 20em;
+	}
+}
 
 
 @media screen and (min-width: 915px) {
@@ -2206,7 +2209,9 @@ a:-webkit-any-link {
 	}
 
 	.white-border2 {
-		width: 20.8em;
+		margin-top: 2em;
+		margin-left: 2em;
+		width: 20.2em;
 		height: 32.6em;
 	}
 
@@ -2218,8 +2223,8 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 930px) {
 	.white-border2 {
-		margin-top: 2.7em;
-		width: 21.8em;
+		margin-top: 2.5em;
+		width: 21em;
 		height: 33.7em;
 	}
 }
@@ -2283,13 +2288,20 @@ a:-webkit-any-link {
 @media screen and (min-width: 950px) {
 	.white-border2 {
 		margin-left: 2.5em;
-		width: 22em;
+		width: 21.75em;
 		height: 35.8em;
 	}
 }
 
 
-@media screen and (min-width: 983px) {
+@media screen and (min-width: 960px) {
+	.white-border2 {
+		width: 22.4em;
+	}
+}
+
+
+@media screen and (min-width: 980px) {
 
 	/* Logo størrelse */
 	#logo img {
@@ -2303,6 +2315,9 @@ a:-webkit-any-link {
 		padding: 0em 8em;
 	}
 
+	#morgenmad-section img {
+		max-width: 87%;
+	}
 
 	.white-border1 {
 		border: white solid 1vw;
@@ -2316,8 +2331,8 @@ a:-webkit-any-link {
 	.white-border2 {
 		margin-top: 2.7em;
 		margin-left: 2.7em;
-		width: 20.9em;
-		height: 34em;
+		width: 19.2em;
+		height: 32.4em;
 	}
 
 
@@ -2349,11 +2364,12 @@ a:-webkit-any-link {
 
 
 	#morgenmad-section img {
-		max-height: 82%;
+		max-width: 95%;
 	}
 
-	#koldedrikke-section {
-		padding-top: 0em;
+	#koldedrikke-section img {
+		max-height: 100%;
+		margin: 0em;
 	}
 
 	.white-border1 {
@@ -2366,19 +2382,19 @@ a:-webkit-any-link {
 
 	.white-border2 {
 		border: white solid 0.6em;
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 17.3em;
+		margin-top: 2.6em;
+		margin-left: 2.6em;
+		width: 16.4em;
 		height: 30em;
 	}
 
 
 	.white-border3 {
 		border: white solid 0.6em;
-		margin-top: -1.5vw;
+		margin-top: -0.9em;
 		margin-left: -0.5em;
-		width: 12em;
-		height: 11.5em;
+		width: 14em;
+		height: 12em;
 	}
 
 	/*Menukort SLUT*/
@@ -2420,81 +2436,59 @@ a:-webkit-any-link {
 		padding: 0em 12em;
 	}
 
-	#coffee_section img {
-		margin: 0em;
-		max-width: 100%;
-	}
 
 	.coffee_price_list {
-		margin-right: -2vw;
+		margin-right: -2.5em;
 	}
 
-	.coffee-text p {
-		padding-right: 0.5vw;
-		letter-spacing: 0.2px;
+	.coffee-text p,
+	.morgenmad-text p {
+		padding-right: 0.9em;
+		letter-spacing: 0.02em;
 	}
 
 	.morgenmad-list {
 		margin-top: 3vw;
 	}
 
-	#morgenmad-section img {
-		margin-top: 0px;
-		max-width: 34vw;
-		height: 62vh;
-	}
-
-	.morgenmad-text p {
-		padding-right: 2.8vw;
-		letter-spacing: 0.2px;
-	}
-
-	.morgenmad-list li {
-		padding-right: 2.8vw;
-	}
-
-	#koldedrikke-section img {
-		margin-top: 0px;
-		max-width: 34vw;
-		height: 40vh;
+	.morgenmad_price_list li {
+		margin-right: 0.9em;
 	}
 
 	.drikke-text p {
-		padding-right: 6vw;
-		letter-spacing: 0.2px;
+		padding-right: 0.03em;
+		letter-spacing: 0.02em;
 	}
 
 	.drikke_price_list {
-		margin-right: 18vw;
+		margin-right: 10em;
 	}
 
 
 	.white-border1 {
-		border: white solid 1vw;
-		margin-top: 5vw;
-		margin-left: -3vw;
-		width: 35vw;
-		height: 47vw;
-		position: absolute;
+		border: white solid 0.3em;
+		margin-top: 2.7em;
+		margin-left: -0.7em;
+		width: 14.5em;
+		height: 32em;
 	}
 
 	.white-border2 {
-		border: white solid 1vw;
-		margin-top: 5vw;
-		margin-left: 5vw;
-		width: 30vw;
-		height: 38vw;
+		border: white solid 0.3em;
+		margin-top: 2.5em;
+		margin-left: 2.5em;
+		width: 15.5em;
+		height: 32em;
 		position: absolute;
 	}
 
 
 	.white-border3 {
-		border: white solid 1vw;
-		margin-top: -9vw;
-		margin-left: 37vw;
-		width: 25vw;
-		height: 23vw;
-		position: absolute;
+		border: white solid 0.3em;
+		margin-top: -1vw;
+		margin-left: -0.5em;
+		width: 14.5em;
+		height: 15em;
 	}
 
 	/*Menukort SLUT*/
