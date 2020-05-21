@@ -83,7 +83,6 @@ function insertmenuKort(section) {
 	let template =
 		`
 <section id="menuCard">
-
      	<div id="coffee_section">
 		<div class="menu-left">
 			<div class="coffee-text">
@@ -366,6 +365,9 @@ function insertmenuKort(section) {
 				<div class="white-border3"></div>
 				<div><img src="${section.koldebillede.guid}" alt="Billede af blomster og juice flasker" ;></div>
 			</div>
+		</div>
+		<div id="menu-info">
+		<p>${section.slutbeskrivelse}</p>
 		</div>
 </div>
 					`;
