@@ -2008,19 +2008,9 @@ a:-webkit-any-link {
 
 
     /* Kontakt start */
-    #sectionwrapper {
+    #contact-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100% 100%;
-
-
-    }
-
-    #contact-section {
-        grid-column-start: 1;
-        grid-column-end: 2;
-
-
     }
 
     .infomation {
@@ -2032,8 +2022,6 @@ a:-webkit-any-link {
         text-align: center;
         padding-top: 1px;
         padding-bottom: 1px;
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
 
     .besked {
@@ -2041,7 +2029,8 @@ a:-webkit-any-link {
         margin-left: 10vw;
         margin-right: 10vw;
         margin-top: 10vw;
-
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     .mapouter {
@@ -2068,13 +2057,85 @@ a:-webkit-any-link {
 
     /*------- KONTAKT FORMULAR --------*/
     .container {
-        display: grid;
-        grid-template-rows: 100% 100%;
-        grid-template-columns: 1fr;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 10vw;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    label {
+        font: 14px Avenir light, Avenir Black, sans-serif;
+
+    }
+
+    .feedback-input {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        color: black;
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 0.5px solid black;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+    .feedback-input:focus {
+        border: 2px solid #CC4949;
+    }
+
+    textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+    }
+
+    [type="submit"] {
+        width: 30%;
+        background: #DB3C3C;
+        border-radius: 1px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+    }
+
+    [type="submit"]:hover {
+        background: gray;
+    }
+
+    /*------- KONTAKT FORMULAR --------*/
+    .container {
+        grid-column-start: 2;
+        grid-column-end: 3;
         margin-left: 10vw;
         margin-right: 10vw;
         margin-bottom: 10vw;
     }
+
+    /*
+    .kontakt-section {
+        display: grid;
+        grid-template-rows: 100% 100%;
+        grid-template-columns: 1fr 1fr;
+
+    }
+*/
 
     label {
         font: 14px Avenir light, Avenir Black, sans-serif;
