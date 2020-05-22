@@ -87,11 +87,9 @@ function insertContact(section) {
                         <h3>${section.mail_overskrift}</h3>
                         <p>${section.mail_kontakt}</p>
                     </div>
-
                     <div class="besked">
                         <p>${section.kontaktbrdtekst_kontakt}</p>
                     </div>
-
 
 					`;
     destContact.insertAdjacentHTML("beforeend", template);
