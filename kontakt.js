@@ -76,36 +76,39 @@ function insertContact(section) {
     let destContact = document.querySelector("#contact-section");
 
     let template =
+
+
         `
+     <div class="grid2" id="contact">
+
                 <div class="infomation">
-                        <h3>${section.adresse_overskrift}</h3>
-                        <p>${section.adresse_kontakt}</p>
+                    <h3>${section.adresse_overskrift}</h3>
+                    <p>${section.adresse_kontakt}</p>
 
-                        <h3>${section.telefon_overskrift}</h3>
-                        <p>${section.telefon_kontakt}</p>
+                    <h3>${section.telefon_overskrift}</h3>
+                    <p>${section.telefon_kontakt}</p>
 
-                        <h3>${section.mail_overskrift}</h3>
-                        <p>${section.mail_kontakt}</p>
+                    <h3>${section.mail_overskrift}</h3>
+                    <p>${section.mail_kontakt}</p>
                 </div>
 
-                <div class="map">
-
-            <!--Taget kode https://www.embedgooglemap.net/en/-->
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Ryesgade%2025%2C%20copenhagen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-            <!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->
-
+    <div class="map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Ryesgade%2025%2C%20copenhagen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
                 </div>
+            </div>
+    </div>
+
+        </div>
 
 
-
-
+<div class="grid2" id="contact_row">
                 <div class="besked">
                     <p>${section.kontaktbrdtekst_kontakt}</p>
                 </div>
 
 
-                <div class="container">
+                <div class="form_container">
                     <form action="mailto:iben.bording.nielsen1998@gmail.com">
                         <label for="fname">Fornavn</label>
                         <input name="name" type="text" class="feedback-input" placeholder="Name" />
@@ -116,6 +119,8 @@ function insertContact(section) {
                         <input type="submit" value="Send"/>
                     </form>
                 </div>
+
+</div>
 					`;
     destContact.insertAdjacentHTML("beforeend", template);
 
