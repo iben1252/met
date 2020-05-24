@@ -692,7 +692,7 @@ label {
     font: 14px Avenir light, Avenir Black, sans-serif;
     font-weight: 500;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 1px;
     line-height: 22px;
     background-color: transparent;
     border: 0.5px solid black;
@@ -716,12 +716,11 @@ textarea {
 
 [type="submit"] {
     width: 30%;
-    background: #DB3C3C;
-    border-radius: 1px;
-    border: 0;
+    background: transparent;
+    border-radius: 20px;
+    border: solid 1px #DB3C3C;
     cursor: pointer;
-    color: white;
-    font: 14px Avenir light, Avenir Black, sans-serif;
+    font: 14px Avenir light, Avenir, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.3s;
@@ -730,7 +729,10 @@ textarea {
 }
 
 [type="submit"]:hover {
-    background: gray;
+    background: #DB3C3C;
+    color: white;
+
+
 }
 
 /*------- KONTAKT FORMULAR SLUT --------*
@@ -2118,6 +2120,7 @@ a:-webkit-any-link {
     [type="submit"]:hover {
         background: gray;
     }
+
     /* Kontakt SLUT */
 
     /*Footer*/

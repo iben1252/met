@@ -88,7 +88,6 @@ function insertContact(section) {
                         <p>${section.mail_kontakt}</p>
                 </div>
 
-
                 <div class="map">
 
             <!--Taget kode https://www.embedgooglemap.net/en/-->
@@ -99,24 +98,24 @@ function insertContact(section) {
                 </div>
 
 
+
+
+                <div class="besked">
+                    <p>${section.kontaktbrdtekst_kontakt}</p>
                 </div>
 
-                    <div class="besked">
-                        <p>${section.kontaktbrdtekst_kontakt}</p>
-                    </div>
 
-
- <div class="container">
-        <form action="mailto:iben.bording.nielsen1998@gmail.com">
-            <label for="fname">Fornavn</label>
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />
-            <label for="lname">Efternavn</label>
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <label for="subject">Besked</label>
-            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-            <input type="submit" value="SUBMIT" />
-        </form>
-    </div>
+                <div class="container">
+                    <form action="mailto:iben.bording.nielsen1998@gmail.com">
+                        <label for="fname">Fornavn</label>
+                        <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                        <label for="lname">Email</label>
+                        <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                        <label for="subject">Besked</label>
+                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                        <input type="submit" value="Send"/>
+                    </form>
+                </div>
 					`;
     destContact.insertAdjacentHTML("beforeend", template);
 
