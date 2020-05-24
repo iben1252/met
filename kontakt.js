@@ -77,7 +77,7 @@ function insertContact(section) {
 
     let template =
         `
-                    <div class="infomation">
+                <div class="infomation">
                         <h3>${section.adresse_overskrift}</h3>
                         <p>${section.adresse_kontakt}</p>
 
@@ -86,7 +86,21 @@ function insertContact(section) {
 
                         <h3>${section.mail_overskrift}</h3>
                         <p>${section.mail_kontakt}</p>
-                    </div>
+                </div>
+
+
+                <div class="map">
+
+            <!--Taget kode https://www.embedgooglemap.net/en/-->
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Ryesgade%2025%2C%20copenhagen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+            <!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->
+
+                </div>
+
+
+                </div>
+
                     <div class="besked">
                         <p>${section.kontaktbrdtekst_kontakt}</p>
                     </div>
