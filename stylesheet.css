@@ -611,9 +611,6 @@ ul {
 
 /*--------------------Kontakt side ------------------*/
 
-#contact-section {
-    /*    display: flex;*/
-}
 
 .infomation {
     background-color: #F2EDEB;
@@ -624,7 +621,7 @@ ul {
     text-align: center;
     padding-top: 1px;
     padding-bottom: 1px;
-
+    margin-bottom: 2vw;
 }
 
 .infomation h3 {
@@ -669,6 +666,15 @@ ul {
 iframe {
     height: 300px;
     width: 255px;
+}
+
+
+.contact-heading h2 {
+    text-align: center;
+    font-family: "Avenir black", sans-serif;
+    font-size: 1.2em;
+    color: #DD3340;
+    padding-top: 6vw;
 }
 
 /*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
@@ -1083,7 +1089,7 @@ a:-webkit-any-link {
     }
 
     #contact_row {
-        padding: 2vw;
+        padding: 0vw 2vw 2vw 2vw;
     }
 
     /* SLUT Kontakt side*/
@@ -2179,50 +2185,46 @@ a:-webkit-any-link {
     #contact_row {
         margin-left: 14.4vw;
         margin-right: 14.4vw;
-
     }
 
 }
 
 @media screen and (min-width: 768px) {
 
-    /* Logo størrelse */
+    /*--------Logo størrelse------*/
     #logo img {
         max-width: 45%;
         margin-right: 1.5vw;
     }
 
-    /* Logo SLUT */
+    /*----------Logo SLUT----------*/
 
 
-
-    /*Burgermenu */
+    /*----------Burgermenu---------*/
     .burgermenu {
         display: none;
     }
 
-    /*Burgermenu SLUT*/
+    /*---------Burgermenu SLUT------*/
 
 
-
-    /*Navbar visning ved tablet*/
+    /*---Navbar visning ved tablet---*/
     #nav {
         display: grid;
     }
 
-    /*Navbar visning ved tablet SLUT*/
+    /*--Navbar visning ved tablet SLUT--*/
 
 
-
-    /*Menukort*/
+    /*------------Menukort--------------*/
     #menuCard {
         padding: 0em 3em 0em 3em;
     }
 
-    /*Menukort slut*/
+    /*-----------Menukort slut----------*/
 
 
-    /*Grid*/
+    /*----------------Grid--------------*/
     #coffee_section,
     #morgenmad-section,
     #koldedrikke-section {
@@ -2241,7 +2243,6 @@ a:-webkit-any-link {
         margin: 2em 1em;
     }
 
-
     .menu-left {
         display: grid;
         grid-column-start: 1;
@@ -2256,7 +2257,6 @@ a:-webkit-any-link {
         grid-row-start: 1;
         grid-row-end: 2;
     }
-
 
     #morgenmad-section .menu-right {
         text-align: left;
@@ -2273,7 +2273,6 @@ a:-webkit-any-link {
         width: 100%;
         max-height: 100%;
     }
-
 
     #morgenmad-section h1 {
         margin-top: 0em;
@@ -2298,12 +2297,12 @@ a:-webkit-any-link {
     }
 
 
-    /*Grid slut*/
+    /*---------Grid slut---------*/
 
 
 
 
-    /* Kaffe sektion*/
+    /*--------Kaffe sektion-------*/
 
     .coffee-list li {
         margin: 0vw 0vw 0vw 0vw;
@@ -2317,11 +2316,11 @@ a:-webkit-any-link {
         margin-top: 0em;
     }
 
-    /*Kaffe sektion SLUT */
+    /*------Kaffe sektion SLUT-----*/
 
 
 
-    /*morgenmad section*/
+    /*-------morgenmad section------*/
 
     .morgenmad_price_list {
         margin-right: 1em;
@@ -2332,10 +2331,10 @@ a:-webkit-any-link {
         padding-left: 0em;
     }
 
-    /*morgenmad section SLUT */
+    /*------morgenmad section SLUT---*/
 
 
-    /*Kolde drikke sektion*/
+    /*------Kolde drikke sektion-----*/
 
     .drikke-list li {
         margin: 0vw 0vw -1vw 0vw;
@@ -2353,10 +2352,10 @@ a:-webkit-any-link {
         max-height: 100%;
     }
 
+    /*-------Kolde drikke slut--------*/
 
-    /*Kolde drikke slut*/
 
-
+    /*-------Hvide kanter --------*/
     .white-border1 {
         border: white solid 0.5em;
         margin-top: 2em;
@@ -2385,23 +2384,29 @@ a:-webkit-any-link {
         position: absolute;
     }
 
-    /*Menukort SLUT*/
+    /*-------Hvide kanter SLUT-----*/
 
 
-    /* Galleri */
+
+    /*--------Menukort SLUT------*/
+
+
+    /*-----------Galleri----------*/
     #gallery-section .content {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 10% 10% 10% 10%;
     }
 
-    /* Galleri SLUT*/
+    /*---------Galleri SLUT--------*/
 
 
 
 
 
 
-    /* Kontakt side start */
+    /*-------Kontakt side start-----*/
+
+    /*For begge row*/
     #contact_row {
         margin-left: 0vw;
         margin-right: 0vw;
@@ -2414,7 +2419,10 @@ a:-webkit-any-link {
         margin-top: 5vw;
     }
 
+    /*----SLUT For begge row---*/
 
+
+    /*-----row 1 i kontakt side--*/
     .infomation {
         height: 50vh;
         background-color: #F2EDEB;
@@ -2439,17 +2447,8 @@ a:-webkit-any-link {
         text-align: left;
     }
 
-    .besked {
-        font: 14px Avenir light, Avenir Black, sans-serif;
-        margin-left: 6vw;
-        margin-right: 2vw;
-        margin-top: 0vw;
-
-    }
-
-
     .map {
-        padding-left: 10.5vw;
+        padding-left: 0.5vw;
     }
 
 
@@ -2467,6 +2466,7 @@ a:-webkit-any-link {
         background: none !important;
         height: 100%;
         width: 100%;
+        padding-left: 9.5vw;
     }
 
     iframe {
@@ -2476,27 +2476,34 @@ a:-webkit-any-link {
 
     /*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
 
+    /*---SLUT row 1 i kontakt side---*/
 
 
 
-    /*------- KONTAKT FORMULAR --------*/
+    /*----row 2 i kontakt side---*/
+    .besked {
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 0vw;
+    }
+
     .form_container {
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-bottom: 10vw;
+        margin-left: -2vw;
+        margin-right: 7vw;
+        margin-bottom: 9vw;
 
     }
 
     label {
         font: 14px Avenir light, Avenir Black, sans-serif;
-
     }
 
     .feedback-input {
         font: 14px Avenir light, Avenir Black, sans-serif;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1px;
+        line-height: 1px;
     }
 
     .feedback-input:focus {
@@ -2509,33 +2516,20 @@ a:-webkit-any-link {
         resize: vertical;
     }
 
-    /*
-            [type="submit"] {
-                width: 26%;
-                background: transparent;
-                border-radius: 20px;
-                border: solid 1px #DB3C3C;
-                cursor: pointer;
-                font: 14px Avenir light, Avenir, sans-serif;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                transition: all 0.3s;
-                margin-top: -4px;
-                font-weight: 700;
-            }
+    [type="submit"] {
+        width: 21%;
+        font-size: 13px
+    }
 
-            [type="submit"]:hover {
-                background: #DB3C3C;
-                color: white;
-            }
-*/
-    /* Kontakt SLUT */
+    /*---row 2 i kontakt side----*/
+
+    /*-------------Kontakt SLUT-------------*/
 
 
 
 
 
-    /*Footer*/
+    /*------------------Footer--------------*/
     #footer_box {
         display: grid;
     }
@@ -2578,7 +2572,7 @@ a:-webkit-any-link {
         width: 26%;
     }
 
-    /*Footer*/
+    /*--------------SLUT Footer---------------------*/
 
 
 
@@ -2670,6 +2664,9 @@ a:-webkit-any-link {
 }
 
 
+
+
+
 @media screen and (min-width: 800px) {
 
     /* Logo størrelse */
@@ -2678,6 +2675,7 @@ a:-webkit-any-link {
     }
 
     /* Logo SLUT */
+
 
     /*Menukort*/
     /* Billede på morgemad og frokost*/
@@ -2759,6 +2757,22 @@ a:-webkit-any-link {
     /*Forside Citat SLUT*/
 }
 
+
+
+
+
+@media screen and (min-width: 810px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
+}
+
 @media screen and (min-width: 816px) {
     .white-border1 {
         margin-top: 2.5em;
@@ -2776,6 +2790,19 @@ a:-webkit-any-link {
 
 
 
+@media screen and (min-width: 826px) {
+
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2.9vw;
+    }
+
+    /*SLUT kontakt side*/
+
+}
+
+
 @media screen and (min-width: 830px) {
     .white-border2 {
         margin-top: 3em;
@@ -2791,6 +2818,14 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 842px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2.8vw;
+    }
+
+    /*SLUT kontakt side*/
+
 
     /* Logo størrelse */
     #logo img {
@@ -2849,6 +2884,15 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 860px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 4vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
     .white-border1 {
         margin-top: 2em;
         width: 15.5em;
@@ -2867,6 +2911,15 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 875px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 5vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
     .white-border1 {
         margin-top: 1.6em;
         margin-left: -0.8em;
@@ -2886,6 +2939,14 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 885px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 6vw;
+    }
+
+    /*SLUT kontakt side*/
+
     .white-border1 {
         margin-top: 2.7em;
         height: 28em;
@@ -2908,6 +2969,14 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 904px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 7vw;
+    }
+
+    /*SLUT kontakt side*/
+
     .white-border2 {
         width: 20em;
     }
@@ -2915,6 +2984,15 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 915px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 8vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
     #morgenmad-section img {
         max-width: 90%;
     }
@@ -2940,6 +3018,13 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 940px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 9vw;
+    }
+
+    /*SLUT kontakt side*/
 
     /* Logo størrelse */
     #logo img {
@@ -2995,6 +3080,13 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 950px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 10vw;
+    }
+
+    /*SLUT kontakt side*/
     .white-border2 {
         margin-left: 2.5em;
         width: 21.75em;
@@ -3008,6 +3100,14 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 960px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 9vw;
+    }
+
+    /*SLUT kontakt side*/
+
     .white-border2 {
         width: 22.4em;
         height: 30em;
@@ -3016,6 +3116,13 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 980px) {
+
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 12vw;
+    }
+
+    /*SLUT kontakt side*/
 
     /* Logo størrelse */
     #logo img {
@@ -3067,6 +3174,24 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1000px) {
+
+    /*kontakt side*/
+    .infomation h3 {
+        padding-top: 3.3vw;
+
+    }
+
+    #contact {
+        padding-left: 4vw;
+    }
+
+    .mapouter {
+
+        width: 100%;
+    }
+
+    /*SLUT kontakt side*/
+
 
     /* Logo størrelse */
     #logo img {
@@ -3140,6 +3265,16 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 1024px) {
+
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 5vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
 
     /* Logo størrelse */
     #logo img {
@@ -3275,6 +3410,16 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1047px) {
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 6vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
+
     #morgenmad-section img {
         max-width: 90%;
         max-height: 90%;
@@ -3297,6 +3442,17 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1100px) {
+
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 7vw;
+    }
+
+    /*SLUT kontakt side*/
+
+
+
 
     /* Logo størrelse */
     #logo img {
@@ -3377,7 +3533,42 @@ a:-webkit-any-link {
 }
 
 
+@media screen and (min-width: 1130px) {
+
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 8vw;
+        padding-right: 3vw;
+    }
+
+    /*SLUT kontakt side*/
+
+}
+
+
 @media screen and (min-width: 1150px) {
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 9vw;
+        padding-right: 4vw;
+    }
+
+    .infomation {
+        height: 42vh;
+    }
+
+    .infomation h3 {
+        padding-top: 1.8vw;
+    }
+
+    .mapouter {
+        height: 42vh;
+    }
+
+
+    /*SLUT kontakt side*/
 
     #menuCard {
         padding: 0em 16em;
@@ -3399,6 +3590,18 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1200px) {
+
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 10vw;
+        padding-right: 5vw;
+
+    }
+
+
+    /*SLUT kontakt side*/
+
 
     /* Logo størrelse */
     #logo img {
@@ -3501,6 +3704,18 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 1250px) {
+
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 11vw;
+        padding-right: 6vw;
+    }
+
+
+    /*SLUT kontakt side*/
+
+
     .white-border1 {
         height: 32.5em;
         width: 17.5em;
@@ -3522,6 +3737,15 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1300px) {
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 13vw;
+        padding-right: 8vw;
+    }
+
+
+    /*SLUT kontakt side*/
 
     /* Logo størrelse */
     #logo img {
@@ -3587,6 +3811,15 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1350px) {
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 14vw;
+        padding-right: 9vw;
+    }
+
+    /*SLUT kontakt side*/
+
 
     #morgenmad-section img {
         max-width: 85%;
@@ -3617,6 +3850,15 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1400px) {
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 15vw;
+        padding-right: 10vw;
+    }
+
+    /*SLUT kontakt side*/
+
 
     /* Logo størrelse */
     #logo img {

@@ -99,12 +99,19 @@ function insertContact(section) {
             </div>
     </div>
 
-        </div>
+    </div>
 
 
-<div class="grid2" id="contact_row">
+
+    <div class="contact-heading">
+        <h2>${section.overskrift}</h2>
+    </div>
+
+    <div class="grid2" id="contact_row">
+
                 <div class="besked">
                     <p>${section.kontaktbrdtekst_kontakt}</p>
+                    <p>${section.tak_tekst}</p>
                 </div>
 
 
