@@ -19,18 +19,14 @@ Responsive
 body {
     margin: 0;
     /*Fjerner standard margin fra siden*/
-
-
 }
 
-
-/*---------- Generelt SLUT -----------*/
-
+/*-------- Generelt SLUT ---------*/
 
 
 
 
-/*-----------  Nav Menu -------------*/
+/*----------  Nav Menu ------------*/
 
 #nav {
     display: grid;
@@ -341,17 +337,6 @@ ul {
     width: 81vw;
 }
 
-/*
-.mette p {
-    padding-left: 11vw;
-}
-
-
-.thomas p {
-    padding-left: 0.7vw;
-    padding-right: 10.9vw;
-}
-*/
 
 /*--------------------- Om os SLUT ------------------*/
 
