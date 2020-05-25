@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-    line_break_shortcode();
     burgerStart();
     getParty();
     getFooter1();
@@ -89,7 +88,6 @@ function insertParty(section) {
                     <img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
 
                     <h2>${section.arrangement}</h2>
-                    <p>${section.underbeskrivelse}</p>
                     <p>${section.underbeskrivelse_1}</p>
                     <p>${section.underbeskrivelse_2}</p>
                     <p>${section.underbeskrivelse_slut}</p>
@@ -176,7 +174,8 @@ function insertParty(section) {
 
                 <article>
 
-                    <h2>${section.brunch_overskrift}</h2>
+                    <h2>${section.prisforslag_1}</h2>
+                    <h2>${section.menu_1}</h2>
                     <p>${section.pris_1}</p>
                     <p>${section.pris_2}</p>
                     <p>${section.pris_3}</p>
@@ -185,7 +184,8 @@ function insertParty(section) {
                     <p>${section.pris_6}</p>
                     <p>${section.pris_slut}</p>
 
-                    <h2>${section.koldemet}</h2>
+                    <h2>${section.prisforslag_2}</h2>
+                    <h2>${section.menu_2}</h2>
                     <p>${section.prisfor_tekst}</p>
                     <p>${section.prisfor_per}</p>
                     <p>${section.prisfor_1}</p>
