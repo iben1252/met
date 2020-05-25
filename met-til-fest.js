@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
+    line_break_shortcode();
     burgerStart();
     getParty();
     getFooter1();
@@ -62,7 +63,6 @@ function closeBurger() {
 
 
 
-
 //*---------------------------------MET TIL FEST sektion -----------------------------------*//
 
 
@@ -84,10 +84,125 @@ function insertParty(section) {
 
 
         `
+                <div class="party_info">
+
+                    <img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
+
+                    <h2>${section.arrangement}</h2>
+                    <p>${section.underbeskrivelse}</p>
+                    <p>${section.underbeskrivelse_1}</p>
+                    <p>${section.underbeskrivelse_2}</p>
+                    <p>${section.underbeskrivelse_slut}</p>
+
+                </div>
 
 
 
-                    <p>${section.kontaktbrdtekst_kontakt}</p>
+                <div class="heading">
+                    <h1>${section.maanedensmenu_overskrift}</h1>
+                    <h2>${section.tildel_maaned}</h2>
+                </div>
+
+
+
+
+                <div class="top_menu">
+
+                    <img src="${section.billedvenstre_1.guid}" alt="Billede af et fællespisningsbord";>
+
+                    <h2>${section.snacks_overskrift}</h2>
+                    <p>${section.snacks_1}</p>
+                    <p>${section.snacks_2}</p>
+                    <p>${section.snacks_3}</p>
+                    <p>${section.snacks_4}</p>
+                    <p>${section.snacks_5}</p>
+                    <p>${section.snacks_6}</p>
+                    <p>${section.snacks_7}</p>
+
+                    <h2>${section.signatursalater}</h2>
+                    <p>${section.salater_1}</p>
+                    <p>${section.salater_2}</p>
+                    <p>${section.salater_3}</p>
+
+                    <img src="${section.billedhojre_1.guid}" alt="Billede af et fællespisningsbord";>
+
+                </div>
+
+
+
+                <div class="bottom_menu">
+
+                    <img src="${section.billedvenstre_2.guid}" alt="Billede af et fællespisningsbord";>
+
+                    <h2>${section.desserter_overskrift}</h2>
+                    <p>${section.dessert_1}</p>
+                    <p>${section.dessert_2}</p>
+                    <p>${section.dessert_3}</p>
+
+                    <h2>${section.sandwich_overskrift}</h2>
+                    <p>${section.sand_1}</p>
+                    <p>${section.sand_2}</p>
+                    <p>${section.sand_3}</p>
+
+                    <img src="${section.billedhojre_2.guid}" alt="Billede af et fællespisningsbord";>
+
+                </div>
+
+
+
+
+
+                <article>
+
+                    <h2>${section.brunch_overskrift}</h2>
+                    <p>${section.morgenmad_1}</p>
+                    <p>${section.morgenmad_2}</p>
+                    <p>${section.morgenmad_3}</p>
+                    <p>${section.morgenmad_4}</p>
+                    <p>${section.morgenmad_5}</p>
+                    <p>${section.morgenmad_6}</p>
+                    <p>${section.morgenmad_7}</p>
+
+                    <h2>${section.koldemet}</h2>
+                    <p>${section.drikke_1}</p>
+                    <p>${section.drikke_2}</p>
+                    <p>${section.drikke_3}</p>
+
+                </article>
+
+
+            <h1>${section.priser}</h1>
+
+
+                <article>
+
+                    <h2>${section.brunch_overskrift}</h2>
+                    <p>${section.pris_1}</p>
+                    <p>${section.pris_2}</p>
+                    <p>${section.pris_3}</p>
+                    <p>${section.pris_4}</p>
+                    <p>${section.pris_5}</p>
+                    <p>${section.pris_6}</p>
+                    <p>${section.pris_slut}</p>
+
+                    <h2>${section.koldemet}</h2>
+                    <p>${section.prisfor_tekst}</p>
+                    <p>${section.prisfor_per}</p>
+                    <p>${section.prisfor_1}</p>
+                    <p>${section.prisfor_2}</p>
+                    <p>${section.prisfor_3}</p>
+                    <p>${section.prisfor_4}</p>
+                    <p>${section.prisfor_5}</p>
+                    <p>${section.prisfor_6}</p>
+                    <p>${section.prisfor_7}</p>
+                    <p>${section.prisfor_8}</p>
+
+                </article>
+
+
+
+
+
 
 
 
