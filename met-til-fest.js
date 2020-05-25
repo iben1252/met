@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-	burgerStart();
-	getFooter1();
-	getFooter2();
+    burgerStart();
+    getParty();
+    getFooter1();
+    getFooter2();
 }
 
 
@@ -27,37 +28,83 @@ function start() {
 //*-----------------------------Burgermenu sektion-----------------------------------*//
 
 function burgerStart() {
-	document.querySelector(".menu-button").addEventListener("click", openBurger());
-	document.querySelector(".menu-button").textContent = "☰";
-	document.querySelector(".burgernav").style.display = "none";
+    document.querySelector(".menu-button").addEventListener("click", openBurger());
+    document.querySelector(".menu-button").textContent = "☰";
+    document.querySelector(".burgernav").style.display = "none";
 }
 
 function openBurger() {
-	console.log("open burger");
-	document.querySelector(".burgernav").style.display = "block";
-	document.querySelector(".burgernav").style.display = "grid";
-	document.querySelector(".menu-burger").style.display = "contents";
-	document.querySelector(".fest-burger").style.display = "contents";
-	document.querySelector(".kontakt-burger").style.display = "contents";
+    console.log("open burger");
+    document.querySelector(".burgernav").style.display = "block";
+    document.querySelector(".burgernav").style.display = "grid";
+    document.querySelector(".menu-burger").style.display = "contents";
+    document.querySelector(".fest-burger").style.display = "contents";
+    document.querySelector(".kontakt-burger").style.display = "contents";
 
-	document.querySelector(".menu-button").addEventListener("click", closeBurger);
-	document.querySelector(".menu-button").removeEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "⤫";
+    document.querySelector(".menu-button").addEventListener("click", closeBurger);
+    document.querySelector(".menu-button").removeEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "⤫";
 }
 
 function closeBurger() {
-	console.log("close burger");
-	document.querySelector(".burgernav").style.display = "none";
-	document.querySelector(".menu-burger").style.display = "none";
-	document.querySelector(".fest-burger").style.display = "none";
-	document.querySelector(".kontakt-burger").style.display = "none";
+    console.log("close burger");
+    document.querySelector(".burgernav").style.display = "none";
+    document.querySelector(".menu-burger").style.display = "none";
+    document.querySelector(".fest-burger").style.display = "none";
+    document.querySelector(".kontakt-burger").style.display = "none";
 
-	document.querySelector(".menu-button").removeEventListener("click", closeBurger);
-	document.querySelector(".menu-button").addEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "☰";
+    document.querySelector(".menu-button").removeEventListener("click", closeBurger);
+    document.querySelector(".menu-button").addEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "☰";
 }
 
 //*-----------------------------Burgermenu sektion SLUT-----------------------------------*//
+
+
+
+
+//*---------------------------------MET TIL FEST sektion -----------------------------------*//
+
+
+
+
+
+async function getParty() {
+    console.log("MET til fest side loadede");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/met_til_fest/113";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertParty(section);
+}
+
+function insertParty(section) {
+    let destParty = document.querySelector("#party-section");
+
+    let template =
+
+
+        `
+
+
+
+                    <p>${section.kontaktbrdtekst_kontakt}</p>
+
+
+
+
+
+
+					`;
+    destParty.insertAdjacentHTML("beforeend", template);
+
+}
+
+
+
+
+
+
+//*-----------------------------MET TIL FEST sektion SLUT-----------------------------------*//
 
 
 
@@ -69,46 +116,46 @@ function closeBurger() {
 /* aabningstider og dage */
 
 async function getFooter1() {
-	console.log("get left");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertFooter1(section);
+    console.log("get left");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertFooter1(section);
 }
 
 function insertFooter1(section) {
-	let destFooter1 = document.querySelector(".footer-left");
+    let destFooter1 = document.querySelector(".footer-left");
 
-	let template =
-		`
+    let template =
+        `
 				<p>${section.aabningsdage}</p>
                 <p>${section.aabningsdage_2}</p>
 					`;
-	destFooter1.insertAdjacentHTML("beforeend", template);
+    destFooter1.insertAdjacentHTML("beforeend", template);
 
 }
 
 /* adresse og information */
 
 async function getFooter2() {
-	console.log("get right");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertFooter2(section);
+    console.log("get right");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertFooter2(section);
 }
 
 function insertFooter2(section) {
-	let destFooter2 = document.querySelector(".footer-right");
+    let destFooter2 = document.querySelector(".footer-right");
 
-	let template =
-		`
+    let template =
+        `
                <p>${section.adresse_footer}</p>
                <p>${section.telefonnummer}</p>
                <p>${section.mail_footer}</p>
 
 					`;
-	destFooter2.insertAdjacentHTML("beforeend", template);
+    destFooter2.insertAdjacentHTML("beforeend", template);
 
 }
 
