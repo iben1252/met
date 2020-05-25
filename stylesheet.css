@@ -582,16 +582,6 @@ ul {
 
 }
 
-/*---- HVIS DER ER BALLEDE MED LOGOET PÅ ANDRE SIDER SÅ KIG PÅ DENNE!!! -----*
-
-.logo a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-}
-
-
 /*< !-- Taget kode https: //www.embedgooglemap.net/en/-->-->*/
 
 .mapouter {
@@ -711,6 +701,10 @@ textarea {
     padding-right: 8vw;
 }
 
+.arrangement_2 {
+    display: none;
+}
+
 #party-section h2 {
     font-family: "Avenir medium", sans-serif;
     font-size: 0.9em;
@@ -759,6 +753,22 @@ textarea {
     padding-bottom: 10vw;
 }
 
+.snacks_overskirft {
+    color: #F27F1B;
+}
+
+.signatursalater {
+    color: #DDAA00;
+}
+
+.desserter_overskrift {
+    color: #194F94;
+}
+
+.sandwich_overskrift {
+    color: #DD3340;
+}
+
 /*Månedens menu SLUT*/
 
 
@@ -785,6 +795,23 @@ textarea {
     margin-top: 10vw;
     padding-left: 13vw;
     padding-right: 13vw;
+}
+
+.price_1 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DD3340;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.price_2 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DD3340;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #party-section #price_suggestion p {
@@ -2633,7 +2660,125 @@ a:-webkit-any-link {
         margin-left: 50vw;
     }
 
-    /*---------------------- Om os SLUT ------------------*/
+    /*-------------------- Om os SLUT ----------------*/
+
+    /*-------------MET TIL FEST------------*/
+
+    /*beskrivelse til party*/
+    #party-section h1 {
+        font-family: "Avenir heavy", sans-serif;
+        font-size: 1.2em;
+        margin-top: 16vw;
+        text-align: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .arrangement {
+        display: none;
+    }
+
+
+    #party-section h2 {
+        font-family: "Avenir medium", sans-serif;
+        font-size: 0.9em;
+        margin-top: 0vw;
+        text-align: center;
+    }
+
+    #party-section p {
+        font: 14px "Avenir light", sans-serif;
+        padding-left: 13vw;
+        padding-right: 13vw;
+
+
+    }
+
+    #party-section img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+
+    #party-section .heading h2 {
+        font: 15px Avenir light, Avenir Black, sans-serif;
+        letter-spacing: 0.4vw;
+    }
+
+    /*beskrivelse til party SLUT*/
+
+    .party_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 60%;
+
+
+    }
+
+    .party_info p {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        margin-top: 1vw;
+    }
+
+    /*Grå sektion*/
+    #grey {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+    }
+
+    #party-section #grey h2 {
+        margin-top: -1vw;
+    }
+
+    #party-section #grey {
+        background-color: #F2EDEB;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    /*Grå sektion SLUT*/
+
+
+    /*pris forslag*/
+    #party-section #price_suggestion h2 {
+        margin-left: -10vw;
+        margin-right: -10vw;
+    }
+
+    #party-section #price_suggestion p {
+        text-align: center;
+        margin-left: -10vw;
+        margin-right: -10vw;
+    }
+
+    .price_1 {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #DD3340;
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+
+    .price_2 {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #DD3340;
+        margin-left: 2vw;
+        margin-right: 5vw;
+        margin-top: 0vw;
+
+    }
+
+    #party-section #price_suggestion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*pris forslag SLUT*/
 
 }
 

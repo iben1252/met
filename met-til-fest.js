@@ -85,9 +85,9 @@ function insertParty(section) {
         `
                 <div class="party_info">
 
-                    <h1>${section.arrangement}</h1>
+                    <h1 class="arrangement">${section.arrangement}</h1>
                     <img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
-
+                    <h1 class="arrangement_2">${section.arrangement}</h1>
                     <p>${section.underbeskrivelse_1}</p>
                     <p>${section.underbeskrivelse_2}</p>
                     <p>${section.underbeskrivelse_slut}</p>
@@ -109,7 +109,7 @@ function insertParty(section) {
 
                     <img src="${section.billedvenstre_1.guid}" alt="Billede af et fællespisningsbord";>
 
-                    <h2>${section.snacks_overskrift}</h2>
+                    <h2 class="snacks_overskirft">${section.snacks_overskrift}</h2>
                     <p>${section.snacks_1}</p>
                     <p>${section.snacks_2}</p>
                     <p>${section.snacks_3}</p>
@@ -118,7 +118,7 @@ function insertParty(section) {
                     <p>${section.snacks_6}</p>
                     <p>${section.snacks_7}</p>
 
-                    <h2>${section.signatursalater}</h2>
+                    <h2 class="signatursalater">${section.signatursalater}</h2>
                     <p>${section.salater_1}</p>
                     <p>${section.salater_2}</p>
                     <p>${section.salater_3}</p>
@@ -133,12 +133,12 @@ function insertParty(section) {
 
                     <img src="${section.billedvenstre_2.guid}" alt="Billede af et fællespisningsbord";>
 
-                    <h2>${section.desserter_overskrift}</h2>
+                    <h2 class="desserter_overskrift">${section.desserter_overskrift}</h2>
                     <p>${section.dessert_1}</p>
                     <p>${section.dessert_2}</p>
                     <p>${section.dessert_3}</p>
 
-                    <h2>${section.sandwich_overskrift}</h2>
+                    <h2 class="sandwich_overskrift">${section.sandwich_overskrift}</h2>
                     <p>${section.sand_1}</p>
                     <p>${section.sand_2}</p>
                     <p>${section.sand_3}</p>
@@ -153,20 +153,22 @@ function insertParty(section) {
 
 
                 <section id="grey">
-
-                    <h2>${section.brunch_overskrift}</h2>
-                    <p>${section.morgenmad_1}</p>
-                    <p>${section.morgenmad_2}</p>
-                    <p>${section.morgenmad_3}</p>
-                    <p>${section.morgenmad_4}</p>
-                    <p>${section.morgenmad_5}</p>
-                    <p>${section.morgenmad_6}</p>
-                    <p>${section.morgenmad_7}</p>
-
-                    <h2>${section.koldemet}</h2>
-                    <p>${section.drikke_1}</p>
-                    <p>${section.drikke_2}</p>
-                    <p>${section.drikke_3}</p>
+                    <div class="brunch">
+                        <h2>${section.brunch_overskrift}</h2>
+                        <p>${section.morgenmad_1}</p>
+                        <p>${section.morgenmad_2}</p>
+                        <p>${section.morgenmad_3}</p>
+                        <p>${section.morgenmad_4}</p>
+                        <p>${section.morgenmad_5}</p>
+                        <p>${section.morgenmad_6}</p>
+                        <p>${section.morgenmad_7}</p>
+                    </div>
+                    <div class="koldemet">
+                        <h2>${section.koldemet}</h2>
+                        <p>${section.drikke_1}</p>
+                        <p>${section.drikke_2}</p>
+                        <p>${section.drikke_3}</p>
+                    </div>
 
                 </section>
 
@@ -175,29 +177,31 @@ function insertParty(section) {
 
 
                 <section id="price_suggestion">
-
-                    <h2>${section.prisforslag_1}</h2>
-                    <h2>${section.menu_1}</h2>
-                    <p>${section.pris_1}</p>
-                    <p>${section.pris_2}</p>
-                    <p>${section.pris_3}</p>
-                    <p>${section.pris_4}</p>
-                    <p>${section.pris_5}</p>
-                    <p>${section.pris_6}</p>
-                    <p>${section.pris_slut}</p>
-
-                    <h2>${section.prisforslag_2}</h2>
-                    <h2>${section.menu_2}</h2>
-                    <p>${section.prisfor_tekst}</p>
-                    <p>${section.prisfor_per}</p>
-                    <p>${section.prisfor_1}</p>
-                    <p>${section.prisfor_2}</p>
-                    <p>${section.prisfor_3}</p>
-                    <p>${section.prisfor_4}</p>
-                    <p>${section.prisfor_5}</p>
-                    <p>${section.prisfor_6}</p>
-                    <p>${section.prisfor_7}</p>
-                    <p>${section.prisfor_8}</p>
+                    <div class="price_1">
+                        <h2>${section.prisforslag_1}</h2>
+                        <h2 class="menu_1">${section.menu_1}</h2>
+                        <p>${section.pris_1}</p>
+                        <p>${section.pris_2}</p>
+                        <p>${section.pris_3}</p>
+                        <p>${section.pris_4}</p>
+                        <p>${section.pris_5}</p>
+                        <p>${section.pris_6}</p>
+                        <p>${section.pris_slut}</p>
+                    </div>
+                    <div class="price_2">
+                        <h2>${section.prisforslag_2}</h2>
+                        <h2 class="menu_2">${section.menu_2}</h2>
+                        <p>${section.prisfor_tekst}</p>
+                        <p>${section.prisfor_per}</p>
+                        <p>${section.prisfor_1}</p>
+                        <p>${section.prisfor_2}</p>
+                        <p>${section.prisfor_3}</p>
+                        <p>${section.prisfor_4}</p>
+                        <p>${section.prisfor_5}</p>
+                        <p>${section.prisfor_6}</p>
+                        <p>${section.prisfor_7}</p>
+                        <p>${section.prisfor_8}</p>
+                    </div>
 
                 </section>
 
