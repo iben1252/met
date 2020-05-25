@@ -349,8 +349,6 @@ ul {
 
 /*----------------------MENU kort------------------*/
 /*Styling på overordnet menukort*/
-
-
 #menukort {
     margin: 0em 1em;
 }
@@ -368,7 +366,6 @@ ul {
 
 #menukort img {
     max-width: 100%;
-
 }
 
 /*Styling på overordnet menukort SLUT*/
@@ -398,7 +395,6 @@ ul {
 }
 
 #coffee_section img {
-    /*    margin-top: 45vw;*/
     max-width: 95%;
     display: inline-grid;
 }
@@ -420,13 +416,6 @@ ul {
 
 
 /*morgenmad*/
-
-/*
-.morgenmad-text {
-	margin-top: -40vw;
-
-}
-*/
 
 #morgenmad-section h1 {
     color: #EB414F;
@@ -457,7 +446,6 @@ ul {
     font-style: oblique;
 }
 
-
 /*morgenmad slut*/
 
 
@@ -470,7 +458,6 @@ ul {
 #koldedrikke-section ul {
     display: grid;
 }
-
 
 .drikke-list {
     display: flex;
@@ -489,9 +476,7 @@ ul {
 }
 
 .menu-right-last {
-    /*	margin-top: 15vw;*/
     display: grid;
-
 }
 
 .white-border3 {
@@ -503,7 +488,6 @@ ul {
     position: absolute;
     grid-row-start: 3;
     grid-row-end: 4;
-
     position: absolute;
 }
 
@@ -561,29 +545,7 @@ ul {
     margin: 0em 2em 4em 2em;
 }
 
-/*
-.menu-right-last {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 5;
-	grid-row-end: 6;
-	text-align: center;
-}
-*/
-
 /*Grid slut*/
-
-
-
-
-
-/*
-.whiteborder1 {
-    border: 1vw solid white;
-    max-width: 30vw;
-    z-index: absolute;
-}
-*/
 
 /*--------------------MENU kort SLUT------------------*/
 
@@ -595,8 +557,6 @@ ul {
 
 
 /*--------------------Kontakt side ------------------*/
-
-
 .infomation {
     background-color: #F2EDEB;
     font: 13px Avenir light, Avenir Black, sans-serif;
@@ -652,7 +612,6 @@ iframe {
     height: 300px;
     width: 255px;
 }
-
 
 .contact-heading h2 {
     text-align: center;
@@ -727,24 +686,11 @@ textarea {
 [type="submit"]:hover {
     background: #DB3C3C;
     color: white;
-
-
 }
 
 /*------- KONTAKT FORMULAR SLUT --------*
 
 /*-------------------Kontakt side SLUT --------------*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -908,7 +854,6 @@ a:-webkit-any-link {
     grid-column-end: 0;
     grid-row-start: 1;
     font-size: 1.6em;
-    /*        cursor: pointer;*/
 }
 
 
@@ -922,13 +867,8 @@ a:-webkit-any-link {
 
 
 
-
-
-
 /*-------------------- 8: RESPONSIVE-----------------*/
 @media screen and (min-width: 298px) {
-
-
 
     /*----------- Burgermenu --------------*/
     .menu-button {
@@ -969,7 +909,6 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 300px) {
-
 
     /*Om os citat*/
     .mySlides p,
@@ -1226,8 +1165,6 @@ a:-webkit-any-link {
         height: 400px;
         width: 320px;
     }
-
-
 }
 
 
@@ -1268,7 +1205,6 @@ a:-webkit-any-link {
     }
 
     /* SLUT Kontakt side*/
-
 }
 
 
@@ -1302,7 +1238,6 @@ a:-webkit-any-link {
         margin: 4em;
     }
 
-
     .coffee_price_list li {
         margin-right: 12em;
     }
@@ -1319,7 +1254,6 @@ a:-webkit-any-link {
         max-width: 93%;
     }
 
-
     .white-border1 {
         margin-top: 3em;
         margin-left: -1em;
@@ -1327,7 +1261,6 @@ a:-webkit-any-link {
         height: 25.5em;
         position: absolute;
     }
-
 
     .white-border3 {
         margin-top: -0.7em;
@@ -1795,7 +1728,6 @@ a:-webkit-any-link {
     #contact_row {
         margin-left: 8.2vw;
         margin-right: 8.2vw;
-
     }
 
     /* SLUT Kontakt side*/
@@ -1863,8 +1795,6 @@ a:-webkit-any-link {
     /* Galleri SLUT */
 
 
-
-
     /*Om os citat*/
     .mySlides p,
     .quote_1 p,
@@ -1890,7 +1820,6 @@ a:-webkit-any-link {
         height: 22em;
         position: absolute;
     }
-
 
     .white-border3 {
         margin-left: -3vw;
@@ -1959,8 +1888,8 @@ a:-webkit-any-link {
         padding: 0em 3em;
     }
 
-
     /*beskrivelses tekst styling SLUT*/
+
 
     #coffee_section img {
         max-width: 100%;
@@ -1973,7 +1902,6 @@ a:-webkit-any-link {
         height: 23.2em;
         position: absolute;
     }
-
 
     .white-border3 {
         margin-top: -1em;
@@ -1998,10 +1926,6 @@ a:-webkit-any-link {
 }
 
 
-
-
-
-
 @media screen and (min-width: 648px) {
 
     /*Kontakt side*/
@@ -2013,7 +1937,6 @@ a:-webkit-any-link {
     #contact_row {
         margin-left: 10.6vw;
         margin-right: 10.6vw;
-
     }
 
     /* SLUT Kontakt side*/
@@ -2033,7 +1956,6 @@ a:-webkit-any-link {
         height: 23em;
     }
 
-
     .white-border3 {
         margin-top: -1em;
         margin-left: -1em;
@@ -2042,13 +1964,7 @@ a:-webkit-any-link {
     }
 
     /*MENUKORT SLUT*/
-
 }
-
-
-
-
-
 
 
 @media screen and (min-width: 678px) {
@@ -2062,9 +1978,7 @@ a:-webkit-any-link {
     #contact_row {
         margin-left: 11.9vw;
         margin-right: 11.9vw;
-
     }
-
 
     /* SLUT Kontakt side*/
 }
@@ -2082,8 +1996,6 @@ a:-webkit-any-link {
 }
 
 
-
-
 @media screen and (min-width: 710px) {
 
     /*Kontakt side*/
@@ -2095,7 +2007,6 @@ a:-webkit-any-link {
     #contact_row {
         margin-left: 13vw;
         margin-right: 13vw;
-
     }
 
     /* SLUT Kontakt side*/
@@ -2149,7 +2060,6 @@ a:-webkit-any-link {
         margin-left: 26.2vw;
         margin-right: 26vw;
     }
-
 
     #contact_row {
         margin-left: 13.7vw;
@@ -2281,7 +2191,6 @@ a:-webkit-any-link {
         padding-top: 3em;
     }
 
-
     /*---------Grid slut---------*/
 
 
@@ -2319,6 +2228,7 @@ a:-webkit-any-link {
     /*------morgenmad section SLUT---*/
 
 
+
     /*------Kolde drikke sektion-----*/
 
     .drikke-list li {
@@ -2340,6 +2250,7 @@ a:-webkit-any-link {
     /*-------Kolde drikke slut--------*/
 
 
+
     /*-------Hvide kanter --------*/
     .white-border1 {
         border: white solid 0.5em;
@@ -2359,7 +2270,6 @@ a:-webkit-any-link {
         position: absolute;
     }
 
-
     .white-border3 {
         border: white solid 0.5em;
         margin-top: -1em;
@@ -2370,10 +2280,8 @@ a:-webkit-any-link {
     }
 
     /*-------Hvide kanter SLUT-----*/
-
-
-
     /*--------Menukort SLUT------*/
+
 
 
     /*-----------Galleri----------*/
@@ -2387,15 +2295,12 @@ a:-webkit-any-link {
 
 
 
-
-
     /*-------Kontakt side start-----*/
 
     /*For begge row*/
     #contact_row {
         margin-left: 0vw;
         margin-right: 0vw;
-
     }
 
     .grid2 {
@@ -2418,7 +2323,6 @@ a:-webkit-any-link {
         text-align: center;
         padding-top: 0px;
         padding-bottom: 0px;
-
     }
 
     .infomation h3 {
@@ -2435,7 +2339,6 @@ a:-webkit-any-link {
     .map {
         padding-left: 0.5vw;
     }
-
 
     /*<!--Taget kode https://www.embedgooglemap.net/en/-->*/
     .mapouter {
@@ -2460,7 +2363,6 @@ a:-webkit-any-link {
     }
 
     /*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
-
     /*---SLUT row 1 i kontakt side---*/
 
 
@@ -2477,7 +2379,6 @@ a:-webkit-any-link {
         margin-left: -2vw;
         margin-right: 7vw;
         margin-bottom: 9vw;
-
     }
 
     label {
@@ -2590,7 +2491,6 @@ a:-webkit-any-link {
     .mette img {
         text-align: end;
         padding-right: 3px;
-
     }
 
     .thomas,
@@ -2616,9 +2516,6 @@ a:-webkit-any-link {
         width: 45vw;
         margin-bottom: 0vw;
     }
-
-
-
 
 
     /*Om os citat*/
@@ -2650,9 +2547,6 @@ a:-webkit-any-link {
     /*SLUT kontakt*/
 
 
-
-
-
     .white-border2 {
         margin-top: 2.5em;
         width: 17.8em;
@@ -2664,8 +2558,6 @@ a:-webkit-any-link {
     }
 
 }
-
-
 
 
 
@@ -2726,7 +2618,6 @@ a:-webkit-any-link {
     #aboutUs .mette p {
         padding-left: 3vw;
         padding-right: 2vw;
-
     }
 
     #aboutUs .thomas p {
