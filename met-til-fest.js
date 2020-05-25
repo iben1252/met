@@ -85,9 +85,9 @@ function insertParty(section) {
         `
                 <div class="party_info">
 
+                    <h1>${section.arrangement}</h1>
                     <img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
 
-                    <h2>${section.arrangement}</h2>
                     <p>${section.underbeskrivelse_1}</p>
                     <p>${section.underbeskrivelse_2}</p>
                     <p>${section.underbeskrivelse_slut}</p>
@@ -103,6 +103,7 @@ function insertParty(section) {
 
 
 
+        <section id="month_menu">
 
                 <div class="top_menu">
 
@@ -146,11 +147,12 @@ function insertParty(section) {
 
                 </div>
 
+            </section>
 
 
 
 
-                <article>
+                <section id="grey">
 
                     <h2>${section.brunch_overskrift}</h2>
                     <p>${section.morgenmad_1}</p>
@@ -166,13 +168,13 @@ function insertParty(section) {
                     <p>${section.drikke_2}</p>
                     <p>${section.drikke_3}</p>
 
-                </article>
+                </section>
 
 
             <h1>${section.priser}</h1>
 
 
-                <article>
+                <section id="price_suggestion">
 
                     <h2>${section.prisforslag_1}</h2>
                     <h2>${section.menu_1}</h2>
@@ -197,7 +199,7 @@ function insertParty(section) {
                     <p>${section.prisfor_7}</p>
                     <p>${section.prisfor_8}</p>
 
-                </article>
+                </section>
 
 
 

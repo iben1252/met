@@ -7,6 +7,7 @@ Galleri
 Om os
 Menukort
 Kontakt side
+MET TIL FEST
 Footer
 Burgermenu
 Responsive
@@ -691,6 +692,113 @@ textarea {
 /*------- KONTAKT FORMULAR SLUT --------*
 
 /*-------------------Kontakt side SLUT --------------*/
+
+
+
+
+
+/*-------------MET TIL FEST------------*/
+
+
+
+/*beskrivelse til party*/
+#party-section h1 {
+    font-family: "Avenir heavy", sans-serif;
+    font-size: 1.2em;
+    margin-top: 16vw;
+    text-align: center;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+#party-section h2 {
+    font-family: "Avenir medium", sans-serif;
+    font-size: 0.9em;
+    margin-top: 0vw;
+    text-align: center;
+}
+
+#party-section p {
+    font: 14px "Avenir light", sans-serif;
+    padding-left: 13vw;
+    padding-right: 13vw;
+
+}
+
+#party-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+
+#party-section .heading h2 {
+    font: 15px Avenir light, Avenir Black, sans-serif;
+    letter-spacing: 0.4vw;
+}
+
+/*beskrivelse til party SLUT*/
+
+
+
+
+/*Månedens menu*/
+#party-section #month_menu h2 {
+    margin-top: 10vw;
+    text-align: left;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+#party-section #month_menu .bottom_menu img {
+    display: none;
+}
+
+#party-section #month_menu .bottom_menu {
+    padding-bottom: 10vw;
+}
+
+/*Månedens menu SLUT*/
+
+
+
+
+/*Grå sektion*/
+#party-section #grey h2 {
+    margin-top: 10vw;
+}
+
+#party-section #grey {
+    background-color: #F2EDEB;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+/*Grå sektion SLUT*/
+
+
+
+
+/*pris forslag*/
+#party-section #price_suggestion h2 {
+    margin-top: 10vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+#party-section #price_suggestion p {
+    text-align: center;
+}
+
+#party-section #price_suggestion {
+    margin-bottom: 28vw;
+}
+
+/*pris forslag SLUT*/
+
+
+/*-------------MET TIL FEST SLUT---------*/
 
 
 
@@ -2410,7 +2518,6 @@ a:-webkit-any-link {
     /*---row 2 i kontakt side----*/
 
     /*-------------Kontakt SLUT-------------*/
-
 
 
 
