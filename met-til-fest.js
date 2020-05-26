@@ -84,9 +84,11 @@ function insertParty(section) {
 
 		`
     <section id="description">
+				<div class="heading_bigdevice">
+                    <h1 class="arrangement">${section.arrangement}</h1>
+                </div>
 
                 <div class="party_info">
-
 					<div class="party_left">
                     	<h1 class="arrangement">${section.arrangement}</h1>
                     	<img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>

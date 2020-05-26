@@ -754,6 +754,10 @@ textarea {
 	padding-right: 13vw;
 }
 
+.heading_bigdevice h1 {
+	display: none;
+}
+
 #party-section #month_menu .bottom_menu img {
 	display: none;
 }
@@ -2866,9 +2870,18 @@ a:-webkit-any-link {
 		grid-template-rows: 100%;
 	}
 
+	.arrangement {
+		display: none;
+	}
+
+	.heading_bigdevice h1 {
+		display: block;
+		margin: 0vw;
+	}
+
 	#party-section .party_info p {
 		padding-left: 0vw;
-		padding-right: 0vw;
+		padding-right: 5vw;
 	}
 
 	.party_left {
@@ -2882,7 +2895,42 @@ a:-webkit-any-link {
 		grid-column-end: 3;
 	}
 
+	/*
+	#party-section .party_left img {
+		width: 65%;
+	}
+*/
+
 	/* Arrangement info SLUT*/
+
+
+	/*Månedens menu*/
+	#month_menu {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	/*Top menu*/
+	#party-section #month_menu .top_menu {
+		padding-left: 0vw;
+		padding-right: 0vw;
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+	}
+
+
+
+	/*Bottom menu*/
+	#party-section #month_menu .bottom_menu {
+		padding-left: 0vw;
+		padding-right: 0vw;
+		;
+	}
+
+
+	/*Månedens menu SLUT*/
 
 
 	/*Grå sektion*/
