@@ -2785,17 +2785,6 @@ a:-webkit-any-link {
     /*--------------SLUT Footer---------------------*/
 
 
-    hej .brunch {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
-    .koldemet {
-        padding-left: 4vw;
-        padding-right: 4vw;
-    }
-
-
 
     /*---------------------- Om os ------------------*/
     /*JS template som fanger og styler*/
@@ -2864,17 +2853,58 @@ a:-webkit-any-link {
 
 
 
+
+
+
+
     /*-------------MET TIL FEST------------*/
 
-    /*beskrivelse til party*/
 
-    .arrangement {
+    /*Grå sektion*/
+    #grey {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
     }
+
+    #party-section #grey h2 {
+        margin-top: -1vw;
+        text-align: left;
+        padding-left: 8vw;
+    }
+
+    #party-section #grey {
+        background-color: #F2EDEB;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    #party-section #grey h2 {
+        padding-left: 11vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 2vw;
+        padding-right: 0vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
+        padding-right: 2vw;
+    }
+
+    /*Grå sektion SLUT*/
+
+
+
+
 
     /*pris forslag*/
 
-    /*
+    #party-section h1 {
+        padding-left: 8vw;
+    }
+
     #party-section #price_suggestion {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2911,95 +2941,9 @@ a:-webkit-any-link {
     #party-section .price_2 p {
         padding-left: 4vw;
         padding-right: 4vw;
-    }*/
+    }
 
     /*pris forslag SLUT*/
-
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 8vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 8vw;
-        padding-right: 4vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-
-
 
 
 
@@ -3117,9 +3061,6 @@ a:-webkit-any-link {
     /*Om os - Thomad og Mette SLUT*/
 
 
-
-
-
     /*Forside Citat */
     .slideshow-container {
         padding-left: 60px;
@@ -3129,93 +3070,27 @@ a:-webkit-any-link {
     /*Forside Citat SLUT*/
 
 
+
     /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
     /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
     #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 8vw;
+        padding-left: 11vw;
+        padding-bottom: 2vw;
     }
 
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
+    #party-section #grey .brunch p {
+        padding-left: 4vw;
+        padding-right: 0vw;
     }
 
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 8vw;
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
         padding-right: 4vw;
     }
 
     /*Grå sektion SLUT*/
+    /*-------------MET TIL FEST SLUT------------*/
 
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
 
 
@@ -3276,93 +3151,6 @@ a:-webkit-any-link {
         height: 16.5em;
     }
 
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 7vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 7vw;
-        padding-right: 6vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
 
 
@@ -3432,91 +3220,15 @@ a:-webkit-any-link {
 
     /*-------------MET TIL FEST------------*/
 
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
 
     /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
+
 
     #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 8vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 8vw;
-        padding-right: 4vw;
+        padding-left: 11vw;
     }
 
     /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
 
 
@@ -3545,93 +3257,7 @@ a:-webkit-any-link {
         width: 15.5em;
     }
 
-    /*-------------MET TIL FEST------------*/
 
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 9vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 9vw;
-        padding-right: 5vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 
 }
 
@@ -3661,93 +3287,7 @@ a:-webkit-any-link {
         width: 16em;
     }
 
-    /*-------------MET TIL FEST------------*/
 
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 7vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 7vw;
-        padding-right: 4vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
 
 
@@ -3769,93 +3309,6 @@ a:-webkit-any-link {
         width: 18.9em;
     }
 
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 7vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 7vw;
-        padding-right: 4vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
 
 
@@ -3880,6 +3333,22 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 904px) {
 
+
+    /*MET til FEST*/
+    /*Grå sektion*/
+
+    #party-section #grey .brunch p {
+        padding-left: 6vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
+    }
+
+    /*Grå sektion SLUT*/
+    /*MET til FEST*/
+
+
     /*kontakt side*/
     .gmap_canvas {
         padding-right: 7vw;
@@ -3895,12 +3364,6 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 915px) {
 
-
-
-    /*MET til fest*/
-
-
-    /*MET til fest SLUT*/
 
     /*kontakt side*/
     .gmap_canvas {
@@ -4120,12 +3583,34 @@ a:-webkit-any-link {
         padding-right: 7vw;
     }
 
-    /*MET til fest */
+    /*Grå sektion*/
+    #party-section #grey h2 {
+        padding-left: 12.4vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 10vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 16vw;
+    }
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 11vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 10vw;
+    }
+
+    /*Grå sektion SLUT*/
+    /*MET til fest*/
+
 
     /*kontakt side*/
     .infomation h3 {
         padding-top: 3.3vw;
-
     }
 
     #contact {
@@ -4133,7 +3618,6 @@ a:-webkit-any-link {
     }
 
     .mapouter {
-
         width: 100%;
     }
 
@@ -4216,94 +3700,6 @@ a:-webkit-any-link {
     }
 
     /*Om os citat SLUT*/
-
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 8vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 8vw;
-        padding-right: 3vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 
 
 }
@@ -4504,6 +3900,22 @@ a:-webkit-any-link {
         padding-right: 9vw;
     }
 
+
+    /*Grå sektion*/
+    #party-section #grey .koldemet h2 {
+        padding-left: 9vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 12vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 12vw;
+    }
+
+    /*Grå sektion SLUT*/
+
     /*MET til fest */
 
 
@@ -4531,6 +3943,20 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1100px) {
+
+
+
+    /*Grå sektion*/
+    #party-section #grey .brunch p {
+        padding-left: 13vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 13vw;
+    }
+
+    /*Grå sektion SLUT*/
+
 
     /*kontakt side*/
 
@@ -4662,93 +4088,6 @@ a:-webkit-any-link {
 
     /*SLUT kontakt side*/
 
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 9vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 9vw;
-        padding-right: 7vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 
 }
 
@@ -4796,6 +4135,32 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1200px) {
+
+    /*MET til fest*/
+    /*Grå sektion*/
+    #party-section #grey .koldemet h2 {
+        padding-left: 9vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 14.5vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 14.5vw;
+    }
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
+
+    /*Grå sektion SLUT*/
+    /*MET til fest*/
+
 
     /*kontakt side*/
 
@@ -4934,6 +4299,16 @@ a:-webkit-any-link {
         margin-top: 3vw;
     }
 
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
+
+
     /*MET til fest */
 
     /*kontakt side*/
@@ -4992,6 +4367,19 @@ a:-webkit-any-link {
     #party-section #price_suggestion h2 {
         margin-top: 2vw;
     }
+
+    /*Grå sektion*/
+    #party-section #grey .brunch p {
+        padding-left: 16vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 16vw;
+    }
+
+    /*Grå sektion SLUT*/
+    /*MET til fest */
+
 
     /*kontakt side*/
 
@@ -5083,9 +4471,30 @@ a:-webkit-any-link {
         padding-right: 18vw;
     }
 
+    /*Grå sektion*/
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 18vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 18vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 19vw;
+    }
+
+    /*Grå sektion SLUT*/
     /*MET til fest SLUT*/
 
-    /*kontakt side*/
+
+
+
     /*kontakt side*/
 
     #contact {
@@ -5144,7 +4553,37 @@ a:-webkit-any-link {
         padding-right: 19vw;
     }
 
+
+    /*Grå sektion*/
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 20vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 20vw;
+    }
+
+
+
+    #party-section #grey h2 {
+        padding-bottom: 1vw;
+    }
+
+    /*Grå sektion SLUT*/
     /*MET til fest SLUT*/
+
+
+
+
     /*kontakt side*/
 
     #contact {
@@ -5249,91 +4688,4 @@ a:-webkit-any-link {
     /*Forside Citat SLUT*/
 
 
-    /*-------------MET TIL FEST------------*/
-
-    /*beskrivelse til party*/
-    #party-section h1 {
-        font-family: "Avenir heavy", sans-serif;
-        font-size: 1.2em;
-        margin-top: 16vw;
-        text-align: center;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-
-    .arrangement {
-        display: none;
-    }
-
-    #party-section h2 {
-        font-family: "Avenir medium", sans-serif;
-        font-size: 0.9em;
-        margin-top: 0vw;
-        text-align: center;
-    }
-
-    #party-section p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 13vw;
-        padding-right: 13vw;
-    }
-
-    #party-section img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #party-section .heading h2 {
-        font: 15px Avenir light, Avenir Black, sans-serif;
-        letter-spacing: 0.4vw;
-    }
-
-    /*beskrivelse til party SLUT*/
-
-    .party_info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 40% 60%;
-    }
-
-    .party_info p {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        margin-top: 1vw;
-    }
-
-    /*Grå sektion*/
-    #grey {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-    }
-
-    #party-section #grey h2 {
-        margin-top: -1vw;
-        text-align: left;
-        padding-left: 10vw;
-    }
-
-    #party-section #grey {
-        background-color: #F2EDEB;
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
-
-    #party-section #grey p {
-        font: 14px "Avenir light", sans-serif;
-        padding-left: 10vw;
-        padding-right: 3vw;
-    }
-
-    /*Grå sektion SLUT*/
-
-
-    /*pris forslag*/
-
-
-    /*pris forslag SLUT*/
 }
