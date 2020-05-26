@@ -83,6 +83,8 @@ function insertParty(section) {
 
 
         `
+    <section id="description">
+
                 <div class="party_info">
 
                     <h1 class="arrangement">${section.arrangement}</h1>
@@ -101,6 +103,7 @@ function insertParty(section) {
                     <h2>${section.tildel_maaned}</h2>
                 </div>
 
+        </section>
 
 
         <section id="month_menu">
@@ -173,7 +176,7 @@ function insertParty(section) {
                 </section>
 
 
-            <h1>${section.priser}</h1>
+            <h1 class="price_heading">${section.priser}</h1>
 
 
                 <section id="price_suggestion">
