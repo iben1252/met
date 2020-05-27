@@ -4689,7 +4689,17 @@ a:-webkit-any-link {
 
 	/*Grå sektion SLUT*/
 
-	/*MET til fest */
+	/*MET til fest*/
+	.red_box1 {
+		width: 28vw;
+		height: 38vh;
+	}
+
+	.red_box2 {
+		height: 38vh;
+	}
+
+	/*MET til fest SLUT*/
 
 
 	/*kontakt side*/
@@ -4827,6 +4837,24 @@ a:-webkit-any-link {
 	/*Forside Citat SLUT*/
 
 
+
+	/*MET til fest*/
+	.red_box1 {
+		width: 28vw;
+		height: 40vh;
+		margin: 11vw 10vw 0vw 0vw;
+	}
+
+	.red_box2 {
+		height: 40vh;
+		width: 60vw;
+		margin: 11vw 0vw;
+		right: 5vw;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 
@@ -4888,6 +4916,8 @@ a:-webkit-any-link {
 
 	/*SLUT kontakt side*/
 
+
+	/*Menu*/
 	#menuCard {
 		padding: 0em 16em;
 	}
@@ -4904,6 +4934,22 @@ a:-webkit-any-link {
 		width: 16em;
 		height: 14em;
 	}
+
+	/*Menu SLUT*/
+
+
+	/*MET til fest*/
+	.red_box1 {
+		margin: 12vw 10vw 0vw 0vw;
+	}
+
+	.red_box2 {
+		margin: 12vw 0vw;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 
@@ -5054,6 +5100,23 @@ a:-webkit-any-link {
 
 	/*Om os citat SLUT*/
 
+
+
+
+	/*MET til fest*/
+	.red_box1 {
+		height: 45vh;
+		margin: 10.5vw 10vw 0vw 0vw;
+	}
+
+	.red_box2 {
+		height: 45vh;
+		margin: 10.5vw 0vw;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 @media screen and (min-width: 1250px) {
@@ -5105,6 +5168,8 @@ a:-webkit-any-link {
 	/*SLUT kontakt side*/
 
 
+
+	/*Menu*/
 	.white-border1 {
 		height: 32.5em;
 		width: 17.5em;
@@ -5121,6 +5186,23 @@ a:-webkit-any-link {
 		width: 20em;
 		height: 17em;
 	}
+
+	/*Menu SLUT*/
+
+
+
+	/*MET til fest*/
+	.red_box1 {
+		height: 47vh;
+	}
+
+	.red_box2 {
+		height: 47vh;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 
