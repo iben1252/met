@@ -144,7 +144,7 @@ function insertParty(section) {
 						</div>
 
 						<img src="${section.billedhojre_1.guid}" alt="Billede af et fællespisningsbord";>
-					</div
+					</div>
                 </div>
 
 
