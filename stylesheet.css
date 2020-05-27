@@ -3160,24 +3160,22 @@ a:-webkit-any-link {
 	}
 
 	.red_box1 {
-		display: blononeck;
-		position: absolute;
-		z-index: 1;
 		border: #DD3340 solid 0.25vw;
 		width: 28vw;
 		height: 45vw;
-		justify-content: center;
+		margin: 6vw 0vw;
 	}
 
 	.red_box2 {
-		display: none;
-		position: absolute;
-		z-index: -1;
 		border: #DD3340 solid 0.25vw;
 		width: 60vw;
 		height: 45vw;
-		justify-content: center;
+		margin: 6vw 0vw;
 		right: 4vw;
+	}
+
+	#party-section .party_info img {
+		width: 70%;
 	}
 
 	.arrangement {
@@ -3213,20 +3211,51 @@ a:-webkit-any-link {
 		grid-column-end: 3;
 	}
 
-	/*
-	#party-section .party_left img {
-		width: 65%;
-	}
-*/
 
 	/* Arrangement info SLUT*/
 
 
 	/*Månedens menu*/
 	#month_menu {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
+		margin 5vw;
+	}
+
+	#party-section #month_menu .top_menu img {
+		padding-top: 3vw;
+	}
+
+	#party-section #month_menu h2 {
+		padding-left: 0vw;
+		padding-right: 0vw;
+		margin-top: 5vw;
+	}
+
+	#party-section #month_menu p {
+		padding: 0vw;
+	}
+
+	.snacks_text {
+		padding: 2vw 6vw 0vw 6vw;
+	}
+
+	.salat_text {
+		padding: 9vw 5.5vw 0vw 6vw;
+	}
+
+	.dessert_text {
+		padding: 9vw 8vw 0vw 6vw;
+	}
+
+
+	.sandwich_text {
+		padding: 12vw 5.5vw 0vw 6vw;
+	}
+
+
+	#party-section #month_menu .top_menu img {
+		width: 75%;
+		margin-top: 5vw;
+		margin-bottom: 5vw;
 	}
 
 	/*Top menu*/
@@ -3234,7 +3263,9 @@ a:-webkit-any-link {
 		padding-left: 0vw;
 		padding-right: 0vw;
 		grid-column-start: 1;
-		grid-column-end: 2;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
 	}
 
 	/*Bottom menu*/
@@ -3242,6 +3273,16 @@ a:-webkit-any-link {
 		padding-left: 0vw;
 		padding-right: 0vw;
 	}
+
+	.top_menu1,
+	.top_menu2,
+	.bottom_menu1,
+	.bottom_menu2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
 
 
 	/*Månedens menu SLUT*/

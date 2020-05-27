@@ -88,12 +88,15 @@ function insertParty(section) {
                 <div class="party_info">
 					<div class="red_box1">
 					</div>
+
 					<div class="party_left">
                     	<h1 class="arrangement">${section.arrangement}</h1>
                     	<img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
 					</div>
+
 					<div class="red_box2">
 					</div>
+
 					<div class="party_right">
 						<h1 class="arrangement_2">${section.arrangement}</h1>
 						<p>${section.underbeskrivelse_1}</p>
@@ -116,44 +119,58 @@ function insertParty(section) {
 
                 <div class="top_menu">
 
-                    <img src="${section.billedvenstre_1.guid}" alt="Billede af et fællespisningsbord";>
+					<div class="top_menu1">
+                    	<img src="${section.billedvenstre_1.guid}" alt="Billede af et fællespisningsbord";>
 
-                    <h2 class="snacks_overskirft">${section.snacks_overskrift}</h2>
-                    <p>${section.snacks_1}</p>
-                    <p>${section.snacks_2}</p>
-                    <p>${section.snacks_3}</p>
-                    <p>${section.snacks_4}</p>
-                    <p>${section.snacks_5}</p>
-                    <p>${section.snacks_6}</p>
-                    <p>${section.snacks_7}</p>
+						<div class="snacks_text">
+							<h2 class="snacks_overskirft">${section.snacks_overskrift}</h2>
+							<p>${section.snacks_1}</p>
+							<p>${section.snacks_2}</p>
+							<p>${section.snacks_3}</p>
+							<p>${section.snacks_4}</p>
+							<p>${section.snacks_5}</p>
+							<p>${section.snacks_6}</p>
+							<p>${section.snacks_7}</p>
+						</div>
+					</div>
 
-                    <h2 class="signatursalater">${section.signatursalater}</h2>
-                    <p>${section.salater_1}</p>
-                    <p>${section.salater_2}</p>
-                    <p>${section.salater_3}</p>
+					<div class="top_menu2">
 
-                    <img src="${section.billedhojre_1.guid}" alt="Billede af et fællespisningsbord";>
+						<div class="salat_text">
+							<h2 class="signatursalater">${section.signatursalater}</h2>
+							<p>${section.salater_1}</p>
+							<p>${section.salater_2}</p>
+							<p>${section.salater_3}</p>
+						</div>
 
+						<img src="${section.billedhojre_1.guid}" alt="Billede af et fællespisningsbord";>
+					</div
                 </div>
 
 
 
                 <div class="bottom_menu">
+					<div class="bottom_menu1">
+						<img src="${section.billedvenstre_2.guid}" alt="Billede af et fællespisningsbord";>
 
-                    <img src="${section.billedvenstre_2.guid}" alt="Billede af et fællespisningsbord";>
+						<div class="dessert_text">
+							<h2 class="desserter_overskrift">${section.desserter_overskrift}</h2>
+							<p>${section.dessert_1}</p>
+							<p>${section.dessert_2}</p>
+							<p>${section.dessert_3}</p>
+						</div>
+					</div>
 
-                    <h2 class="desserter_overskrift">${section.desserter_overskrift}</h2>
-                    <p>${section.dessert_1}</p>
-                    <p>${section.dessert_2}</p>
-                    <p>${section.dessert_3}</p>
+					<div class="bottom_menu2">
+						<div class="sandwich_text">
+							<h2 class="sandwich_overskrift">${section.sandwich_overskrift}</h2>
+							<p>${section.sand_1}</p>
+							<p>${section.sand_2}</p>
+							<p>${section.sand_3}</p>
+						</div>
 
-                    <h2 class="sandwich_overskrift">${section.sandwich_overskrift}</h2>
-                    <p>${section.sand_1}</p>
-                    <p>${section.sand_2}</p>
-                    <p>${section.sand_3}</p>
-
-                    <img src="${section.billedhojre_2.guid}" alt="Billede af et fællespisningsbord";>
-
+						<img src="${section.billedhojre_2.guid}" alt="Billede af et fællespisningsbord";>
+					</div>
                 </div>
 
             </section>
