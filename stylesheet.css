@@ -741,6 +741,10 @@ textarea {
 
 }
 
+#party-section .party_info p {
+	padding: 0vw 20vw;
+}
+
 #party-section img {
 	display: block;
 	margin-left: auto;
@@ -751,6 +755,7 @@ textarea {
 #party-section .party_info img {
 	margin-top: 6vw;
 	margin-bottom: 6vw;
+	width: 65%;
 }
 
 #party-section .heading h2 {
@@ -767,9 +772,9 @@ textarea {
 	position: absolute;
 	z-index: -1;
 	border: #DD3340 solid 0.1vw;
-	width: 91.5vw;
-	height: 80vw;
-	margin: 0vw 5vw;
+	width: 80vw;
+	height: 72vw;
+	margin: 0vw 10vw;
 }
 
 .red_box2 {
@@ -777,9 +782,9 @@ textarea {
 	position: absolute;
 	z-index: 1;
 	border: #DD3340 solid 0.1vw;
-	width: 91.5vw;
-	height: 140vw;
-	margin: -20vw 5vw 5vw;
+	width: 80vw;
+	height: 170vw;
+	margin: -20vw 10vw 10vw;
 }
 
 /*beskrivelse til party SLUT*/
@@ -1197,6 +1202,14 @@ a:-webkit-any-link {
 
 	/*Footer*/
 
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 152vw;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 
@@ -1277,11 +1290,15 @@ a:-webkit-any-link {
 	}
 
 	.red_box1 {
-		height: 80vw;
+		height: 70vw;
 	}
 
 	.red_box2 {
-		height: 125vw;
+		height: 140vw;
+	}
+
+	#party-section .heading h1 {
+		margin-top: 25vw;
 	}
 
 	/*MET til Fest SLUT*/
@@ -1302,6 +1319,13 @@ a:-webkit-any-link {
 	}
 
 	/* SLUT Kontakt side*/
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 130vw;
+	}
+
+	/*MET til fest SLUT*/
 }
 
 
@@ -1316,8 +1340,12 @@ a:-webkit-any-link {
 	/* SLUT Kontakt side*/
 
 	/*MET til fest*/
+	.red_box1 {
+		height: 70vw;
+	}
+
 	.red_box2 {
-		height: 115vw;
+		height: 122vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -1418,6 +1446,18 @@ a:-webkit-any-link {
 		height: 400px;
 		width: 320px;
 	}
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 110vw;
+	}
+
+	#party-section .party_info img {
+		width: 65%;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 
@@ -1436,11 +1476,11 @@ a:-webkit-any-link {
 
 	/*MET til fest*/
 	.red_box1 {
-		height: 80vw;
+		height: 70vw;
 	}
 
 	.red_box2 {
-		height: 95vw;
+		height: 105vw;
 	}
 
 	#party-section .heading h1 {
@@ -1477,6 +1517,13 @@ a:-webkit-any-link {
 	}
 
 	/* SLUT Kontakt side*/
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 93vw;
+	}
+
+	/*MET til fest SLUT*/
 }
 
 
@@ -1590,18 +1637,18 @@ a:-webkit-any-link {
 
 	/*MET til fest*/
 	.red_box1 {
-		height: 70vw;
+		height: 62vw;
 	}
 
 	.red_box2 {
-		height: 78vw;
+		height: 84vw;
 	}
 
 	#party-section .heading h1 {
 		margin-top: 15vw;
 	}
 
-	/*MET til fest SLUT/
+	/*MET til fest SLUT*/
 
 }
 
@@ -1817,11 +1864,23 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 517px) {
 
+	/*Kontakt side*/
+
 	#contact_row {
 		margin-left: 3vw;
 		margin-right: 3vw;
-
 	}
+
+	/*Kontakt side SLUT*/
+
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 75vw;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 @media screen and (min-width: 527px) {
@@ -1918,7 +1977,7 @@ a:-webkit-any-link {
 
 	/*MET til fest*/
 	.red_box2 {
-		height: 70vw;
+		height: 80vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -1935,10 +1994,6 @@ a:-webkit-any-link {
 		padding-left: 4vw;
 		padding-right: 4vw;
 	}
-
-	.red_box1 {}
-
-	.red_box2 {}
 
 	#party-section #month_menu .top_menu img {
 		margin-top: 1vw;
@@ -2041,6 +2096,28 @@ a:-webkit-any-link {
 	.drikke_price_list li {
 		margin-right: 13em;
 	}
+
+	/*Menu SLUT*/
+
+
+	/*MET til fest*/
+	#party-section .arrangement {
+		padding-left: 25vw;
+		padding-right: 25vw;
+	}
+
+	.red_box1 {
+		width: 70vw;
+		margin: 0vw 11vw;
+	}
+
+	.red_box2 {
+		width: 70vw;
+		margin: -20vw 11vw 11vw;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 
@@ -2059,8 +2136,16 @@ a:-webkit-any-link {
 
 	}
 
-
 	/* SLUT Kontakt side*/
+
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 75vw;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 @media screen and (min-width: 600px) {
@@ -2181,6 +2266,15 @@ a:-webkit-any-link {
 
 	/*MENUKORT SLUT*/
 
+
+	/*MET til fest*/
+	.red_box2 {
+		height: 68vw;
+	}
+
+	/*MET til fest SLUT*/
+
+
 	/*Footer*/
 	.some_container svg {
 		width: 20%;
@@ -2284,6 +2378,23 @@ a:-webkit-any-link {
 		padding-right: 17vw;
 	}
 
+	.red_box1 {
+		width: 63vw;
+		height: 56vw;
+		margin: 0vw 15vw;
+	}
+
+	.red_box2 {
+		width: 63vw;
+		height: 59vw;
+		margin: -17vw 15vw 15vw
+	}
+
+	#party-section .party_info img {
+		width: 57%;
+	}
+
+
 	#party-section #month_menu h2 {
 		padding-left: 17vw;
 		padding-right: 13vw;
@@ -2313,6 +2424,7 @@ a:-webkit-any-link {
 		margin-top: 10vw;
 		padding-bottom: 3vw;
 	}
+
 
 	/*MET TIL FEST SLUT*/
 
@@ -2382,6 +2494,21 @@ a:-webkit-any-link {
 	}
 
 	/* SLUT Kontakt side*/
+
+
+	/*MET til fest*/
+	.red_box1 {
+		height: 53vw;
+	}
+
+	.red_box2 {
+		height: 59vw;
+		margin -15vw 15vw 15vw;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 
@@ -2394,6 +2521,17 @@ a:-webkit-any-link {
 	}
 
 	/* SLUT Kontakt side*/
+
+
+
+	/*MET til fest*/
+
+	.red_box2 {
+		height: 53vw;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 
@@ -2407,6 +2545,26 @@ a:-webkit-any-link {
 
 	#party-section img {
 		width: 57%;
+	}
+
+	#party-section .party_info img {
+		width: 50%;
+	}
+
+	.red_box1 {
+		height: 46vw;
+		width: 56vw;
+		margin: 0vw 18vw;
+	}
+
+	.red_box2 {
+		height: 55vw;
+		width: 56vw;
+		margin: -16vw 18vw 18vw;
+	}
+
+	#party-section .party_info p {
+		padding: 0vw 24vw;
 	}
 
 	#party-section #month_menu .top_menu img {
