@@ -3162,15 +3162,15 @@ a:-webkit-any-link {
 	.red_box1 {
 		border: #DD3340 solid 0.25vw;
 		width: 28vw;
-		height: 45vw;
-		margin: 6vw 0vw;
+		height: 40vw;
+		margin: 8vw 0vw;
 	}
 
 	.red_box2 {
 		border: #DD3340 solid 0.25vw;
 		width: 60vw;
-		height: 45vw;
-		margin: 6vw 0vw;
+		height: 40vw;
+		margin: 8vw 0vw;
 		right: 4vw;
 	}
 
@@ -3216,12 +3216,12 @@ a:-webkit-any-link {
 
 
 	/*Månedens menu*/
-	#month_menu {
-		margin 5vw;
+	#party-section #month_menu {
+		margin: 0vw 7vw;
 	}
 
 	#party-section #month_menu .top_menu img {
-		padding-top: 3vw;
+		padding-top: 5vw;
 	}
 
 	#party-section #month_menu h2 {
@@ -3235,20 +3235,19 @@ a:-webkit-any-link {
 	}
 
 	.snacks_text {
-		padding: 2vw 6vw 0vw 6vw;
+		padding: 3vw 6vw 0vw 0vw;
 	}
 
 	.salat_text {
-		padding: 9vw 5.5vw 0vw 6vw;
+		padding: 9vw 0vw 0vw 6vw;
 	}
 
 	.dessert_text {
-		padding: 9vw 8vw 0vw 6vw;
+		padding: 13vw 8vw 0vw 0vw;
 	}
 
-
 	.sandwich_text {
-		padding: 12vw 5.5vw 0vw 6vw;
+		padding: 13vw 0vw 0vw 6vw;
 	}
 
 
@@ -3645,8 +3644,44 @@ a:-webkit-any-link {
 	/*-------------MET TIL FEST------------*/
 
 
-	/*Grå sektion*/
+	/*Månedens menu*/
 
+	#party-section #month_menu {
+		margin: 0vw 7vw;
+	}
+
+	#party-section #month_menu .top_menu img {
+		padding-top: 3vw;
+	}
+
+	#party-section #month_menu p {
+		padding: 0vw;
+	}
+
+	.snacks_text {
+		padding: 7vw 4.5vw 0vw 0vw;
+	}
+
+	.salat_text {
+		padding: 14vw 0vw 0vw 4.5vw;
+	}
+
+	.dessert_text {
+		padding: 14vw 4.5vw 0vw 0vw;
+	}
+
+	.sandwich_text {
+		padding: 14vw 0vw 0vw 4.5vw;
+	}
+
+
+	#party-section #month_menu .top_menu img {
+		width: 80%;
+	}
+
+	/*Månedens menu SLUT*/
+
+	/*Grå sektion*/
 
 	#party-section #grey h2 {
 		padding-left: 11vw;
@@ -3797,6 +3832,9 @@ a:-webkit-any-link {
 	/*SLUT kontakt side*/
 
 
+
+
+	/*Menu*/
 	#morgenmad-section img {
 		max-width: 90%;
 	}
@@ -3818,6 +3856,43 @@ a:-webkit-any-link {
 		height: 16em;
 		width: 17em;
 	}
+
+	/* Menu SLUT */
+
+
+
+	/*MET til fest*/
+	#party-section #month_menu {
+		margin: 0vw 10vw;
+	}
+
+	#party-section #month_menu .top_menu img {
+		padding-top: 3vw;
+	}
+
+	.snacks_text {
+		padding: 5vw 4.5vw 0vw 0vw;
+	}
+
+	.salat_text {
+		padding: 12vw 0vw 0vw 4.5vw;
+	}
+
+	.dessert_text {
+		padding: 13vw 4.5vw 0vw 0vw;
+	}
+
+	.sandwich_text {
+		padding: 12vw 0vw 0vw 4.5vw;
+	}
+
+
+	#party-section #month_menu .top_menu img {
+		width: 80%;
+	}
+
+	/*MET til fest SLUT*/
+
 }
 
 
