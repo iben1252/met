@@ -84,9 +84,6 @@ function insertParty(section) {
 
 		`
     <section id="description">
-				<div class="heading_bigdevice">
-                    <h1 class="arrangement">${section.arrangement}</h1>
-                </div>
 
                 <div class="party_info">
 					<div class="red_box1">
