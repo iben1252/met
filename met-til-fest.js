@@ -89,9 +89,13 @@ function insertParty(section) {
                 </div>
 
                 <div class="party_info">
+					<div class="red_box1">
+					</div>
 					<div class="party_left">
                     	<h1 class="arrangement">${section.arrangement}</h1>
                     	<img src="${section.metfest_billede.guid}" alt="Billede af et fællespisningsbord";>
+					</div>
+					<div class="red_box2">
 					</div>
 					<div class="party_right">
 						<h1 class="arrangement_2">${section.arrangement}</h1>
