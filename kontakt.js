@@ -117,19 +117,6 @@ function insertContact(section) {
 
                 <div class="form_container">
                         ${section.content.rendered}
-
-<!--
-                        <form action="mailto:iben.bording.nielsen1998@gmail.com">
-                        <label for="fname">Fornavn</label>
-                        <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                        <label for="lname">Email</label>
-                        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                        <label for="subject">Besked</label>
-                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                        <input type="submit" value="Send"/>
-                    </form>
--->
-
                 </div>
 
 </div>
