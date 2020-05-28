@@ -4631,6 +4631,16 @@ a:-webkit-any-link {
         height: 32em;
     }
 
+<<<<<<< HEAD
+	#party-section .heading h1 {
+		margin-top: 10vw;
+	}
+
+	#party-section #month_menu .top_menu img,
+	#party-section #month_menu .bottom_menu img {
+		padding-top: 0vw;
+	}
+=======
     .white-border2 {
         border: white solid 0.5em;
         margin-top: 2em;
@@ -4766,6 +4776,7 @@ a:-webkit-any-link {
     #party-section #month_menu .bottom_menu img {
         padding-top: 0vw;
     }
+>>>>>>> master/master
 
     #party-section #month_menu h2 {
         padding-left: 0vw;
@@ -4795,6 +4806,15 @@ a:-webkit-any-link {
     }
 
 
+<<<<<<< HEAD
+	#party-section #month_menu .top_menu img,
+	#party-section #month_menu .bottom_menu img {
+		width: 80%;
+		margin-top: 5vw;
+		margin-bottom: 0vw;
+		z-index: 1;
+	}
+=======
     #party-section #month_menu .top_menu img,
     #party-section #month_menu .bottom_menu img {
         width: 90%;
@@ -4802,6 +4822,7 @@ a:-webkit-any-link {
         margin-bottom: 0vw;
         z-index: 1;
     }
+>>>>>>> master/master
 
     /*Top menu*/
     #party-section #month_menu .top_menu {
@@ -4812,10 +4833,19 @@ a:-webkit-any-link {
         grid-row-start: 1;
         grid-row-end: 2;
 
+<<<<<<< HEAD
+	/*Bottom menu*/
+	#party-section #month_menu .bottom_menu {
+		margin-top: -2vw;
+		padding-left: 0vw;
+		padding-right: 0vw;
+		padding-bottom: 5vw;
+=======
         display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
         grid-template-rows: 70%;
     }
+>>>>>>> master/master
 
     /*Bottom menu*/
     #party-section #month_menu .bottom_menu {
@@ -4842,10 +4872,17 @@ a:-webkit-any-link {
         grid-column-start: 3;
         grid-column-end: 5;
 
+<<<<<<< HEAD
+	#party-section #month_menu .bottom_menu1 img,
+	#party-section #month_menu .bottom_menu2 img {
+		margin-top: -5vw;
+	}
+=======
         display: grid;
         grid-template-columns: 1fr 0.8fr;
         grid-template-rows: auto;
     }
+>>>>>>> master/master
 
 
     #party-section #month_menu .top_menu1 img,
@@ -5401,7 +5438,16 @@ a:-webkit-any-link {
         margin: 10.5vw 0vw;
     }
 
+<<<<<<< HEAD
+	#party-section #month_menu .bottom_menu1 img,
+	#party-section #month_menu .bottom_menu2 img {
+		margin-top: -5vw;
+	}
+
+	/*MET til fest SLUT*/
+=======
     /*MET til fest SLUT*/
+>>>>>>> master/master
 
 
 }
@@ -5489,6 +5535,14 @@ a:-webkit-any-link {
 
 
 
+<<<<<<< HEAD
+	#party-section #month_menu .bottom_menu1 img,
+	#party-section #month_menu .bottom_menu2 img {
+		margin-top: -2vw;
+	}
+
+	/*MET til fest SLUT*/
+=======
     /*MET til fest*/
     .red_box1 {
         height: 47vh;
@@ -5499,6 +5553,7 @@ a:-webkit-any-link {
     }
 
     /*MET til fest SLUT*/
+>>>>>>> master/master
 
 
 }
@@ -5631,6 +5686,14 @@ a:-webkit-any-link {
     /*Om os citat SLUT*/
 
 
+<<<<<<< HEAD
+	#party-section #month_menu .bottom_menu1 img,
+	#party-section #month_menu .bottom_menu2 img {
+		margin-top: 0vw;
+	}
+
+	/*MET til fest SLUT*/
+=======
     /*MET til fest*/
     .red_box1 {
         height: 49vh;
@@ -5641,6 +5704,7 @@ a:-webkit-any-link {
     }
 
     /*MET til fest SLUT*/
+>>>>>>> master/master
 
 
 
@@ -5655,7 +5719,16 @@ a:-webkit-any-link {
         padding-right: 18vw;
     }
 
+<<<<<<< HEAD
+	#party-section #month_menu .bottom_menu1 img,
+	#party-section #month_menu .bottom_menu2 img {
+		margin-top: 2vw;
+	}
+
+	/*Grå sektion*/
+=======
     /*Grå sektion*/
+>>>>>>> master/master
 
     #party-section #grey .koldemet h2 {
         padding-left: 8vw;
@@ -5741,7 +5814,21 @@ a:-webkit-any-link {
         height: 51vh;
     }
 
+<<<<<<< HEAD
+	.salat_text,
+	.sandwich_text {
+		padding: 0vw 0vw 0vw 4vw;
+	}
+
+	.snacks_text,
+	.dessert_text {
+		padding: 0vw 4vw 0vw 0vw;
+	}
+
+	/*MET til fest SLUT*/
+=======
     /*MET til fest SLUT*/
+>>>>>>> master/master
 
 
 }
