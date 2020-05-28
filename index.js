@@ -95,15 +95,33 @@ function insertGallery(section) {
         `
 						<section>
 							<div class="content">
-								<div class="picture-left">
+								<div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="${section.billede_venstre.guid}" alt="Billede af caffeen facade" style="width:300px;height:300px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p class="pictur_header">${section.billede_venstre_overskrift}</p>                         <p>${section.billede_venstre_tekst1}</p><p>${section.billede_venstre_tekst2}</p><p>${section.billede_venstre_tekst3}</p><p>${section.billede_venstre_tekst4}</p><p class="end_text">${section.billede_venstre_tekst5}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+<!-----
+                                <div class="picture-left">
 									<div class="front">
-										<img src="${section.billede_venstre.guid}" alt="Billede af caffeen facade";"></div>
+										<img src="${section.billede_venstre.guid}" alt="Billede af caffeen facade";"
+                                    </div>
 
 									<div class="back">
 										<p>${section.billede_venstre_tekst}</p>
 									</div>
 
-								</div>
+				                </div>
+
+--->
 
 							<div class="gallery-content" id="${section.slug}">
 								<div class="top">
@@ -134,6 +152,8 @@ function clickCard() {
 
     front.addEventListener("click");
     flipFrontCard();
+
+
 }
 
 function flipFrontCard() {
