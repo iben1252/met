@@ -5328,6 +5328,20 @@ a:-webkit-any-link {
 
 	/*Om os citat SLUT*/
 
+
+	/*MET til fest*/
+	.red_box1 {
+		height: 49vh;
+	}
+
+	.red_box2 {
+		height: 49vh;
+	}
+
+	/*MET til fest SLUT*/
+
+
+
 }
 
 
@@ -5384,6 +5398,9 @@ a:-webkit-any-link {
 	/*SLUT kontakt side*/
 
 
+
+
+	/*Menu*/
 	#morgenmad-section img {
 		max-width: 85%;
 		max-height: 85%;
@@ -5409,6 +5426,23 @@ a:-webkit-any-link {
 		width: 21em;
 		height: 17em;
 	}
+
+	/*Menu SLUT*/
+
+
+
+	/*MET til fest*/
+	.red_box1 {
+		height: 51vh;
+	}
+
+	.red_box2 {
+		height: 51vh;
+	}
+
+	/*MET til fest SLUT*/
+
+
 }
 
 
@@ -5416,6 +5450,22 @@ a:-webkit-any-link {
 
 
 	/*MET til fest */
+
+	/*Info*/
+	.red_box1 {
+		height: 55vh;
+		margin: 10vw 0vw;
+	}
+
+	.red_box2 {
+		height: 55vh;
+		margin: 10vw 0vw;
+	}
+
+	/*Info SLUT*/
+
+
+
 	#party-section #price_suggestion {
 		padding-left: 19vw;
 		padding-right: 19vw;
