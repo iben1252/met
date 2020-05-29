@@ -2363,6 +2363,7 @@ a:-webkit-any-link {
 		background-color: transparent;
 		width: 250px;
 		height: 300px;
+		justify-self: end;
 		/*        border: 1px solid #f1f1f1;*/
 		perspective: 1000px;
 		/* Remove this if you don't want the 3D effect */
@@ -3140,7 +3141,7 @@ a:-webkit-any-link {
 	/*-----------Galleri----------*/
 	#gallery-section .content {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
+		grid-template-rows: 1fr 1fr;
 	}
 
 	/*---------Galleri SLUT--------*/
