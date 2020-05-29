@@ -3139,8 +3139,8 @@ a:-webkit-any-link {
 
 	/*-----------Galleri----------*/
 	#gallery-section .content {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 10% 10% 10% 10%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
 	}
 
 	/*---------Galleri SLUT--------*/
