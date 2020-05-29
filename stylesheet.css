@@ -1658,7 +1658,7 @@ a:-webkit-any-link {
         margin-top: 3em;
         margin-left: -1em;
         width: 18.5em;
-        height: 25.5em;
+        height: 28em;
         position: absolute;
     }
 
@@ -1824,6 +1824,10 @@ a:-webkit-any-link {
         padding: 0em 5em 0em 0em;
     }
 
+    #menukort h1{
+        margin-top: 2vw;
+    }
+
     .morgenmad-text p {
         padding: 0em 5em 0em 0em;
     }
@@ -1866,7 +1870,7 @@ a:-webkit-any-link {
         margin-top: 3em;
         margin-left: -1em;
         width: 18em;
-        height: 24em;
+        height: 27.5em;
         position: absolute;
     }
 
@@ -1947,7 +1951,7 @@ a:-webkit-any-link {
         margin-top: 2em;
         margin-left: -0.5em;
         width: 17em;
-        height: 23.5em;
+        height: 28em;
         position: absolute;
     }
 
@@ -3163,16 +3167,19 @@ a:-webkit-any-link {
     /* Galleri */
 
     #gallery-section .flip-card-front img {
-        width: 44vw;
+        width: 35vw;
     }
 
     #gallery-section .gallery-content img {
-        max-height: 23vw;
+        max-height: 21vw;
         max-width: 23vw;
+        margin-left: 4vw;
+
     }
 
     #gallery-section .content img {
-        max-width: 38vw;
+/*        max-width: 38vw;*/
+
     }
 
     #gallery-section .bottom img {
@@ -3181,12 +3188,14 @@ a:-webkit-any-link {
 
     #gallery-section .p-top-right {
         display: grid;
+
     }
 
     #gallery-section .p-top-left {
         display: grid;
         margin-left: 0vw;
         margin-right: 0vw;
+
     }
 
     #gallery-section .content {
@@ -3201,13 +3210,13 @@ a:-webkit-any-link {
     }
 
     .gallery-content {
-        margin: -1vw 0vw;
+        margin: -0.6vw 0vw;
         display: grid;
     }
 
     .gallery-content .top {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: ;
         grid-row-start: 1;
         grid-row-end: 2;
         margin: 0.5vw;
@@ -3243,22 +3252,26 @@ a:-webkit-any-link {
     .p-top-left {
         grid-column-start: 1;
         grid-column-end: 2;
+        width: 27vw;
     }
 
 
     .p-top-right {
         grid-column-start: 2;
         grid-column-end: 3;
+        width: 22vw;
     }
 
     .p-bottom-left {
         grid-column-start: 1;
         grid-column-end: 2;
+        width: 24vw;
     }
 
     .p-bottom-right {
         grid-column-start: 2;
         grid-column-end: 3;
+        width: 22vw;
     }
 
 
@@ -3326,37 +3339,7 @@ a:-webkit-any-link {
 
     /*------- Flip animation SLUT ------*/
 
-    /* Galleri SLUT */
 
-    /*-----------Galleri----------*/
-    /*
-    #gallery-section .content {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100%;
-    }
-
-
-    #gallery-section .content img {
-        max-width: 39vw;
-    }
-
-    #gallery-section .bottom img {
-        display: grid;
-    }
-
-    #gallery-section .p-top-right {
-        display: grid;
-    }
-
-    #gallery-section .p-top-left {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 75vw;
-    }
-*/
-
-    /*---------Galleri SLUT--------*/
 
 
 
