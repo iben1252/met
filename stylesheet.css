@@ -18,8 +18,8 @@ Responsive
 
 /*---------- Generelt -----------*/
 body {
-	margin: 0;
-	/*Fjerner standard margin fra siden*/
+    margin: 0;
+    /*Fjerner standard margin fra siden*/
 
 }
 
@@ -31,71 +31,71 @@ body {
 /*----------  Nav Menu ------------*/
 
 #nav {
-	display: grid;
-	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-	grid-template-rows: 5% 60%;
-	justify-items: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+    grid-template-rows: 5% 60%;
+    justify-items: center;
 }
 
 #logo {
-	display: grid;
-	grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-	grid-template-rows: 50% 60%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
+    grid-template-rows: 50% 60%;
 }
 
 #logo a {
-	grid-template-rows: 50% 60%;
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	max-width: 90%;
-	margin-top: 2vh;
+    grid-template-rows: 50% 60%;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width: 90%;
+    margin-top: 2vh;
 }
 
 #logo img {
-	max-width: 70%;
+    max-width: 70%;
 }
 
 li {
-	margin: 1vw 3.5vw 0vw 3.5vw;
+    margin: 1vw 3.5vw 0vw 3.5vw;
 }
 
 #nav a {
-	text-decoration: none;
-	color: gray;
-	font-family: 'Avenir light', sans-serif;
-	font-size: 1em;
-	padding-bottom: 3vw;
+    text-decoration: none;
+    color: gray;
+    font-family: 'Avenir light', sans-serif;
+    font-size: 1em;
+    padding-bottom: 3vw;
 }
 
 #nav li:hover {
-	font-style: italic;
-	border-bottom: 1px solid #DD3340;
+    font-style: italic;
+    border-bottom: 1px solid #DD3340;
 }
 
 #nav li:active {
-	border-bottom: 1px solid #DD3340;
-	font-style: italic;
+    border-bottom: 1px solid #DD3340;
+    font-style: italic;
 }
 
 ul {
-	list-style-type: none;
-	margin-bottom: 2vw;
-	padding: 0vw;
-	overflow: hidden;
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 5;
-	display: flex;
-	font-family: Avenir Light;
-	white-space: nowrap;
+    list-style-type: none;
+    margin-bottom: 2vw;
+    padding: 0vw;
+    overflow: hidden;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: flex;
+    font-family: Avenir Light;
+    white-space: nowrap;
 }
 
 #active {
-	border-bottom: 1px solid #DD3340;
-	font-style: italic;
+    border-bottom: 1px solid #DD3340;
+    font-style: italic;
 }
 
 
@@ -112,24 +112,24 @@ ul {
 
 /* Citat tegn billede */
 #quote-section img {
-	display: block;
-	padding-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 7vw;
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
 
-	grid-template-columns: 1fr;
-	grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
 
 /* Citat tegn billede slut */
 
 #quote-section {
-	background: #F2EDEB;
+    background: #F2EDEB;
 }
 
 .slideshow-container {
-	position: relative;
+    position: relative;
 }
 
 /* Slider */
@@ -137,69 +137,69 @@ ul {
 .quote_1,
 .quote_2,
 .quote_3 {
-	display: none;
-	padding-left: 80px;
-	padding-right: 80px;
-	padding-top: 40px;
-	text-align: center;
+    display: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    text-align: center;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -30px;
-	padding: 16px;
-	color: #888;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-	position: absolute;
-	right: 0;
-	border-radius: 3px 0 0 3px;
-	align-self: center;
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    align-self: center;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	/*    background-color: rgba(0, 0, 0, 6.8);*/
-	color: white;
+    /*    background-color: rgba(0, 0, 0, 6.8);*/
+    color: white;
 }
 
 /* The dot/bullet/indicator container */
 .dot-container {
-	text-align: center;
-	padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 2px;
-	background-color: transparent;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 
-	border-radius: 10px;
-	border: 1px solid #DB3C3C;
+    border-radius: 10px;
+    border: 1px solid #DB3C3C;
 }
 
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-	background-color: #DB3C3C;
+    background-color: #DB3C3C;
 }
 
 /* Add an italic font style to all quotes */
@@ -207,9 +207,9 @@ ul {
 .quote_1 q,
 .quote_2 q,
 .quote_3 q {
-	font-family: Avenir;
-	font-style: italic;
-	line-height: 25px;
+    font-family: Avenir;
+    font-style: italic;
+    line-height: 25px;
 }
 
 /* Add a blue color to the author */
@@ -217,9 +217,9 @@ ul {
 .quote_1 p,
 .quote_2 p,
 .quote_3 p {
-	font-family: Avenir light;
-	color: #dd3340;
-	margin-left: 2vw;
+    font-family: Avenir light;
+    color: #dd3340;
+    margin-left: 2vw;
 }
 
 /*----------- Slideshow container SLUT ------------*/
@@ -235,58 +235,89 @@ ul {
 /*---------------- Galleri ------------------------*/
 
 #gallery-section .content {
-	display: grid;
-	margin: 3vw;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto;
-	perspective: 30vw;
+    display: grid;
+    margin: 3vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    perspective: 30vw;
 }
 
 #gallery-section .content img {
-	max-width: 96%;
+    max-width: 75vw;
+}
+
+#gallery-section .bottom img {
+    display: none;
+}
+
+#gallery-section .p-top-right {
+    display: none;
+}
+
+#gallery-section .p-top-left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
 }
 
 .flip-card {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
 }
 
 .flip-card-front {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flip-card p {
+    font-family: "Avenir light", sans-serif;
+    font-size: 0.9em;
+    margin-left: 9vw;
+    margin-right: 9vw;
+
+}
+
+.flip-card h3 {
+    font-family: "Avenir light", sans-serif;
+    font-size: 0.9em;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    color: #DD3340;
 }
 
 #gallery-section .front img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .front {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .back {
-	font-family: "Avenir light", sans-serif;
-	display: none;
+    font-family: "Avenir light", sans-serif;
+    display: none;
 }
 
 .gallery-content .top {
-	display: flex;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 3;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .gallery-content .bottom {
-	display: flex;
-	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-row-start: 4;
-	grid-row-end: 5;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 
@@ -294,16 +325,16 @@ ul {
 .p-top-right,
 .p-bottom-left,
 .p-bottom-right {
-	margin: 1vw;
+    margin: 1vw;
 }
 
 .flip {
-	transform: rotateY(180deg);
-	transition: transform 0.8s;
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
 }
 
 .flip-back {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 
@@ -320,25 +351,25 @@ ul {
 /*------------------------- Om os------------------------*/
 /*JS template som fanger og styler*/
 #aboutUs h2 {
-	font-family: Avenir Light;
-	text-align: center;
-	padding-top: 7vh;
+    font-family: Avenir Light;
+    text-align: center;
+    padding-top: 7vh;
 }
 
 #aboutUs {
-	text-align: center;
+    text-align: center;
 }
 
 #aboutUs p {
-	font-family: Avenir Light;
-	text-align: left;
-	padding-left: 9vw;
-	padding-right: 9vw;
-	margin-bottom: 14vw;
+    font-family: Avenir Light;
+    text-align: left;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    margin-bottom: 14vw;
 }
 
 #aboutUs img {
-	width: 81vw;
+    width: 75vw;
 }
 
 
@@ -354,22 +385,22 @@ ul {
 /*----------------------MENU kort------------------*/
 /*Styling på overordnet menukort*/
 #menukort {
-	margin: 0em 1em;
+    margin: 0em 1em;
 }
 
 #menukort h1 {
-	font-family: "Avenir black", sans-serif;
-	font-size: 1.2em;
-	margin-top: 0vw;
+    font-family: "Avenir black", sans-serif;
+    font-size: 1.2em;
+    margin-top: 0vw;
 }
 
 #menukort p {
-	font-family: "Avenir light", sans-serif;
-	font-size: 0.9em;
+    font-family: "Avenir light", sans-serif;
+    font-size: 0.9em;
 }
 
 #menukort img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /*Styling på overordnet menukort SLUT*/
@@ -379,40 +410,40 @@ ul {
 
 /*Kaffe*/
 #coffee_section h1 {
-	color: #F2CA50;
+    color: #F2CA50;
 }
 
 #coffee_section ul {
-	display: grid;
+    display: grid;
 }
 
 .coffee-list {
-	display: flex;
+    display: flex;
 }
 
 .coffee-list li {
-	margin: -1em 0em 0.5em 0em;
+    margin: -1em 0em 0.5em 0em;
 }
 
 .coffee_price_list li {
-	margin-right: 40vw;
+    margin-right: 40vw;
 }
 
 #coffee_section img {
-	max-width: 95%;
-	display: inline-grid;
+    max-width: 95%;
+    display: inline-grid;
 }
 
 .white-border1 {
-	border: white solid 0.5em;
-	margin-top: 2em;
-	margin-left: -0.1em;
-	width: 15em;
-	height: 21em;
-	grid-row-start: 4;
-	grid-row-end: 5;
+    border: white solid 0.5em;
+    margin-top: 2em;
+    margin-left: -0.1em;
+    width: 15em;
+    height: 21em;
+    grid-row-start: 4;
+    grid-row-end: 5;
 
-	position: absolute;
+    position: absolute;
 }
 
 /*Kaffe slut*/
@@ -422,32 +453,32 @@ ul {
 /*morgenmad*/
 
 #morgenmad-section h1 {
-	color: #EB414F;
-	font-size: 1.1em;
+    color: #EB414F;
+    font-size: 1.1em;
 }
 
 #morgenmad-section ul {
-	display: grid;
+    display: grid;
 }
 
 .morgenmad-list {
-	display: flex;
+    display: flex;
 }
 
 .morgenmad-list li {
-	margin: -1em 0em 0.5em 0em;
+    margin: -1em 0em 0.5em 0em;
 }
 
 .morgenmad_price_list {
-	margin-right: 6vw;
+    margin-right: 6vw;
 }
 
 #morgenmad-section img {
-	display: none;
+    display: none;
 }
 
 .mad {
-	font-style: oblique;
+    font-style: oblique;
 }
 
 /*morgenmad slut*/
@@ -456,43 +487,43 @@ ul {
 
 /*koldedrikke*/
 #koldedrikke-section h1 {
-	color: #798C35;
+    color: #798C35;
 }
 
 #koldedrikke-section ul {
-	display: grid;
+    display: grid;
 }
 
 .drikke-list {
-	display: flex;
+    display: flex;
 }
 
 .drikke-list li {
-	margin: -1em 0em 0.5em 0em;
+    margin: -1em 0em 0.5em 0em;
 }
 
 .drikke_price_list li {
-	margin-right: 53vw;
+    margin-right: 53vw;
 }
 
 #koldedrikke-section h1 {
-	margin-top: 3vh;
+    margin-top: 3vh;
 }
 
 .menu-right-last {
-	display: grid;
+    display: grid;
 }
 
 .white-border3 {
-	border: white solid 0.5em;
-	margin-top: -1em;
-	margin-left: 0em;
-	width: 14em;
-	height: 13em;
-	position: absolute;
-	grid-row-start: 3;
-	grid-row-end: 4;
-	position: absolute;
+    border: white solid 0.5em;
+    margin-top: -1em;
+    margin-left: 0em;
+    width: 14em;
+    height: 13em;
+    position: absolute;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: absolute;
 }
 
 /*koldedrikke slut*/
@@ -501,52 +532,52 @@ ul {
 /*Grid*/
 #coffee_section,
 #morgenmad-section {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 20% 40% 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 20%;
 }
 
 #koldedrikke-section {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 30% 25% 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 25% 35%;
 }
 
 .menu-left {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	margin: 1.5em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1.5em;
 }
 
 #koldedrikke-section .menu-left {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .menu-right {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 3;
-	grid-row-end: 4;
-	margin: 1.5em;
-	text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 1.5em;
+    text-align: center;
 }
 
 #morgenmad-section .menu-right {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 6;
-	text-align: left;
-	margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    text-align: left;
+    margin-top: 0;
 }
 
 #menu-info {
-	margin: 0em 2em 4em 2em;
+    margin: 0em 2em 4em 2em;
 }
 
 /*Grid slut*/
@@ -562,138 +593,138 @@ ul {
 
 /*--------------------Kontakt side ------------------*/
 .infomation {
-	background-color: #F2EDEB;
-	font: 13px Avenir light, Avenir Black, sans-serif;
-	margin-top: 13vw;
-	margin-left: 8vw;
-	margin-right: 8vw;
-	text-align: center;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	margin-bottom: 2vw;
+    background-color: #F2EDEB;
+    font: 13px Avenir light, Avenir Black, sans-serif;
+    margin-top: 13vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 2vw;
 }
 
 .infomation h3 {
-	font: 14px Avenir medium, Avenir Black, sans-serif;
+    font: 14px Avenir medium, Avenir Black, sans-serif;
 }
 
 .besked {
-	font: 14px Avenir light, Avenir Black, sans-serif;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-top: 10vw;
+    font: 14px Avenir light, Avenir Black, sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vw;
 
 }
 
 /*< !-- Taget kode https: //www.embedgooglemap.net/en/-->-->*/
 
 .mapouter {
-	position: relative;
-	text-align: center;
-	display: flex;
-	width: 100%;
-	height: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .gmap_canvas {
-	overflow: hidden;
-	background: none !important;
-	height: 100%;
-	width: 100%;
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
 }
 
 iframe {
-	height: 300px;
-	width: 255px;
+    height: 300px;
+    width: 255px;
 }
 
 .contact-heading h2 {
-	text-align: center;
-	font-family: "Avenir black", sans-serif;
-	font-size: 1.2em;
-	color: #DD3340;
-	padding-top: 6vw;
+    text-align: center;
+    font-family: "Avenir black", sans-serif;
+    font-size: 1.2em;
+    color: #DD3340;
+    padding-top: 6vw;
 }
 
 /*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
 
 /*------- KONTAKT FORMULAR --------*/
 .form_container {
-	display: grid;
-	grid-template-rows: 100% 100%;
-	grid-template-columns: 1fr;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	margin-bottom: 10vw;
+    display: grid;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 1fr;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vw;
 }
 
 label {
-	font: 14px Avenir light, Avenir Black, sans-serif;
+    font: 14px Avenir light, Avenir Black, sans-serif;
 
 }
 
 .feedback-input {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 4;
-	color: black;
-	font: 14px Avenir light, Avenir Black, sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	border-radius: 1px;
-	line-height: 22px;
-	background-color: transparent;
-	border: 0.5px solid black;
-	transition: all 0.3s;
-	padding: 13px;
-	margin-bottom: 15px;
-	width: 100%;
-	box-sizing: border-box;
-	outline: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    color: black;
+    font: 14px Avenir light, Avenir Black, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 1px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 0.5px solid black;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
 }
 
 .feedback-input:focus {
-	border: 2px solid #CC4949;
-	padding: 7vw;
+    border: 2px solid #CC4949;
+    padding: 7vw;
 }
 
 label input[type="text"i] {
-	border: 0.5px solid black;
-	width: 74vw;
-	padding: 1vw;
+    border: 0.5px solid black;
+    width: 74vw;
+    padding: 1vw;
 }
 
 label input[type="email"i] {
-	border: 0.5px solid black;
-	width: 74vw;
-	padding: 1vw;
-	margin-bottom: 6vw;
+    border: 0.5px solid black;
+    width: 74vw;
+    padding: 1vw;
+    margin-bottom: 6vw;
 }
 
 textarea {
-	width: 76vw;
-	border: 0.5px solid black;
+    width: 76vw;
+    border: 0.5px solid black;
 
 }
 
 [type="submit"] {
-	width: 26%;
-	background: transparent;
-	border-radius: 20px;
-	border: solid 1px #DB3C3C;
-	cursor: pointer;
-	font: 14px Avenir light, Avenir, sans-serif;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	transition: all 0.3s;
-	margin-top: -4px;
-	font-weight: 700;
+    width: 26%;
+    background: transparent;
+    border-radius: 20px;
+    border: solid 1px #DB3C3C;
+    cursor: pointer;
+    font: 14px Avenir light, Avenir, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
 }
 
 [type="submit"]:hover {
-	background: #DB3C3C;
-	color: white;
+    background: #DB3C3C;
+    color: white;
 }
 
 /*------- KONTAKT FORMULAR SLUT --------*
@@ -711,96 +742,96 @@ textarea {
 /*beskrivelse til party*/
 #party-section .heading h1,
 #party-section .price_heading {
-	font-family: "Avenir heavy", sans-serif;
-	font-size: 1.2em;
-	text-align: center;
-	padding-left: 9vw;
-	padding-right: 9vw;
+    font-family: "Avenir heavy", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 
 #party-section .heading h1 {
-	margin-top: 35vw;
+    margin-top: 35vw;
 }
 
 #party-section .price_heading {
-	margin-top: 20vw;
+    margin-top: 20vw;
 }
 
 #party-section .arrangement {
-	font-family: "Avenir heavy", sans-serif;
-	font-size: 1.2em;
-	color: #DD3340;
-	text-align: center;
-	padding-top: 7vw;
-	padding-left: 9vw;
-	padding-right: 9vw;
+    font-family: "Avenir heavy", sans-serif;
+    font-size: 1.2em;
+    color: #DD3340;
+    text-align: center;
+    padding-top: 7vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 
 .arrangement_2 {
-	display: none;
-	color: #DD3340;
-	font-family: "Avenir heavy", sans-serif;
-	font-size: 1.2em;
+    display: none;
+    color: #DD3340;
+    font-family: "Avenir heavy", sans-serif;
+    font-size: 1.2em;
 }
 
 #party-section h2 {
-	font-family: "Avenir medium", sans-serif;
-	font-size: 0.9em;
-	margin-top: 0vw;
-	text-align: center;
+    font-family: "Avenir medium", sans-serif;
+    font-size: 0.9em;
+    margin-top: 0vw;
+    text-align: center;
 }
 
 #party-section p {
-	font: 14px "Avenir light", sans-serif;
-	padding-left: 13vw;
-	padding-right: 13vw;
+    font: 14px "Avenir light", sans-serif;
+    padding-left: 13vw;
+    padding-right: 13vw;
 
 }
 
 #party-section .party_info p {
-	padding: 0vw 20vw;
+    padding: 0vw 20vw;
 }
 
 #party-section img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 #party-section .party_info img {
-	margin-top: 6vw;
-	margin-bottom: 6vw;
-	width: 65%;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    width: 65%;
 }
 
 #party-section .heading h2 {
-	font: 15px Avenir light, Avenir Black, sans-serif;
-	letter-spacing: 0.4vw;
+    font: 15px Avenir light, Avenir Black, sans-serif;
+    letter-spacing: 0.4vw;
 }
 
 #party-section .heading h1 {
-	margin-bottom: 0vw;
+    margin-bottom: 0vw;
 }
 
 .red_box1 {
-	display: block;
-	position: absolute;
-	z-index: -1;
-	border: #DD3340 solid 0.1vw;
-	width: 80vw;
-	height: 72vw;
-	margin: 0vw 10vw;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border: #DD3340 solid 0.1vw;
+    width: 80vw;
+    height: 72vw;
+    margin: 0vw 10vw;
 }
 
 .red_box2 {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	border: #DD3340 solid 0.1vw;
-	width: 80vw;
-	height: 170vw;
-	margin: -20vw 10vw 10vw;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border: #DD3340 solid 0.1vw;
+    width: 80vw;
+    height: 170vw;
+    margin: -20vw 10vw 10vw;
 }
 
 /*beskrivelse til party SLUT*/
@@ -810,42 +841,42 @@ textarea {
 
 /*Månedens menu*/
 #party-section #month_menu h2 {
-	margin-top: 10vw;
-	text-align: left;
-	padding-left: 13vw;
-	padding-right: 13vw;
+    margin-top: 10vw;
+    text-align: left;
+    padding-left: 13vw;
+    padding-right: 13vw;
 }
 
 .heading_bigdevice h1 {
-	display: none;
+    display: none;
 }
 
 #party-section #month_menu .bottom_menu img {
-	display: none;
+    display: none;
 }
 
 #party-section #month_menu .bottom_menu {
-	padding-bottom: 10vw;
+    padding-bottom: 10vw;
 }
 
 #party-section #month_menu .top_menu img {
-	margin-top: 7vw;
+    margin-top: 7vw;
 }
 
 .snacks_overskirft {
-	color: #F27F1B;
+    color: #F27F1B;
 }
 
 .signatursalater {
-	color: #DDAA00;
+    color: #DDAA00;
 }
 
 .desserter_overskrift {
-	color: #194F94;
+    color: #194F94;
 }
 
 .sandwich_overskrift {
-	color: #DD3340;
+    color: #DD3340;
 }
 
 /*Månedens menu SLUT*/
@@ -855,16 +886,16 @@ textarea {
 
 /*Grå sektion*/
 #party-section #grey h2 {
-	margin-top: 10vw;
-	text-align: left;
-	padding-left: 13vw;
+    margin-top: 10vw;
+    text-align: left;
+    padding-left: 13vw;
 
 }
 
 #party-section #grey {
-	background-color: #F2EDEB;
-	padding-top: 6vw;
-	padding-bottom: 6vw;
+    background-color: #F2EDEB;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
 }
 
 /*Grå sektion SLUT*/
@@ -874,34 +905,34 @@ textarea {
 
 /*pris forslag*/
 #party-section #price_suggestion h2 {
-	margin-top: 10vw;
-	padding-left: 13vw;
-	padding-right: 13vw;
+    margin-top: 10vw;
+    padding-left: 13vw;
+    padding-right: 13vw;
 }
 
 .price_1 {
-	border-style: solid;
-	border-width: 0.1vw;
-	border-color: #DD3340;
-	margin-left: 10vw;
-	margin-right: 10vw;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: #DD3340;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .price_2 {
-	border-style: solid;
-	border-width: 0.1vw;
-	border-color: #DD3340;
-	margin-top: 5vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: #DD3340;
+    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #party-section #price_suggestion p {
-	text-align: center;
+    text-align: center;
 }
 
 #party-section #price_suggestion {
-	margin-bottom: 28vw;
+    margin-bottom: 28vw;
 }
 
 /*pris forslag SLUT*/
@@ -921,48 +952,48 @@ textarea {
 
 /*SIGN UP MAILCHIMP STYLING */
 #mc_embed_signup {
-	clear: left;
-	font: 14px Avenir light, Avenir Black, sans-serif;
+    clear: left;
+    font: 14px Avenir light, Avenir Black, sans-serif;
 }
 
 #mc_embed_signup .mc-field-group input {
-	background-color: transparent;
-	border: 1px solid white;
-	border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
 }
 
 ::-webkit-input-placeholder {
-	/* Edge */
-	color: white;
-	font: 'Avenir Black', sans-serif;
-	font-style: oblique;
+    /* Edge */
+    color: white;
+    font: 'Avenir Black', sans-serif;
+    font-style: oblique;
 }
 
 /*Grunden til der står "important" er fordi at Mailchimp egen CSS er dominerende for den taget kode. Med important kan man fastgøre at det er vigtigt og dermed fange det man vil style*/
 
 #mc_embed_signup .button {
-	background-color: transparent !important;
-	border: 1px solid white !important;
-	border-radius: 0px !important;
-	font: Avenir light, Avenir Black, sans-serif !important;
-	font-size: 11px !important;
-	padding: 6px 6px 6px 6px !important;
-	line-height: inherit !important;
-	height: 30px !important;
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    border-radius: 0px !important;
+    font: Avenir light, Avenir Black, sans-serif !important;
+    font-size: 11px !important;
+    padding: 6px 6px 6px 6px !important;
+    line-height: inherit !important;
+    height: 30px !important;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
-	border: 2px solid white !important;
+    border: 2px solid white !important;
 }
 
 #mc_embed_signup div#mce-responses {
-	width: auto !important;
-	padding: auto !important;
-	margin: auto !important;
+    width: auto !important;
+    padding: auto !important;
+    margin: auto !important;
 }
 
 #mail_section {
-	display: flex;
+    display: flex;
 }
 
 /*SIGN UP MAILCHIMP STYLING SLUT*/
@@ -970,23 +1001,23 @@ textarea {
 
 /*SoMe ikoner i footer*/
 .some_container {
-	padding-top: 9.2vh;
-	padding-left: 16px;
+    padding-top: 9.2vh;
+    padding-left: 16px;
 }
 
 .some_container svg {
-	width: 15%;
-	padding-right: 10px;
+    width: 15%;
+    padding-right: 10px;
 }
 
 path:hover {
-	fill: #000000;
+    fill: #000000;
 }
 
 a:-webkit-any-link {
-	color: -webkit-link;
-	cursor: pointer;
-	text-decoration: none;
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /*SoMe ikoner i footer SLUT*/
@@ -1002,75 +1033,75 @@ a:-webkit-any-link {
 /*------------ 7: Burgermenu Mobile ----------------*/
 
 .burgermenu {
-	margin: 1em;
+    margin: 1em;
 }
 
 .burgernav {
-	display: none;
+    display: none;
 }
 
 .burgernav button {
-	display: flex;
-	cursor: pointer;
-	font-size: 1.5em;
-	cursor: pointer;
+    display: flex;
+    cursor: pointer;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .burgernav button a {
-	text-decoration: none;
-	font-family: "Avenir Light", sans-serif;
-	color: gray;
-	padding: 0.5em;
-	font-size: 16px;
+    text-decoration: none;
+    font-family: "Avenir Light", sans-serif;
+    color: gray;
+    padding: 0.5em;
+    font-size: 16px;
 }
 
 .burgernav button a:hover {
-	font-style: italic;
+    font-style: italic;
 }
 
 .burgernav button a:active {
-	font-style: italic;
+    font-style: italic;
 }
 
 .burger .menu-button {
-	display: block;
+    display: block;
 }
 
 .menu-button {
-	color: #DD3340;
-	display: block;
+    color: #DD3340;
+    display: block;
 }
 
 #nav {
-	display: none;
+    display: none;
 }
 
 #logo {
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
 }
 
 #logo a {
-	grid-column-start: 3;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	margin-top: 1.7em;
-	max-width: 100%;
-	text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 1.7em;
+    max-width: 100%;
+    text-align: center;
 }
 
 .burger {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
 }
 
 .menu-button {
-	grid-column-start: 0;
-	grid-column-end: 0;
-	grid-row-start: 1;
-	font-size: 1.6em;
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 1;
+    font-size: 1.6em;
 }
 
 
@@ -1087,39 +1118,39 @@ a:-webkit-any-link {
 /*-------------------- 8: RESPONSIVE-----------------*/
 @media screen and (min-width: 298px) {
 
-	/*----------- Burgermenu --------------*/
-	.menu-button {
-		display: none;
-	}
+    /*----------- Burgermenu --------------*/
+    .menu-button {
+        display: none;
+    }
 
-	#nav {
-		display: none;
-	}
+    #nav {
+        display: none;
+    }
 
-	#logo {
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows: 50% 50%;
-	}
+    #logo {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+    }
 
-	#logo a {
-		grid-column-start: 3;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 3;
-		margin-top: 1.7em;
-		max-width: 100%;
-		text-align: center;
-	}
+    #logo a {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-top: 1.7em;
+        max-width: 100%;
+        text-align: center;
+    }
 
-	.burger {
-		display: grid;
-	}
+    .burger {
+        display: grid;
+    }
 
-	.burger .menu-button {
-		display: grid;
-	}
+    .burger .menu-button {
+        display: grid;
+    }
 
-	/*----------- Burgermenu SLUT --------------*/
+    /*----------- Burgermenu SLUT --------------*/
 
 }
 
@@ -1127,378 +1158,378 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 300px) {
 
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 6vw;
-	}
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 6vw;
+    }
 
-	/*Om os citat SLUT*/
+    /*Om os citat SLUT*/
 
-	/*Footer*/
-	#box {
-		font-size: 14px;
-	}
+    /*Footer*/
+    #box {
+        font-size: 14px;
+    }
 
-	.some_container svg {
-		width: 25%;
-	}
+    .some_container svg {
+        width: 25%;
+    }
 
-	#box {
-		background-color: #dd3340;
-		font-family: Avenir light;
-		color: white;
-		display: grid;
-		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-		grid-template-rows: 25% 25% 25% 25%;
-		letter-spacing: 0.7px;
-		font-size: 13px;
-	}
+    #box {
+        background-color: #dd3340;
+        font-family: Avenir light;
+        color: white;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 25% 25% 25% 25%;
+        letter-spacing: 0.7px;
+        font-size: 14px;
+    }
 
-	#footer_box {
-		grid-column-start: 2;
-		grid-column-end: 6;
-	}
+    #footer_box {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
 
-	#footer_box2 {
-		grid-column-start: 2;
-		grid-column-end: 6;
-	}
+    #footer_box2 {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
 
-	.footer-left {
-		grid-column-start: 2;
-		grid-column-end: 6;
-		grid-row-start: 1;
-		grid-row-end: 1;
-		padding-top: 3vh;
-	}
+    .footer-left {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 3vh;
+    }
 
-	.footer-right {
-		grid-column-start: 2;
-		grid-column-end: 5;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		padding-top: 3vh;
-		padding-bottom: 3vh;
-	}
+    .footer-right {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
 
-	#mc_embed_signup {
-		grid-column-start: 2;
-		grid-column-end: 5;
-		grid-row-start: 4;
-		grid-row-end: 3;
-		padding-top: 3vh;
-		padding-bottom: 3vh;
-	}
+    #mc_embed_signup {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 3;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
 
-	/*Webite - text-stroke - er for at gøre tekst skriften mere bold */
-	#mc_embed_signup h2 {
-		font-size: 1em !important;
-		-webkit-text-stroke: 0.3px white;
-	}
+    /*Webite - text-stroke - er for at gøre tekst skriften mere bold */
+    #mc_embed_signup h2 {
+        font-size: 1em !important;
+        -webkit-text-stroke: 0.3px white;
+    }
 
-	#mc_embed_signup form {
-		padding: 0vw !important;
-	}
+    #mc_embed_signup form {
+        padding: 0vw !important;
+    }
 
-	.some_container {
-		grid-column-start: 3;
-		grid-row-start: 4;
-		grid-row-end: 4;
-		padding-top: 2.5vh;
-		padding-bottom: 0vw;
-		padding-left: 2vw;
-	}
+    .some_container {
+        grid-column-start: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        padding-top: 2.5vh;
+        padding-bottom: 0vw;
+        padding-left: 2vw;
+    }
 
-	.some_container svg {
-		width: 30%;
-	}
+    .some_container svg {
+        width: 30%;
+    }
 
-	/*Footer*/
+    /*Footer*/
 
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 152vw;
-	}
+    /*MET til fest*/
+    .red_box2 {
+        height: 152vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 
 @media screen and (min-width: 322px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 10.7vw;
-		margin-right: 10.7vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 10.7vw;
+        margin-right: 10.7vw;
+    }
 
-	#contact_row {
-		padding: 0vw 2vw 2vw 2vw;
-	}
+    #contact_row {
+        padding: 0vw 2vw 2vw 2vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
-	/*MET til fest*/
-	#party-section .price_heading {
-		margin-top: 15vw;
-	}
+    /*MET til fest*/
+    #party-section .price_heading {
+        margin-top: 15vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 @media screen and (min-width: 337px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 12vw;
-		margin-right: 12vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 12vw;
+        margin-right: 12vw;
+    }
 
-	#contact_row {
-		margin-left: 0vw;
-		margin-right: 0vw;
-	}
+    #contact_row {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 }
 
 
 
 @media screen and (min-width: 345px) {
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 20% 37% 20%;
-	}
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 37% 20%;
+    }
 
-	#koldedrikke-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 30% 22% 35%;
-	}
+    #koldedrikke-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 22% 35%;
+    }
 
-	#coffee_section img {
-		max-width: 95%;
-	}
+    #coffee_section img {
+        max-width: 95%;
+    }
 
-	.white-border1 {
-		height: 21.5em;
-		width: 16.5em;
-	}
+    .white-border1 {
+        height: 21.5em;
+        width: 16.5em;
+    }
 
-	.white-border3 {
-		width: 16em;
-		height: 15em;
-	}
+    .white-border3 {
+        width: 16em;
+        height: 15em;
+    }
 
 
-	/*MET til Fest*/
+    /*MET til Fest*/
 
-	#party-section .arrangement {
-		padding-left: 20vw;
-		padding-right: 20vw;
-	}
+    #party-section .arrangement {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
 
-	.red_box1 {
-		height: 70vw;
-	}
+    .red_box1 {
+        height: 70vw;
+    }
 
-	.red_box2 {
-		height: 140vw;
-	}
+    .red_box2 {
+        height: 140vw;
+    }
 
-	#party-section .heading h1 {
-		margin-top: 25vw;
-	}
+    #party-section .heading h1 {
+        margin-top: 25vw;
+    }
 
-	/*MET til Fest SLUT*/
+    /*MET til Fest SLUT*/
 }
 
 
 @media screen and (min-width: 355px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 14vw;
-		margin-right: 14vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 14vw;
+        margin-right: 14vw;
+    }
 
-	#contact_row {
-		margin-left: 5vw;
-		margin-right: 5vw;
-	}
+    #contact_row {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
-	label input[type="text"i] {
-		width: 64vw;
-	}
+    label input[type="text"i] {
+        width: 64vw;
+    }
 
-	label input[type="email"i] {
-		width: 64vw;
-		margin-bottom: 6vw;
-	}
+    label input[type="email"i] {
+        width: 64vw;
+        margin-bottom: 6vw;
+    }
 
-	textarea {
-		width: 65vw;
-	}
+    textarea {
+        width: 65vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 130vw;
-	}
+    /*MET til fest*/
+    .red_box2 {
+        height: 130vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 }
 
 
 @media screen and (min-width: 375px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 17vw;
-		margin-right: 17vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 17vw;
+        margin-right: 17vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 70vw;
-	}
+    /*MET til fest*/
+    .red_box1 {
+        height: 70vw;
+    }
 
-	.red_box2 {
-		height: 122vw;
-	}
+    .red_box2 {
+        height: 122vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 }
 
 
 
 @media screen and (min-width: 400px) {
 
-	/*MET TIL FEST*/
-	/*PRISER*/
-	#party-section #price_suggestion h2 {
-		margin-top: 4vw;
-	}
+    /*MET TIL FEST*/
+    /*PRISER*/
+    #party-section #price_suggestion h2 {
+        margin-top: 4vw;
+    }
 
-	#party-section #price_suggestion .price_1 {
-		padding-bottom: 4vw;
-	}
+    #party-section #price_suggestion .price_1 {
+        padding-bottom: 4vw;
+    }
 
-	#party-section #price_suggestion .price_2 {
-		padding-bottom: 4vw;
-	}
-
-
-	#party-section #price_suggestion {
-		margin-bottom: 13vw;
-	}
-
-	/*PRISER SLUT*/
-	/*MET TIL FEST SLUT*/
+    #party-section #price_suggestion .price_2 {
+        padding-bottom: 4vw;
+    }
 
 
+    #party-section #price_suggestion {
+        margin-bottom: 13vw;
+    }
+
+    /*PRISER SLUT*/
+    /*MET TIL FEST SLUT*/
 
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 10vw;
-		margin-right: 10vw;
-	}
-
-	#contact_row {
-		margin-left: 1vw;
-		margin-right: 1vw;
-	}
-
-	label input[type="text"i] {
-		width: 73vw;
-	}
-
-	label input[type="email"i] {
-		width: 73vw;
-	}
-
-	textarea {
-		width: 74vw;
-	}
 
 
-	/* SLUT Kontakt side*/
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 20% 35% 20%;
-	}
+    #contact_row {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 
-	#coffee_section,
-	#menu-info {
-		padding: 0em 2em;
-	}
+    label input[type="text"i] {
+        width: 73vw;
+    }
 
-	#morgenmad-section {
-		padding: 0em 3em;
-	}
+    label input[type="email"i] {
+        width: 73vw;
+    }
 
-	#koldedrikke-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 30% 20% 40%;
-		padding: 0em 2em;
-	}
+    textarea {
+        width: 74vw;
+    }
 
-	.coffee_price_list li {
-		margin-right: 9em;
-	}
 
-	.morgenmad_price_list li {
-		margin-right: 0.5em;
-	}
+    /* SLUT Kontakt side*/
 
-	.drikke_price_list li {
-		margin-right: 11.3em;
-	}
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 35% 20%;
+    }
 
-	#coffee_section img {
-		max-width: 90%;
-	}
+    #coffee_section,
+    #menu-info {
+        padding: 0em 2em;
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		height: 22em;
-		width: 14em;
-	}
+    #morgenmad-section {
+        padding: 0em 3em;
+    }
 
-	.white-border3 {
-		height: 13em;
-		width: 14em;
-	}
+    #koldedrikke-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 20% 40%;
+        padding: 0em 2em;
+    }
 
-	iframe {
-		height: 400px;
-		width: 320px;
-	}
+    .coffee_price_list li {
+        margin-right: 9em;
+    }
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 110vw;
-	}
+    .morgenmad_price_list li {
+        margin-right: 0.5em;
+    }
 
-	#party-section .party_info img {
-		width: 65%;
-	}
+    .drikke_price_list li {
+        margin-right: 11.3em;
+    }
 
-	/*MET til fest SLUT*/
+    #coffee_section img {
+        max-width: 90%;
+    }
+
+    .white-border1 {
+        margin-top: 2em;
+        height: 22em;
+        width: 14em;
+    }
+
+    .white-border3 {
+        height: 13em;
+        width: 14em;
+    }
+
+    iframe {
+        height: 400px;
+        width: 320px;
+    }
+
+    /*MET til fest*/
+    .red_box2 {
+        height: 110vw;
+    }
+
+    #party-section .party_info img {
+        width: 65%;
+    }
+
+    /*MET til fest SLUT*/
 
 }
 
@@ -1508,64 +1539,64 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 420px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 12vw;
-		margin-right: 12vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 12vw;
+        margin-right: 12vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 70vw;
-	}
+    /*MET til fest*/
+    .red_box1 {
+        height: 70vw;
+    }
 
-	.red_box2 {
-		height: 105vw;
-	}
+    .red_box2 {
+        height: 105vw;
+    }
 
-	#party-section .heading h1 {
-		margin-top: 25vw;
-	}
+    #party-section .heading h1 {
+        margin-top: 25vw;
+    }
 
-	#party-section .price_heading {
-		margin-top: 10vw;
-	}
+    #party-section .price_heading {
+        margin-top: 10vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 @media screen and (min-width: 432px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 13vw;
-		margin-right: 13vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 }
 
 
 @media screen and (min-width: 438px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 13.4vw;
-		margin-right: 13.4vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 13.4vw;
+        margin-right: 13.4vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 93vw;
-	}
+    /*MET til fest*/
+    .red_box2 {
+        height: 93vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 }
 
 
@@ -1573,83 +1604,91 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 441px) {
 
+    .mySlides,
+    .quote_1,
+    .quote_2,
+    .quote_3 {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 10vw;
-		margin-right: 10vw;
-	}
 
-	/* SLUT Kontakt side*/
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    /* SLUT Kontakt side*/
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 60%;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 60%;
+    }
 
-	/* Logo SLUT */
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
-	#menuCard {
-		padding: 1em;
-	}
+    /* Logo SLUT */
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
+    #menuCard {
+        padding: 1em;
+    }
 
-	#morgenmad-section .menu-left {
-		margin: 4em;
-	}
+    #morgenmad-section .menu-left {
+        margin: 4em;
+    }
 
-	.coffee_price_list li {
-		margin-right: 12em;
-	}
+    .coffee_price_list li {
+        margin-right: 12em;
+    }
 
-	.morgenmad_price_list li {
-		margin-right: 5em;
-	}
+    .morgenmad_price_list li {
+        margin-right: 5em;
+    }
 
-	.drikke_price_list li {
-		margin-right: 55vw;
-	}
+    .drikke_price_list li {
+        margin-right: 55vw;
+    }
 
-	#menuCard img {
-		max-width: 93%;
-	}
+    #menuCard img {
+        max-width: 93%;
+    }
 
-	.white-border1 {
-		margin-top: 3em;
-		margin-left: -1em;
-		width: 18.5em;
-		height: 25.5em;
-		position: absolute;
-	}
+    .white-border1 {
+        margin-top: 3em;
+        margin-left: -1em;
+        width: 18.5em;
+        height: 25.5em;
+        position: absolute;
+    }
 
-	.white-border3 {
-		margin-top: -0.7em;
-		margin-left: -0.7em;
-		width: 18em;
-		height: 18em;
-		position: absolute;
-	}
+    .white-border3 {
+        margin-top: -0.7em;
+        margin-left: -0.7em;
+        width: 18em;
+        height: 18em;
+        position: absolute;
+    }
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 17% 35% 43%;
-		padding: 0em;
-	}
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 17% 35% 43%;
+        padding: 0em;
+    }
 
-	#koldedrikke-section {
-		grid-template-rows: 22% 22% 45%;
-		padding: 0em;
-	}
+    #koldedrikke-section {
+        grid-template-rows: 22% 22% 45%;
+        padding: 0em;
+    }
 
-	/*Styling af produkt og priser SLUT */
-	/*MENUKORT SLUT*/
+    /*Styling af produkt og priser SLUT */
+    /*MENUKORT SLUT*/
 
-	iframe {
-		height: 400px;
-		width: 353px;
-	}
+    iframe {
+        height: 400px;
+        width: 353px;
+    }
 }
 
 
@@ -1657,202 +1696,214 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 461px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 11.5vw;
-		margin-right: 11.5vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 11.5vw;
+        margin-right: 11.5vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 }
 
 @media screen and (min-width: 477px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 12.8vw;
-		margin-right: 12.8vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 12.8vw;
+        margin-right: 12.8vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 62vw;
-	}
+    /*MET til fest*/
+    .red_box1 {
+        height: 62vw;
+    }
 
-	.red_box2 {
-		height: 84vw;
-	}
+    .red_box2 {
+        height: 84vw;
+    }
 
-	#party-section .heading h1 {
-		margin-top: 15vw;
-	}
+    #party-section .heading h1 {
+        margin-top: 15vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 
 @media screen and (min-width: 487px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 13.5vw;
-		margin-right: 13.5vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 13.5vw;
+        margin-right: 13.5vw;
+    }
 
-	#contact_row {
-		margin-left: 2vw;
-		margin-right: 2vw;
-	}
+    #contact_row {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 
-	label input[type="text"i] {
-		width: 70vw;
-	}
+    label input[type="text"i] {
+        width: 70vw;
+    }
 
-	label input[type="email"i] {
-		width: 70vw;
-	}
+    label input[type="email"i] {
+        width: 70vw;
+    }
 
-	textarea {
-		width: 71vw;
-	}
+    textarea {
+        width: 71vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 }
 
 
 
 @media screen and (min-width: 500px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 14.5vw;
-		margin-right: 14.5vw;
-	}
-
-	.besked {
-		margin-top: 5vw;
-
-	}
-
-	/* SLUT Kontakt side*/
 
 
+    /*Galleri*/
 
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
+    .flip-card p {
+        margin-left: 14vw;
+        margin-right: 14vw;
+    }
 
-	#menuCard {
-		padding: 1em;
-	}
-
-	.morgenmad_price_list {
-		margin-right: 2.7em;
-	}
-
-	.drikke-list li,
-	.morgenmad-list li,
-	.coffee-list li {
-		margin: -1em 0em 0.1em 0em;
-	}
-
-	.drikke_price_list li {
-		margin-right: 15em;
-	}
-
-	.menu-left p {
-		margin-top: 1.3em;
-	}
-
-	/*beskrivelses tekst styling*/
-
-	.coffee-text p {
-		padding: 0em 5em 0em 0em;
-	}
-
-	.morgenmad-text p {
-		padding: 0em 5em 0em 0em;
-	}
-
-	.drikke-text p {
-		padding: 0em 5em 0em 0em;
-	}
-
-	/*beskrivelses tekst styling SLUT*/
+    /*Galleri SLUT*/
 
 
-	.menu-right {
-		padding: 0em;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 14.5vw;
+        margin-right: 14.5vw;
+    }
 
-	.menu-left {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 3;
-	}
+    .besked {
+        margin-top: 5vw;
 
-	#menukort img {
-		max-width: 100%;
-	}
+    }
 
-	#menukort .menu-left {
-		margin: 0em 1em;
-	}
-
-	.coffee-text p,
-	.morgenmad-text p,
-	.drikke-text p {
-		padding-right: 1em;
-	}
+    /* SLUT Kontakt side*/
 
 
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 3em;
-		margin-left: -1em;
-		width: 18em;
-		height: 24em;
-		position: absolute;
-	}
 
-	.white-border3 {
-		border: white solid 0.5em;
-		height: 17em;
-	}
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-rows: 18% 35% 45%;
-	}
+    #menuCard {
+        padding: 1em;
+    }
 
-	#koldedrikke-section {
-		grid-template-rows: 26% 20% 47%;
-	}
+    .morgenmad_price_list {
+        margin-right: 2.7em;
+    }
 
-	.coffee_price_list li {
-		margin-right: 12em;
-	}
+    .drikke-list li,
+    .morgenmad-list li,
+    .coffee-list li {
+        margin: -1em 0em 0.1em 0em;
+    }
 
-	.drikke_price_list li {
-		margin-right: 14em;
-	}
+    .drikke_price_list li {
+        margin-right: 15em;
+    }
 
-	.morgenmad_price_list li {
-		margin-right: 2em;
-	}
+    .menu-left p {
+        margin-top: 1.3em;
+    }
 
-	#coffee_section,
-	#morgenmad-section,
-	#koldedrikke-section,
-	#menu-info {
-		padding: 0em 2em;
-	}
+    /*beskrivelses tekst styling*/
 
-	/*Styling af produkt og priser SLUT
+    .coffee-text p {
+        padding: 0em 5em 0em 0em;
+    }
+
+    .morgenmad-text p {
+        padding: 0em 5em 0em 0em;
+    }
+
+    .drikke-text p {
+        padding: 0em 5em 0em 0em;
+    }
+
+    /*beskrivelses tekst styling SLUT*/
+
+
+    .menu-right {
+        padding: 0em;
+    }
+
+    .menu-left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #menukort img {
+        max-width: 100%;
+    }
+
+    #menukort .menu-left {
+        margin: 0em 1em;
+    }
+
+    .coffee-text p,
+    .morgenmad-text p,
+    .drikke-text p {
+        padding-right: 1em;
+    }
+
+
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 3em;
+        margin-left: -1em;
+        width: 18em;
+        height: 24em;
+        position: absolute;
+    }
+
+    .white-border3 {
+        border: white solid 0.5em;
+        height: 17em;
+    }
+
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-rows: 18% 35% 45%;
+    }
+
+    #koldedrikke-section {
+        grid-template-rows: 26% 20% 47%;
+    }
+
+    .coffee_price_list li {
+        margin-right: 12em;
+    }
+
+    .drikke_price_list li {
+        margin-right: 14em;
+    }
+
+    .morgenmad_price_list li {
+        margin-right: 2em;
+    }
+
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section,
+    #menu-info {
+        padding: 0em 2em;
+    }
+
+    /*Styling af produkt og priser SLUT
     /*MENUKORT SLUT*/
 
 }
@@ -1860,347 +1911,347 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 505px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 15vw;
-		margin-right: 15vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 60%;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 60%;
+    }
 
-	/* Logo SLUT */
+    /* Logo SLUT */
 
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 40vw;
-	}
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 40vw;
+    }
 
-	/*Om os citat SLUT*/
+    /*Om os citat SLUT*/
 
-	/*MENUKORT START*/
-	#coffee_section img {
-		max-width: 95%;
-	}
+    /*MENUKORT START*/
+    #coffee_section img {
+        max-width: 95%;
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -0.5em;
-		width: 17em;
-		height: 23.5em;
-		position: absolute;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -0.5em;
+        width: 17em;
+        height: 23.5em;
+        position: absolute;
+    }
 
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: -1em;
-		width: 18.5em;
-		height: 17.5em;
-		position: absolute;
-	}
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: -1em;
+        width: 18.5em;
+        height: 17.5em;
+        position: absolute;
+    }
 
-	#koldedrikke-section {
-		grid-template-rows: 26% 24% 47%;
-	}
+    #koldedrikke-section {
+        grid-template-rows: 26% 24% 47%;
+    }
 
-	#coffee_section {
-		grid-template-rows: 14% 42% 43%;
-	}
+    #coffee_section {
+        grid-template-rows: 14% 42% 43%;
+    }
 
-	/*MENUKORT SLUT*/
+    /*MENUKORT SLUT*/
 
 }
 
 @media screen and (min-width: 517px) {
 
-	/*Kontakt side*/
+    /*Kontakt side*/
 
-	#contact_row {
-		margin-left: 3vw;
-		margin-right: 3vw;
-	}
+    #contact_row {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
 
-	label input[type="text"i] {
-		width: 67vw;
-	}
+    label input[type="text"i] {
+        width: 67vw;
+    }
 
-	label input[type="email"i] {
-		width: 67vw;
-	}
+    label input[type="email"i] {
+        width: 67vw;
+    }
 
-	textarea {
-		width: 68vw;
-	}
+    textarea {
+        width: 68vw;
+    }
 
-	/*Kontakt side SLUT*/
+    /*Kontakt side SLUT*/
 
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 75vw;
-	}
+    /*MET til fest*/
+    .red_box2 {
+        height: 75vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 @media screen and (min-width: 527px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 16.5vw;
-		margin-right: 16.5vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 16.5vw;
+        margin-right: 16.5vw;
+    }
 
-	#contact_row {
-		margin-left: 3.5vw;
-		margin-right: 3.5vw;
+    #contact_row {
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
 
-	}
+    }
 
-	/* SLUT Kontakt side*/
-
-
-	/* Logo størrelse */
-	#logo img {
-		max-width: 65%;
-	}
-
-	/* Logo SLUT */
-
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
-
-	#menuCard {
-		padding: 0em 2em;
-	}
-
-	.coffee_price_list li {
-		margin-right: 10em;
-	}
-
-	.morgenmad_price_list {
-		margin-right: 2em;
-	}
+    /* SLUT Kontakt side*/
 
 
-	.menu-left p {
-		margin-top: 2em;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 65%;
+    }
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 14% 47% 38%;
-	}
+    /* Logo SLUT */
 
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
 
-	.drikke_price_list li {
-		margin-right: 13em;
-	}
+    #menuCard {
+        padding: 0em 2em;
+    }
 
-	/*Styling af produkt og priser SLUT */
+    .coffee_price_list li {
+        margin-right: 10em;
+    }
 
-	/*beskrivelses tekst styling*/
-	.coffee-text p,
-	.morgenmad-text p,
-	.drikke-text p {
-		padding: 0em 0.5em 0em 0em;
-	}
-
-	/*beskrivelses tekst styling SLUT*/
-
-	#coffee_section img {
-		max-width: 93%;
-	}
-
-	#koldedrikke-section img {
-		max-width: 100%;
-	}
-
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -0.5em;
-		width: 17em;
-		height: 22em;
-		position: absolute;
-	}
+    .morgenmad_price_list {
+        margin-right: 2em;
+    }
 
 
-	.white-border3 {
-		margin-left: -0.5em;
-		width: 16em;
-		height: 16.5em;
-		position: absolute;
-	}
+    .menu-left p {
+        margin-top: 2em;
+    }
 
-	/*MENUKORT SLUT*/
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 14% 47% 38%;
+    }
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 80vw;
-	}
 
-	/*MET til fest SLUT*/
+    .drikke_price_list li {
+        margin-right: 13em;
+    }
+
+    /*Styling af produkt og priser SLUT */
+
+    /*beskrivelses tekst styling*/
+    .coffee-text p,
+    .morgenmad-text p,
+    .drikke-text p {
+        padding: 0em 0.5em 0em 0em;
+    }
+
+    /*beskrivelses tekst styling SLUT*/
+
+    #coffee_section img {
+        max-width: 93%;
+    }
+
+    #koldedrikke-section img {
+        max-width: 100%;
+    }
+
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -0.5em;
+        width: 17em;
+        height: 22em;
+        position: absolute;
+    }
+
+
+    .white-border3 {
+        margin-left: -0.5em;
+        width: 16em;
+        height: 16.5em;
+        position: absolute;
+    }
+
+    /*MENUKORT SLUT*/
+
+    /*MET til fest*/
+    .red_box2 {
+        height: 80vw;
+    }
+
+    /*MET til fest SLUT*/
 
 }
 
 @media screen and (min-width: 535px) {
 
-	/*MET til fest*/
-	#description,
-	#month_menu #price_suggestion,
-	.brunch,
-	.koldemet {
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
+    /*MET til fest*/
+    #description,
+    #month_menu #price_suggestion,
+    .brunch,
+    .koldemet {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 
-	#party-section #month_menu .top_menu img {
-		margin-top: 1vw;
-		margin-left: 12vw;
-		margin-right: 11vw;
-		width: 75%;
-	}
+    #party-section #month_menu .top_menu img {
+        margin-top: 1vw;
+        margin-left: 12vw;
+        margin-right: 11vw;
+        width: 75%;
+    }
 
-	#party-section #month_menu .top_menu {
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
+    #party-section #month_menu .top_menu {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 
-	#party-section #month_menu .bottom_menu {
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
+    #party-section #month_menu .bottom_menu {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
 
-	#party-section #month_menu .top_menu img {
-		padding-top: 4vw;
-	}
+    #party-section #month_menu .top_menu img {
+        padding-top: 4vw;
+    }
 
-	.price_1 {
-		margin-left: 16vw;
-		margin-right: 18vw;
-	}
+    .price_1 {
+        margin-left: 16vw;
+        margin-right: 18vw;
+    }
 
-	.price_2 {
-		margin-left: 16vw;
-		margin-right: 18vw;
-	}
+    .price_2 {
+        margin-left: 16vw;
+        margin-right: 18vw;
+    }
 
-	/*MET til fest*/
-
-
+    /*MET til fest*/
 
 
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 17.5vw;
-		margin-right: 17.5vw;
-	}
 
 
-	#contact_row {
-		margin-left: 5.2vw;
-		margin-right: 5.2vw;
-
-	}
-
-	label input[type="text"i] {
-		width: 64vw;
-	}
-
-	label input[type="email"i] {
-		width: 64vw;
-	}
-
-	textarea {
-		width: 65vw;
-	}
-
-	/* SLUT Kontakt side*/
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 17.5vw;
+        margin-right: 17.5vw;
+    }
 
 
+    #contact_row {
+        margin-left: 5.2vw;
+        margin-right: 5.2vw;
 
-	/*MENU*/
-	#coffee_section {
-		grid-template-rows: 15% 45% 39%;
-	}
+    }
 
-	#koldedrikke-section {
-		grid-template-rows: 24% 32% 45%;
-	}
+    label input[type="text"i] {
+        width: 64vw;
+    }
 
-	#coffee_section,
-	#morgenmad-section,
-	#koldedrikke-section {
-		padding: 0em 3em;
-	}
+    label input[type="email"i] {
+        width: 64vw;
+    }
 
-	#menu-info {
-		padding: 3em 2.5em;
-	}
+    textarea {
+        width: 65vw;
+    }
 
-	#koldedrikke-section .menu-right {
-		margin: 0em;
-	}
-
-	#koldedrikke-section img,
-	#coffee_section img {
-		max-width: 90%;
-	}
-
-	.white-border1 {
-		height: 22em;
-		width: 15em;
-	}
-
-	.white-border3 {
-		height: 16.3em;
-		width: 19em;
-	}
-
-	.coffee_price_list li {
-		margin-right: 10em;
-	}
-
-	.morgenmad_price_list li {
-		margin-right: 2em;
-	}
-
-	.drikke_price_list li {
-		margin-right: 13em;
-	}
-
-	/*Menu SLUT*/
+    /* SLUT Kontakt side*/
 
 
-	/*MET til fest*/
-	#party-section .arrangement {
-		padding-left: 25vw;
-		padding-right: 25vw;
-	}
 
-	.red_box1 {
-		width: 70vw;
-		margin: 0vw 11vw;
-	}
+    /*MENU*/
+    #coffee_section {
+        grid-template-rows: 15% 45% 39%;
+    }
 
-	.red_box2 {
-		width: 70vw;
-		margin: -20vw 11vw 11vw;
-	}
+    #koldedrikke-section {
+        grid-template-rows: 24% 32% 45%;
+    }
 
-	/*MET til fest SLUT*/
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section {
+        padding: 0em 3em;
+    }
+
+    #menu-info {
+        padding: 3em 2.5em;
+    }
+
+    #koldedrikke-section .menu-right {
+        margin: 0em;
+    }
+
+    #koldedrikke-section img,
+    #coffee_section img {
+        max-width: 90%;
+    }
+
+    .white-border1 {
+        height: 22em;
+        width: 15em;
+    }
+
+    .white-border3 {
+        height: 16.3em;
+        width: 19em;
+    }
+
+    .coffee_price_list li {
+        margin-right: 10em;
+    }
+
+    .morgenmad_price_list li {
+        margin-right: 2em;
+    }
+
+    .drikke_price_list li {
+        margin-right: 13em;
+    }
+
+    /*Menu SLUT*/
+
+
+    /*MET til fest*/
+    #party-section .arrangement {
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+
+    .red_box1 {
+        width: 70vw;
+        margin: 0vw 11vw;
+    }
+
+    .red_box2 {
+        width: 70vw;
+        margin: -20vw 11vw 11vw;
+    }
+
+    /*MET til fest SLUT*/
 
 }
 
@@ -2208,282 +2259,179 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 567px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 18.8vw;
-		margin-right: 18.8vw;
-	}
+    /*galleri*/
 
-	#contact_row {
-		margin-left: 6.9vw;
-		margin-right: 6.9vw;
-	}
+    #gallery-section .content img {
+        max-width: 64vw;
+    }
 
-	label input[type="text"i] {
-		width: 59vw;
-	}
-
-	label input[type="email"i] {
-		width: 59vw;
-	}
-
-	textarea {
-		width: 60vw;
-	}
+    /*galleri*/
 
 
 
-	/* SLUT Kontakt side*/
+    /*citat*/
+    .mySlides,
+    .quote_1,
+    .quote_2,
+    .quote_3 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /*citat*/
+
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 18.8vw;
+        margin-right: 18.8vw;
+    }
+
+    #contact_row {
+        margin-left: 6.9vw;
+        margin-right: 6.9vw;
+    }
+
+    label input[type="text"i] {
+        width: 59vw;
+    }
+
+    label input[type="email"i] {
+        width: 59vw;
+    }
+
+    textarea {
+        width: 60vw;
+    }
+
+    /* SLUT Kontakt side*/
 
 
-	/*MET til fest*/
-	.red_box2 {
-		height: 75vw;
-	}
 
-	/*MET til fest SLUT*/
+    /*om os*/
+
+    #aboutUs img {
+        width: 62vw;
+    }
+
+    #aboutUs p {
+        padding-left: 19vw;
+        padding-right: 19vw;
+        margin-bottom: 9vw;
+
+    }
+
+
+
+    /*om os*/
+
+
+
+
+    /*MET til fest*/
+    .red_box2 {
+        height: 75vw;
+    }
+
+    /*MET til fest SLUT*/
 
 }
 
 @media screen and (min-width: 600px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 20.5vw;
-		margin-right: 20.5vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
 
-	#contact_row {
-		margin-left: 8.2vw;
-		margin-right: 8.2vw;
-	}
+    #contact_row {
+        margin-left: 8.2vw;
+        margin-right: 8.2vw;
+    }
 
-	/* SLUT Kontakt side*/
-
-
-	/* Logo størrelse */
-	#logo img {
-		max-width: 50%;
-		margin-right: 2vw;
-	}
-
-	/* Logo SLUT */
+    /* SLUT Kontakt side*/
 
 
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
+    /* Logo størrelse */
+    #logo img {
+        max-width: 50%;
+        margin-right: 2vw;
+    }
 
-	#menuCard {
-		padding: 0em 4em 0em;
-	}
-
-	#koldedrikke-section {
-		padding: 0em 4em;
-	}
-
-	/*beskrivelses tekst styling SLUT*/
+    /* Logo SLUT */
 
 
-	/* Galleri */
-	#gallery-section .content {
-		grid-template-columns: 0.5fr 1fr;
-		justify-content: left;
-	}
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
 
-	.flip-card {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-	}
+    #menuCard {
+        padding: 0em 4em 0em;
+    }
 
-	.gallery-content {
-		margin: -1vw 0vw;
-		display: grid;
-	}
+    #koldedrikke-section {
+        padding: 0em 4em;
+    }
 
-	.gallery-content .top {
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		margin: 0.5vw;
-
-		/*
-		grid-template-columns: 1fr 0.5fr;
-		grid-template-rows: auto auto;
-*/
-	}
-
-	.gallery-content .bottom {
-		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 2;
-		grid-row-end: 3;
-		margin: 0.5vw;
-		/*
-
-		grid-template-columns: 0.5fr 1fr;
-		grid-template-rows: auto auto;
-*/
-	}
-
-
-	#gallery-section .gallery-content img {
-		max-height: 100%;
-		max-width: 100%;
-	}
-
-	.p-top-left,
-	.p-top-right,
-	.p-bottom-left,
-	.p-bottom-right {
-		margin: 0.5vw;
-	}
-
-	.p-top-left {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-
-
-	.p-top-right {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-
-	.p-bottom-left {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
-
-	.p-bottom-right {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
+    /*beskrivelses tekst styling SLUT*/
 
 
 
-	/*------- Flip animation ------*/
 
-	/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-	.flip-card {
-		background-color: transparent;
-		width: 250px;
-		height: 300px;
-		justify-self: end;
-		/*        border: 1px solid #f1f1f1;*/
-		perspective: 1000px;
-		/* Remove this if you don't want the 3D effect */
-	}
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 50vw;
+    }
 
-	/* This container is needed to position the front and back side */
-	.flip-card-inner {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		transition: transform 0.8s;
-		transform-style: preserve-3d;
-	}
-
-	/* Do an horizontal flip when you move the mouse over the flip box container */
-	.flip-card:hover .flip-card-inner {
-		transform: rotateY(180deg);
-	}
-
-	/* Position the front and back side */
-	.flip-card-front,
-	.flip-card-back {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		-webkit-backface-visibility: hidden;
-		/* Safari */
-		backface-visibility: hidden;
-		font: 14px Avenir light, Avenir Black, sans-serif;
-	}
-
-	.flip-card-front {
-		width: 300px;
-		height: 300px;
-	}
-
-
-	/* Style the back side */
-	.flip-card-back {
-		background-color: white;
-		color: black;
-		transform: rotateY(180deg);
-	}
-
-	.pictur_header {
-		color: #DB3C3C;
-	}
-
-	.end_text {
-		font-style: italic;
-	}
-
-	/*------- Flip animation SLUT ------*/
-
-	/* Galleri SLUT */
-
-
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 50vw;
-	}
-
-	/*Om os citat SLUT*/
+    /*Om os citat SLUT*/
 
 
 
-	/*MENUKORT START*/
+    /*MENUKORT START*/
 
-	#coffee_section img {
-		max-width: 100%;
-	}
+    #coffee_section img {
+        max-width: 100%;
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 16em;
-		height: 22em;
-		position: absolute;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 16em;
+        height: 22em;
+        position: absolute;
+    }
 
-	.white-border3 {
-		margin-left: -3vw;
-		width: 18.5em;
-		height: 16em;
-		position: absolute;
-	}
+    .white-border3 {
+        margin-left: -3vw;
+        width: 18.5em;
+        height: 16em;
+        position: absolute;
+    }
 
-	#coffee_section,
-	#morgenmad-section {
-		grid-template-rows: 15% 45% 40%;
-	}
+    #coffee_section,
+    #morgenmad-section {
+        grid-template-rows: 15% 45% 40%;
+    }
 
-	/*MENUKORT SLUT*/
-
-
-	/*MET til fest*/
-	.red_box2 {
-		height: 68vw;
-	}
-
-	/*MET til fest SLUT*/
+    /*MENUKORT SLUT*/
 
 
-	/*Footer*/
-	.some_container svg {
-		width: 20%;
-	}
+    /*MET til fest*/
+    .red_box2 {
+        height: 68vw;
+    }
 
-	/*Footer SLUT*/
+    /*MET til fest SLUT*/
+
+
+    /*Footer*/
+    .some_container svg {
+        width: 20%;
+    }
+
+    /*Footer SLUT*/
 
 }
 
@@ -2491,249 +2439,282 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 610px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 22vw;
-		margin-right: 22vw;
-	}
 
-	#contact_row {
-		margin-left: 9.6vw;
-		margin-right: 9.6vw;
-	}
+    /*galleri*/
 
-	label input[type="text"i] {
-		width: 54vw;
-	}
+    #gallery-section .content img {
+        max-width: 62vw;
+    }
 
-	label input[type="email"i] {
-		width: 54vw;
-	}
-
-	textarea {
-		width: 55vw;
-	}
-
-	/* SLUT Kontakt side*/
+    /*galleri*/
 
 
-	/*Om os thomas og mette*/
-	#aboutUs p {
-		padding-left: 15vw;
-		padding-right: 14vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 22vw;
+        margin-right: 22vw;
+    }
 
-	#aboutUs img {
-		width: 70vw;
-	}
+    #contact_row {
+        margin-left: 9.6vw;
+        margin-right: 9.6vw;
+    }
 
-	/*Om os thomas og mette*/
+    label input[type="text"i] {
+        width: 54vw;
+    }
 
+    label input[type="email"i] {
+        width: 54vw;
+    }
 
+    textarea {
+        width: 55vw;
+    }
 
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
-
-	#menuCard {
-		padding: 0.5em 4em;
-	}
-
-	#menu-info {
-		padding: 0em 3em;
-	}
-
-	/*beskrivelses tekst styling SLUT*/
+    /* SLUT Kontakt side*/
 
 
-	#coffee_section img {
-		max-width: 100%;
-	}
+    /*Om os thomas og mette*/
+    #aboutUs p {
+        padding-left: 15.8vw;
+        padding-right: 15vw;
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 16em;
-		height: 23.2em;
-		position: absolute;
-	}
+    #aboutUs img {
+        width: 68vw;
+    }
 
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: -1em;
-		width: 18.5em;
-		height: 16.3em;
-		position: absolute;
-	}
+    /*Om os thomas og mette*/
 
-	/*MENUKORT SLUT*/
+
+
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
+
+    #menuCard {
+        padding: 0.5em 4em;
+    }
+
+    #menu-info {
+        padding: 0em 3em;
+    }
+
+    /*beskrivelses tekst styling SLUT*/
+
+
+    #coffee_section img {
+        max-width: 100%;
+    }
+
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 16em;
+        height: 23.2em;
+        position: absolute;
+    }
+
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: -1em;
+        width: 18.5em;
+        height: 16.3em;
+        position: absolute;
+    }
+
+    /*MENUKORT SLUT*/
 }
 
 @media screen and (min-width: 638px) {
 
 
-	/*MET TIL FEST*/
-	#party-section h1 {
-		padding-left: 5vw;
-	}
 
-	#party-section img {
-		width: 64%;
-	}
+    /*    Galleri*/
 
-	#party-section #month_menu .top_menu img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 64%;
-	}
+    #gallery-section .content img {
+        max-width: 57vw;
+    }
 
-	#party-section p {
-		padding-left: 17vw;
-		padding-right: 17vw;
-	}
-
-	.red_box1 {
-		width: 63vw;
-		height: 56vw;
-		margin: 0vw 15vw;
-	}
-
-	.red_box2 {
-		width: 63vw;
-		height: 59vw;
-		margin: -17vw 15vw 15vw
-	}
-
-	#party-section .party_info img {
-		width: 57%;
-	}
+    /*    Galleri SLUT */
 
 
-	#party-section #month_menu h2 {
-		padding-left: 17vw;
-		padding-right: 13vw;
-	}
+    /*MET TIL FEST*/
+    #party-section h1 {
+        padding-left: 5vw;
+    }
 
-	#party-section #grey h2 {
-		padding-left: 17vw;
-	}
+    #party-section img {
+        width: 64%;
+    }
 
-	.price_1,
-	.price_2 {
-		margin-left: 22vw;
-		margin-right: 22vw;
-	}
+    #party-section #month_menu .top_menu img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 64%;
+    }
 
-	#party-section .price_1 p {
-		padding-left: 12vw;
-		padding-right: 12vw;
-	}
+    #party-section p {
+        padding-left: 17vw;
+        padding-right: 17vw;
+    }
 
-	#party-section .price_2 p {
-		padding-left: 10vw;
-		padding-right: 10vw;
-	}
+    .red_box1 {
+        width: 63vw;
+        height: 56vw;
+        margin: 0vw 15vw;
+    }
 
-	#party-section .price_heading {
-		margin-top: 10vw;
-		padding-bottom: 3vw;
-	}
+    .red_box2 {
+        width: 63vw;
+        height: 59vw;
+        margin: -17vw 15vw 15vw
+    }
+
+    #party-section .party_info img {
+        width: 57%;
+    }
 
 
-	/*MET TIL FEST SLUT*/
+    #party-section #month_menu h2 {
+        padding-left: 17vw;
+        padding-right: 13vw;
+    }
+
+    #party-section #grey h2 {
+        padding-left: 17vw;
+    }
+
+    .price_1,
+    .price_2 {
+        margin-left: 22vw;
+        margin-right: 22vw;
+    }
+
+    #party-section .price_1 p {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    #party-section .price_2 p {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #party-section .price_heading {
+        margin-top: 10vw;
+        padding-bottom: 3vw;
+    }
 
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 22.4vw;
-		margin-right: 22.3vw;
-	}
+    /*Om os*/
 
-	/* SLUT Kontakt side*/
+    #aboutUs img {
+        width: 57vw;
+    }
+
+    #aboutUs p {
+        padding-left: 21.5vw;
+        padding-right: 21vw;
+    }
+
+    /*Om os SLUT*/
+
+    /*MET TIL FEST SLUT*/
+
+
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 22.4vw;
+        margin-right: 22.3vw;
+    }
+
+    /* SLUT Kontakt side*/
 }
 
 
 @media screen and (min-width: 648px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 23.4vw;
-		margin-right: 23.3vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 23.4vw;
+        margin-right: 23.3vw;
+    }
 
-	#contact_row {
-		margin-left: 10.6vw;
-		margin-right: 10.6vw;
-	}
+    #contact_row {
+        margin-left: 10.6vw;
+        margin-right: 10.6vw;
+    }
 
-	label input[type="text"i] {
-		width: 51vw;
-	}
+    label input[type="text"i] {
+        width: 51vw;
+    }
 
-	label input[type="email"i] {
-		width: 51vw;
-	}
+    label input[type="email"i] {
+        width: 51vw;
+    }
 
-	textarea {
-		width: 52vw;
-	}
-
-
-	/* SLUT Kontakt side*/
+    textarea {
+        width: 52vw;
+    }
 
 
-	/*MENUKORT*/
-	/*Styling af produkt og priser */
+    /* SLUT Kontakt side*/
 
-	#menuCard {
-		padding: 0.5em 6em;
-	}
 
-	/*beskrivelses tekst styling SLUT*/
+    /*MENUKORT*/
+    /*Styling af produkt og priser */
 
-	.white-border1 {
-		width: 16em;
-		height: 23em;
-	}
+    #menuCard {
+        padding: 0.5em 6em;
+    }
 
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: -1em;
-		width: 18em;
-		height: 16em;
-	}
+    /*beskrivelses tekst styling SLUT*/
 
-	/*MENUKORT SLUT*/
+    .white-border1 {
+        width: 16em;
+        height: 23em;
+    }
+
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: -1em;
+        width: 18em;
+        height: 16em;
+    }
+
+    /*MENUKORT SLUT*/
 }
 
 
 @media screen and (min-width: 678px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 24.4vw;
-		margin-right: 24.3vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 24.4vw;
+        margin-right: 24.3vw;
+    }
 
-	#contact_row {
-		margin-left: 11.9vw;
-		margin-right: 11.9vw;
-	}
+    #contact_row {
+        margin-left: 11.9vw;
+        margin-right: 11.9vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 53vw;
-	}
+    /*MET til fest*/
+    .red_box1 {
+        height: 53vw;
+    }
 
-	.red_box2 {
-		height: 59vw;
-		margin -15vw 15vw 15vw;
-	}
+    .red_box2 {
+        height: 59vw;
+        margin -15vw 15vw 15vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 
 }
@@ -2741,922 +2722,1146 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 700px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 24.8vw;
-		margin-right: 24.8vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 24.8vw;
+        margin-right: 24.8vw;
+    }
 
-	label input[type="text"i] {
-		width: 49vw;
-	}
+    label input[type="text"i] {
+        width: 49vw;
+    }
 
-	label input[type="email"i] {
-		width: 49vw;
-	}
+    label input[type="email"i] {
+        width: 49vw;
+    }
 
-	textarea {
-		width: 50vw;
-	}
+    textarea {
+        width: 50vw;
+    }
 
-	/* SLUT Kontakt side*/
+    /* SLUT Kontakt side*/
 
 
 
-	/*MET til fest*/
+    /*MET til fest*/
 
-	.red_box2 {
-		height: 53vw;
-	}
+    .red_box2 {
+        height: 53vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 
 @media screen and (min-width: 710px) {
 
-	/*MET TIL FEST*/
-	#party-section h1 {
-		text-align: center;
-		margin-top: 7vw;
-	}
+    /*Galleri*/
 
-	#party-section img {
-		width: 57%;
-	}
+    #gallery-section .content img {
+        max-width: 51vw;
+    }
 
-	#party-section .party_info img {
-		width: 50%;
-	}
+    /*Galleri SLUT*/
 
-	.red_box1 {
-		height: 46vw;
-		width: 56vw;
-		margin: 0vw 18vw;
-	}
 
-	.red_box2 {
-		height: 55vw;
-		width: 56vw;
-		margin: -16vw 18vw 18vw;
-	}
+    /*Om os*/
+    #aboutUs img {
+        max-width: 51vw;
+    }
 
-	#party-section .party_info p {
-		padding: 0vw 24vw;
-	}
+    #aboutUs p {
+        padding-left: 24vw;
+        padding-right: 23vw;
+    }
 
-	#party-section #month_menu .top_menu img {
-		width: 57%;
-	}
-
-	#party-section p {
-		padding-left: 20vw;
-		padding-right: 20vw;
-	}
-
-	#party-section #month_menu h2 {
-		padding-left: 20vw;
-		padding-right: 16vw;
-	}
-
-	#party-section #grey h2 {
-		padding-left: 20vw;
-	}
-
-	.price_1,
-	.price_2 {
-		margin-left: 24vw;
-		margin-right: 24vw;
-	}
-
-	#party-section .price_1 p {
-		padding-left: 9vw;
-		padding-right: 9vw;
-	}
-
-	#party-section .price_2 p {
-		padding-left: 6vw;
-		padding-right: 7vw;
-	}
+    /*Om os*/
 
 
 
-	/*MET TIL FEST SLUT*/
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 25.3vw;
-		margin-right: 25.3vw;
-	}
+    /*MET TIL FEST*/
+    #party-section h1 {
+        text-align: center;
+        margin-top: 7vw;
+    }
 
-	#contact_row {
-		margin-left: 13vw;
-		margin-right: 13vw;
-	}
+    #party-section img {
+        width: 57%;
+    }
 
-	/* SLUT Kontakt side*/
+    #party-section .party_info img {
+        width: 50%;
+    }
+
+    .red_box1 {
+        height: 46vw;
+        width: 56vw;
+        margin: 0vw 18vw;
+    }
+
+    .red_box2 {
+        height: 55vw;
+        width: 56vw;
+        margin: -16vw 18vw 18vw;
+    }
+
+    #party-section .party_info p {
+        padding: 0vw 24vw;
+    }
+
+    #party-section #month_menu .top_menu img {
+        width: 57%;
+    }
+
+    #party-section p {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    #party-section #month_menu h2 {
+        padding-left: 20vw;
+        padding-right: 16vw;
+    }
+
+    #party-section #grey h2 {
+        padding-left: 20vw;
+    }
+
+    .price_1,
+    .price_2 {
+        margin-left: 24vw;
+        margin-right: 24vw;
+    }
+
+    #party-section .price_1 p {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+
+    #party-section .price_2 p {
+        padding-left: 6vw;
+        padding-right: 7vw;
+    }
 
 
-	/*Om os thomas og mette*/
-	#aboutUs p {
-		padding-left: 17vw;
-		padding-right: 17vw;
-	}
 
-	#aboutUs img {
-		width: 65vw;
-	}
+    /*MET TIL FEST SLUT*/
 
-	/*Om os thomas og mette*/
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 25.3vw;
+        margin-right: 25.3vw;
+    }
+
+    #contact_row {
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+
+    /* SLUT Kontakt side*/
 
 
-	/*menu*/
+    /*menu*/
 
-	#menuCard {
-		padding: 0.1em 8em;
-	}
+    #menuCard {
+        padding: 0.1em 8em;
+    }
 
-	#coffee_section {
-		grid-template-rows: 15% 42% 40%
-	}
+    #coffee_section {
+        grid-template-rows: 15% 42% 40%
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		width: 16em;
-		height: 24.5em;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        width: 16em;
+        height: 24.5em;
+    }
 
-	.white-border3 {
-		margin-top: -1em;
-		width: 18em;
-		height: 16em;
-	}
+    .white-border3 {
+        margin-top: -1em;
+        width: 18em;
+        height: 16em;
+    }
 
-	/*MENUKORT SLUT*/
+    /*MENUKORT SLUT*/
 
-	/*menu slut*/
+    /*menu slut*/
 }
 
 #koldedrikke-section h1 {
-	margin-top: 0em;
+    margin-top: 0em;
 }
 
 @media screen and (min-width: 730px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 26.2vw;
-		margin-right: 26vw;
-	}
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 26.2vw;
+        margin-right: 26vw;
+    }
 
-	#contact_row {
-		margin-left: 13.7vw;
-		margin-right: 13.7vw;
-	}
+    #contact_row {
+        margin-left: 13.7vw;
+        margin-right: 13.7vw;
+    }
 
-	label input[type="text"i] {
-		width: 46vw;
-	}
+    label input[type="text"i] {
+        width: 46vw;
+    }
 
-	label input[type="email"i] {
-		width: 46vw;
-	}
+    label input[type="email"i] {
+        width: 46vw;
+    }
 
-	textarea {
-		width: 47vw;
-	}
+    textarea {
+        width: 47vw;
+    }
 
 }
 
 
 @media screen and (min-width: 752px) {
 
-	/*Kontakt side*/
-	.infomation {
-		margin-left: 26.7vw;
-		margin-right: 26.4vw;
-	}
+    /*galleri*/
+    #gallery-section .content img {
+        max-width: 47vw;
+    }
 
-	#contact_row {
-		margin-left: 14.4vw;
-		margin-right: 14.4vw;
-	}
+    /*galleri SLUT*/
+
+    /*    Om os */
+
+    #aboutUs img {
+        max-width: 47vw;
+    }
+
+    #aboutUs p {
+        padding-left: 24vw;
+        padding-right: 23vw;
+    }
+
+    /*    Om os  SLUT */
+
+
+
+    /*Kontakt side*/
+    .infomation {
+        margin-left: 26.7vw;
+        margin-right: 26.4vw;
+    }
+
+    #contact_row {
+        margin-left: 14.4vw;
+        margin-right: 14.4vw;
+    }
+
+    /*Kontakt side SLUT*/
 
 }
 
 @media screen and (min-width: 768px) {
 
-	/*--------Logo størrelse------*/
-	#logo img {
-		max-width: 45%;
-		margin-right: 1.5vw;
-	}
-
-	/*----------Logo SLUT----------*/
-
-
-	/*----------Burgermenu---------*/
-	.burgermenu {
-		display: none;
-	}
-
-	/*---------Burgermenu SLUT------*/
-
+    /*--------Logo størrelse------*/
+    #logo img {
+        max-width: 45%;
+        margin-right: 1.5vw;
+    }
+
+    /*----------Logo SLUT----------*/
+
+
+    /*----------Burgermenu---------*/
+    .burgermenu {
+        display: none;
+    }
+
+    /*---------Burgermenu SLUT------*/
+
 
-	/*---Navbar visning ved tablet---*/
-	#nav {
-		display: grid;
-	}
-
-	/*--Navbar visning ved tablet SLUT--*/
-
+    /*---Navbar visning ved tablet---*/
+    #nav {
+        display: grid;
+    }
+
+    /*--Navbar visning ved tablet SLUT--*/
+
 
-	/*------------Menukort--------------*/
-	#menuCard {
-		padding: 0em 3em 0em 3em;
-	}
+    /*------------Menukort--------------*/
+    #menuCard {
+        padding: 0em 3em 0em 3em;
+    }
 
-	/*-----------Menukort slut----------*/
+    /*-----------Menukort slut----------*/
 
 
-	/*----------------Grid--------------*/
-	#coffee_section,
-	#morgenmad-section,
-	#koldedrikke-section {
-		display: flex;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50% 50%;
-		padding: 0em;
-	}
+    /*----------------Grid--------------*/
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        padding: 0em;
+    }
 
-	#coffee_section .menu-right {
-		margin: 0em;
-	}
+    #coffee_section .menu-right {
+        margin: 0em;
+    }
 
-	#menu-info {
-		padding: 2em 0em;
-		margin: 2em 1em;
-	}
+    #menu-info {
+        padding: 2em 0em;
+        margin: 2em 1em;
+    }
 
-	.menu-left {
-		display: grid;
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
+    .menu-left {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-	.menu-right {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
+    .menu-right {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-	#morgenmad-section .menu-right {
-		text-align: left;
-		display: grid;
-		grid-column-start: 2;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		margin: 0em;
-	}
+    #morgenmad-section .menu-right {
+        text-align: left;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0em;
+    }
 
-	#morgenmad-section img {
-		display: grid;
-		width: 100%;
-		max-height: 100%;
-	}
+    #morgenmad-section img {
+        display: grid;
+        width: 100%;
+        max-height: 100%;
+    }
 
-	#morgenmad-section h1 {
-		margin-top: 0em;
-	}
+    #morgenmad-section h1 {
+        margin-top: 0em;
+    }
 
-	.menu-right-last {
-		grid-column-start: 2;
-		grid-column-end: 3;
-		grid-row-start: 1;
-		grid-row-end: 6;
-	}
+    .menu-right-last {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
 
-	#coffee_section img {
-		max-height: 100%;
-		padding: 0;
-	}
+    #coffee_section img {
+        max-height: 100%;
+        padding: 0;
+    }
 
-	#coffee_section,
-	#morgenmad-section,
-	#koldedrikke-section {
-		padding-top: 3em;
-	}
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section {
+        padding-top: 3em;
+    }
 
-	/*---------Grid slut---------*/
+    /*---------Grid slut---------*/
 
 
 
 
-	/*--------Kaffe sektion-------*/
+    /*--------Kaffe sektion-------*/
 
-	.coffee-list li {
-		margin: 0vw 0vw 0vw 0vw;
-	}
+    .coffee-list li {
+        margin: 0vw 0vw 0vw 0vw;
+    }
 
-	.coffee_price_list li {
-		margin-right: 9.5em;
-	}
+    .coffee_price_list li {
+        margin-right: 9.5em;
+    }
 
-	.menu-left p {
-		margin-top: 0em;
-	}
+    .menu-left p {
+        margin-top: 0em;
+    }
 
-	/*------Kaffe sektion SLUT-----*/
+    /*------Kaffe sektion SLUT-----*/
 
 
 
-	/*-------morgenmad section------*/
+    /*-------morgenmad section------*/
 
-	.morgenmad_price_list {
-		margin-right: 1em;
-	}
+    .morgenmad_price_list {
+        margin-right: 1em;
+    }
 
-	#morgenmad-section img {
-		max-height: 100%;
-		padding-left: 0em;
-	}
+    #morgenmad-section img {
+        max-height: 100%;
+        padding-left: 0em;
+    }
 
-	/*------morgenmad section SLUT---*/
+    /*------morgenmad section SLUT---*/
 
 
 
-	/*------Kolde drikke sektion-----*/
+    /*------Kolde drikke sektion-----*/
 
-	.drikke-list li {
-		margin: 0vw 0vw -1vw 0vw;
-	}
+    .drikke-list li {
+        margin: 0vw 0vw -1vw 0vw;
+    }
 
-	.drikke_price_list {
-		margin-right: 25vw;
-	}
+    .drikke_price_list {
+        margin-right: 25vw;
+    }
 
-	#koldedrikke-section h1 {
-		margin-top: 0em;
-	}
+    #koldedrikke-section h1 {
+        margin-top: 0em;
+    }
 
-	#koldedrikke-section img {
-		max-height: 100%;
-	}
+    #koldedrikke-section img {
+        max-height: 100%;
+    }
 
-	/*-------Kolde drikke slut--------*/
+    /*-------Kolde drikke slut--------*/
 
 
 
-	/*-------Hvide kanter --------*/
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 16.5em;
-		height: 29em;
-		position: absolute;
-	}
+    /*-------Hvide kanter --------*/
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 16.5em;
+        height: 29em;
+        position: absolute;
+    }
 
-	.white-border2 {
-		border: white solid 0.5em;
-		margin-top: 1.5em;
-		margin-left: 1.5em;
-		width: 17.2em;
-		height: 31em;
-		position: absolute;
-	}
+    .white-border2 {
+        border: white solid 0.5em;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        width: 17.2em;
+        height: 31em;
+        position: absolute;
+    }
 
-	.white-border3 {
-		border: white solid 0.5em;
-		margin-top: -1em;
-		margin-left: -1em;
-		width: 16.5em;
-		height: 14em;
-		position: absolute;
-	}
+    .white-border3 {
+        border: white solid 0.5em;
+        margin-top: -1em;
+        margin-left: -1em;
+        width: 16.5em;
+        height: 14em;
+        position: absolute;
+    }
 
-	/*-------Hvide kanter SLUT-----*/
-	/*--------Menukort SLUT------*/
+    /*-------Hvide kanter SLUT-----*/
+    /*--------Menukort SLUT------*/
 
 
+    /* Galleri */
 
-	/*-----------Galleri----------*/
-	#gallery-section .content {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100%;
-	}
+    #gallery-section .flip-card-front img {
+        width: 44vw;
+    }
 
-	/*---------Galleri SLUT--------*/
+    #gallery-section .gallery-content img {
+        max-height: 23vw;
+        max-width: 23vw;
+    }
 
+    #gallery-section .content img {
+        max-width: 38vw;
+    }
 
+    #gallery-section .bottom img {
+        display: grid;
+    }
 
+    #gallery-section .p-top-right {
+        display: grid;
+    }
 
-	/*-------Kontakt side start-----*/
+    #gallery-section .p-top-left {
+        display: grid;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
 
-	/*For begge row*/
-	#contact_row {
-		margin-left: 0vw;
-		margin-right: 0vw;
-	}
+    #gallery-section .content {
+        grid-template-columns: 0.5fr 1fr;
+        justify-content: left;
+    }
 
-	.grid2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		margin-top: 5vw;
-	}
+    .flip-card {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+    }
 
+    .gallery-content {
+        margin: -1vw 0vw;
+        display: grid;
+    }
+
+    .gallery-content .top {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0.5vw;
 
-	/*----SLUT For begge row---*/
+        /*
+		grid-template-columns: 1fr 0.5fr;
+		grid-template-rows: auto auto;
+*/
+    }
+
+    .gallery-content .bottom {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 0.5vw;
+        /*
+
+		grid-template-columns: 0.5fr 1fr;
+		grid-template-rows: auto auto;
+*/
+    }
 
 
-	/*-----row 1 i kontakt side--*/
-	.infomation {
-		height: 50vh;
-		background-color: #F2EDEB;
-		font: 14px Avenir light, Avenir Black, sans-serif;
-		margin-top: 0vw;
-		margin-left: 8vw;
-		margin-right: -9vw;
-		text-align: center;
-		padding-top: 0px;
-		padding-bottom: 0px;
-	}
+
+    .p-top-left,
+    .p-top-right,
+    .p-bottom-left,
+    .p-bottom-right {
+        margin: 0.5vw;
+    }
 
-	.infomation h3 {
-		padding-top: 4vw;
-		padding-left: 4vw;
-		text-align: left;
-	}
+    .p-top-left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 
-	.infomation p {
-		padding-left: 4vw;
-		text-align: left;
-	}
 
-	.map {
-		padding-left: 0.5vw;
-	}
+    .p-top-right {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 
-	/*<!--Taget kode https://www.embedgooglemap.net/en/-->*/
-	.mapouter {
-		position: relative;
-		text-align: center;
-		display: flex;
-		width: 85%;
-		height: 50vh;
-	}
+    .p-bottom-left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .p-bottom-right {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 
-	.gmap_canvas {
-		overflow: hidden;
-		background: none !important;
-		height: 100%;
-		width: 100%;
-		padding-left: 9.5vw;
-	}
 
-	iframe {
-		height: 500px;
-		width: 400px;
-	}
 
-	/*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
-	/*---SLUT row 1 i kontakt side---*/
+    /*------- Flip animation ------*/
 
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 300px;
+        justify-self: end;
+        /*        border: 1px solid #f1f1f1;*/
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
 
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
 
-	/*----row 2 i kontakt side---*/
-	.besked {
-		font: 14px Avenir light, Avenir Black, sans-serif;
-		margin-left: 6vw;
-		margin-right: 6vw;
-		margin-top: 0vw;
-	}
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
 
-	.form_container {
-		margin-left: -2vw;
-		margin-right: 7vw;
-		margin-bottom: 9vw;
-	}
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        font: 14px Avenir light, Avenir Black, sans-serif;
+    }
 
-	label {
-		font: 14px Avenir light, Avenir Black, sans-serif;
-	}
+    .flip-card-front {
+        width: 300px;
+        height: 300px;
+    }
 
-	.feedback-input {
-		font: 14px Avenir light, Avenir Black, sans-serif;
-		font-weight: 500;
-		font-size: 1px;
-		line-height: 1px;
-	}
 
-	.feedback-input:focus {
-		border: 2px solid #CC4949;
-	}
+    /* Style the back side */
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+
+    .pictur_header {
+        color: #DB3C3C;
+    }
+
+    .end_text {
+        font-style: italic;
+    }
+
+    /*------- Flip animation SLUT ------*/
+
+    /* Galleri SLUT */
+
+    /*-----------Galleri----------*/
+    /*
+    #gallery-section .content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+    }
 
-	/* FORM*/
-	.besked {
-		margin-top: 3vw;
-	}
 
-	.wpcf7 {
-		margin-left: 2vw;
-	}
+    #gallery-section .content img {
+        max-width: 39vw;
+    }
+
+    #gallery-section .bottom img {
+        display: grid;
+    }
+
+    #gallery-section .p-top-right {
+        display: grid;
+    }
+
+    #gallery-section .p-top-left {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75vw;
+    }
+*/
+
+    /*---------Galleri SLUT--------*/
+
+
+
+
+    /*-------Kontakt side start-----*/
+
+    /*For begge row*/
+    #contact_row {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5vw;
+    }
+
+
+    /*----SLUT For begge row---*/
+
+
+    /*-----row 1 i kontakt side--*/
+    .infomation {
+        height: 50vh;
+        background-color: #F2EDEB;
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        margin-top: 0vw;
+        margin-left: 8vw;
+        margin-right: -9vw;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .infomation h3 {
+        padding-top: 4vw;
+        padding-left: 4vw;
+        text-align: left;
+    }
+
+    .infomation p {
+        padding-left: 4vw;
+        text-align: left;
+    }
 
-	label input[type="email"i] {
-		margin-bottom: 3vw;
-	}
+    .map {
+        padding-left: 0.5vw;
+    }
 
-	label input[type="text"i] {
-		width: 38vw;
-	}
+    /*<!--Taget kode https://www.embedgooglemap.net/en/-->*/
+    .mapouter {
+        position: relative;
+        text-align: center;
+        display: flex;
+        width: 85%;
+        height: 50vh;
+    }
 
-	label input[type="email"i] {
-		width: 38vw;
-	}
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%;
+        padding-left: 9.5vw;
+    }
+
+    iframe {
+        height: 500px;
+        width: 400px;
+    }
+
+    /*<!--SLUT Taget kode  https://www.embedgooglemap.net/en/-->-->*/
+    /*---SLUT row 1 i kontakt side---*/
+
+
+
+    /*----row 2 i kontakt side---*/
+    .besked {
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-top: 0vw;
+    }
+
+    .form_container {
+        margin-left: -2vw;
+        margin-right: 7vw;
+        margin-bottom: 9vw;
+    }
+
+    label {
+        font: 14px Avenir light, Avenir Black, sans-serif;
+    }
+
+    .feedback-input {
+        font: 14px Avenir light, Avenir Black, sans-serif;
+        font-weight: 500;
+        font-size: 1px;
+        line-height: 1px;
+    }
+
+    .feedback-input:focus {
+        border: 2px solid #CC4949;
+    }
+
+    /* FORM*/
+    .besked {
+        margin-top: 3vw;
+    }
+
+    .wpcf7 {
+        margin-left: 2vw;
+    }
+
+    label input[type="email"i] {
+        margin-bottom: 3vw;
+    }
+
+    label input[type="text"i] {
+        width: 38vw;
+    }
+
+    label input[type="email"i] {
+        width: 38vw;
+    }
+
+    textarea {
+        width: 40vw;
+    }
+
+    [type="submit"] {
+        width: 21%;
+        font-size: 13px
+    }
+
+    /* FORM*/
+
+
+    /*---row 2 i kontakt side----*/
+
+    /*-------------Kontakt SLUT-------------*/
 
-	textarea {
-		width: 40vw;
-	}
+
+
+
+    /*------------------Footer--------------*/
+    #footer_box {
+        display: grid;
+    }
 
-	[type="submit"] {
-		width: 21%;
-		font-size: 13px
-	}
+    .footer-left {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 5vh;
+    }
 
-	/* FORM*/
+    .footer-right {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 4.4vh;
+        padding-right: 9vw;
+    }
 
+    #mc_embed_signup {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 2;
+        padding-top: 10vh;
+    }
 
-	/*---row 2 i kontakt side----*/
+    .some_container {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 2;
+        padding-top: 17vh;
+        padding-left: 9vw;
+    }
 
-	/*-------------Kontakt SLUT-------------*/
+    .some_container svg {
+        width: 26%;
+    }
 
+    /*--------------SLUT Footer---------------------*/
 
 
 
-	/*------------------Footer--------------*/
-	#footer_box {
-		display: grid;
-	}
+    /*---------------------- Om os ------------------*/
+    /*JS template som fanger og styler*/
 
-	.footer-left {
-		grid-column-start: 1;
-		grid-column-end: 1;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		padding-top: 5vh;
-	}
+    #aboutUs {
+        border: none;
+    }
 
-	.footer-right {
-		grid-column-start: 2;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-		padding-top: 4.4vh;
-		padding-right: 9vw;
-	}
+    #aboutUs h2 {
+        font-family: Avenir Light;
+        text-align: center;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+    }
 
-	#mc_embed_signup {
-		grid-column-start: 2;
-		grid-column-end: 4;
-		grid-row-start: 6;
-		grid-row-end: 2;
-		padding-top: 10vh;
-	}
+    /*JS template som fanger og styler*/
+    .grid-colum-2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
 
-	.some_container {
-		grid-column-start: 4;
-		grid-column-end: 4;
-		grid-row-start: 6;
-		grid-row-end: 2;
-		padding-top: 17vh;
-		padding-left: 9vw;
-	}
+    #aboutUs img {
 
-	.some_container svg {
-		width: 26%;
-	}
+        margin-bottom: 9vw;
+    }
 
-	/*--------------SLUT Footer---------------------*/
+    .mette img {
+        text-align: end;
+        padding-right: 3px;
+    }
 
+    .thomas img {
+        text-align: start;
+        padding-left: 8px;
+    }
+
+
+    #aboutUs .mette p {
+        padding-left: 3vw;
+        padding-right: 2vw;
+
+    }
+
+    #aboutUs .thomas p {
+        padding-left: 1vw;
+        padding-right: 2vw;
+    }
+
+
+    #aboutUs img {
+        width: 45vw;
+        margin-bottom: 0vw;
+    }
+
 
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 50vw;
+    }
 
-	/*---------------------- Om os ------------------*/
-	/*JS template som fanger og styler*/
+    /*-------------------- Om os SLUT ----------------*/
 
-	#aboutUs {
-		border: none;
-	}
 
-	#aboutUs h2 {
-		font-family: Avenir Light;
-		text-align: center;
-		padding-top: 7vh;
-		padding-bottom: 7vh;
-	}
 
-	/*JS template som fanger og styler*/
-	.grid-colum-2 {
-		display: grid;
-		grid-template-columns: 2fr 2fr;
-	}
+
+
 
-	#aboutUs img {
 
-		margin-bottom: 9vw;
-	}
+    /*-------------MET TIL FEST------------*/
+    #party-section h1 {
+        margin-top: 0vh;
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .heading {
+        margin-top:
+    }
+
+    .price_heading {
+        margin-top: 7vh;
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+
+    /* Arrangement info*/
+    .party_info {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: 140%;
+    }
+
+    .red_box1 {
+        border: #DD3340 solid 0.1vw;
+        width: 28vw;
+        height: 40vh;
+        margin: 6vw 0vw;
+    }
+
+    .red_box2 {
+        border: #DD3340 solid 0.1vw;
+        width: 60vw;
+        height: 40vh;
+        margin: 6vw 0vw;
+        right: 4vw;
+    }
+
+    #party-section .party_info img {
+        width: 63%;
+    }
+
+    .arrangement {
+        display: none;
+    }
+
+    .arrangement_2 {
+        display: block;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        margin-top: 0vw;
+    }
+
+    #party-section #month_menu .bottom_menu img {
+        display: block;
+    }
+
+    #party-section .party_info p {
+        padding-left: 0vw;
+        padding-right: 5vw;
+    }
+
+    .party_left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-self: center;
+    }
+
+    .party_info img {
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+    }
+
+    .party_right {
+        align-self: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+
+    /* Arrangement info SLUT*/
+
+
+    /*Månedens menu*/
+    #party-section #month_menu {
+        margin: 0vw 7vw;
+    }
+
+    #party-section .heading h1 {
+        margin-top: 18vw;
+    }
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        padding-top: 5vw;
+    }
+
+    #party-section #month_menu h2 {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        margin-top: 5vw;
+    }
 
-	.mette img {
-		text-align: end;
-		padding-right: 3px;
-	}
+    #party-section #month_menu p {
+        padding: 0vw;
+    }
 
-	.thomas img {
-		text-align: start;
-		padding-left: 8px;
-	}
+    .snacks_text {
+        padding: 3vw 6vw 0vw 0vw;
+    }
 
+    .salat_text {
+        padding: 12vw 0vw 0vw 6vw;
+    }
 
-	#aboutUs .mette p {
-		padding-left: 3vw;
-		padding-right: 2vw;
+    .dessert_text {
+        padding: 15vw 8vw 0vw 0vw;
+    }
 
-	}
+    .sandwich_text {
+        padding: 14vw 0vw 0vw 6vw;
+    }
+
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        width: 70%;
+        margin-top: 7vw;
+        margin-bottom: 5vw;
+    }
 
-	#aboutUs .thomas p {
-		padding-left: 1vw;
-		padding-right: 2vw;
-	}
-
-
-	#aboutUs img {
-		width: 45vw;
-		margin-bottom: 0vw;
-	}
-
-
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 50vw;
-	}
-
-	/*-------------------- Om os SLUT ----------------*/
-
-
-
-
-
-
-
-	/*-------------MET TIL FEST------------*/
-	#party-section h1 {
-		margin-top: 0vh;
-		padding-left: 0vw;
-		padding-right: 0vw;
-	}
-
-	.heading {
-		margin-top:
-	}
-
-	.price_heading {
-		margin-top: 7vh;
-		padding-left: 9vw;
-		padding-right: 9vw;
-	}
-
-	/* Arrangement info*/
-	.party_info {
-		display: grid;
-		grid-template-columns: 0.8fr 1fr;
-		grid-template-rows: 140%;
-	}
-
-	.red_box1 {
-		border: #DD3340 solid 0.1vw;
-		width: 28vw;
-		height: 40vh;
-		margin: 6vw 0vw;
-	}
-
-	.red_box2 {
-		border: #DD3340 solid 0.1vw;
-		width: 60vw;
-		height: 40vh;
-		margin: 6vw 0vw;
-		right: 4vw;
-	}
-
-	#party-section .party_info img {
-		width: 63%;
-	}
-
-	.arrangement {
-		display: none;
-	}
-
-	.arrangement_2 {
-		display: block;
-		padding-left: 0vw;
-		padding-right: 0vw;
-		margin-top: 0vw;
-	}
-
-	#party-section #month_menu .bottom_menu img {
-		display: block;
-	}
-
-	#party-section .party_info p {
-		padding-left: 0vw;
-		padding-right: 5vw;
-	}
-
-	.party_left {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		align-self: center;
-	}
-
-	.party_info img {
-		margin-top: 0vw;
-		margin-bottom: 0vw;
-	}
-
-	.party_right {
-		align-self: center;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-
-
-	/* Arrangement info SLUT*/
-
-
-	/*Månedens menu*/
-	#party-section #month_menu {
-		margin: 0vw 7vw;
-	}
-
-	#party-section .heading h1 {
-		margin-top: 18vw;
-	}
-
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		padding-top: 5vw;
-	}
-
-	#party-section #month_menu h2 {
-		padding-left: 0vw;
-		padding-right: 0vw;
-		margin-top: 5vw;
-	}
-
-	#party-section #month_menu p {
-		padding: 0vw;
-	}
-
-	.snacks_text {
-		padding: 3vw 6vw 0vw 0vw;
-	}
-
-	.salat_text {
-		padding: 12vw 0vw 0vw 6vw;
-	}
-
-	.dessert_text {
-		padding: 15vw 8vw 0vw 0vw;
-	}
-
-	.sandwich_text {
-		padding: 14vw 0vw 0vw 6vw;
-	}
-
-
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		width: 70%;
-		margin-top: 7vw;
-		margin-bottom: 5vw;
-	}
-
-	/*Top menu*/
-	#party-section #month_menu .top_menu {
-		padding-left: 0vw;
-		padding-right: 0vw;
-		grid-column-start: 1;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-
-	/*Bottom menu*/
-	#party-section #month_menu .bottom_menu {
-		padding-left: 0vw;
-		padding-right: 0vw;
-	}
-
-	.top_menu1,
-	.top_menu2,
-	.bottom_menu1,
-	.bottom_menu2 {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-	}
-
-
-
-	/*Månedens menu SLUT*/
-
-
-	/*Grå sektion*/
-	#grey {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50% 50%;
-	}
-
-	#party-section #grey h2 {
-		margin-top: -1vw;
-		text-align: left;
-		padding-left: 8vw;
-	}
-
-	#party-section #grey {
-		background-color: #F2EDEB;
-		padding-top: 6vw;
-		padding-bottom: 6vw;
-	}
-
-	#party-section #grey h2 {
-		padding-left: 11vw;
-	}
-
-	#party-section #grey .brunch p {
-		padding-left: 2vw;
-		padding-right: 0vw;
-	}
-
-	#party-section #grey .koldemet p {
-		padding-left: 0vw;
-		padding-right: 2vw;
-	}
-
-	/*Grå sektion SLUT*/
-
-
-
-
-
-	/*pris forslag*/
-
-	#party-section #price_suggestion {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	.price_1 {
-		margin-left: 5vw;
-		margin-right: 2vw;
-	}
-
-	.price_2 {
-		margin-left: 2vw;
-		margin-right: 5vw;
-		margin-top: 0vw;
-	}
-
-	#party-section #price_suggestion h2 {
-		margin-top: 4vw;
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
-
-	#party-section #price_suggestion .price_1 .menu_1,
-	#party-section #price_suggestion .price_2 .menu_2 {
-		margin-top: 2vw;
-
-	}
-
-	#party-section .price_1 p {
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
-
-	#party-section .price_2 p {
-		padding-left: 4vw;
-		padding-right: 4vw;
-	}
-
-	/*pris forslag SLUT*/
+    /*Top menu*/
+    #party-section #month_menu .top_menu {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /*Bottom menu*/
+    #party-section #month_menu .bottom_menu {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .top_menu1,
+    .top_menu2,
+    .bottom_menu1,
+    .bottom_menu2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+
+
+    /*Månedens menu SLUT*/
+
+
+    /*Grå sektion*/
+    #grey {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+    }
+
+    #party-section #grey h2 {
+        margin-top: -1vw;
+        text-align: left;
+        padding-left: 8vw;
+    }
+
+    #party-section #grey {
+        background-color: #F2EDEB;
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+
+    #party-section #grey h2 {
+        padding-left: 11vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 2vw;
+        padding-right: 0vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
+        padding-right: 2vw;
+    }
+
+    /*Grå sektion SLUT*/
+
+
+
+
+
+    /*pris forslag*/
+
+    #party-section #price_suggestion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .price_1 {
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+
+    .price_2 {
+        margin-left: 2vw;
+        margin-right: 5vw;
+        margin-top: 0vw;
+    }
+
+    #party-section #price_suggestion h2 {
+        margin-top: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    #party-section #price_suggestion .price_1 .menu_1,
+    #party-section #price_suggestion .price_2 .menu_2 {
+        margin-top: 2vw;
+
+    }
+
+    #party-section .price_1 p {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    #party-section .price_2 p {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    /*pris forslag SLUT*/
 
 
 
@@ -3668,29 +3873,29 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 777px) {
 
-	/*kontakt*/
-	.besked {
-		margin-right: 3vw;
+    /*kontakt*/
+    .besked {
+        margin-right: 3vw;
 
-	}
+    }
 
-	.form_container {
-		margin-left: -1vw;
-		margin-right: 8vw;
-	}
+    .form_container {
+        margin-left: -1vw;
+        margin-right: 8vw;
+    }
 
-	/*SLUT kontakt*/
+    /*SLUT kontakt*/
 
 
-	.white-border2 {
-		margin-top: 2.5em;
-		width: 17.8em;
-		height: 30em;
-	}
+    .white-border2 {
+        margin-top: 2.5em;
+        width: 17.8em;
+        height: 30em;
+    }
 
-	#morgenmad-section .menu-left {
-		padding-right: 1em;
-	}
+    #morgenmad-section .menu-left {
+        padding-right: 1em;
+    }
 
 
 }
@@ -3699,123 +3904,123 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 800px) {
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 40%;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+    }
 
-	/* Logo SLUT */
-
-
-	/*Menukort*/
-	/* Billede på morgemad og frokost*/
-	#coffee_section img {
-		max-height: 100%;
-	}
+    /* Logo SLUT */
 
 
-	#morgenmad-section img {
-		width: 100%;
-	}
+    /*Menukort*/
+    /* Billede på morgemad og frokost*/
+    #coffee_section img {
+        max-height: 100%;
+    }
 
 
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 17.5em;
-		height: 26em;
-		position: absolute;
-	}
-
-	.white-border2 {
-		margin-top: 2.5em;
-		margin-left: 2em;
-		width: 18.5em;
-		height: 30em;
-		position: absolute;
-	}
+    #morgenmad-section img {
+        width: 100%;
+    }
 
 
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: 0em;
-		width: 17.5em;
-		height: 15em;
-		position: absolute;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 17.5em;
+        height: 26em;
+        position: absolute;
+    }
 
-	/*Menukort SLUT */
-
-
-
-
-	/*Om os - Thomad og Mette*/
-
-	#aboutUs .mette p {
-		padding-left: 3vw;
-		padding-right: 2vw;
-	}
-
-	#aboutUs .thomas p {
-		padding-left: 1vw;
-		padding-right: 4vw;
-	}
-
-	#aboutUs img {
-		width: 35vw;
-		margin-bottom: 0vw;
-	}
-
-	#aboutUs {
-		padding-left: 9vw;
-		padding-right: 9vw;
-	}
-
-	/*Om os - Thomad og Mette SLUT*/
+    .white-border2 {
+        margin-top: 2.5em;
+        margin-left: 2em;
+        width: 18.5em;
+        height: 30em;
+        position: absolute;
+    }
 
 
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 60px;
-		padding-right: 60px;
-	}
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: 0em;
+        width: 17.5em;
+        height: 15em;
+        position: absolute;
+    }
 
-	/*Forside Citat SLUT*/
+    /*Menukort SLUT */
 
 
 
-	/*-------------MET TIL FEST------------*/
-	/*Info*/
-	.party_info {
-		display: grid;
-		grid-template-rows: 120%;
-	}
 
-	.red_box1,
-	.red_box2 {
-		margin: 4vw 0vw;
-	}
+    /*Om os - Thomad og Mette*/
 
-	/*Info SLUT*/
+    #aboutUs .mette p {
+        padding-left: 3vw;
+        padding-right: 2vw;
+    }
 
-	/*Grå sektion*/
-	#party-section #grey h2 {
-		padding-left: 11vw;
-		padding-bottom: 2vw;
-	}
+    #aboutUs .thomas p {
+        padding-left: 1vw;
+        padding-right: 4vw;
+    }
 
-	#party-section #grey .brunch p {
-		padding-left: 4vw;
-		padding-right: 0vw;
-	}
+    #aboutUs img {
+        width: 35vw;
+        margin-bottom: 0vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-left: 0vw;
-		padding-right: 4vw;
-	}
+    #aboutUs {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*-------------MET TIL FEST SLUT------------*/
+    /*Om os - Thomad og Mette SLUT*/
+
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /*Forside Citat SLUT*/
+
+
+
+    /*-------------MET TIL FEST------------*/
+    /*Info*/
+    .party_info {
+        display: grid;
+        grid-template-rows: 120%;
+    }
+
+    .red_box1,
+    .red_box2 {
+        margin: 4vw 0vw;
+    }
+
+    /*Info SLUT*/
+
+    /*Grå sektion*/
+    #party-section #grey h2 {
+        padding-left: 11vw;
+        padding-bottom: 2vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 4vw;
+        padding-right: 0vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
+        padding-right: 4vw;
+    }
+
+    /*Grå sektion SLUT*/
+    /*-------------MET TIL FEST SLUT------------*/
 
 }
 
@@ -3825,29 +4030,29 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 810px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 2vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
 
 }
 
 @media screen and (min-width: 816px) {
-	.white-border1 {
-		margin-top: 2.5em;
-	}
+    .white-border1 {
+        margin-top: 2.5em;
+    }
 
-	.white-border2 {
-		width: 19.5em;
-	}
+    .white-border2 {
+        width: 19.5em;
+    }
 
-	.white-border3 {
-		margin-top: -0.7em;
-		height: 15.7em;
-	}
+    .white-border3 {
+        margin-top: -0.7em;
+        height: 15.7em;
+    }
 }
 
 
@@ -3855,192 +4060,192 @@ a:-webkit-any-link {
 @media screen and (min-width: 826px) {
 
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 2.9vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2.9vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
 }
 
 
 @media screen and (min-width: 830px) {
-	.white-border2 {
-		margin-top: 3em;
-		width: 20.3em;
-		height: 32.5em;
-	}
+    .white-border2 {
+        margin-top: 3em;
+        width: 20.3em;
+        height: 32.5em;
+    }
 
-	.white-border3 {
-		width: 17.5em;
-		height: 16.5em;
-	}
+    .white-border3 {
+        width: 17.5em;
+        height: 16.5em;
+    }
 
 }
 
 
 @media screen and (min-width: 842px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 2.8vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 2.8vw;
+    }
 
-	/*SLUT kontakt side*/
-
-
-	/* Logo størrelse */
-	#logo img {
-		max-width: 40%;
-	}
-
-	/* Logo SLUT */
-
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 6em;
-	}
+    /*SLUT kontakt side*/
 
 
-	#coffee_section img {
-		max-height: 100%;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+    }
 
-	#koldedrikke-section img {
-		max-width: 100%;
-		margin: 0em;
-	}
+    /* Logo SLUT */
 
-	.morgenmad_price_list .menu-right {
-		padding-left: 1em;
-	}
-
-	#morgenmad-section ul {
-		margin-right: 0.1em;
-	}
-
-	.white-border1 {
-		margin-top: 2.5em;
-		margin-left: -1em;
-		width: 14.5em;
-		height: 25em;
-	}
-
-	.white-border2 {
-		margin-top: 2.5em;
-		margin-left: 1.5em;
-		width: 16.3em;
-		height: 30em;
-	}
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 6em;
+    }
 
 
-	.white-border3 {
-		margin-top: -0.7em;
-		margin-left: -0.7em;
-		width: 14em;
-		height: 13em;
-	}
+    #coffee_section img {
+        max-height: 100%;
+    }
 
-	/*Menukort SLUT*/
+    #koldedrikke-section img {
+        max-width: 100%;
+        margin: 0em;
+    }
 
-	/*-------------MET TIL FEST------------*/
+    .morgenmad_price_list .menu-right {
+        padding-left: 1em;
+    }
 
-	.red_box1 {
-		height: 39vh;
-		width: 27vw;
-		margin: 5.5vw 0vw;
-	}
+    #morgenmad-section ul {
+        margin-right: 0.1em;
+    }
 
-	.red_box2 {
-		height: 39vh;
-		width: 62vw;
-		margin: 5.5vw 0vw;
-	}
+    .white-border1 {
+        margin-top: 2.5em;
+        margin-left: -1em;
+        width: 14.5em;
+        height: 25em;
+    }
 
-	#party-section .party_info img {
-		width: 60%;
-		margin: 8vw 8vw;
-	}
-
-
-	/*Månedens menu*/
-
-	#party-section #month_menu {
-		margin: 0vw 7vw;
-	}
-
-	#party-section .heading h1 {
-		margin-top: 12vw;
-	}
-
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		padding-top: 3vw;
-	}
-
-	#party-section #month_menu p {
-		padding: 0vw;
-	}
-
-	.snacks_text {
-		padding: 3vw 7vw 0vw 0vw;
-	}
-
-	.salat_text {
-		padding: 10vw 0vw 0vw 7vw;
-	}
-
-	.dessert_text {
-		padding: 13vw 7vw 0vw 0vw;
-	}
-
-	.sandwich_text {
-		padding: 14vw 0vw 0vw 7vw;
-	}
+    .white-border2 {
+        margin-top: 2.5em;
+        margin-left: 1.5em;
+        width: 16.3em;
+        height: 30em;
+    }
 
 
-	#party-section #month_menu img,
-	#party-section #month_menu .bottom_menu img {
-		width: 70%;
-	}
+    .white-border3 {
+        margin-top: -0.7em;
+        margin-left: -0.7em;
+        width: 14em;
+        height: 13em;
+    }
 
-	/*Månedens menu SLUT*/
+    /*Menukort SLUT*/
 
-	/*Grå sektion*/
+    /*-------------MET TIL FEST------------*/
 
-	#party-section #grey h2 {
-		padding-left: 11vw;
-	}
+    .red_box1 {
+        height: 39vh;
+        width: 27vw;
+        margin: 5.5vw 0vw;
+    }
 
-	/*Grå sektion SLUT*/
+    .red_box2 {
+        height: 39vh;
+        width: 62vw;
+        margin: 5.5vw 0vw;
+    }
+
+    #party-section .party_info img {
+        width: 60%;
+        margin: 8vw 8vw;
+    }
+
+
+    /*Månedens menu*/
+
+    #party-section #month_menu {
+        margin: 0vw 7vw;
+    }
+
+    #party-section .heading h1 {
+        margin-top: 12vw;
+    }
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        padding-top: 3vw;
+    }
+
+    #party-section #month_menu p {
+        padding: 0vw;
+    }
+
+    .snacks_text {
+        padding: 3vw 7vw 0vw 0vw;
+    }
+
+    .salat_text {
+        padding: 10vw 0vw 0vw 7vw;
+    }
+
+    .dessert_text {
+        padding: 13vw 7vw 0vw 0vw;
+    }
+
+    .sandwich_text {
+        padding: 14vw 0vw 0vw 7vw;
+    }
+
+
+    #party-section #month_menu img,
+    #party-section #month_menu .bottom_menu img {
+        width: 70%;
+    }
+
+    /*Månedens menu SLUT*/
+
+    /*Grå sektion*/
+
+    #party-section #grey h2 {
+        padding-left: 11vw;
+    }
+
+    /*Grå sektion SLUT*/
 }
 
 
 @media screen and (min-width: 860px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 4vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 4vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
 
-	.white-border1 {
-		margin-top: 2em;
-		width: 15.5em;
-		height: 30em;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        width: 15.5em;
+        height: 30em;
+    }
 
-	.white-border2 {
-		width: 17.4em;
-	}
+    .white-border2 {
+        width: 17.4em;
+    }
 
-	.white-border3 {
-		height: 14em;
-		width: 15.5em;
-	}
+    .white-border3 {
+        height: 14em;
+        width: 15.5em;
+    }
 
 
 
@@ -4048,60 +4253,60 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 875px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 5vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 5vw;
+    }
 
-	/*SLUT kontakt side*/
-
-
-	/*Menu*/
-	.white-border1 {
-		margin-top: 1.6em;
-		margin-left: -0.8em;
-		width: 16em;
-		height: 32em;
-	}
-
-	.white-border2 {
-		width: 18.2em;
-	}
-
-	.white-border3 {
-		height: 15em;
-		width: 16em;
-	}
-
-	/*Menu SLUT*/
+    /*SLUT kontakt side*/
 
 
+    /*Menu*/
+    .white-border1 {
+        margin-top: 1.6em;
+        margin-left: -0.8em;
+        width: 16em;
+        height: 32em;
+    }
 
-	/*MET til fest*/
+    .white-border2 {
+        width: 18.2em;
+    }
 
-	.red_box1 {
-		margin: 6vw 0vw;
-	}
+    .white-border3 {
+        height: 15em;
+        width: 16em;
+    }
 
-	.red_box2 {
-		margin: 6vw 0vw;
-	}
-
-	#party-section .party_info img {
-		width: 60%;
-	}
+    /*Menu SLUT*/
 
 
 
-	.snacks_text {
-		padding: 6vw 4.5vw 0vw 0vw;
-	}
+    /*MET til fest*/
 
-	.salat_text {
-		padding: 12vw 0vw 0vw 4.5vw;
-	}
+    .red_box1 {
+        margin: 6vw 0vw;
+    }
 
-	/*MET til fest SLUT*/
+    .red_box2 {
+        margin: 6vw 0vw;
+    }
+
+    #party-section .party_info img {
+        width: 60%;
+    }
+
+
+
+    .snacks_text {
+        padding: 6vw 4.5vw 0vw 0vw;
+    }
+
+    .salat_text {
+        padding: 12vw 0vw 0vw 4.5vw;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -4109,341 +4314,341 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 885px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 6vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 6vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
-	.white-border1 {
-		margin-top: 2.7em;
-		height: 28em;
-	}
+    .white-border1 {
+        margin-top: 2.7em;
+        height: 28em;
+    }
 
-	.white-border2 {
-		width: 18.9em;
-	}
+    .white-border2 {
+        width: 18.9em;
+    }
 
 }
 
 
 @media screen and (min-width: 890px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 2vw;
-		padding-right: 2vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 
-	/*MET til fest */
+    /*MET til fest */
 
-	.white-border2 {
-		width: 19.3em
-	}
+    .white-border2 {
+        width: 19.3em
+    }
 
-	#morgenmad-section img {
-		max-width: 95%;
-	}
+    #morgenmad-section img {
+        max-width: 95%;
+    }
 }
 
 @media screen and (min-width: 904px) {
 
 
 
-	/*MET til FEST*/
-	/*Grå sektion*/
+    /*MET til FEST*/
+    /*Grå sektion*/
 
-	#party-section #grey .brunch p {
-		padding-left: 6vw;
-	}
+    #party-section #grey .brunch p {
+        padding-left: 6vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-left: 0vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-left: 0vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*MET til FEST*/
+    /*Grå sektion SLUT*/
+    /*MET til FEST*/
 
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 7vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 7vw;
+    }
 
-	.wpcf7 {
-		margin-left: 3vw;
-	}
+    .wpcf7 {
+        margin-left: 3vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
-	.white-border2 {
-		width: 20em;
-	}
+    .white-border2 {
+        width: 20em;
+    }
 }
 
 
 @media screen and (min-width: 915px) {
 
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 8vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 8vw;
+    }
 
-	/*SLUT kontakt side*/
-
-
-
-
-	/*Menu*/
-	#morgenmad-section img {
-		max-width: 90%;
-	}
-
-	.white-border1 {
-		margin-top: 2em;
-		width: 17em;
-		height: 31.5em;
-	}
-
-	.white-border2 {
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 20.2em;
-		height: 31em;
-	}
-
-	.white-border3 {
-		height: 16em;
-		width: 17em;
-	}
-
-	/* Menu SLUT */
-
-
-
-	/*MET til fest*/
-	.red_box1 {
-		height: 45vh;
-		margin: 5vw 0vw;
-	}
-
-	.red_box2 {
-		height: 45vh;
-		margin: 5vw 0vw;
-	}
-
-	#party-section .party_info img {
-		width: 60%;
-	}
+    /*SLUT kontakt side*/
 
 
 
 
-	#party-section #month_menu {
-		margin: 0vw 10vw;
-	}
+    /*Menu*/
+    #morgenmad-section img {
+        max-width: 90%;
+    }
 
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		padding-top: 3vw;
-	}
+    .white-border1 {
+        margin-top: 2em;
+        width: 17em;
+        height: 31.5em;
+    }
 
-	.snacks_text {
-		padding: 5vw 4.5vw 0vw 0vw;
-	}
+    .white-border2 {
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 20.2em;
+        height: 31em;
+    }
 
-	.salat_text {
-		padding: 13vw 0vw 0vw 4.5vw;
-	}
+    .white-border3 {
+        height: 16em;
+        width: 17em;
+    }
 
-	.dessert_text {
-		padding: 13vw 4.5vw 0vw 0vw;
-	}
-
-	.sandwich_text {
-		padding: 13vw 0vw 0vw 4.5vw;
-	}
+    /* Menu SLUT */
 
 
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		width: 80%;
-	}
 
-	/*MET til fest SLUT*/
+    /*MET til fest*/
+    .red_box1 {
+        height: 45vh;
+        margin: 5vw 0vw;
+    }
+
+    .red_box2 {
+        height: 45vh;
+        margin: 5vw 0vw;
+    }
+
+    #party-section .party_info img {
+        width: 60%;
+    }
+
+
+
+
+    #party-section #month_menu {
+        margin: 0vw 10vw;
+    }
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        padding-top: 3vw;
+    }
+
+    .snacks_text {
+        padding: 5vw 4.5vw 0vw 0vw;
+    }
+
+    .salat_text {
+        padding: 13vw 0vw 0vw 4.5vw;
+    }
+
+    .dessert_text {
+        padding: 13vw 4.5vw 0vw 0vw;
+    }
+
+    .sandwich_text {
+        padding: 13vw 0vw 0vw 4.5vw;
+    }
+
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        width: 80%;
+    }
+
+    /*MET til fest SLUT*/
 
 }
 
 
 @media screen and (min-width: 940px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 5vw;
-		padding-right: 5vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 
-	/*MET til fest */
-
-
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 9vw;
-	}
-
-	.infomation {
-		font: 15px Avenir light, Avenir Black, sans-serif;
-	}
-
-	.infomation h3 {
-		padding-top: 3vw;
-	}
-
-	.besked {
-		font: 15px Avenir light, Avenir Black, sans-serif;
-	}
-
-	/*SLUT kontakt side*/
-
-	/* Logo størrelse */
-	#logo img {
-		max-width: 35%;
-	}
-
-	/* Logo SLUT */
-
-	/*Menukort*/
-	/* Billede på morgemad og frokost*/
-	#morgenmad-section img {
-		max-height: 90%;
-	}
-
-	.white-border1 {
-		margin-top: 2.5em;
-		margin-right: 2.5em;
-		width: 18em;
-		height: 31.7em;
-	}
-
-	.white-border2 {
-		margin-top: 2.5em;
-		margin-left: 2.5em;
-		width: 21em;
-		height: 30em;
-	}
-
-	.white-border3 {
-		margin-top: -2em;
-		margin-left: -0.5em;
-		width: 18em;
-		height: 18em;
-	}
-
-	/*Menukort SLUT */
+    /*MET til fest */
 
 
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 80px;
-		padding-right: 80px;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 9vw;
+    }
 
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 54vw;
-	}
+    .infomation {
+        font: 15px Avenir light, Avenir Black, sans-serif;
+    }
 
-	/*Forside Citat SLUT*/
+    .infomation h3 {
+        padding-top: 3vw;
+    }
+
+    .besked {
+        font: 15px Avenir light, Avenir Black, sans-serif;
+    }
+
+    /*SLUT kontakt side*/
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 35%;
+    }
+
+    /* Logo SLUT */
+
+    /*Menukort*/
+    /* Billede på morgemad og frokost*/
+    #morgenmad-section img {
+        max-height: 90%;
+    }
+
+    .white-border1 {
+        margin-top: 2.5em;
+        margin-right: 2.5em;
+        width: 18em;
+        height: 31.7em;
+    }
+
+    .white-border2 {
+        margin-top: 2.5em;
+        margin-left: 2.5em;
+        width: 21em;
+        height: 30em;
+    }
+
+    .white-border3 {
+        margin-top: -2em;
+        margin-left: -0.5em;
+        width: 18em;
+        height: 18em;
+    }
+
+    /*Menukort SLUT */
+
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 54vw;
+    }
+
+    /*Forside Citat SLUT*/
 }
 
 @media screen and (min-width: 950px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 10vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 10vw;
+    }
 
-	/*SLUT kontakt side*/
-	.white-border2 {
-		margin-left: 2.5em;
-		width: 21.75em;
-		height: 35.8em;
-	}
+    /*SLUT kontakt side*/
+    .white-border2 {
+        margin-left: 2.5em;
+        width: 21.75em;
+        height: 35.8em;
+    }
 
-	#morgenmad-section img {
-		max-width: 90%;
-	}
+    #morgenmad-section img {
+        max-width: 90%;
+    }
 
 
-	/*MET til fest*/
-	#party-section #month_menu {
-		margin: 0vw 12vw;
-	}
+    /*MET til fest*/
+    #party-section #month_menu {
+        margin: 0vw 12vw;
+    }
 
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		padding-top: 3vw;
-	}
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        padding-top: 3vw;
+    }
 
-	.snacks_text {
-		padding: 4vw 4.5vw 0vw 0vw;
-	}
+    .snacks_text {
+        padding: 4vw 4.5vw 0vw 0vw;
+    }
 
-	.salat_text {
-		padding: 11vw 0vw 0vw 4.5vw;
-	}
+    .salat_text {
+        padding: 11vw 0vw 0vw 4.5vw;
+    }
 
-	.dessert_text {
-		padding: 13vw 4.5vw 0vw 0vw;
-	}
+    .dessert_text {
+        padding: 13vw 4.5vw 0vw 0vw;
+    }
 
-	.sandwich_text {
-		padding: 12vw 0vw 0vw 4.5vw;
-	}
+    .sandwich_text {
+        padding: 12vw 0vw 0vw 4.5vw;
+    }
 
-	/*MET til fest SLUT*/
+    /*MET til fest SLUT*/
 
 }
 
 
 @media screen and (min-width: 960px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 9vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 9vw;
+    }
 
-	/*SLUT kontakt side*/
-
-
-	/*Menu*/
-	.white-border2 {
-		width: 22.4em;
-		height: 30em;
-	}
-
-	/*Menu SLUT*/
-
-	/*MET til fest*/
-
-	.red_box1 {
-		margin: 5.5vw 0vw;
-	}
-
-	.red_box2 {
-		margin: 5.5vw 0vw;
-	}
-
-	#party-section .heading h1 {
-		margin-top: 13vw;
-	}
+    /*SLUT kontakt side*/
 
 
-	/*MET til fest SLUT*/
+    /*Menu*/
+    .white-border2 {
+        width: 22.4em;
+        height: 30em;
+    }
+
+    /*Menu SLUT*/
+
+    /*MET til fest*/
+
+    .red_box1 {
+        margin: 5.5vw 0vw;
+    }
+
+    .red_box2 {
+        margin: 5.5vw 0vw;
+    }
+
+    #party-section .heading h1 {
+        margin-top: 13vw;
+    }
+
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -4451,71 +4656,71 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 980px) {
 
-	/*kontakt side*/
-	.gmap_canvas {
-		padding-right: 12vw;
-	}
+    /*kontakt side*/
+    .gmap_canvas {
+        padding-right: 12vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 40%;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+    }
 
-	/* Logo SLUT */
+    /* Logo SLUT */
 
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 8em;
-	}
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 8em;
+    }
 
-	#menu-info {
-		margin: 3em;
-	}
+    #menu-info {
+        margin: 3em;
+    }
 
-	#morgenmad-section img {
-		max-width: 95%;
-	}
+    #morgenmad-section img {
+        max-width: 95%;
+    }
 
-	.white-border1 {
-		border: white solid 1vw;
-		margin-top: 2.4em;
-		margin-left: -1em;
-		width: 17em;
-		height: 31em;
-		position: absolute;
-	}
+    .white-border1 {
+        border: white solid 1vw;
+        margin-top: 2.4em;
+        margin-left: -1em;
+        width: 17em;
+        height: 31em;
+        position: absolute;
+    }
 
-	.white-border2 {
-		margin-top: 2.7em;
-		margin-left: 2.7em;
-		width: 19.2em;
-		height: 32.4em;
-	}
-
-
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: -0.3em;
-		width: 16em;
-		height: 15.5em;
-	}
-
-	/*Menukort SLUT*/
+    .white-border2 {
+        margin-top: 2.7em;
+        margin-left: 2.7em;
+        width: 19.2em;
+        height: 32.4em;
+    }
 
 
-	/*MET til fest*/
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: -0.3em;
+        width: 16em;
+        height: 15.5em;
+    }
 
-	.red_box1 {
-		margin: 7vw 0vw;
-	}
+    /*Menukort SLUT*/
 
-	.red_box2 {
-		margin: 7vw 0vw;
-	}
 
-	/*MET til fest SLUT*/
+    /*MET til fest*/
+
+    .red_box1 {
+        margin: 7vw 0vw;
+    }
+
+    .red_box2 {
+        margin: 7vw 0vw;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -4525,737 +4730,737 @@ a:-webkit-any-link {
 @media screen and (min-width: 1000px) {
 
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 7vw;
-		padding-right: 7vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
 
-	/*Grå sektion*/
-	#party-section #grey h2 {
-		padding-left: 12.4vw;
-	}
+    /*Grå sektion*/
+    #party-section #grey h2 {
+        padding-left: 12.4vw;
+    }
 
-	#party-section #grey .brunch p {
-		padding-left: 10vw;
-	}
+    #party-section #grey .brunch p {
+        padding-left: 10vw;
+    }
 
-	#party-section #grey .brunch h2 {
-		padding-left: 16vw;
-	}
+    #party-section #grey .brunch h2 {
+        padding-left: 16vw;
+    }
 
-	#party-section #grey .koldemet h2 {
-		padding-left: 11vw;
-	}
+    #party-section #grey .koldemet h2 {
+        padding-left: 11vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 10vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 10vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*MET til fest*/
-
-
-	/*kontakt side*/
-	.infomation h3 {
-		padding-top: 3.3vw;
-	}
-
-	#contact {
-		padding-left: 4vw;
-	}
-
-	.mapouter {
-		width: 100%;
-	}
-
-	.form_container {
-		margin-right: 9vw;
-	}
-
-	.besked {
-		margin-left: 10vw;
-		margin-right: 3vw;
-	}
-
-	/*SLUT kontakt side*/
+    /*Grå sektion SLUT*/
+    /*MET til fest*/
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 40%;
-	}
+    /*kontakt side*/
+    .infomation h3 {
+        padding-top: 3.3vw;
+    }
 
-	/* Logo SLUT */
+    #contact {
+        padding-left: 4vw;
+    }
 
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 10em;
-	}
+    .mapouter {
+        width: 100%;
+    }
 
+    .form_container {
+        margin-right: 9vw;
+    }
 
-	#morgenmad-section img {
-		max-width: 90%;
-	}
+    .besked {
+        margin-left: 10vw;
+        margin-right: 3vw;
+    }
 
-	#koldedrikke-section img {
-		max-height: 100%;
-		margin: 0em;
-	}
-
-	.white-border1 {
-		border: white solid 0.6em;
-		margin-top: 1.5em;
-		margin-left: -1em;
-		width: 16em;
-		height: 30em;
-	}
-
-	.white-border2 {
-		border: white solid 0.6em;
-		margin-top: 2.6em;
-		margin-left: 2.6em;
-		width: 16.4em;
-		height: 30em;
-	}
+    /*SLUT kontakt side*/
 
 
-	.white-border3 {
-		border: white solid 0.6em;
-		margin-top: -0.9em;
-		margin-left: -0.5em;
-		width: 13em;
-		height: 12em;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 40%;
+    }
 
-	/*Menukort SLUT*/
+    /* Logo SLUT */
+
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 10em;
+    }
 
 
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 120px;
-		padding-right: 120px;
-	}
+    #morgenmad-section img {
+        max-width: 90%;
+    }
 
-	/*Forside Citat SLUT*/
+    #koldedrikke-section img {
+        max-height: 100%;
+        margin: 0em;
+    }
 
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 48vw;
-	}
+    .white-border1 {
+        border: white solid 0.6em;
+        margin-top: 1.5em;
+        margin-left: -1em;
+        width: 16em;
+        height: 30em;
+    }
 
-	/*Om os citat SLUT*/
+    .white-border2 {
+        border: white solid 0.6em;
+        margin-top: 2.6em;
+        margin-left: 2.6em;
+        width: 16.4em;
+        height: 30em;
+    }
+
+
+    .white-border3 {
+        border: white solid 0.6em;
+        margin-top: -0.9em;
+        margin-left: -0.5em;
+        width: 13em;
+        height: 12em;
+    }
+
+    /*Menukort SLUT*/
+
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    /*Forside Citat SLUT*/
+
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 48vw;
+    }
+
+    /*Om os citat SLUT*/
 
 
 }
 
 @media screen and (min-width: 1024px) {
 
-	/*kontakt side*/
+    /*kontakt side*/
 
-	#contact {
-		padding-left: 5vw;
-	}
+    #contact {
+        padding-left: 5vw;
+    }
 
-	/*SLUT kontakt side*/
+    /*SLUT kontakt side*/
 
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 35%;
-	}
-
-	/* Logo SLUT */
+    /* Logo størrelse */
+    #logo img {
+        max-width: 35%;
+    }
+
+    /* Logo SLUT */
 
-
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 11.5em;
-	}
-
-	#morgenmad-section .menu-left {
-		padding-right: 1em;
-	}
-
-	#morgenmad-section img {
-		max-height: 85%;
-	}
-
-	.coffee_price_list {
-		margin-right: -2.5em;
-	}
-
-	.coffee-text p,
-	.morgenmad-text p {
-		padding-right: 0.9em;
-		letter-spacing: 0.02em;
-	}
-
-	#morgenmad-section .menu-right {
-		grid-template-rows: 23% 75%;
-	}
+
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 11.5em;
+    }
+
+    #morgenmad-section .menu-left {
+        padding-right: 1em;
+    }
+
+    #morgenmad-section img {
+        max-height: 85%;
+    }
+
+    .coffee_price_list {
+        margin-right: -2.5em;
+    }
+
+    .coffee-text p,
+    .morgenmad-text p {
+        padding-right: 0.9em;
+        letter-spacing: 0.02em;
+    }
+
+    #morgenmad-section .menu-right {
+        grid-template-rows: 23% 75%;
+    }
 
-	.morgenmad_price_list li {
-		margin-right: 0.9em;
-	}
+    .morgenmad_price_list li {
+        margin-right: 0.9em;
+    }
 
-	#koldedrikke-section .menu-left {
-		grid-template-rows: 40% 55%;
-	}
+    #koldedrikke-section .menu-left {
+        grid-template-rows: 40% 55%;
+    }
 
-	.drikke-text p {
-		padding-right: 0.03em;
-		letter-spacing: 0.02em;
-	}
-
-	.drikke_price_list {
-		margin-right: 10em;
-	}
-
-
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 2.7em;
-		margin-left: -0.7em;
-		width: 14.5em;
-		height: 32em;
-	}
-
-	.white-border2 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 18.5em;
-		height: 31em;
-		position: absolute;
-	}
-
-
-	.white-border3 {
-		border: white solid 0.5em;
-		margin-top: -1vw;
-		margin-left: -0.5em;
-		width: 18em;
-		height: 17em;
-	}
-
-	/*Menukort SLUT*/
-
-
-
-	/*Footer*/
-	#footer_box {
-		display: grid;
-		grid-column-start: 1;
-		grid-column-end: 4;
-		margin-left: 2.5vw;
-	}
-
-	.footer-left {
-		grid-column-start: 1;
-		grid-column-end: 1;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-
-	.footer-right {
-		grid-column-start: 2;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-
-	#mc_embed_signup {
-		grid-column-start: 4;
-		grid-column-end: 6;
-		grid-row-start: 1;
-		grid-row-end: 3;
-		padding-top: 4vh;
-		padding-right: 10vw;
-	}
-
-	.some_container {
-		grid-column-start: 6;
-		grid-row-start: 6;
-		grid-row-start: 1;
-		grid-row-end: 6;
-		padding-top: 10vh;
-		padding-left: 32vw;
-	}
-
-	.some_container svg {
-		max-width: 23%;
-	}
-
-	/*Footer*/
-
-
-
-	/*MET til fest*/
-
-	/* Arrangement info*/
-
-	.party_info {
-		grid-template-rows: 100%;
-	}
-
-	.red_box1 {
-		width: 28vw;
-		height: 42vh;
-		margin: 4.5vw 0vw;
-	}
-
-	.red_box2 {
-		height: 42vh;
-		margin: 4.5vw 0vw;
-	}
-
-	#party-section .party_info img {
-		width: 60%;
-	}
-
-	.arrangement {
-		display: none;
-	}
-
-	.arrangement_2 {
-		display: block;
-		padding-left: 0vw;
-		padding-right: 0vw;
-		margin-top: 0vw;
-	}
-
-	#party-section .party_info p {
-		padding-left: 0vw;
-		padding-right: 5vw;
-	}
-
-	.party_left {
-		grid-column-start: 1;
-		grid-column-end: 2;
-		align-self: center;
-	}
-
-	.party_info img {
-		margin-top: 0vw;
-		margin-bottom: 0vw;
-	}
-
-	.party_right {
-		align-self: center;
-		grid-column-start: 2;
-		grid-column-end: 3;
-	}
-
-
-	/* Arrangement info SLUT*/
-
-
-	/*Månedens menu*/
-	#party-section #month_menu {
-		margin: 0vw;
-	}
-
-	#party-section .heading h1 {
-		margin-top: 5vw;
-	}
-
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		padding-top: 0vw;
-	}
-
-	#party-section #month_menu h2 {
-		padding-left: 0vw;
-		padding-right: 0vw;
-		margin-top: 5vw;
-	}
-
-	#party-section #month_menu p {
-		padding: 0vw;
-	}
-
-	.snacks_text {
-		padding: 0vw 1vw 0vw 0vw;
-	}
-
-	.salat_text {
-		padding: 0vw 0vw 0vw 1vw;
-	}
-
-	.dessert_text {
-		padding: 0vw 1vw 0vw 0vw;
-	}
-
-	.sandwich_text {
-		padding: 0vw 0vw 0vw 1vw;
-	}
-
-
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		width: 85%;
-		margin-top: 5vw;
-		margin-bottom: 0vw;
-	}
-
-	#party-section #month_menu .top_menu img {
-		margin-top: 10vw;
-	}
-
-	#party-section #month_menu .bottom_menu img {
-		margin-top: -6.6vw;
-	}
-
-	/*Top menu*/
-	#party-section #month_menu .top_menu {
-		padding-left: 0vw;
-		padding-right: 0vw;
-		grid-column-start: 1;
-		grid-column-end: 4;
-		grid-row-start: 1;
-		grid-row-end: 2;
-
-		display: grid;
-		grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-		grid-template-rows: 70%;
-	}
-
-	/*Bottom menu*/
-	#party-section #month_menu .bottom_menu {
-		padding-left: 0vw;
-		padding-right: 0vw;
-		margin-top: -3vw;
-
-		display: grid;
-		grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-		grid-template-rows: 65%;
-	}
-
-	.top_menu1,
-	.bottom_menu1 {
-		grid-column-start: 1;
-		grid-column-end: 3;
-
-		display: grid;
-		grid-template-columns: 0.8fr 1fr;
-		grid-template-rows: auto;
-	}
-
-	.top_menu2,
-	.bottom_menu2 {
-		grid-column-start: 3;
-		grid-column-end: 5;
-
-		display: grid;
-		grid-template-columns: 1fr 0.8fr;
-		grid-template-rows: auto;
-	}
-
-
-	#party-section #month_menu .top_menu1 img,
-	#party-section #month_menu .bottom_menu1 img {
-		margin-left: 0vw;
-	}
-
-	#party-section #month_menu .top_menu2 img,
-	#party-section #month_menu .bottom_menu2 img {
-		margin-right: 0vw;
-	}
-
-	/*Månedens Menu SLUT*/
-
-
-
-	/*MET til fest SLUT*/
+    .drikke-text p {
+        padding-right: 0.03em;
+        letter-spacing: 0.02em;
+    }
+
+    .drikke_price_list {
+        margin-right: 10em;
+    }
+
+
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 2.7em;
+        margin-left: -0.7em;
+        width: 14.5em;
+        height: 32em;
+    }
+
+    .white-border2 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 18.5em;
+        height: 31em;
+        position: absolute;
+    }
+
+
+    .white-border3 {
+        border: white solid 0.5em;
+        margin-top: -1vw;
+        margin-left: -0.5em;
+        width: 18em;
+        height: 17em;
+    }
+
+    /*Menukort SLUT*/
+
+
+
+    /*Footer*/
+    #footer_box {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-left: 2.5vw;
+    }
+
+    .footer-left {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .footer-right {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #mc_embed_signup {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-top: 4vh;
+        padding-right: 10vw;
+    }
+
+    .some_container {
+        grid-column-start: 6;
+        grid-row-start: 6;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        padding-top: 10vh;
+        padding-left: 32vw;
+    }
+
+    .some_container svg {
+        max-width: 23%;
+    }
+
+    /*Footer*/
+
+
+
+    /*MET til fest*/
+
+    /* Arrangement info*/
+
+    .party_info {
+        grid-template-rows: 100%;
+    }
+
+    .red_box1 {
+        width: 28vw;
+        height: 42vh;
+        margin: 4.5vw 0vw;
+    }
+
+    .red_box2 {
+        height: 42vh;
+        margin: 4.5vw 0vw;
+    }
+
+    #party-section .party_info img {
+        width: 60%;
+    }
+
+    .arrangement {
+        display: none;
+    }
+
+    .arrangement_2 {
+        display: block;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        margin-top: 0vw;
+    }
+
+    #party-section .party_info p {
+        padding-left: 0vw;
+        padding-right: 5vw;
+    }
+
+    .party_left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-self: center;
+    }
+
+    .party_info img {
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+    }
+
+    .party_right {
+        align-self: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+
+    /* Arrangement info SLUT*/
+
+
+    /*Månedens menu*/
+    #party-section #month_menu {
+        margin: 0vw;
+    }
+
+    #party-section .heading h1 {
+        margin-top: 5vw;
+    }
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        padding-top: 0vw;
+    }
+
+    #party-section #month_menu h2 {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        margin-top: 5vw;
+    }
+
+    #party-section #month_menu p {
+        padding: 0vw;
+    }
+
+    .snacks_text {
+        padding: 0vw 1vw 0vw 0vw;
+    }
+
+    .salat_text {
+        padding: 0vw 0vw 0vw 1vw;
+    }
+
+    .dessert_text {
+        padding: 0vw 1vw 0vw 0vw;
+    }
+
+    .sandwich_text {
+        padding: 0vw 0vw 0vw 1vw;
+    }
+
+
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        width: 85%;
+        margin-top: 5vw;
+        margin-bottom: 0vw;
+    }
+
+    #party-section #month_menu .top_menu img {
+        margin-top: 10vw;
+    }
+
+    #party-section #month_menu .bottom_menu img {
+        margin-top: -6.6vw;
+    }
+
+    /*Top menu*/
+    #party-section #month_menu .top_menu {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 70%;
+    }
+
+    /*Bottom menu*/
+    #party-section #month_menu .bottom_menu {
+        padding-left: 0vw;
+        padding-right: 0vw;
+        margin-top: -3vw;
+
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 65%;
+    }
+
+    .top_menu1,
+    .bottom_menu1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .top_menu2,
+    .bottom_menu2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: auto;
+    }
+
+
+    #party-section #month_menu .top_menu1 img,
+    #party-section #month_menu .bottom_menu1 img {
+        margin-left: 0vw;
+    }
+
+    #party-section #month_menu .top_menu2 img,
+    #party-section #month_menu .bottom_menu2 img {
+        margin-right: 0vw;
+    }
+
+    /*Månedens Menu SLUT*/
+
+
+
+    /*MET til fest SLUT*/
 
 
 }
 
 
 @media screen and (min-width: 1047px) {
-	/*kontakt side*/
+    /*kontakt side*/
 
-	#contact {
-		padding-left: 6vw;
-	}
-
-
-	.form_container {
-		margin-left: 1vw;
-		margin-right: 8vw;
-	}
-
-	.besked {
-		margin-left: 12vw;
-		margin-right: 1vw;
-	}
-
-	.contact-heading h2 {
-		font-size: 1.4em;
-		padding-top: 3vw;
-
-	}
+    #contact {
+        padding-left: 6vw;
+    }
 
 
+    .form_container {
+        margin-left: 1vw;
+        margin-right: 8vw;
+    }
 
-	/*SLUT kontakt side*/
+    .besked {
+        margin-left: 12vw;
+        margin-right: 1vw;
+    }
+
+    .contact-heading h2 {
+        font-size: 1.4em;
+        padding-top: 3vw;
+
+    }
 
 
 
-	#morgenmad-section img {
-		max-width: 90%;
-		max-height: 90%;
-	}
+    /*SLUT kontakt side*/
 
-	.white-border1 {
-		margin-top: 2em;
-		width: 15.5em;
-	}
 
-	.white-border2 {
-		width: 19.8em;
-	}
 
-	.white-border3 {
-		height: 19em;
-		width: 19em;
-	}
+    #morgenmad-section img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .white-border1 {
+        margin-top: 2em;
+        width: 15.5em;
+    }
+
+    .white-border2 {
+        width: 19.8em;
+    }
+
+    .white-border3 {
+        height: 19em;
+        width: 19em;
+    }
 }
 
 
 @media screen and (min-width: 1076px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 9vw;
-		padding-right: 9vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
 
 
-	/*Grå sektion*/
-	#party-section #grey .koldemet h2 {
-		padding-left: 9vw;
-	}
+    /*Grå sektion*/
+    #party-section #grey .koldemet h2 {
+        padding-left: 9vw;
+    }
 
-	#party-section #grey .brunch p {
-		padding-left: 12vw;
-	}
+    #party-section #grey .brunch p {
+        padding-left: 12vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 12vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 12vw;
+    }
 
-	/*Grå sektion SLUT*/
+    /*Grå sektion SLUT*/
 
-	/*MET til fest*/
-	.red_box1 {
-		width: 28vw;
-		height: 43vh;
-	}
+    /*MET til fest*/
+    .red_box1 {
+        width: 28vw;
+        height: 43vh;
+    }
 
-	.red_box2 {
-		height: 43vh;
-	}
+    .red_box2 {
+        height: 43vh;
+    }
 
-	#party-section #month_menu .top_menu img {
-		margin-top: 9vw;
-	}
+    #party-section #month_menu .top_menu img {
+        margin-top: 9vw;
+    }
 
-	#party-section #month_menu .bottom_menu img {
-		margin-top: -7.3vw;
-	}
+    #party-section #month_menu .bottom_menu img {
+        margin-top: -7.3vw;
+    }
 
-	#party-section #month_menu .top_menu img,
-	#party-section #month_menu .bottom_menu img {
-		width: 80%;
-	}
+    #party-section #month_menu .top_menu img,
+    #party-section #month_menu .bottom_menu img {
+        width: 80%;
+    }
 
-	.snacks_text,
-	.dessert_text {
-		padding: 0vw 1vw;
-	}
+    .snacks_text,
+    .dessert_text {
+        padding: 0vw 1vw;
+    }
 
-	.salat_text,
-	.sandwich_text {
-		padding: 0vw 1vw;
-	}
-
-
-	/*MET til fest SLUT*/
+    .salat_text,
+    .sandwich_text {
+        padding: 0vw 1vw;
+    }
 
 
-	/*kontakt side*/
-	#contact {
-		padding-left: 7vw;
-	}
+    /*MET til fest SLUT*/
 
 
-	.form_container {
-		margin-left: 2vw;
-		margin-right: 10vw;
-	}
+    /*kontakt side*/
+    #contact {
+        padding-left: 7vw;
+    }
 
-	.besked {
-		margin-left: 13vw;
-		margin-right: 0vw;
-	}
 
-	/*SLUT kontakt side*/
+    .form_container {
+        margin-left: 2vw;
+        margin-right: 10vw;
+    }
+
+    .besked {
+        margin-left: 13vw;
+        margin-right: 0vw;
+    }
+
+    /*SLUT kontakt side*/
 
 }
 
 @media screen and (min-width: 1060px) {
 
-	/*form tabel*/
+    /*form tabel*/
 
-	label input[type="text"i] {
-		width: 32vw;
-	}
+    label input[type="text"i] {
+        width: 32vw;
+    }
 
-	label input[type="email"i] {
-		width: 32vw;
-	}
+    label input[type="email"i] {
+        width: 32vw;
+    }
 
-	textarea {
-		width: 34vw;
-	}
+    textarea {
+        width: 34vw;
+    }
 
-	/*form tabel slut*/
+    /*form tabel slut*/
 }
 
 @media screen and (min-width: 1100px) {
 
 
 
-	/*Grå sektion*/
-	#party-section #grey .brunch p {
-		padding-left: 13vw;
-	}
+    /*Grå sektion*/
+    #party-section #grey .brunch p {
+        padding-left: 13vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 13vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 13vw;
+    }
 
-	/*Grå sektion SLUT*/
-
-
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 7vw;
-	}
-
-	.form_container {
-		margin-left: 3vw;
-		margin-right: 10vw;
-	}
-
-	.besked {
-		margin-left: 14vw;
-		margin-right: 0vw;
-	}
-
-	/*SLUT kontakt side*/
+    /*Grå sektion SLUT*/
 
 
+    /*kontakt side*/
 
+    #contact {
+        padding-left: 7vw;
+    }
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 33%;
-	}
+    .form_container {
+        margin-left: 3vw;
+        margin-right: 10vw;
+    }
 
-	/* Logo SLUT */
+    .besked {
+        margin-left: 14vw;
+        margin-right: 0vw;
+    }
 
-
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 12em;
-	}
-
-	#koldedrikke-section img {
-		max-width: 84%;
-		padding-left: 3em;
-
-	}
-
-	#coffee_section img {
-		max-width: 100%;
-		max-height: 100%;
-	}
-
-	.coffee-text {
-		padding-right: 2.2em;
-	}
-
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 18em;
-		height: 30em;
-		position: absolute;
-	}
-
-	.white-border2 {
-		border: white solid 0.5em;
-		margin-top: 2.5em;
-		margin-left: 2.5em;
-		width: 21em;
-		height: 30em;
-	}
-
-	.white-border3 {
-		border: white solid 0.5em;
-		margin-top: -1em;
-		margin-left: 2em;
-		width: 21em;
-		height: 18em;
-	}
-
-
-	/*Menukort SLUT*/
-
-
-	/*Forside Citat */
-
-
-	.slideshow-container {
-		padding-left: 140px;
-		padding-right: 140px;
-	}
-
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 51vw;
-	}
-
-	/*Forside Citat SLUT*/
+    /*SLUT kontakt side*/
 
 
 
-	/*MET til fest*/
-	.red_box1 {
-		width: 28vw;
-		height: 45vh;
-		margin: 4vw 10vw 0vw 0vw;
-	}
 
-	.red_box2 {
-		height: 45vh;
-		width: 61vw;
-		margin: 4vw 0vw;
-		right: 5vw;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 33%;
+    }
 
-	/*MET til fest SLUT*/
+    /* Logo SLUT */
+
+
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 12em;
+    }
+
+    #koldedrikke-section img {
+        max-width: 84%;
+        padding-left: 3em;
+
+    }
+
+    #coffee_section img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .coffee-text {
+        padding-right: 2.2em;
+    }
+
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 18em;
+        height: 30em;
+        position: absolute;
+    }
+
+    .white-border2 {
+        border: white solid 0.5em;
+        margin-top: 2.5em;
+        margin-left: 2.5em;
+        width: 21em;
+        height: 30em;
+    }
+
+    .white-border3 {
+        border: white solid 0.5em;
+        margin-top: -1em;
+        margin-left: 2em;
+        width: 21em;
+        height: 18em;
+    }
+
+
+    /*Menukort SLUT*/
+
+
+    /*Forside Citat */
+
+
+    .slideshow-container {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 51vw;
+    }
+
+    /*Forside Citat SLUT*/
+
+
+
+    /*MET til fest*/
+    .red_box1 {
+        width: 28vw;
+        height: 45vh;
+        margin: 4vw 10vw 0vw 0vw;
+    }
+
+    .red_box2 {
+        height: 45vh;
+        width: 61vw;
+        margin: 4vw 0vw;
+        right: 5vw;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -5263,125 +5468,125 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1130px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 11vw;
-		padding-right: 11vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 11vw;
+        padding-right: 11vw;
+    }
 
-	/*MET til fest */
-
-
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 8vw;
-		padding-right: 3vw;
-	}
-
-	.form_container {
-		margin-left: 1vw;
-		margin-right: 13vw;
-	}
-
-	.besked {
-		margin-left: 15vw;
-		margin-right: 2vw;
-	}
+    /*MET til fest */
 
 
-	/*SLUT kontakt side*/
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 8vw;
+        padding-right: 3vw;
+    }
+
+    .form_container {
+        margin-left: 1vw;
+        margin-right: 13vw;
+    }
+
+    .besked {
+        margin-left: 15vw;
+        margin-right: 2vw;
+    }
+
+
+    /*SLUT kontakt side*/
 
 
 }
 
 
 @media screen and (min-width: 1150px) {
-	/*kontakt side*/
+    /*kontakt side*/
 
-	#contact {
-		padding-left: 9vw;
-		padding-right: 4vw;
-	}
+    #contact {
+        padding-left: 9vw;
+        padding-right: 4vw;
+    }
 
-	.infomation {
-		height: 42vh;
-	}
+    .infomation {
+        height: 42vh;
+    }
 
-	.infomation h3 {
-		padding-top: 1.8vw;
-	}
+    .infomation h3 {
+        padding-top: 1.8vw;
+    }
 
-	.mapouter {
-		height: 42vh;
-	}
+    .mapouter {
+        height: 42vh;
+    }
 
-	.form_container {
-		margin-left: 0vw;
-		margin-right: 14vw;
-	}
+    .form_container {
+        margin-left: 0vw;
+        margin-right: 14vw;
+    }
 
-	label input[type="text"i] {
-		width: 30vw;
-	}
+    label input[type="text"i] {
+        width: 30vw;
+    }
 
-	label input[type="email"i] {
-		width: 30vw;
-	}
+    label input[type="email"i] {
+        width: 30vw;
+    }
 
-	textarea {
-		width: 32vw;
-	}
-
-
-	/*SLUT kontakt side*/
+    textarea {
+        width: 32vw;
+    }
 
 
-	/*Menu*/
-	#menuCard {
-		padding: 0em 16em;
-	}
-
-	.white-border1 {
-		width: 15.5em;
-	}
-
-	.white-border2 {
-		width: 16.7em;
-	}
-
-	.white-border3 {
-		width: 16em;
-		height: 14em;
-	}
-
-	/*Menu SLUT*/
+    /*SLUT kontakt side*/
 
 
-	/*MET til fest*/
-	.red_box1 {
-		margin: 5vw 10vw 0vw 0vw;
-	}
+    /*Menu*/
+    #menuCard {
+        padding: 0em 16em;
+    }
 
-	.red_box2 {
-		margin: 5vw 0vw;
-	}
+    .white-border1 {
+        width: 15.5em;
+    }
+
+    .white-border2 {
+        width: 16.7em;
+    }
+
+    .white-border3 {
+        width: 16em;
+        height: 14em;
+    }
+
+    /*Menu SLUT*/
 
 
+    /*MET til fest*/
+    .red_box1 {
+        margin: 5vw 10vw 0vw 0vw;
+    }
 
-
-	#party-section #month_menu .top_menu img {
-		margin-top: 8vw;
-	}
-
-
-	#party-section #month_menu .bottom_menu img {
-		margin-top: -2vw;
-	}
+    .red_box2 {
+        margin: 5vw 0vw;
+    }
 
 
 
-	/*MET til fest SLUT*/
+
+    #party-section #month_menu .top_menu img {
+        margin-top: 8vw;
+    }
+
+
+    #party-section #month_menu .bottom_menu img {
+        margin-top: -2vw;
+    }
+
+
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -5389,263 +5594,263 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1200px) {
 
-	/*MET til fest*/
-	/*Grå sektion*/
-	#party-section #grey .koldemet h2 {
-		padding-left: 9vw;
-	}
+    /*MET til fest*/
+    /*Grå sektion*/
+    #party-section #grey .koldemet h2 {
+        padding-left: 9vw;
+    }
 
-	#party-section #grey .brunch p {
-		padding-left: 14.5vw;
-	}
+    #party-section #grey .brunch p {
+        padding-left: 14.5vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 14.5vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 14.5vw;
+    }
 
-	#party-section #grey .koldemet h2 {
-		padding-left: 8vw;
-	}
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
 
-	#party-section #grey .brunch h2 {
-		padding-left: 22vw;
-	}
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*MET til fest*/
-
-
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 10vw;
-		padding-right: 5vw;
-
-	}
-
-	.form_container {
-		margin-left: 1vw;
-		margin-right: 14vw;
-	}
-
-	.besked {
-		margin-left: 16vw;
-		margin-right: 2vw;
-	}
+    /*Grå sektion SLUT*/
+    /*MET til fest*/
 
 
-	/*SLUT kontakt side*/
+    /*kontakt side*/
+
+    #contact {
+        padding-left: 10vw;
+        padding-right: 5vw;
+
+    }
+
+    .form_container {
+        margin-left: 1vw;
+        margin-right: 14vw;
+    }
+
+    .besked {
+        margin-left: 16vw;
+        margin-right: 2vw;
+    }
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 30%;
-	}
-
-	/* Logo SLUT */
+    /*SLUT kontakt side*/
 
 
+    /* Logo størrelse */
+    #logo img {
+        max-width: 30%;
+    }
 
-	/*Om os - Thomad og Mette*/
-
-	.mette img {
-		text-align: end;
-		padding-left: 7vw;
-
-	}
-
-	.thomas img {
-		text-align: start;
-		padding-left: 0vw;
-	}
-
-	#aboutUs .mette p {
-		padding-left: 8.8vw;
-		padding-right: 2vw;
-	}
-
-	#aboutUs .thomas p {
-		padding-left: 5.5vw;
-		padding-right: 5.5vw;
-	}
-
-	#aboutUs img {
-		width: 30vw;
-		margin-bottom: 0vw;
-	}
+    /* Logo SLUT */
 
 
-	/*Om os - Thomad og Mette SLUT*/
+
+    /*Om os - Thomad og Mette*/
+
+    .mette img {
+        text-align: end;
+        padding-left: 7vw;
+
+    }
+
+    .thomas img {
+        text-align: start;
+        padding-left: 0vw;
+    }
+
+    #aboutUs .mette p {
+        padding-left: 8.8vw;
+        padding-right: 2vw;
+    }
+
+    #aboutUs .thomas p {
+        padding-left: 5.5vw;
+        padding-right: 5.5vw;
+    }
+
+    #aboutUs img {
+        width: 30vw;
+        margin-bottom: 0vw;
+    }
 
 
-	/*Menukort*/
-	/*
+    /*Om os - Thomad og Mette SLUT*/
+
+
+    /*Menukort*/
+    /*
 	#menuCard {
 		padding: 5vw 12vw 5vw 14vw;
 	}
 */
 
-	#coffee_section,
-	#morgenmad-section,
-	#koldedrikke-section {
-		display: flex;
-		grid-template-columns: 100% 100%;
-		grid-template-rows: 50% 50%;
-		margin: 1em 0em;
-	}
+    #coffee_section,
+    #morgenmad-section,
+    #koldedrikke-section {
+        display: flex;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: 50% 50%;
+        margin: 1em 0em;
+    }
 
-	.white-border2 {
-		width: 19.7em;
-		height: 30em;
-	}
+    .white-border2 {
+        width: 19.7em;
+        height: 30em;
+    }
 
-	.white-border3 {
-		width: 18em;
-		height: 15.5em;
-	}
+    .white-border3 {
+        width: 18em;
+        height: 15.5em;
+    }
 
-	#koldedrikke-section .menu-left {
-		grid-template-rows: 45% 50%;
-	}
+    #koldedrikke-section .menu-left {
+        grid-template-rows: 45% 50%;
+    }
 
-	#koldedrikke-section img {
-		max-width: 80%;
-		max-height: 80%;
-	}
+    #koldedrikke-section img {
+        max-width: 80%;
+        max-height: 80%;
+    }
 
-	/*Menukort SLUT*/
-
-
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 200px;
-		padding-right: 200px;
-	}
-
-	/*Forside Citat SLUT*/
-
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 43vw;
-	}
-
-	/*Om os citat SLUT*/
+    /*Menukort SLUT*/
 
 
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    /*Forside Citat SLUT*/
+
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 43vw;
+    }
+
+    /*Om os citat SLUT*/
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 45vh;
-		margin: 10.5vw 10vw 0vw 0vw;
-	}
 
-	.red_box2 {
-		height: 45vh;
-		margin: 10.5vw 0vw;
-	}
 
-	/*MET til fest SLUT*/
+    /*MET til fest*/
+    .red_box1 {
+        height: 45vh;
+        margin: 10.5vw 10vw 0vw 0vw;
+    }
+
+    .red_box2 {
+        height: 45vh;
+        margin: 10.5vw 0vw;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
 
 @media screen and (min-width: 1250px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 14vw;
-		padding-right: 14vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 14vw;
+        padding-right: 14vw;
+    }
 
-	#party-section #price_suggestion .price_2 {
-		padding-bottom: 2vw;
-	}
+    #party-section #price_suggestion .price_2 {
+        padding-bottom: 2vw;
+    }
 
-	#party-section #price_suggestion h2 {
-		margin-top: 3vw;
-	}
-
-
-	#party-section #grey .koldemet h2 {
-		padding-left: 8vw;
-	}
-
-	#party-section #grey .brunch h2 {
-		padding-left: 22vw;
-	}
+    #party-section #price_suggestion h2 {
+        margin-top: 3vw;
+    }
 
 
-	/*MET til fest */
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
 
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 11vw;
-		padding-right: 6vw;
-	}
-
-	.besked {
-		margin-left: 17vw;
-		margin-right: 1vw;
-	}
-
-	.form_container {
-		margin-left: 0vw;
-		margin-right: 16vw;
-	}
-
-	label input[type="text"i] {
-		width: 29vw;
-	}
-
-	label input[type="email"i] {
-		width: 29vw;
-	}
-
-	textarea {
-		width: 31vw;
-	}
-
-	/*SLUT kontakt side*/
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
 
 
+    /*MET til fest */
 
-	/*Menu*/
-	.white-border1 {
-		height: 32.5em;
-		width: 17.5em;
-	}
+    /*kontakt side*/
 
-	.white-border2 {
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 23.5em;
-		height: 32em;
-	}
+    #contact {
+        padding-left: 11vw;
+        padding-right: 6vw;
+    }
 
-	.white-border3 {
-		width: 20em;
-		height: 17em;
-	}
+    .besked {
+        margin-left: 17vw;
+        margin-right: 1vw;
+    }
 
-	/*Menu SLUT*/
+    .form_container {
+        margin-left: 0vw;
+        margin-right: 16vw;
+    }
+
+    label input[type="text"i] {
+        width: 29vw;
+    }
+
+    label input[type="email"i] {
+        width: 29vw;
+    }
+
+    textarea {
+        width: 31vw;
+    }
+
+    /*SLUT kontakt side*/
 
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 47vh;
-	}
+    /*Menu*/
+    .white-border1 {
+        height: 32.5em;
+        width: 17.5em;
+    }
 
-	.red_box2 {
-		height: 47vh;
-	}
+    .white-border2 {
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 23.5em;
+        height: 32em;
+    }
 
-	/*MET til fest SLUT*/
+    .white-border3 {
+        width: 20em;
+        height: 17em;
+    }
+
+    /*Menu SLUT*/
+
+
+
+    /*MET til fest*/
+    .red_box1 {
+        height: 47vh;
+    }
+
+    .red_box2 {
+        height: 47vh;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -5654,140 +5859,140 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1300px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 16vw;
-		padding-right: 16vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 16vw;
+        padding-right: 16vw;
+    }
 
-	#party-section #price_suggestion .price_2 {
-		padding-bottom: 1vw;
-	}
+    #party-section #price_suggestion .price_2 {
+        padding-bottom: 1vw;
+    }
 
-	#party-section #price_suggestion h2 {
-		margin-top: 2vw;
-	}
+    #party-section #price_suggestion h2 {
+        margin-top: 2vw;
+    }
 
-	/*Grå sektion*/
-	#party-section #grey .brunch p {
-		padding-left: 16vw;
-	}
+    /*Grå sektion*/
+    #party-section #grey .brunch p {
+        padding-left: 16vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 16vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 16vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*MET til fest */
-
-
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 13vw;
-		padding-right: 8vw;
-	}
-
-	.besked {
-		margin-left: 19vw;
-		margin-right: 2vw;
-	}
-
-	.form_container {
-		margin-left: 0vw;
-		margin-right: 18vw;
-	}
-
-	label input[type="text"i] {
-		width: 27vw;
-	}
-
-	label input[type="email"i] {
-		width: 27vw;
-	}
-
-	label input[type="email"i] {
-		margin-bottom: 3vw;
-	}
-
-	textarea {
-		width: 29vw;
-	}
+    /*Grå sektion SLUT*/
+    /*MET til fest */
 
 
-	/*SLUT kontakt side*/
+    /*kontakt side*/
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 28%;
-	}
+    #contact {
+        padding-left: 13vw;
+        padding-right: 8vw;
+    }
 
-	/* Logo SLUT */
+    .besked {
+        margin-left: 19vw;
+        margin-right: 2vw;
+    }
 
+    .form_container {
+        margin-left: 0vw;
+        margin-right: 18vw;
+    }
 
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 19em;
-	}
+    label input[type="text"i] {
+        width: 27vw;
+    }
 
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 16em;
-		height: 33em;
-	}
+    label input[type="email"i] {
+        width: 27vw;
+    }
 
-	.white-border2 {
-		border: white solid 0.5em;
-		margin-top: 2.5em;
-		margin-left: 2.5em;
-		width: 20em;
-		height: 30.5em;
-	}
+    label input[type="email"i] {
+        margin-bottom: 3vw;
+    }
 
-
-	.white-border3 {
-		border: white solid 0.5em;
-		margin-top: -1em;
-		margin-left: 1em;
-		width: 18.5em;
-		height: 15em;
-	}
-
-	/*Menukort SLUT*/
+    textarea {
+        width: 29vw;
+    }
 
 
+    /*SLUT kontakt side*/
 
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 240px;
-		padding-right: 240px;
-	}
+    /* Logo størrelse */
+    #logo img {
+        max-width: 28%;
+    }
 
-	/*Forside Citat SLUT*/
-
-	/*Om os citat*/
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 41vw;
-	}
-
-	/*Om os citat SLUT*/
+    /* Logo SLUT */
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 49vh;
-	}
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 19em;
+    }
 
-	.red_box2 {
-		height: 49vh;
-	}
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 16em;
+        height: 33em;
+    }
 
-	/*MET til fest SLUT*/
+    .white-border2 {
+        border: white solid 0.5em;
+        margin-top: 2.5em;
+        margin-left: 2.5em;
+        width: 20em;
+        height: 30.5em;
+    }
+
+
+    .white-border3 {
+        border: white solid 0.5em;
+        margin-top: -1em;
+        margin-left: 1em;
+        width: 18.5em;
+        height: 15em;
+    }
+
+    /*Menukort SLUT*/
+
+
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    /*Forside Citat SLUT*/
+
+    /*Om os citat*/
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 41vw;
+    }
+
+    /*Om os citat SLUT*/
+
+
+    /*MET til fest*/
+    .red_box1 {
+        height: 49vh;
+    }
+
+    .red_box2 {
+        height: 49vh;
+    }
+
+    /*MET til fest SLUT*/
 
 
 
@@ -5796,99 +6001,99 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1350px) {
 
-	/*MET til fest */
-	#party-section #price_suggestion {
-		padding-left: 18vw;
-		padding-right: 18vw;
-	}
+    /*MET til fest */
+    #party-section #price_suggestion {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
 
-	/*Grå sektion*/
+    /*Grå sektion*/
 
-	#party-section #grey .koldemet h2 {
-		padding-left: 8vw;
-	}
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
 
-	#party-section #grey .brunch p {
-		padding-left: 18vw;
-	}
+    #party-section #grey .brunch p {
+        padding-left: 18vw;
+    }
 
-	#party-section #grey .koldemet p {
-		padding-right: 18vw;
-	}
+    #party-section #grey .koldemet p {
+        padding-right: 18vw;
+    }
 
-	#party-section #grey .brunch h2 {
-		padding-left: 19vw;
-	}
+    #party-section #grey .brunch h2 {
+        padding-left: 19vw;
+    }
 
-	/*Grå sektion SLUT*/
-	/*MET til fest SLUT*/
-
-
-
-
-	/*kontakt side*/
-	.infomation h3 {
-		padding-top: 1.3vw;
-	}
-
-	#contact {
-		padding-left: 14vw;
-		padding-right: 9vw;
-	}
-
-
-	.besked {
-		margin-left: 20vw;
-		margin-right: 2vw;
-	}
-
-
-	/*SLUT kontakt side*/
+    /*Grå sektion SLUT*/
+    /*MET til fest SLUT*/
 
 
 
 
-	/*Menu*/
-	#morgenmad-section img {
-		max-width: 85%;
-		max-height: 85%;
-	}
+    /*kontakt side*/
+    .infomation h3 {
+        padding-top: 1.3vw;
+    }
 
-	.white-border1 {
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 17em;
-		height: 32em;
-	}
+    #contact {
+        padding-left: 14vw;
+        padding-right: 9vw;
+    }
 
-	.white-border2 {
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 24em;
-		height: 33em;
-	}
 
-	.white-border3 {
-		margin-top: -1em;
-		margin-left: 1em;
-		width: 21em;
-		height: 17em;
-	}
+    .besked {
+        margin-left: 20vw;
+        margin-right: 2vw;
+    }
 
-	/*Menu SLUT*/
+
+    /*SLUT kontakt side*/
 
 
 
-	/*MET til fest*/
-	.red_box1 {
-		height: 51vh;
-	}
 
-	.red_box2 {
-		height: 51vh;
-	}
+    /*Menu*/
+    #morgenmad-section img {
+        max-width: 85%;
+        max-height: 85%;
+    }
 
-	/*MET til fest SLUT*/
+    .white-border1 {
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 17em;
+        height: 32em;
+    }
+
+    .white-border2 {
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 24em;
+        height: 33em;
+    }
+
+    .white-border3 {
+        margin-top: -1em;
+        margin-left: 1em;
+        width: 21em;
+        height: 17em;
+    }
+
+    /*Menu SLUT*/
+
+
+
+    /*MET til fest*/
+    .red_box1 {
+        height: 51vh;
+    }
+
+    .red_box2 {
+        height: 51vh;
+    }
+
+    /*MET til fest SLUT*/
 
 
 }
@@ -5897,179 +6102,179 @@ a:-webkit-any-link {
 @media screen and (min-width: 1400px) {
 
 
-	/*MET til fest */
+    /*MET til fest */
 
-	/*Info*/
-	.red_box1 {
-		height: 55vh;
-		margin: 10vw 0vw;
-	}
+    /*Info*/
+    .red_box1 {
+        height: 55vh;
+        margin: 10vw 0vw;
+    }
 
-	.red_box2 {
-		height: 55vh;
-		margin: 10vw 0vw;
-	}
+    .red_box2 {
+        height: 55vh;
+        margin: 10vw 0vw;
+    }
 
-	/*Info SLUT*/
-
-
-
-	#party-section #price_suggestion {
-		padding-left: 19vw;
-		padding-right: 19vw;
-	}
-
-
-	/*Grå sektion*/
-
-	#party-section #grey .koldemet h2 {
-		padding-left: 8vw;
-	}
-
-	#party-section #grey .brunch h2 {
-		padding-left: 22vw;
-	}
-
-	#party-section #grey .brunch p {
-		padding-left: 20vw;
-	}
-
-	#party-section #grey .koldemet p {
-		padding-right: 20vw;
-	}
-
-
-	#party-section #grey h2 {
-		padding-bottom: 1vw;
-	}
-
-	/*Grå sektion SLUT*/
-	/*MET til fest SLUT*/
+    /*Info SLUT*/
 
 
 
-
-	/*kontakt side*/
-
-	#contact {
-		padding-left: 15vw;
-		padding-right: 10vw;
-	}
-
-	.besked {
-		margin-left: 21vw;
-		margin-right: 2vw;
-	}
-
-	.form_container {
-		margin-left: 0vw;
-		margin-right: 19vw;
-	}
-
-	label input[type="text"i] {
-		width: 26vw;
-	}
-
-	label input[type="email"i] {
-		width: 26vw;
-	}
-
-	label input[type="email"i] {
-		margin-bottom: 1vw;
-	}
-
-	textarea {
-		width: 28vw;
-	}
+    #party-section #price_suggestion {
+        padding-left: 19vw;
+        padding-right: 19vw;
+    }
 
 
-	/*SLUT kontakt side*/
+    /*Grå sektion*/
+
+    #party-section #grey .koldemet h2 {
+        padding-left: 8vw;
+    }
+
+    #party-section #grey .brunch h2 {
+        padding-left: 22vw;
+    }
+
+    #party-section #grey .brunch p {
+        padding-left: 20vw;
+    }
+
+    #party-section #grey .koldemet p {
+        padding-right: 20vw;
+    }
 
 
-	/* Logo størrelse */
-	#logo img {
-		max-width: 28%;
-	}
+    #party-section #grey h2 {
+        padding-bottom: 1vw;
+    }
 
-	/* Logo SLUT */
-
-
-	/*Menukort*/
-	#menuCard {
-		padding: 0em 22em;
-	}
-
-	#koldedrikke-section {
-		padding-top: 2em;
-	}
-
-	#koldedrikke-section .menu-lift {
-		margin-left: 2em;
-	}
-
-	#coffee_section img {
-		max-width: 95%;
-	}
-
-	#koldedrikke-section img {
-		max-width: 80%;
-	}
-
-	#morgenmad-section img {
-		max-width: 80%;
-	}
-
-	.drikke-text p {
-		width: 18em;
-	}
-
-	.white-border1 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: -1em;
-		width: 16em;
-		height: 34.5em;
-	}
-
-	.white-border2 {
-		border: white solid 0.5em;
-		margin-top: 2em;
-		margin-left: 2em;
-		width: 21.5em;
-		height: 31.5em;
-	}
-
-
-	.white-border3 {
-		border: white solid 0.5em;
-		margin-top: -1em;
-		margin-left: 2em;
-		width: 18em;
-		height: 15em;
-	}
+    /*Grå sektion SLUT*/
+    /*MET til fest SLUT*/
 
 
 
-	/*Menukort SLUT*/
 
-	/*Forside Citat */
-	.slideshow-container {
-		padding-left: 330px;
-		padding-right: 330px;
-	}
+    /*kontakt side*/
 
-	.mySlides p,
-	.quote_1 p,
-	.quote_2 p,
-	.quote_3 p {
-		margin-left: 31vw;
-	}
+    #contact {
+        padding-left: 15vw;
+        padding-right: 10vw;
+    }
 
-	#quote-section img {
-		width: 4vw;
-	}
+    .besked {
+        margin-left: 21vw;
+        margin-right: 2vw;
+    }
 
-	/*Forside Citat SLUT*/
+    .form_container {
+        margin-left: 0vw;
+        margin-right: 19vw;
+    }
+
+    label input[type="text"i] {
+        width: 26vw;
+    }
+
+    label input[type="email"i] {
+        width: 26vw;
+    }
+
+    label input[type="email"i] {
+        margin-bottom: 1vw;
+    }
+
+    textarea {
+        width: 28vw;
+    }
+
+
+    /*SLUT kontakt side*/
+
+
+    /* Logo størrelse */
+    #logo img {
+        max-width: 28%;
+    }
+
+    /* Logo SLUT */
+
+
+    /*Menukort*/
+    #menuCard {
+        padding: 0em 22em;
+    }
+
+    #koldedrikke-section {
+        padding-top: 2em;
+    }
+
+    #koldedrikke-section .menu-lift {
+        margin-left: 2em;
+    }
+
+    #coffee_section img {
+        max-width: 95%;
+    }
+
+    #koldedrikke-section img {
+        max-width: 80%;
+    }
+
+    #morgenmad-section img {
+        max-width: 80%;
+    }
+
+    .drikke-text p {
+        width: 18em;
+    }
+
+    .white-border1 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: -1em;
+        width: 16em;
+        height: 34.5em;
+    }
+
+    .white-border2 {
+        border: white solid 0.5em;
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 21.5em;
+        height: 31.5em;
+    }
+
+
+    .white-border3 {
+        border: white solid 0.5em;
+        margin-top: -1em;
+        margin-left: 2em;
+        width: 18em;
+        height: 15em;
+    }
+
+
+
+    /*Menukort SLUT*/
+
+    /*Forside Citat */
+    .slideshow-container {
+        padding-left: 330px;
+        padding-right: 330px;
+    }
+
+    .mySlides p,
+    .quote_1 p,
+    .quote_2 p,
+    .quote_3 p {
+        margin-left: 31vw;
+    }
+
+    #quote-section img {
+        width: 4vw;
+    }
+
+    /*Forside Citat SLUT*/
 
 
 }
@@ -6077,34 +6282,34 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1440px) {
 
-	/*kontakt*/
-	.contact-heading h2 {
-		margin-bottom: -3vw;
-	}
+    /*kontakt*/
+    .contact-heading h2 {
+        margin-bottom: -3vw;
+    }
 
-	.infomation h3 {
-		padding-top: 1.3vw;
-	}
+    .infomation h3 {
+        padding-top: 1.3vw;
+    }
 
-	.form_container {
-		margin-right: 20vw;
-	}
+    .form_container {
+        margin-right: 20vw;
+    }
 
-	label input[type="text"i] {
-		width: 25.3vw;
-	}
+    label input[type="text"i] {
+        width: 25.3vw;
+    }
 
-	label input[type="email"i] {
-		width: 25.3vw;
-	}
+    label input[type="email"i] {
+        width: 25.3vw;
+    }
 
-	label input[type="email"i] {
-		margin-bottom: 1vw;
-	}
+    label input[type="email"i] {
+        margin-bottom: 1vw;
+    }
 
-	textarea {
-		width: 27vw;
-	}
+    textarea {
+        width: 27vw;
+    }
 
-	/*kontakt SLUT*/
+    /*kontakt SLUT*/
 }
