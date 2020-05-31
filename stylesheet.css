@@ -3222,7 +3222,8 @@ a:-webkit-any-link {
 
 
     .gallery-content {
-        margin: -1vw 10vw 0vw -6vw;;
+        margin: -1vw 10vw 0vw -6vw;
+        ;
         display: grid;
 
     }
@@ -4859,6 +4860,41 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 1024px) {
 
+    /*Animation galleri fade*/
+
+    /*    Taget kode fra https: //medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
+
+    .fade-in {
+        animation: fadeIn ease 4s;
+        -webkit-animation: fadeIn ease 4s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+
+        100% {
+            opacity: 100;
+        }
+    }
+
+    /*Animation galleri fade SLUT*/
+
+
+
     /*Galleri*/
     .flip-card {
         justify-self: start;
@@ -5205,6 +5241,8 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 1047px) {
+
+
     /*kontakt side*/
 
     #contact {
