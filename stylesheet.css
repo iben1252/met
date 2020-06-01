@@ -3971,7 +3971,6 @@ a:-webkit-any-link {
         padding-right: 1em;
     }
 
-
 }
 
 
@@ -4304,6 +4303,20 @@ a:-webkit-any-link {
     }
 
     /*menu SLUT*/
+
+
+    /* Flip card */
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        font: 16px Avenir light, Avenir Black, sans-serif;
+    }
 
 }
 
@@ -4731,6 +4744,19 @@ a:-webkit-any-link {
 
 
     /*MET til fest SLUT*/
+
+
+    /* Flip card */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+        font: 18px Avenir light, Avenir Black, sans-serif;
+    }
 
 
 }
