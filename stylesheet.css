@@ -2917,6 +2917,12 @@ a:-webkit-any-link {
         width: 47vw;
     }
 
+    .white-border3 {
+        margin-top: -5vw;
+        margin-left: -14vw;
+        width: 70vw;
+        height: 53vh;
+    }
 
 }
 
@@ -4079,7 +4085,7 @@ a:-webkit-any-link {
     /*SLUT kontakt side*/
 
 
-     .white-border2 {
+    .white-border2 {
         height: 57vh;
     }
 }
@@ -4505,7 +4511,7 @@ a:-webkit-any-link {
 
     /*SLUT kontakt side*/
 
-     .white-border2 {
+    .white-border2 {
         height: 60vh;
     }
 }
@@ -4666,8 +4672,8 @@ a:-webkit-any-link {
 
     /*MET til fest SLUT*/
 
-     .white-border2 {
-        height: 61vh;
+    .white-border2 {
+        height: 66vh;
     }
 }
 
