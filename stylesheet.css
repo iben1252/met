@@ -2004,14 +2004,14 @@ a:-webkit-any-link {
 		margin-top: 20vw;
 		margin-left: -6vw;
 		width: 66vw;
-		height: 75vh;
+		height: 65vh;
 	}
 
 	.white-border3 {
 		border: white solid 2vw;
 		margin-top: -2vh;
 		margin-left: -2vw;
-		height: 40vh;
+		height: 37vh;
 		width: 65vw;
 	}
 
@@ -2172,11 +2172,11 @@ a:-webkit-any-link {
 	}
 
 	#menuCard #coffee_section {
-		padding-left: 3vw
+		padding-left: 3vw;
 	}
 
 	.white-border3 {
-		height: 43vh;
+		height: 38vh;
 	}
 
 
@@ -2309,7 +2309,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 45vh;
+		height: 42vh;
 		width: 65vw;
 	}
 
@@ -2428,6 +2428,7 @@ a:-webkit-any-link {
 	.white-border1 {
 		margin-top: 8vw;
 		margin-left: -5vw;
+		height: 71vh;
 	}
 
 
@@ -2522,18 +2523,11 @@ a:-webkit-any-link {
 		margin: 5vw;
 	}
 
-
-	/*MENUKORT SLUT*/
 	.white-border1 {
 		margin-top: 8vw;
 		margin-left: -7vw;
 	}
 
-
-	.white-border3 {
-		height: 51vh;
-		width: 69vw;
-	}
 
 	.morgenmad_price_list {
 		margin-right: 24vw;
@@ -2544,7 +2538,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 46vh;
+		height: 42vh;
 		width: 66vw;
 	}
 
@@ -2558,6 +2552,8 @@ a:-webkit-any-link {
 	#koldedrikke-section .menu-right img {
 		max-width: 85%;
 	}
+
+	/*MENUKORT SLUT*/
 
 
 	/*MET til fest*/
@@ -2844,7 +2840,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 45vh;
+		height: 41vh;
 		width: 59vw;
 	}
 
@@ -2903,10 +2899,11 @@ a:-webkit-any-link {
 
 	.white-border1 {
 		margin-top: 7vw;
+		height: 75vh;
 	}
 
 	.white-border3 {
-		height: 47vh;
+		height: 42vh;
 	}
 }
 
@@ -2941,7 +2938,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 49vh;
+		height: 43vh;
 	}
 
 	.coffee_price_list {
@@ -3107,12 +3104,14 @@ a:-webkit-any-link {
 		margin: 2vw 10vw;
 	}
 
+	#koldedrikke-section h1 {
+		margin-top: 0vh;
+	}
+
 	/* Menu SLUT*/
 }
 
-#koldedrikke-section h1 {
-	margin-top: 0em;
-}
+
 
 @media screen and (min-width: 730px) {
 
@@ -3139,12 +3138,20 @@ a:-webkit-any-link {
 		width: 47vw;
 	}
 
+
+	/*Menu*/
 	.white-border3 {
 		margin-top: -5vw;
 		margin-left: -14vw;
 		width: 70vw;
-		height: 48vh;
+		height: 4vh;
 	}
+
+	.white-border3 {
+		height: 46vh;
+	}
+
+	/*Menu SLUT*/
 
 }
 
