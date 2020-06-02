@@ -5614,12 +5614,12 @@ a:-webkit-any-link {
 	.red_box1 {
 		width: 28vw;
 		height: 42vh;
-		margin: 4.5vw 0vw;
+		margin: 3vw 0vw;
 	}
 
 	.red_box2 {
 		height: 42vh;
-		margin: 4.5vw 0vw;
+		margin: 3vw 0vw;
 	}
 
 	#party-section .party_info img {
@@ -6078,13 +6078,13 @@ a:-webkit-any-link {
 	.red_box1 {
 		width: 28vw;
 		height: 45vh;
-		margin: 4vw 10vw 0vw 0vw;
+		margin: 2vw 10vw 0vw 0vw;
 	}
 
 	.red_box2 {
 		height: 45vh;
 		width: 61vw;
-		margin: 4vw 0vw;
+		margin: 2vw 0vw;
 		right: 5vw;
 	}
 
@@ -6275,11 +6275,11 @@ a:-webkit-any-link {
 	}
 
 	.red_box1 {
-		margin: 5vw 10vw 0vw 0vw;
+		margin: 3vw 10vw 0vw 0vw;
 	}
 
 	.red_box2 {
-		margin: 5vw 0vw;
+		margin: 3vw 0vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -6454,12 +6454,12 @@ a:-webkit-any-link {
 	/*MET til fest*/
 	.red_box1 {
 		height: 45vh;
-		margin: 10.5vw 10vw 0vw 0vw;
+		margin: 3.5vw 10vw 0vw 0vw;
 	}
 
 	.red_box2 {
 		height: 45vh;
-		margin: 10.5vw 0vw;
+		margin: 3.5vw 0vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -6774,10 +6774,12 @@ a:-webkit-any-link {
 	/*MET til fest*/
 	.red_box1 {
 		height: 49vh;
+		margin: 2.5vw 10vw 0vw 0vw;
 	}
 
 	.red_box2 {
 		height: 49vh;
+		margin: 2.5vw 0vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -6932,6 +6934,11 @@ a:-webkit-any-link {
 
 
 	/*MET til fest*/
+
+	.party_info {
+		grid-template-rows: 95%;
+	}
+
 	.red_box1 {
 		height: 51vh;
 	}
@@ -6977,12 +6984,12 @@ a:-webkit-any-link {
 	/*Info*/
 	.red_box1 {
 		height: 55vh;
-		margin: 10vw 0vw;
+		margin: 2.5vw 0vw;
 	}
 
 	.red_box2 {
 		height: 55vh;
-		margin: 10vw 0vw;
+		margin: 2.5vw 0vw;
 	}
 
 	/*Info SLUT*/
