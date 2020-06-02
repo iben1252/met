@@ -6241,6 +6241,11 @@ a:-webkit-any-link {
 
 
     /*MET til fest*/
+
+    #morgenmad-section {
+        margin-top: 9vh;
+    }
+
     .red_box1 {
         margin: 5vw 10vw 0vw 0vw;
     }
@@ -6249,9 +6254,20 @@ a:-webkit-any-link {
         margin: 5vw 0vw;
     }
 
+    .white-border3 {
+        height: 41vh;
+    }
+
     /*MET til fest SLUT*/
 
 
+}
+
+@media screen and (min-width: 1160px) {
+
+    .white-border2 {
+        height: 63vh;
+    }
 }
 
 @media screen and (min-width: 1165px) {
@@ -6323,6 +6339,9 @@ a:-webkit-any-link {
         margin-right: 2vw;
     }
 
+    .white-border3 {
+        height: 38vh;
+    }
 
     /*SLUT kontakt side*/
 
@@ -6436,6 +6455,30 @@ a:-webkit-any-link {
     #party-section #month_menu .top_menu img,
     #party-section #month_menu .bottom_menu img {
         width: 79%;
+    }
+
+    .white-border2 {
+        margin-top: 9vh;
+        margin-left: 6vw;
+    }
+
+
+    .white-border3 {
+        width: 27vw;
+        height: 41vh;
+        margin-left: -0.5vw;
+    }
+
+    .white-border1 {
+        margin-left: -6vw;
+    }
+
+    #koldedrikke-section .menu-right img {
+        max-width: 87%;
+    }
+
+    #menuCard #coffee_section .menu-right img {
+        max-width: 105%;
     }
 
     /*MET til fest */
@@ -6649,7 +6692,13 @@ a:-webkit-any-link {
     /* Logo SLUT */
 
 
+
     /*Menukort*/
+
+    #menuCard #coffee_section .menu-right img {
+        max-width: 114%;
+    }
+
     #menuCard {
         padding: 0vw 13vw;
     }
@@ -6660,13 +6709,14 @@ a:-webkit-any-link {
     }
 
     .white-border1 {
-        margin-top: 8vw;
-        width: 22vw;
+        margin-top: 7vw;
+        width: 23vw;
         height: 70vh;
+        margin-left: -1vw;
     }
 
     .white-border2 {
-        margin-left: 2vw;
+        margin-left: 6vw;
         width: 22vw;
         height: 70vh;
     }
@@ -6674,7 +6724,7 @@ a:-webkit-any-link {
     .white-border3 {
         margin-top: -1vw;
         width: 22vw;
-        height: 34vh;
+        height: 37vh;
     }
 
     /*Menukort SLUT*/
@@ -6832,10 +6882,10 @@ a:-webkit-any-link {
     }
 
     .white-border1 {
-        margin-top: 13vh;
+        margin-top: 14vh;
         margin-left: -1vw;
-        width: 21vw;
-        height: 70vh;
+        width: 23vw;
+        height: 75vh;
     }
 
     .white-border2 {
@@ -6850,7 +6900,7 @@ a:-webkit-any-link {
         margin-top: -2vh;
         margin-left: -0.5vw;
         width: 21vw;
-        height: 33vh;
+        height: 39vh;
     }
 
 
@@ -7013,14 +7063,22 @@ a:-webkit-any-link {
         width: 20vw;
         height: 70vh;
         margin-left: 6vw;
-        margin-top: 10vh;
+        margin-top: 12vh;
     }
 
     .white-border3 {
         width: 20vw;
         height: 32vh;
         margin-left: -1vw;
-        margin-top: -2vh;
+        margin-top: 1vh;
+    }
+
+    #morgenmad-section .menu-left img {
+        margin-top: 7vh;
+    }
+
+    #menuCard #coffee_section .menu-right img {
+        max-width: 125%;
     }
 
     /*Menukort SLUT*/
@@ -7048,6 +7106,17 @@ a:-webkit-any-link {
 }
 
 @media screen and (min-width: 1433px) {
+    .white-border1 {
+        margin-left: -1vw;
+    }
+
+    .white-border3 {
+        height: 35vh;
+    }
+
+    .end_text {
+        margin-top: 1vw;
+    }
 
     #party-section #month_menu .top_menu img,
     #party-section #month_menu .bottom_menu img {
@@ -7062,6 +7131,10 @@ a:-webkit-any-link {
     #party-section #month_menu .top_menu1 img,
     #party-section #month_menu .bottom_menu1 img {
         margin-left: 5vw;
+    }
+
+    .white-border1 {
+        margin-top: 7vw;
     }
 }
 
