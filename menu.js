@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
-	burgerStart();
-	getFooter1();
-	getFooter2();
-	menuKort()
+    burgerStart();
+    getFooter1();
+    getFooter2();
+    menuKort()
 }
 
 
@@ -28,34 +28,34 @@ function start() {
 //*-----------------------------Burgermenu sektion-----------------------------------*//
 
 function burgerStart() {
-	document.querySelector(".menu-button").addEventListener("click", openBurger());
-	document.querySelector(".menu-button").textContent = "☰";
-	document.querySelector(".burgernav").style.display = "none";
+    document.querySelector(".menu-button").addEventListener("click", openBurger());
+    document.querySelector(".menu-button").textContent = "☰";
+    document.querySelector(".burgernav").style.display = "none";
 }
 
 function openBurger() {
-	console.log("open burger");
-	document.querySelector(".burgernav").style.display = "block";
-	document.querySelector(".burgernav").style.display = "grid";
-	document.querySelector(".menu-burger").style.display = "contents";
-	document.querySelector(".fest-burger").style.display = "contents";
-	document.querySelector(".kontakt-burger").style.display = "contents";
+    console.log("open burger");
+    document.querySelector(".burgernav").style.display = "block";
+    document.querySelector(".burgernav").style.display = "grid";
+    document.querySelector(".menu-burger").style.display = "contents";
+    document.querySelector(".fest-burger").style.display = "contents";
+    document.querySelector(".kontakt-burger").style.display = "contents";
 
-	document.querySelector(".menu-button").addEventListener("click", closeBurger);
-	document.querySelector(".menu-button").removeEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "⤫";
+    document.querySelector(".menu-button").addEventListener("click", closeBurger);
+    document.querySelector(".menu-button").removeEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "⤫";
 }
 
 function closeBurger() {
-	console.log("close burger");
-	document.querySelector(".burgernav").style.display = "none";
-	document.querySelector(".menu-burger").style.display = "none";
-	document.querySelector(".fest-burger").style.display = "none";
-	document.querySelector(".kontakt-burger").style.display = "none";
+    console.log("close burger");
+    document.querySelector(".burgernav").style.display = "none";
+    document.querySelector(".menu-burger").style.display = "none";
+    document.querySelector(".fest-burger").style.display = "none";
+    document.querySelector(".kontakt-burger").style.display = "none";
 
-	document.querySelector(".menu-button").removeEventListener("click", closeBurger);
-	document.querySelector(".menu-button").addEventListener("click", openBurger);
-	document.querySelector(".menu-button").textContent = "☰";
+    document.querySelector(".menu-button").removeEventListener("click", closeBurger);
+    document.querySelector(".menu-button").addEventListener("click", openBurger);
+    document.querySelector(".menu-button").textContent = "☰";
 }
 
 //*-----------------------------Burgermenu sektion SLUT-----------------------------------*//
@@ -69,19 +69,19 @@ function closeBurger() {
 //------------------------------------Menu sektion ----------------------------------------
 
 async function menuKort() {
-	console.log("menukort");
+    console.log("menukort");
 
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/menu/42";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertmenuKort(section);
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/menu/42";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertmenuKort(section);
 }
 
 function insertmenuKort(section) {
-	let destmenuKort = document.querySelector("#menukort");
+    let destmenuKort = document.querySelector("#menukort");
 
-	let template =
-		`
+    let template =
+        `
 <section id="menuCard">
      	<div id="coffee_section">
 		<div class="menu-left">
@@ -363,18 +363,24 @@ function insertmenuKort(section) {
 			</div>
 
 		</div>
+
 			<div class="menu-right">
 				<div class="white-border3"></div>
-				<div><img src="${section.koldebillede.guid}" alt="Billede af blomster og juice flasker" ;></div>
+				    <div><img src="${section.koldebillede.guid}" alt="Billede af blomster og juice flasker" ;></div>
 			</div>
 		</div>
-		<div id="menu-info">
-		<p>${section.slutbeskrivelse}</p>
-		</div>
-</div>
-					`;
 
-	destmenuKort.insertAdjacentHTML("beforeend", template);
+
+
+
+		<div id="menu-info">
+		  <p class="end_text">${section.slutbeskrivelse}</p>
+		</div>
+
+</div>
+			`;
+
+    destmenuKort.insertAdjacentHTML("beforeend", template);
 }
 
 //---------------------------------Menu sektion SLUT ----------------------------
@@ -390,46 +396,46 @@ function insertmenuKort(section) {
 /* aabningstider og dage */
 
 async function getFooter1() {
-	console.log("get left");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertFooter1(section);
+    console.log("get left");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertFooter1(section);
 }
 
 function insertFooter1(section) {
-	let destFooter1 = document.querySelector(".footer-left");
+    let destFooter1 = document.querySelector(".footer-left");
 
-	let template =
-		`
+    let template =
+        `
 				<p>${section.aabningsdage}</p>
                 <p>${section.aabningsdage_2}</p>
 					`;
-	destFooter1.insertAdjacentHTML("beforeend", template);
+    destFooter1.insertAdjacentHTML("beforeend", template);
 
 }
 
 /* adresse og information */
 
 async function getFooter2() {
-	console.log("get right");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertFooter2(section);
+    console.log("get right");
+    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+    let jsonData = await fetch(pagesURL);
+    let section = await jsonData.json();
+    insertFooter2(section);
 }
 
 function insertFooter2(section) {
-	let destFooter2 = document.querySelector(".footer-right");
+    let destFooter2 = document.querySelector(".footer-right");
 
-	let template =
-		`
+    let template =
+        `
                <p>${section.adresse_footer}</p>
                <p>${section.telefonnummer}</p>
                <p>${section.mail_footer}</p>
 
 					`;
-	destFooter2.insertAdjacentHTML("beforeend", template);
+    destFooter2.insertAdjacentHTML("beforeend", template);
 
 }
 
