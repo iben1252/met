@@ -93,7 +93,7 @@ ul {
 	white-space: nowrap;
 }
 
-#active {
+.active-underline {
 	border-bottom: 1px solid #DD3340;
 	font-style: italic;
 }
