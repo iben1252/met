@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", start);
 function start() {
 	burgerStart();
 	getParty();
-	getFooter1();
-	getFooter2();
+	getFooter();
 }
 
 
@@ -73,6 +72,7 @@ async function getParty() {
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/met_til_fest/113";
 	let jsonData = await fetch(pagesURL);
 	let section = await jsonData.json();
+
 	insertParty(section);
 }
 
@@ -262,12 +262,14 @@ function insertParty(section) {
 
 /* aabningstider og dage */
 
-async function getFooter1() {
-	console.log("get left");
+async function getFooter() {
+	console.log("get footer");
 	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
 	let jsonData = await fetch(pagesURL);
 	let section = await jsonData.json();
+
 	insertFooter1(section);
+	insertFooter2(section);
 }
 
 function insertFooter1(section) {
@@ -284,13 +286,13 @@ function insertFooter1(section) {
 
 /* adresse og information */
 
-async function getFooter2() {
-	console.log("get right");
-	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-	let jsonData = await fetch(pagesURL);
-	let section = await jsonData.json();
-	insertFooter2(section);
-}
+//async function getFooter2() {
+//	console.log("get right");
+//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
+//	let jsonData = await fetch(pagesURL);
+//	let section = await jsonData.json();
+//	insertFooter2(section);
+//}
 
 function insertFooter2(section) {
 	let destFooter2 = document.querySelector(".footer-right");
