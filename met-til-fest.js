@@ -235,12 +235,6 @@ function insertParty(section) {
 
 
 
-
-
-
-
-
-
 					`;
 	destParty.insertAdjacentHTML("beforeend", template);
 
