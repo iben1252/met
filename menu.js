@@ -8,22 +8,6 @@ function start() {
 
 
 
-//    console.log('is touch', is_touch_device());
-//
-//    //'is touch' - en funktion som kan genkende den enhed man er på; mobil eller desktop. Den bruges netop i forbindelse med forsidens galleri billede som kan flippe frem og tilbage mellem tekst om caféens åbningstider og et billede af caféen.
-//
-//    document.querySelector('html').classList.remove('is_touch_device', 'is_not_touch_device');
-//    //Vi sikrer os at der ikke er nogen klasser på forhånd.
-//
-//    document.querySelector('html').classList.add(
-//        is_touch_device() ? 'is_touch_device' : 'is_not_touch_device');
-//    //Funktionen kigger på om det er true eller false ift. hvilken enhed det er.
-//
-//
-//
-//}
-
-
 //*-----------------------------Burgermenu sektion-----------------------------------*//
 
 function burgerStart() {
@@ -419,14 +403,6 @@ function insertFooter1(section) {
 }
 
 /* adresse og information */
-
-//async function getFooter2() {
-//    console.log("get right");
-//    let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-//    let jsonData = await fetch(pagesURL);
-//    let section = await jsonData.json();
-//    insertFooter2(section);
-//}
 
 function insertFooter2(section) {
 	let destFooter2 = document.querySelector(".footer-right");

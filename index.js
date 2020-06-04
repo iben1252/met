@@ -9,20 +9,6 @@ function start() {
 }
 
 
-//    console.log('is touch', is_touch_device());
-//
-//    //'is touch' - en funktion som kan genkende den enhed man er på; mobil eller desktop. Den bruges netop i forbindelse med forsidens galleri billede som kan flippe frem og tilbage mellem tekst om caféens åbningstider og et billede af caféen.
-//
-//    document.querySelector('html').classList.remove('is_touch_device', 'is_not_touch_device');
-//    //Vi sikrer os at der ikke er nogen klasser på forhånd.
-//
-//    document.querySelector('html').classList.add(
-//        is_touch_device() ? 'is_touch_device' : 'is_not_touch_device');
-//    //Funktionen kigger på om det er true eller false ift. hvilken enhed det er.
-//
-//
-//
-//}
 
 function burgerStart() {
 	document.querySelector(".menu-button").addEventListener("click", openBurger());
@@ -147,38 +133,6 @@ function insertGallery(section) {
 	destGallery.insertAdjacentHTML("beforeend", template);
 
 }
-//function clickCard() {
-//
-//    let front = document.querySelector(".front");
-//
-//    front.addEventListener("click");
-//    flipFrontCard();
-//
-//
-//}
-//
-//function flipFrontCard() {
-//    console.log("flip front card");
-//    let front = document.querySelector(".front");
-//    let back = document.querySelector(".back");
-//
-//    front.classList.add(".flip");
-//    back.classList.remove(".flip-back");
-//
-//    document.querySelector(".front").removeEventListener("click", flipFrontCard);
-//    document.querySelector(".back").addEventListener("click", flipBackCard);
-//}
-//
-//
-//function flipBackCard() {
-//    console.log("flip back card");
-//    document.querySelector(".front").classList.add(".flip-back");
-//    document.querySelector(".back").classList.remove(".flip");
-//
-//
-//    document.querySelector(".front").addEventListener("click", flipFrontCard);
-//    document.querySelector(".back").removeEventListener("click", flipBackCard);
-//}
 
 
 //----------------------- Forside Galleri SLUT ---------------------------------
@@ -234,13 +188,6 @@ function showSlides(n) {
 
 //----------------------- Citat 1 --------------------------------------------
 
-//async function getQuote1() {
-//	console.log("get quote1");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-//	let jsonData = await fetch(pagesURL);
-//	let section = await jsonData.json();
-//	insertQuote1(section);
-//}
 
 function insertQuote1(section) {
 	let destQuote1 = document.querySelector("#quote_1");
@@ -259,14 +206,6 @@ function insertQuote1(section) {
 //-------------------------- Citat 2 -------------------------------------------
 
 
-//async function getQuote2() {
-//	console.log("get quote2");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-//	let jsonData = await fetch(pagesURL);
-//	let section = await jsonData.json();
-//	insertQuote2(section);
-//}
-
 function insertQuote2(section) {
 	let destQuote2 = document.querySelector("#quote_2");
 
@@ -282,14 +221,6 @@ function insertQuote2(section) {
 
 //----------------------------- Citat 3 ------------------------------------------
 
-
-//async function getQuote3() {
-//	console.log("get quote3");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-//	let jsonData = await fetch(pagesURL);
-//	let section = await jsonData.json();
-//	insertQuote3(section);
-//}
 
 function insertQuote3(section) {
 
@@ -319,13 +250,6 @@ function insertQuote3(section) {
 
 //------------------------------Om os sektion-----------------------------------
 
-//async function getAboutUs() {
-//	console.log("Om os");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/forside/13";
-//	let jsonData = await fetch(pagesURL);
-//	let section = await jsonData.json();
-//	insertAboutUs(section);
-//}
 
 function insertAboutUs(section) {
 	let destAboutUs = document.querySelector("#about-us");
@@ -396,13 +320,6 @@ function insertFooter1(section) {
 
 /* adresse og information */
 
-//async function getFooter2() {
-//	console.log("get right");
-//	let pagesURL = "http://widespace.dk/MET-WP/wp-json/wp/v2/footer/125";
-//	let jsonData = await fetch(pagesURL);
-//	let section = await jsonData.json();
-//	insertFooter2(section);
-//}
 
 function insertFooter2(section) {
 	let destFooter2 = document.querySelector(".footer-right");
