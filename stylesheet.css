@@ -3565,7 +3565,6 @@ a:-webkit-any-link {
 		width: 250px;
 		height: 300px;
 		justify-self: center;
-		/*        border: 1px solid #f1f1f1;*/
 		perspective: 1000px;
 		/* Remove this if you don't want the 3D effect */
 	}
