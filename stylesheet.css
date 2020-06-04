@@ -683,6 +683,7 @@ label {
 	width: 100%;
 	box-sizing: border-box;
 	outline: 0;
+	outline: 0;
 }
 
 .feedback-input:focus {
@@ -690,13 +691,13 @@ label {
 	padding: 7vw;
 }
 
-label input[type="text"i] {
+label input[type="text"] {
 	border: 0.5px solid black;
 	width: 74vw;
 	padding: 1vw;
 }
 
-label input[type="email"i] {
+label input[type="email"] {
 	border: 0.5px solid black;
 	width: 74vw;
 	padding: 1vw;
@@ -966,7 +967,7 @@ textarea {
 ::-webkit-input-placeholder {
 	/* Edge */
 	color: white;
-	font: 'Avenir Black', sans-serif;
+	font-family: 'Avenir Black', sans-serif;
 	font-style: oblique;
 }
 
@@ -976,7 +977,7 @@ textarea {
 	background-color: transparent !important;
 	border: 1px solid white !important;
 	border-radius: 0px !important;
-	font: Avenir light, Avenir Black, sans-serif !important;
+	font-family: 'Avenir light', 'Avenir Black', sans-serif !important;
 	font-size: 11px !important;
 	padding: 6px 6px 6px 6px !important;
 	line-height: inherit !important;
@@ -987,9 +988,8 @@ textarea {
 	border: 2px solid white !important;
 }
 
-#mc_embed_signup div#mce-responses {
+#mc_embed_signup #mce-responses {
 	width: auto !important;
-	padding: auto !important;
 	margin: auto !important;
 }
 
@@ -1099,8 +1099,8 @@ a:-webkit-any-link {
 }
 
 .menu-button {
-	grid-column-start: 0;
-	grid-column-end: 0;
+	grid-column-start: 1;
+	grid-column-end: 2;
 	grid-row-start: 1;
 	font-size: 1.6em;
 }
@@ -1427,11 +1427,11 @@ a:-webkit-any-link {
 		margin-right: 5vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 64vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 64vw;
 		margin-bottom: 6vw;
 	}
@@ -1540,11 +1540,11 @@ a:-webkit-any-link {
 		margin-right: 1vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 73vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 73vw;
 	}
 
@@ -1875,11 +1875,11 @@ a:-webkit-any-link {
 		margin-right: 2vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 70vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 70vw;
 	}
 
@@ -2113,11 +2113,11 @@ a:-webkit-any-link {
 		margin-right: 3vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 67vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 67vw;
 	}
 
@@ -2246,11 +2246,11 @@ a:-webkit-any-link {
 
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 64vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 64vw;
 	}
 
@@ -2390,11 +2390,11 @@ a:-webkit-any-link {
 		margin-right: 6.9vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 59vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 59vw;
 	}
 
@@ -2610,11 +2610,11 @@ a:-webkit-any-link {
 		margin-right: 9.6vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 54vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 54vw;
 	}
 
@@ -2801,11 +2801,11 @@ a:-webkit-any-link {
 		margin-right: 10.6vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 51vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 51vw;
 	}
 
@@ -2891,7 +2891,7 @@ a:-webkit-any-link {
 
 	.red_box2 {
 		height: 59vw;
-		margin -15vw 15vw 15vw;
+		margin: -15vw 15vw 15vw;
 	}
 
 	/*MET til fest SLUT*/
@@ -2915,11 +2915,11 @@ a:-webkit-any-link {
 		margin-right: 24.8vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 49vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 49vw;
 	}
 
@@ -3125,11 +3125,11 @@ a:-webkit-any-link {
 		margin-right: 13.7vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 46vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 46vw;
 	}
 
@@ -3504,15 +3504,10 @@ a:-webkit-any-link {
 
 	.gallery-content .top {
 		grid-column-start: 1;
-		grid-column-end: ;
+		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 2;
 		margin: 0.5vw;
-
-		/*
-		grid-template-columns: 1fr 0.5fr;
-		grid-template-rows: auto auto;
-*/
 	}
 
 	.gallery-content .bottom {
@@ -3521,11 +3516,6 @@ a:-webkit-any-link {
 		grid-row-start: 2;
 		grid-row-end: 3;
 		margin: 0.5vw;
-		/*
-
-		grid-template-columns: 0.5fr 1fr;
-		grid-template-rows: auto auto;
-*/
 	}
 
 
@@ -3746,15 +3736,15 @@ a:-webkit-any-link {
 		margin-left: 2vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		margin-bottom: 3vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 38vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 38vw;
 	}
 
@@ -3903,10 +3893,6 @@ a:-webkit-any-link {
 		text-align: left;
 	}
 
-	.heading {
-		margin-top:
-	}
-
 	.price_heading {
 		margin-top: 7vh;
 		padding-left: 9vw;
@@ -3963,7 +3949,6 @@ a:-webkit-any-link {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		align-self: center;
-		padding:
 	}
 
 	.party_info img {
@@ -5515,7 +5500,7 @@ a:-webkit-any-link {
 	.white-border1 {
 		border: white solid 0.5vw;
 		margin-top: 13vh;
-		margin-left: 1w;
+		margin-left: 1vw;
 		width: 24vw;
 		height: 56vh;
 	}
@@ -5851,11 +5836,11 @@ a:-webkit-any-link {
 
 	/*form tabel*/
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 32vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 32vw;
 	}
 
@@ -6238,11 +6223,11 @@ a:-webkit-any-link {
 		margin-right: 14vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 30vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 30vw;
 	}
 
@@ -6561,11 +6546,11 @@ a:-webkit-any-link {
 		margin-right: 16vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 29vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 29vw;
 	}
 
@@ -6685,15 +6670,15 @@ a:-webkit-any-link {
 		margin-right: 18vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 27vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 27vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		margin-bottom: 3vw;
 	}
 
@@ -7047,15 +7032,15 @@ a:-webkit-any-link {
 		margin-right: 19vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 26vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 26vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		margin-bottom: 1vw;
 	}
 
@@ -7181,15 +7166,15 @@ a:-webkit-any-link {
 		margin-right: 20vw;
 	}
 
-	label input[type="text"i] {
+	label input[type="text"] {
 		width: 25.3vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		width: 25.3vw;
 	}
 
-	label input[type="email"i] {
+	label input[type="email"] {
 		margin-bottom: 1vw;
 	}
 
