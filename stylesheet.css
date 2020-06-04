@@ -2673,7 +2673,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 49vh;
+		height: 43vh;
 		width: 64vw;
 	}
 
@@ -2769,7 +2769,6 @@ a:-webkit-any-link {
 
 
 @media screen and (min-width: 648px) {
-	heej
 
 	/*Galleri*/
 	#menuCard #coffee_section {
@@ -3141,14 +3140,10 @@ a:-webkit-any-link {
 
 	/*Menu*/
 	.white-border3 {
-		margin-top: -5vw;
+		margin-top: -5vh;
 		margin-left: -14vw;
 		width: 70vw;
-		height: 4vh;
-	}
-
-	.white-border3 {
-		height: 46vh;
+		height: 45vh;
 	}
 
 	/*Menu SLUT*/
@@ -3412,15 +3407,15 @@ a:-webkit-any-link {
 		margin-top: 14vw;
 		margin-left: -2vw;
 		width: 34vw;
-		height: 60vh;
+		height: 50vh;
 	}
 
 	.white-border2 {
 		border: white solid 0.7vw;
 		margin-top: 7vh;
 		margin-left: 7vw;
-		width: 38vw;
-		height: 60vh;
+		width: 30vw;
+		height: 50vh;
 		position: absolute;
 	}
 
@@ -3429,7 +3424,7 @@ a:-webkit-any-link {
 		margin-top: -1vh;
 		margin-left: 0vw;
 		width: 30vw;
-		height: 27vh;
+		height: 25vh;
 	}
 
 	/*-------Hvide kanter SLUT-----*/
@@ -4221,10 +4216,10 @@ a:-webkit-any-link {
 	}
 
 	.white-border1 {
-		margin-top: 14vh;
+		margin-top: 12vh;
 		margin-left: 1vw;
-		width: 33vw;
-		height: 57vh;
+		width: 28vw;
+		height: 53vh;
 	}
 
 
@@ -4232,7 +4227,7 @@ a:-webkit-any-link {
 		margin-top: 6vh;
 		margin-left: 7vw;
 		width: 33vw;
-		height: 55vh;
+		height: 53vh;
 	}
 
 
@@ -4240,7 +4235,7 @@ a:-webkit-any-link {
 		margin-top: -1vw;
 		margin-left: 0vw;
 		width: 32vw;
-		height: 29vh;
+		height: 27vh;
 	}
 
 
@@ -4342,7 +4337,7 @@ a:-webkit-any-link {
 
 
 	.white-border2 {
-		height: 57vh;
+		height: 55vh;
 	}
 }
 
@@ -4668,8 +4663,8 @@ a:-webkit-any-link {
 	.white-border1 {
 		margin-top: 9vh;
 		margin-left: -1vw;
-		height: 60vh;
-		width: 30vw;
+		height: 58vh;
+		width: 27vw;
 	}
 
 	.white-border2 {
@@ -4678,7 +4673,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 30vh;
+		height: 29vh;
 	}
 
 	/*Menu SLUT*/
@@ -4799,7 +4794,7 @@ a:-webkit-any-link {
 	/*SLUT kontakt side*/
 
 	.white-border2 {
-		height: 60vh;
+		height: 55vh;
 	}
 }
 
@@ -4822,24 +4817,16 @@ a:-webkit-any-link {
 	}
 
 	.white-border1 {
-		margin-top: 13vh;
-		height: 67vh;
-		margin-left: -5vw;
-		width: 36vw;
+		margin-top: 11vh;
+		height: 58vh;
+		margin-left: -3vw;
+		width: 29vw;
 	}
 
 	.white-border2 {
 		margin-top: 6vh;
 	}
 
-
-	/*
-	.white-border3 {
-		margin-left: -1vw;
-		width: 28vw;
-		height: 33vh;
-	}
-*/
 
 	.red_box1 {
 		height: 45vh;
@@ -4997,7 +4984,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		height: 33vh;
+		height: 31vh;
 	}
 }
 
@@ -5117,14 +5104,14 @@ a:-webkit-any-link {
 		margin-top: 12vh;
 		margin-left: -1vw;
 		width: 27vw;
-		height: 60vh;
+		height: 57vh;
 	}
 
 	.white-border2 {
 		border: white solid 0.5vw;
-		margin-top: 8vh;
-		margin-left: 7vw;
-		width: 25vw;
+		margin-top: 6vh;
+		margin-left: 6vw;
+		width: 26vw;
 		height: 56vh;
 	}
 
@@ -5132,9 +5119,9 @@ a:-webkit-any-link {
 	.white-border3 {
 		border: white solid 0.5vw;
 		margin-top: -1vh;
-		margin-left: 0.2vw;
+		margin-left: -0.5vw;
 		width: 26vw;
-		height: 33vh;
+		height: 32vh;
 	}
 
 	#menuCard #coffee_section .menu-right img {
@@ -5251,7 +5238,7 @@ a:-webkit-any-link {
 		margin-top: 12vh;
 		margin-left: -1vw;
 		width: 27vw;
-		height: 70vh;
+		height: 58vh;
 	}
 
 	.white-border2 {
@@ -5259,7 +5246,7 @@ a:-webkit-any-link {
 		margin-top: 7vh;
 		margin-left: 6vw;
 		width: 27vw;
-		height: 90vh;
+		height: 55vh;
 	}
 
 
@@ -5529,8 +5516,8 @@ a:-webkit-any-link {
 		border: white solid 0.5vw;
 		margin-top: 13vh;
 		margin-left: 1w;
-		width: 27vw;
-		height: 63vh;
+		width: 24vw;
+		height: 56vh;
 	}
 
 	.white-border2 {
@@ -5546,8 +5533,8 @@ a:-webkit-any-link {
 		border: white solid 0.5vw;
 		margin-top: -1vh;
 		margin-left: -1.5vw;
-		width: 28vw;
-		height: 33vh;
+		width: 27vw;
+		height: 32vh;
 	}
 
 	#menuCard #coffee_section .menu-right img {
@@ -6078,6 +6065,22 @@ a:-webkit-any-link {
 
 
 
+	/*Menu*/
+	.white-border1 {
+		margin-top: 8vh;
+		height: 60vh;
+		margin-left: -1vw;
+		width: 25vw;
+	}
+
+	.white-border3 {
+		height: 35vh;
+	}
+
+	/*Menu SLUT*/
+
+
+
 	/*MET til fest*/
 	.red_box1 {
 		width: 28vw;
@@ -6090,17 +6093,6 @@ a:-webkit-any-link {
 		width: 61vw;
 		margin: 2vw 0vw;
 		right: 5vw;
-	}
-
-	.white-border1 {
-		margin-top: 8vh;
-		height: 67vh;
-		margin-left: -1vw;
-		width: 30vw;
-	}
-
-	.white-border3 {
-		height: 35vh;
 	}
 
 	/*MET til fest SLUT*/
@@ -6132,10 +6124,10 @@ a:-webkit-any-link {
 
 
 	.white-border1 {
-		margin-top: 12vh;
-		height: 62vh;
+		margin-top: 11vh;
+		height: 58vh;
 		margin-left: -2vw;
-		width: 27vw;
+		width: 22vw;
 	}
 
 	/*Menu SLUT*/
@@ -6264,6 +6256,9 @@ a:-webkit-any-link {
 
 
 	/*Menu*/
+	.white-border2 {
+		width: 23vw;
+	}
 
 	.white-border3 {
 		height: 38vh;
@@ -6423,7 +6418,7 @@ a:-webkit-any-link {
 
 	.white-border3 {
 		width: 27vw;
-		height: 40vh;
+		height: 36vh;
 	}
 
 	#koldedrikke-section img {
@@ -6484,7 +6479,7 @@ a:-webkit-any-link {
 	}
 
 	.white-border1 {
-		width: 25vw;
+		width: 21vw;
 	}
 
 	.white-border2 {
@@ -6493,8 +6488,8 @@ a:-webkit-any-link {
 	}
 
 	.white-border3 {
-		width: 27vw;
-		height: 37vh;
+		width: 25vw;
+		height: 34vh;
 		margin-left: -0.5vw;
 	}
 
@@ -6735,15 +6730,15 @@ a:-webkit-any-link {
 
 	.white-border1 {
 		margin-top: 7vw;
-		width: 23vw;
-		height: 70vh;
+		width: 19vw;
+		height: 60vh;
 		margin-left: -1vw;
 	}
 
 	.white-border2 {
 		margin-left: 6vw;
-		width: 22vw;
-		height: 70vh;
+		width: 20vw;
+		height: 60vh;
 	}
 
 	.white-border3 {
@@ -6910,15 +6905,15 @@ a:-webkit-any-link {
 	}
 
 	.white-border1 {
-		margin-top: 14vh;
+		margin-top: 12vh;
 		margin-left: -1vw;
-		width: 23vw;
-		height: 65vh;
+		width: 19vw;
+		height: 60vh;
 	}
 
 	.white-border2 {
-		margin-top: 8vh;
-		margin-left: 6vw;
+		margin-top: 9vh;
+		margin-left: 5vw;
 		width: 21vw;
 		height: 60vh;
 	}
@@ -6926,7 +6921,7 @@ a:-webkit-any-link {
 
 	.white-border3 {
 		margin-top: -2vh;
-		margin-left: -0.5vw;
+		margin-left: 0.5vw;
 		width: 21vw;
 		height: 35vh;
 	}
